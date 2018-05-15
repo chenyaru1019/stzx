@@ -1,0 +1,78 @@
+<div class="M_top">
+    <div><img src="img/main_icon_meet.png" style='padding-right: 10px;' alt="">我的会议
+    <a href="#" class="M_more">更多</a>
+    </div>
+</div>
+<div class="line"></div>
+<div class="M_content">
+        <ul>
+            <li class="M_li_left M_active">今日会议</li>
+            <li class="M_li_right">明日会议</li>
+        </ul>
+    <div>
+        <div class="M_left"'>
+            今日会议内容
+        </div>
+        <div class="M_right" style='display: none;'>
+            明日会议内容
+        </div>
+    </div>
+</div>
+<style>
+    .M_top {
+        height:30px;
+        background: #FFFFFF;
+        font-family: PingFangSC-Medium;
+        font-size: 15px;
+        line-height:32px;
+        color: #4E4E4E;
+    }
+    .M_more {
+        float:right;
+        color: #9E60B2;
+        font-family: PingFangSC-Regular;
+    }
+    .line {
+        width:104%;
+        margin-left: -5px;
+        height:.125rem/* 2px */;
+        background: #D7D7D7;
+    }
+    .M_content ul {
+        width: 104%;
+        height: 30px;
+        background: #E9EAEF;
+        margin-left: -5px;
+        margin-top: -10px;
+        padding-left: 10px;
+    }
+    .M_content ul li {
+        float:left;
+        font-size: 15px;
+        padding: 4px;
+    }
+    .M_content div {
+        margin-top: 8px;
+        height: 200px;
+    }
+    .M_active {
+        border-bottom:3px solid #9E60B2;;
+    }
+</style>
+<script type="text/javascript">
+   $(function(){
+    $('.M_content').find('.M_li_left').on('click', function() {
+        $('.M_left').show();
+        $('.M_li_left').addClass('M_active');
+        $('.M_right').hide();
+        $('.M_li_right').removeClass("M_active");
+    });
+    $('.M_content').find('.M_li_right').on('click', function(event) {
+        event.preventDefault();
+         $('.M_left').hide();
+         $('.M_li_left').removeClass("M_active");
+        $('.M_right').show();
+        $('.M_li_right').addClass('M_active');
+    });
+   });
+</script>

@@ -1,0 +1,10 @@
+/**
+ * Created by LX on 2017/8/9.
+ *  请求java接口地址
+ */
+var url = 'http://192.168.17.47:8080/stzx/';
+var URLNew= 'http://192.168.17.47:8080/stzx/portal/';
+// var url = 'http://140.206.138.190:5023/stzx/';
+// var URLNew= 'http://140.206.138.190:5023/stzx/portal/';
+// var url = 'http://taizhou.iask.in:26753/stzx/';
+

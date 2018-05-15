@@ -1,0 +1,313 @@
+/* author Romey
+   2016-09-13
+*/
+/*动态点赞开始*/
+.praise{
+    margin: 50px auto;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+}
+#praise{
+    display:block;
+    width:80px;
+    height:80px;
+    margin:0 auto;
+}
+#praise-txt{
+    height:25px;
+    line-height:45px;
+    font-size: 22px;
+}
+
+.praise {
+    text-align: center
+}
+
+.praise img{
+    width:80px;
+    height:80px;
+    display:block;
+    margin: 0 auto;
+}
+.praise img.animation{
+    animation: myfirst 0.5s;
+    -moz-animation: myfirst 0.5s;	/* Firefox */
+    -webkit-animation: myfirst 0.5s;	/* Safari 和 Chrome */
+    -o-animation: myfirst 0.5s;	/* Opera */
+}
+#add-num{
+    display:none;
+}
+#add-num .add-animation{
+    color: #000;
+    position:absolute;
+    top: -16px;
+    left: 50%;
+    font-size: 22px;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -moz-opacity:0;
+    animation: mypraise 0.5s ;
+    -moz-animation: mypraise 0.5s ;	/* Firefox */
+    -webkit-animation: mypraise 0.5s ;	/* Safari 和 Chrome */
+    -o-animation: mypraise 0.5s ;	/* Opera */
+    font-style:normal;
+}
+.praise .hover  , #praise-txt.hover{
+    color: #419bdd;
+    font-size: 22px;
+}
+
+#add-num .add-animation.hover {
+    color: #EB4F38;
+}
+
+.news {
+    font-family:'PingFangJ SFDRegular';
+    color: #000000;
+    font-size: 22px;
+    line-height: 40px;
+}
+.news label span {
+    font-family:'PingFangJ SFDMedium';
+    font-size: 22px;
+    color: #de2d2d;
+    line-height: 35px;
+}
+
+.liulanNum .col-md-8 span,.liulanNum .col-md-4 span {
+    font-family:'PingFangJ SFDRegular';
+    color: #000000;
+    font-size: 18px!important;
+    line-height: 35px;
+}
+.liulanNum .col-md-4 label {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.yizan {
+    font-family: "PingFangJ SFDBold";
+    /*color: #419bdd;*/
+    font-size: 22px;
+}
+
+.yizan span label span {
+    font-size: 22px;
+}
+
+.title label span {
+    font-family:'PingFangJ SFDMedium';
+    font-size: 35px;
+    color: #000;
+    /*line-height: 35px;*/
+}
+.newmsg #control2 span,.newmsg #control1 label{
+    font-family:'PingFangJ SFDRegular';
+    color: #6f6f6f;
+    font-size: 18px;
+}
+/*点赞图标放大动画开始*/
+@keyframes myfirst
+{
+    0%{
+        width:80px;
+        height:80px;
+    }
+    50%{
+        width:90px;
+        height:90px;
+    }
+    100% {
+        width:80px;
+        height:80px;
+    }
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%{
+        width:80px;
+        height:80px;
+    }
+    50%{
+        width:90px;
+        height:90px;
+    }
+    100% {
+        width:80px;
+        height:80px;
+    }
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    0%{
+        width:80px;
+        height:80px;
+    }
+    50%{
+        width:90px;
+        height:90px;
+    }
+    100% {
+        width:80px;
+        height:80px;
+    }
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0%{
+        width:80px;
+        height:80px;
+    }
+    50%{
+        width:90px;
+        height:90px;
+    }
+    100% {
+        width:80px;
+        height:80px;
+    }
+}
+/*点赞图标放大动画结束*/
+/*点赞数量加减动画开始*/
+@keyframes mypraise
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-moz-keyframes mypraise /* Firefox */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-webkit-keyframes mypraise /* Safari 和 Chrome */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-o-keyframes mypraise /* Opera */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+/*点赞数量加减动画结束*/
+/*动态点赞结束*/

@@ -1,0 +1,232 @@
+<script>
+    $(document).ready(function() {
+        var $meetRoom = '一号会议室';
+        var initEvents;
+        var HYS_string = '一号会议室';
+
+        getEvents(function(data){
+            initEvents = data;
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                locale: 'zh-cn',
+                navLinks: true, // can click day/week names to navigate views
+                selectable: true,
+                selectHelper: true,
+                select: function(start, end) {
+                    var HYS_obj = {'start' : $.fullCalendar.formatDate(start,'Y-M-DD HH:m:s'), 'end' : $.fullCalendar.formatDate(end,'Y-M-DD HH:m:s'), 'hys_number' : HYS_string};
+                    $.cookie('HYS_obj', JSON.stringify(HYS_obj), { expires: 7 });
+                    $('#myModal').modal({keyboard: true, show: true, backdrop: false,});
+                    $("#iframeId").attr("src", "StartInstance.html?WorkflowCode=meeting&PageAction=Close");
+                },
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: initEvents,
+
+            });
+        }, $meetRoom);
+
+        $('.HYS_right li').on('click', function() {
+            $(this).css('background-color','rgba(241,241,241,1.50)').siblings().css('background-color','#CDCDCD');
+            HYS_string = $(this).find('input').val();
+            //remove the old eventSources
+            $('#calendar').fullCalendar('removeEventSource', initEvents);
+            $('#calendar').fullCalendar('refetchEvents');
+            var newEvents;
+            getEvents(function(data){
+                newEvents = data;
+                //attach the new eventSources
+                $('#calendar').fullCalendar('addEventSource', newEvents);
+                $('#calendar').fullCalendar('refetchEvents');
+                initEvents = newEvents;
+            }, HYS_string);
+
+        });
+
+        $('#myModal').on('hide.bs.modal', function () {
+            $.cookie('HYS_obj', null);
+        })
+
+        function swichTime($time) {
+            var timearr = $time.split(' ');
+            return timearr[0] + ' ' + timearr[1].replace(/-/g, ":");
+        }
+
+        function showDetail(obj, e){
+            alert('1111')
+        }
+
+        function getEvents(callback, meetingNumber) {
+            var eventsArr = new Array();
+            $.ajax
+            (
+                {
+                    type: "GET",
+                    async: false,
+                    url: 'http://www.qq01234.com:41518/meeting/list?status=2&meetingroom=' + meetingNumber,
+                    dataType: "jsonp",//加入这个选项即可
+                    jsonpCallback: "callbackName",
+                    beforeSend: function(){
+                        showOverlay();
+                    },
+                    success: function (msg) {
+                        $.each(msg.rows, function (index, term) {
+                            var startTime = swichTime(term.starttime);
+                            var endTime = swichTime(term.endtime);
+                            var render_obj = {title: term.meetingroom, start: startTime,  end: endTime};
+                            eventsArr[index] = render_obj;
+
+                        });
+                        callback(eventsArr);
+                    },
+                    complete: function() {
+                        hideOverlay();
+                    },
+                }
+            );
+        }
+
+        function showOverlay() {
+            $('#calendar-overlay').css('display', 'block');
+        }
+
+        function hideOverlay() {
+            $('#calendar-overlay').css('display', 'none');
+        }
+
+    });
+
+</script>
+<style>
+    #calendar {
+        margin: 0 auto;
+        margin-top: 10px;
+        position: relative;
+    }
+    #calendar-overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+    .HYSsiyong {
+        padding:5px;
+        background: #F6F8F8;
+        width: 100%;
+        font-size:18px;
+    }
+    .HYSsiyong ul li {
+        list-style-type: none;
+        float:left;
+        text-align:center;
+    }
+    .HYS_left li {
+        height: 38px;
+        line-height: 34px;
+        width:10%;
+        margin-left: 5px;
+        background: #FCFCFC;
+        border: 1px solid #C1C1C1;
+        box-shadow: 1px 2px 4px 0 rgba(241,241,241,0.80);
+    }
+    .HYSsiyong ul li:hover{
+        cursor:pointer;
+        background-color: rgba(241,241,241,1.50);
+    }
+    .HYS_left li:nth-child(1) {
+        border-top:4px solid #FF9A00;
+    }
+    .HYS_left li:nth-child(2) {
+        border-top:4px solid #00ACC1;
+    }
+    .HYS_left li:nth-child(3) {
+        border-top:4px solid #9E60B2;
+    }
+    .HYS_left li:nth-child(4) {
+        border-top:4px solid #70C170;
+    }
+    .HYS_right  {
+        float: left;
+        padding-left: 20px;
+        width: 80%;
+    }
+    .HYS_right li {
+        margin-left: 11px;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        background-color: #CDCDCD;
+        border-radius: 50%;
+        margin-top: 4px;
+    }
+    .row {
+        margin:0;
+    }
+    #iframeId {
+        width: 100%;
+        height: 500px;
+    }
+    .HYS_right li input {
+        display: none;
+    }
+    .fa-spinner {
+        animation: fa-spin 1s infinite steps(8);
+        font-size: 100px;
+        color: #fff;
+        top: 25%;
+        left: 50%;
+        position: absolute;
+    }
+</style>
+<div class="row HYSsiyong" style="border-bottom: 1px solid #dee5e7;height: 51px;">
+    <div class="col-md-8" style="margin-top: 3px;">
+        <ul class="HYS_left">
+            <li><a href="">待审批</a></li>
+            <li><a href="">审批中</a></li>
+            <li><a href="">已审批</a></li>
+            <li><a href="">进行中</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4" style="margin-top: 4px;">
+        <span style='float: left;line-height: 34px;'>会议室:</span>
+        <ul class="HYS_right">
+            <li ><input type="text" value="一号会议室"/>1</li>
+            <li ><input type="text" value="二号会议室"/>2</li>
+            <li ><input type="text" value="三号会议室"/>3</li>
+            <li ><input type="text" value="四号会议室"/>4</li>
+            <li ><input type="text" value="五号会议室"/>5</li>
+        </ul>
+    </div>
+</div>
+<div id='calendar'>
+    <div id=calendar-overlay>
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    申请表单
+                </h4>
+            </div>
+            <div class="modal-body" style='padding: 0px'>
+                <iframe id="iframeId" src=""></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>

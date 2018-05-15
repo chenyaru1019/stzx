@@ -1,0 +1,138 @@
+.panel {
+    border-left-width: 0px;
+    min-height: 100%;
+}
+#form1 {
+    height: 100%;
+}
+.myTable .pagination>li>a, .pagination>li>span {
+    margin-right: 0px;
+}
+#main-navbar {
+    display: none;
+}
+.divContent .row .col-md-2 {
+    background-color:#fff;
+    padding-left: 50px;
+}
+.row {
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px dashed #C4C4C4;
+}
+.searchBox {
+    /*border: 1px solid #C4C4C4;*/
+    border-bottom: 0px;
+}
+.searchBox .row:last-child {
+    border:0px;
+}
+.searchBox .row:first-child {
+    border-top: 1px dashed #C4C4C4;
+}
+.divContent .row .col-md-4 {
+    border: 0px;
+}
+.searchBox .btn {
+    width: 10%!important;
+    color: #58666e !important;
+    background-color: #fff;
+    border-color: #dee5e7;
+    border-bottom-color: #d8e1e3;
+    -webkit-box-shadow: 0 1px 1px rgba(90, 90, 90, 0.1);
+    box-shadow: 0 1px 1px rgba(90, 90, 90, 0.1);
+}
+.btn-default:hover {
+    background: #eaeaea!important;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.Btn_dropDown {
+    background: url(icon_arrow.png) no-repeat -61px 0px;
+    width: 61px;
+    height: 17px;
+    position: absolute;
+    top: 1px;
+    margin-left: -30px;
+    left: 50%;
+}
+.Btn_dropup {
+    background: url(icon_arrow.png) no-repeat 0px 0px;
+}
+.columns {
+    display: none;
+}
+.tableContent {
+    display: none;
+}
+.sheetContent {
+    width: 100%;
+    height: 100%;
+}
+.container, .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#content-wrapper {
+    padding: 0px;
+}
+.DragContainer {
+    position: fixed;
+    width: 100%;
+    text-align: left;
+    background: #f6f8f8;
+    line-height: 34px;
+    z-index: 999;
+    margin-top: -1px;
+    padding: 5px;
+    border-bottom: 1px solid #dee5e7;
+}
+.panel-body {
+    margin-top: 46px;
+    /*padding: 0px;*/
+
+}
+.divContent {
+    border: 1px solid #dee5e7;
+    margin-bottom: 40px;
+}
+.search_new {
+    text-align: center;
+    padding: 6px 0px;
+    margin: 0px;
+    display: block;
+}
+.myTable {
+    margin-top: 15px;
+}
+.fixed-table-container {
+    border: 0px;
+}
+.table thead tr th {
+    border: 0px;
+}
+input[type=text] {
+    width: 100%;
+}
+#title2, #title4,.divContent .row .col-md-5 {
+    border: 0px;
+}
+.sheetContent {
+    margin-bottom: 0px;
+}
+#content-wrapper {
+    min-height: 660px;
+}
+#ViewNotice tbody tr,#ViewNews tbody tr {
+    cursor: pointer;
+}
+.myTable .btn {
+    width: 100%;
+    color: #000;
+    background-color:#e4e4e4;
+}
+
+.table > tbody > tr > td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

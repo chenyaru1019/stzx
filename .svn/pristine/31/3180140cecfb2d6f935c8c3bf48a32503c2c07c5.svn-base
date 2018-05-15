@@ -1,0 +1,72 @@
+/* 易耗品采购货品查询表格css样式 */
+.QueryList .input-group {
+    margin: 0px!important;
+    padding: 6px;
+    border-top: 1px dashed #C4C4C4;
+}
+.QueryList .input-group .input-group-addon {
+    background: #fff;
+    border: 0;
+}
+.workingCondition {
+    width: 15%;
+}
+.btn {
+    padding: 8px 18px;
+}
+.searchBox label {
+    margin-right: 10px;
+}
+.datatable {
+    border-top: 1px solid #eaeeea;
+    border-bottom: 1px solid #eaeeea;
+}
+.datatable tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+.datatable tbody tr:hover {
+    background-color:#dde6e9;
+}
+.datatable tbody tr td,.datatable thead tr th {
+    padding: 8px 18px;
+    border-bottom: 1px solid #eaeff0;
+}
+.datatable tfoot {
+    text-align: right;
+}
+.datatable tfoot td {
+    padding: 10px 30px;
+}
+.datatable tfoot a {
+    padding: 6px 12px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-right: 0;
+    color: #428bca;
+}
+.datatable tfoot a:hover {
+    background-color: #edf1f2;
+    border-color: #dee5e7;
+}
+.datatable tfoot a:last-child {
+    border-right: 1px solid #ddd;
+}
+.textPrompt {
+    font-size: 16px;
+    padding: 50px;
+    text-align: center;
+}
+.totalData {
+    display: inline-block;
+    position: absolute;
+    bottom: 16px;
+    left: 69%;
+}
+.current {
+    z-index: 2;
+    color: #fff!important;
+    cursor: default;
+    background-color: #428bca!important;
+    border-color:#428bca!important;
+}

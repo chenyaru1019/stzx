@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('../fonts/sourcesanspro/sourcesanspro-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('../fonts/sourcesanspro/sourcesanspro.woff') format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('../fonts/sourcesanspro/sourcesanspro-bold.woff') format('woff');
+}
+
+/*@font-face {*/
+  /*font-family: 'YouYuan';*/
+  /*src: url('../fonts/YouYuan/幼圆.eot');*/
+  /*src: url('../fonts/YouYuan/幼圆.eot?#iefix') format('embedded-opentype'),*/
+/*url('../fonts/YouYuan/幼圆.woff2') format('woff2'),*/
+/*url('../fonts/YouYuan/幼圆.woff') format('woff'),*/
+/*url('../fonts/YouYuan/幼圆.ttf') format('truetype'),*/
+/*url('../fonts/YouYuan/幼圆.svg#akzidenz-grotesk_stdregular') format('svg');*/
+  /*font-weight: 100;*/
+  /*font-style: normal;*/
+/*}*/

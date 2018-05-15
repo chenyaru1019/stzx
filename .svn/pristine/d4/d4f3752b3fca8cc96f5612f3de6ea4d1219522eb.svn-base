@@ -1,0 +1,67 @@
+﻿using OThinker.H3.Controllers;
+using OThinker.H3.DataModel;
+using System;
+
+
+namespace OThinker.H3.Portal.Sheets.stzx.ProjectTask
+{
+    public partial class ProjectTask : OThinker.H3.Controllers.MvcPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+      
+      
+           public override void SaveDataFields(MvcPostValue MvcPost, MvcResult result)
+           {
+
+            //保存后执行操作，
+            base.SaveDataFields(MvcPost, result);
+            if (ActionContext.ActivityCode == "Activity11")
+            {
+                if (MvcPost.Command == "Submit")
+                {
+                    // 项目名称
+                    String ProjectName = (String)this.ActionContext.InstanceData["ProjectName"].Value;
+                    //项目编号
+                    String ProjectNum = (String)this.ActionContext.InstanceData["ProjectNum"].Value;
+
+                    String ObjectID = ((String)ActionContext.InstanceData["ObjectID"].Value).Trim();
+
+                    BizObject[] list = this.ActionContext.InstanceData["ProjectMembers"].Value as BizObject[];
+                    if (list != null || !"".Equals(list))
+                    {
+                        for (int i = 0; i < list.Length; i++)
+                        {
+                            String UserId = ((String)list[i].GetValue("UserId")).Trim();
+
+                            String Name = (String)list[i].GetValue("FullName");
+                            String PersonRole = (String)list[i].GetValue("PersonRole");
+                            String Department = (String)list[i].GetValue("Department");
+                            String Profession = (String)list[i].GetValue("Profession");
+                            String JobTitle = "".Equals((String)list[i].GetValue("JobTitle")) ? "" : (String)list[i].GetValue("JobTitle");
+                            String GNVQ = (String)list[i].GetValue("GNVQ");
+                            DateTime AppointmentDate = (DateTime)list[i].GetValue("AppointmentDate");
+                            DateTime ResidentDate = (DateTime)list[i].GetValue("ResidentDate");
+                            String status = "1";
+                            System.Data.DataTable dt = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+                   "INSERT INTO Info_ProjectMember(UserId,BizObjectId,Name,Department,ProjectName,ProjectNum,JobTitle, Profession, Role,Status)VALUES('" +
+            UserId + "','" + ObjectID + "','" + Name + "','" + Department + "','" + ProjectName + "','" + ProjectNum + "','" + JobTitle + "','" + Profession + "','" + PersonRole + "','" + status + "')");
+
+
+                        }
+
+                    }
+                }
+
+             }
+            
+        }
+
+     
+
+
+
+
+    }
+}

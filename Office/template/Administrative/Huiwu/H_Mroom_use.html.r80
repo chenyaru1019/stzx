@@ -1,0 +1,170 @@
+<script>
+
+    $(document).ready(function() {
+        var initialLocaleCode = 'zh-cn';
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultDate: '2017-05-12',
+            locale: initialLocaleCode,
+            navLinks: true, // can click day/week names to navigate views
+            selectable: true,
+            selectHelper: true,
+            select: function(start, end) {
+                var title = prompt('Event Title:');
+                var eventData;
+                if (title) {
+                    eventData = {
+                        title: title,
+                        start: start,
+                        end: end
+                    };
+                    $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+                }
+                $('#calendar').fullCalendar('unselect');
+            },
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: [
+                {
+                    title: 'All Day Event',
+                    start: '2017-05-01'
+                },
+                {
+                    title: 'Long Event',
+                    start: '2017-05-07',
+                    end: '2017-05-10'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2017-05-09T16:00:00'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2017-05-16T16:00:00'
+                },
+                {
+                    title: 'Conference',
+                    start: '2017-05-11',
+                    end: '2017-05-13'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2017-05-12T10:30:00',
+                    end: '2017-05-12T12:30:00'
+                },
+                {
+                    title: 'Lunch',
+                    start: '2017-05-12T12:00:00'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2017-05-12T14:30:00'
+                },
+                {
+                    title: 'Happy Hour',
+                    start: '2017-05-12T17:30:00'
+                },
+                {
+                    title: 'Dinner',
+                    start: '2017-05-12T20:00:00'
+                },
+                {
+                    title: 'Birthday Party',
+                    start: '2017-05-13T07:00:00'
+                },
+                {
+                    title: 'Click for Google',
+                    url: 'http://google.com/',
+                    start: '2017-05-28'
+                }
+            ]
+        });
+
+    });
+
+</script>
+<style>
+    #calendar {
+        margin: 0 auto;
+        /* margin-top: 50px; */
+    }
+    .HYSsiyong {
+        padding:5px;
+        background: #F8F8F8;
+        border-bottom: 1px solid #C4C4C4;
+/*         position: fixed;
+        z-index: 9;
+        top: 110px; */
+        width: 100%;
+        font-size:18px;
+    }
+    .HYSsiyong ul li {
+        list-style-type: none;
+        float:left;
+        text-align:center;
+    }
+    .HYS_left li {
+        height: 30px;
+        line-height: 27px;
+        width:9%;
+        margin-left: 10px;
+        background: #FCFCFC;
+        border: 1px solid #C1C1C1;
+        box-shadow: 1px 2px 4px 0 rgba(241,241,241,0.50);
+    }
+    .HYS_left li:nth-child(1) {
+        border-top:4px solid #FF9A00;
+    }
+    .HYS_left li:nth-child(2) {
+        border-top:4px solid #00ACC1;
+    }
+    .HYS_left li:nth-child(3) {
+        border-top:4px solid #9E60B2;
+    }
+    .HYS_left li:nth-child(4) {
+        border-top:4px solid #70C170;
+    }
+    .HYS_right  {
+        float: left;
+        padding-left: 20px;
+        width: 80%;
+    }
+    .HYS_right li {
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background-color: #CDCDCD;
+        border-radius: 50%;
+    }
+    .row {
+        margin:0;
+    }
+</style>
+    <div class="row HYSsiyong">
+        <div class="col-md-7">
+            <ul class="HYS_left">
+                <li><a href="">待审批</a></li>
+                <li><a href="">审批中</a></li>
+                <li><a href="">已审批</a></li>
+                <li><a href="">进行中</a></li>
+            </ul>
+        </div>
+        <div class="col-md-5">
+            <span style='float: left;line-height: 34px;'>会议室:</span>
+            <ul class="HYS_right">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>...</li>
+            </ul>
+        </div>
+   </div>
+    <div id='calendar'></div>

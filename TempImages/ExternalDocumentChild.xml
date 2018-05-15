@@ -1,0 +1,1946 @@
+<BizWorkflowPackage>
+  <PackageCode>ExternalDocumentChild</PackageCode>
+  <PackageName>集团收文子流程</PackageName>
+  <FunctionNode xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Serialized>true</Serialized>
+    <ObjectID>6d7e039e-dec9-4c9e-ae83-c706c02f55a8</ObjectID>
+    <ParentObjectID />
+    <ParentIndex>0</ParentIndex>
+    <Code>ExternalDocumentChild</Code>
+    <IsSystem>false</IsSystem>
+    <State>Unspecified</State>
+    <ParentCode>0b6da83c-cbc2-4794-afc4-99dc05befa96</ParentCode>
+    <DisplayName>集团收文子流程</DisplayName>
+    <LockedBy />
+    <Description />
+    <SortKey>0</SortKey>
+    <NodeType>BizWorkflowPackage</NodeType>
+    <OpenNewWindow>false</OpenNewWindow>
+    <IsInherit>false</IsInherit>
+    <IconType>Url</IconType>
+    <IconUrl />
+    <Url />
+  </FunctionNode>
+  <BizObjectSchema>
+    <SchemaCode>ExternalDocumentChild</SchemaCode>
+    <DisplayName>数据模型</DisplayName>
+    <Description />
+    <StorageType>DataList</StorageType>
+    <TableName>I_ExternalDocumentChild</TableName>
+    <MainVersion>3</MainVersion>
+    <SubVersion>4</SubVersion>
+    <NameSchema />
+    <SummarySchema />
+    <Properties>
+      <PropertySchema>
+        <Name>ObjectID</Name>
+        <DisplayName>ObjectID</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Name</Name>
+        <DisplayName>Name</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedBy</Name>
+        <DisplayName>CreatedBy</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedByParentId</Name>
+        <DisplayName>CreatedByParentId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>OwnerId</Name>
+        <DisplayName>OwnerId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>OwnerParentId</Name>
+        <DisplayName>OwnerParentId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedTime</Name>
+        <DisplayName>CreatedTime</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ModifiedBy</Name>
+        <DisplayName>ModifiedBy</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ModifiedTime</Name>
+        <DisplayName>ModifiedTime</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>RunningInstanceId</Name>
+        <DisplayName>RunningInstanceId</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>true</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Applyer</Name>
+        <DisplayName>发布人</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Department</Name>
+        <DisplayName>所属部门</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Type</Name>
+        <DisplayName>来文类别</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>LWNumbering</Name>
+        <DisplayName>来文编号</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>RecriveDate</Name>
+        <DisplayName>收文日期</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <dateTime>0001-01-01T00:00:00</dateTime>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>LWDepartmeent</Name>
+        <DisplayName>来文部门</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Title</Name>
+        <DisplayName>标题</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>HTAttach</Name>
+        <DisplayName>来文附件</DisplayName>
+        <LogicType>Attachment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Receiver</Name>
+        <DisplayName>公司领导查阅人</DisplayName>
+        <LogicType>MultiParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Xml</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CYDepart</Name>
+        <DisplayName>是否需要部门查阅</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Note</Name>
+        <DisplayName>备注</DisplayName>
+        <LogicType>String</LogicType>
+        <MaxLength>2000</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ManagerSuggess</Name>
+        <DisplayName>经理室意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>RequestDate</Name>
+        <DisplayName>要求回复日期</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <dateTime>0001-01-01T00:00:00</dateTime>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>EmployeeView</Name>
+        <DisplayName>部门主管传阅</DisplayName>
+        <LogicType>MultiParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Xml</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ygcy</Name>
+        <DisplayName>员工查阅</DisplayName>
+        <LogicType>MultiParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Xml</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>DepartSuggess</Name>
+        <DisplayName>部门意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>IntegratedOffice</Name>
+        <DisplayName>综合办拟办意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ygyj</Name>
+        <DisplayName>员工意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ReplyAttach</Name>
+        <DisplayName>回复附件</DisplayName>
+        <LogicType>Attachment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>StartTime</Name>
+        <DisplayName>发起时间</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <dateTime>0001-01-01T00:00:00</dateTime>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName>65TRT</MetadataItemName>
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+    </Properties>
+    <Methods>
+      <MethodGroupSchema>
+        <MethodName>Create</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Load</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Update</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Remove</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>GetList</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Filter</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+    </Methods>
+    <Associations />
+    <ViewCollection>
+    </ViewCollection>
+  </BizObjectSchema>
+  <BizListenerPolicy>
+    <PolicyType>OneByOne</PolicyType>
+    <IntervalSecond>600</IntervalSecond>
+    <FilterMethod />
+  </BizListenerPolicy>
+  <BizSheets>
+    <BizSheet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>5ccdd5b8-bec1-42b4-a5a5-6e7c22e5e538</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <BizObjectSchemaCode>ExternalDocumentChild</BizObjectSchemaCode>
+      <SheetCode>SExternalDocumentChild</SheetCode>
+      <DisplayName>默认表单</DisplayName>
+      <LastModifiedBy />
+      <LastModifiedTime>2018-01-09T10:29:32</LastModifiedTime>
+      <SheetType>DefaultSheet</SheetType>
+      <DesignModeContent>&lt;div style="text-align: center;" class="DragContainer" tabindex="0"&gt;
+	&lt;label id="lblTitle" class="panel-title" tabindex="0"&gt;集团收文子流程&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="panel-body sheetContainer" tabindex="0"&gt;
+	&lt;div class="nav-icon fa fa-chevron-right bannerTitle hidden"&gt;
+		&lt;label id="divBasicInfo" data-en_us="Basic information" tabindex="0"&gt;基本信息&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="divContent" tabindex="0"&gt;
+		&lt;div class="row hidden" tabindex="0"&gt;
+			&lt;div id="divFullNameTitle" class="col-md-2" tabindex="0"&gt;
+				&lt;label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" style="z-index: 101; cursor: move;" class="" tabindex="0"&gt;发起人&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divFullName" class="col-md-4" tabindex="0"&gt;
+				&lt;label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" style="z-index: 101; cursor: move;" tabindex="0"&gt;&lt;span class="OnlyDesigner"&gt;Originator.UserName&lt;/span&gt;&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDateTitle" class="col-md-2" tabindex="0"&gt;
+
+			&lt;/div&gt;
+			&lt;div id="divOriginateDate" class="col-md-4" tabindex="0"&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row hidden" tabindex="0"&gt;
+			&lt;div id="divOriginateOUNameTitle" class="col-md-2" tabindex="0"&gt;
+				&lt;label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" style="z-index: 101; cursor: move;" tabindex="0"&gt;所属组织&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateOUName" class="col-md-4" tabindex="0"&gt;
+				&lt;!--					&lt;label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData"&gt;
+&lt;span class="OnlyDesigner"&gt;Originator.OUName&lt;/span&gt;
+					&lt;/label&gt;--&gt;
+					&lt;select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style="z-index: 101; cursor: move;"&gt;
+					&lt;/select&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNoTitle" class="col-md-2" tabindex="0"&gt;
+
+				&lt;label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;发起时间&lt;/label&gt;&lt;/div&gt;
+				&lt;div id="divSequenceNo" class="col-md-4" tabindex="0"&gt;
+
+				&lt;label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;&lt;span class="OnlyDesigner"&gt;OriginateTime&lt;/span&gt;&lt;/label&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+			&lt;label id="divSheetInfo" data-en_us="Sheet information" tabindex="0"&gt;表单信息&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class="divContent" id="divSheet" tabindex="0"&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title1" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label11" data-type="SheetLabel" data-datafield="Applyer" style="z-index: 101; cursor: move;"&gt;发布人&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control1" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control11" type="text" data-datafield="Applyer" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title2" class="col-md-2" tabindex="0"&gt;
+					
+				&lt;label data-datafield="StartTime" data-type="SheetLabel" id="ctl602329" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;发起时间&lt;/label&gt;&lt;/div&gt;
+				&lt;div id="control2" class="col-md-4" tabindex="0"&gt;
+					
+				&lt;input type="text" data-datafield="StartTime" data-type="SheetTime" id="ctl532746" class="" style="z-index: 101; cursor: move;"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div959505" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label12" data-type="SheetLabel" data-datafield="Department" class="" style="z-index: 101; cursor: move;"&gt;所属部门&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div811117" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control12" type="text" data-datafield="Department" data-type="SheetTextBox" class="" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="div543164" class="col-md-2" tabindex="0"&gt;
+					&lt;label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" style="z-index: 101; cursor: move;" class="" tabindex="0"&gt;流水号&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div id="div420338" class="col-md-4" tabindex="0"&gt;
+					&lt;label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" style="z-index: 101; cursor: move;" class="" tabindex="0"&gt;&lt;span class="OnlyDesigner"&gt;SequenceNo&lt;/span&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div946649" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label17" data-type="SheetLabel" data-datafield="Title" style="z-index: 101; cursor: move;" class=""&gt;标题&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div438420" class="col-md-10" tabindex="0"&gt;
+					&lt;input id="Control17" type="text" data-datafield="Title" data-type="SheetTextBox" style="z-index: 101; cursor: move;" class=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title3" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label13" data-type="SheetLabel" data-datafield="Type" style="z-index: 101; cursor: move;"&gt;来文类别&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control3" class="col-md-4" tabindex="0"&gt;
+					
+				&lt;div data-datafield="Type" data-type="SheetRadioButtonList" id="ctl323980" class="" style="z-index: 101; cursor: move;" data-defaultitems="集团工作联系单;集团内部传阅" data-defaultselected="false" data-repeatcolumns="2"&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="radio"&gt;选项一&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;input type="radio"&gt;选项二&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;div id="title4" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="control4" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div402562" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label14" data-type="SheetLabel" data-datafield="LWNumbering" style="z-index: 101; cursor: move;" class=""&gt;来文编号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div262642" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control14" type="text" data-datafield="LWNumbering" data-type="SheetTextBox" style="z-index: 101; cursor: move;" class=""&gt;
+				&lt;/div&gt;
+				&lt;div id="div490032" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="div14956" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div742893" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label16" data-type="SheetLabel" data-datafield="LWDepartmeent" style="z-index: 101; cursor: move;" class=""&gt;来文部门&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div791199" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control16" type="text" data-datafield="LWDepartmeent" data-type="SheetTextBox" style="z-index: 101; cursor: move;" class=""&gt;
+				&lt;/div&gt;
+				&lt;div id="div830585" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="div913967" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title5" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label15" data-type="SheetLabel" data-datafield="RecriveDate" style="z-index: 101; cursor: move;"&gt;收文日期&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control5" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control15" type="text" data-datafield="RecriveDate" data-type="SheetTime" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title6" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="control6" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title9" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label18" data-type="SheetLabel" data-datafield="HTAttach" style="z-index: 101; cursor: move;" class=""&gt;来文附件&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control9" class="col-md-10" tabindex="0"&gt;
+					&lt;div id="Control18" data-datafield="HTAttach" data-type="SheetAttachment" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="file"&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div802745" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label26" data-type="SheetLabel" data-datafield="RequestDate" style="z-index: 101; cursor: move;" class=""&gt;要求回复日期&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div167738" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control26" type="text" data-datafield="RequestDate" data-type="SheetTime" style="z-index: 101; cursor: move;" class=""&gt;
+				&lt;/div&gt;
+				&lt;div id="div720575" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="div660145" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div494811" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label20" data-type="SheetLabel" data-datafield="CYDepart" style="z-index: 101; cursor: move;" class=""&gt;是否需要部门查阅&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div681776" class="col-md-4" tabindex="0"&gt;
+					
+				&lt;div data-datafield="CYDepart" data-type="SheetRadioButtonList" id="ctl191371" class="" style="z-index: 101; cursor: move;" data-defaultitems="是;否" data-defaultselected="false"&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="radio"&gt;选项一&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;input type="radio"&gt;选项二&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;div id="div142410" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="div330312" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div96463" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label27" data-type="SheetLabel" data-datafield="EmployeeView" style="z-index: 101; cursor: move;" class=""&gt;部门主管传阅&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div637474" class="col-md-4" tabindex="0"&gt;
+					&lt;div id="Control27" data-datafield="EmployeeView" data-type="SheetUser" style="z-index: 101; cursor: move;" class=""&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="text"&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id="div284819" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="div95944" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row tableContent" tabindex="0"&gt;
+				&lt;div id="title13" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label21" data-type="SheetLabel" data-datafield="Note" style="z-index: 101; cursor: move;"&gt;备注&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control13" class="col-md-10" tabindex="0"&gt;
+					&lt;textarea id="Control21" data-datafield="Note" data-type="SheetRichTextBox" style="z-index: 101; cursor: move;"&gt;					&lt;/textarea&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			
+			
+			
+		 &lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divFlowAdvice" data-en_us="Flow advice" class="" tabindex="0"&gt;流转意见&lt;/label&gt;
+        &lt;/div&gt;
+			
+			
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div120340" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label19" data-type="SheetLabel" data-datafield="Receiver" style="z-index: 101; cursor: move;" class=""&gt;公司领导查阅人&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div239692" class="col-md-4" tabindex="0"&gt;
+					&lt;div id="Control19" data-datafield="Receiver" data-type="SheetUser" style="z-index: 101; cursor: move;" class=""&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="text"&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id="div238435" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="div211502" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div51536" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label30" data-type="SheetLabel" data-datafield="IntegratedOffice" style="z-index: 101; cursor: move;" class=""&gt;综合办拟办意见&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div321485" class="col-md-10" tabindex="0"&gt;
+					&lt;div id="Control30" data-datafield="IntegratedOffice" data-type="SheetComment" style="z-index: 101; cursor: move;" class=""&gt;&lt;span class="OnlyDesigner"&gt;&lt;textarea style="height:80px;"&gt;&lt;/textarea&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div421880" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label25" data-type="SheetLabel" data-datafield="ManagerSuggess" style="z-index: 101; cursor: move;" class=""&gt;经理室意见&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div107574" class="col-md-10" tabindex="0"&gt;
+					&lt;div id="Control25" data-datafield="ManagerSuggess" data-type="SheetComment" style="z-index: 101; cursor: move;" class=""&gt;&lt;span class="OnlyDesigner"&gt;&lt;textarea style="height:80px;"&gt;&lt;/textarea&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;div class="row" tabindex="0"&gt;&lt;div id="div857207" class="col-md-2" tabindex="0"&gt;&lt;span id="Label28" data-type="SheetLabel" data-datafield="ygcy" style="z-index: 101; cursor: move;" class=""&gt;员工查阅&lt;/span&gt;&lt;/div&gt;&lt;div id="div458432" class="col-md-4" tabindex="0"&gt;&lt;div id="Control28" data-datafield="ygcy" data-type="SheetUser" style="z-index: 101; cursor: move;" class=""&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="text"&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="div653318" class="col-md-2" tabindex="0"&gt;&lt;/div&gt;&lt;div id="div871563" class="col-md-4" tabindex="0"&gt;&lt;/div&gt;&lt;/div&gt;
+			
+			&lt;div class="row tableContent" tabindex="0"&gt;
+				&lt;div id="title25" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label29" data-type="SheetLabel" data-datafield="DepartSuggess" style="z-index: 101; cursor: move;"&gt;部门意见&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control25" class="col-md-10" tabindex="0"&gt;
+					&lt;div id="Control29" data-datafield="DepartSuggess" data-type="SheetComment" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;textarea style="height:80px;"&gt;&lt;/textarea&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;div class="row" tabindex="0"&gt;&lt;div id="div268545" class="col-md-2" tabindex="0"&gt;&lt;label data-datafield="ReplyAttach" data-type="SheetLabel" id="ctl323678" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;回复附件&lt;/label&gt;&lt;/div&gt;&lt;div id="div165979" class="col-md-10" tabindex="0"&gt;&lt;div data-datafield="ReplyAttach" data-type="SheetAttachment" id="ctl49862" class="" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="file"&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+			&lt;div class="row tableContent" tabindex="0"&gt;
+				&lt;div id="title29" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label31" data-type="SheetLabel" data-datafield="ygyj" style="z-index: 101; cursor: move;"&gt;员工意见&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control29" class="col-md-10" tabindex="0"&gt;
+					&lt;div id="Control31" data-datafield="ygyj" data-type="SheetComment" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;textarea style="height:80px;"&gt;&lt;/textarea&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+</DesignModeContent>
+      <RuntimeContent>&lt;script type="text/javascript"&gt;
+
+&lt;/script&gt;
+&lt;div style="text-align: center;" class="DragContainer"&gt;
+	&lt;label id="lblTitle" class="panel-title"&gt;集团收文子流程&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="panel-body sheetContainer"&gt;
+	&lt;div class="nav-icon fa fa-chevron-right bannerTitle hidden"&gt;
+		&lt;label id="divBasicInfo" data-en_us="Basic information"&gt;基本信息&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="divContent"&gt;
+		&lt;div class="row hidden"&gt;
+			&lt;div id="divFullNameTitle" class="col-md-2"&gt;
+				&lt;label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" style="" class=""&gt;发起人&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divFullName" class="col-md-4"&gt;
+				&lt;label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" style=""&gt;&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDateTitle" class="col-md-2"&gt;
+
+			&lt;/div&gt;
+			&lt;div id="divOriginateDate" class="col-md-4"&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row hidden"&gt;
+			&lt;div id="divOriginateOUNameTitle" class="col-md-2"&gt;
+				&lt;label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" style=""&gt;所属组织&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateOUName" class="col-md-4"&gt;
+				&lt;!--					&lt;label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData"&gt;
+&lt;span class="OnlyDesigner"&gt;Originator.OUName&lt;/span&gt;
+					&lt;/label&gt;--&gt;
+					&lt;select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style=""&gt;
+					&lt;/select&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNoTitle" class="col-md-2"&gt;
+
+				&lt;label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" class="" style=""&gt;发起时间&lt;/label&gt;&lt;/div&gt;
+				&lt;div id="divSequenceNo" class="col-md-4"&gt;
+
+				&lt;label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" class="" style=""&gt;&lt;/label&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+			&lt;label id="divSheetInfo" data-en_us="Sheet information"&gt;表单信息&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class="divContent" id="divSheet"&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title1" class="col-md-2"&gt;
+					&lt;span id="Label11" data-type="SheetLabel" data-datafield="Applyer" style=""&gt;发布人&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control1" class="col-md-4"&gt;
+					&lt;input id="Control11" type="text" data-datafield="Applyer" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title2" class="col-md-2"&gt;
+					
+				&lt;label data-datafield="StartTime" data-type="SheetLabel" id="ctl602329" class="" style=""&gt;发起时间&lt;/label&gt;&lt;/div&gt;
+				&lt;div id="control2" class="col-md-4"&gt;
+					
+				&lt;input type="text" data-datafield="StartTime" data-type="SheetTime" id="ctl532746" class="" style=""&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div959505" class="col-md-2"&gt;
+					&lt;span id="Label12" data-type="SheetLabel" data-datafield="Department" class="" style=""&gt;所属部门&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div811117" class="col-md-4"&gt;
+					&lt;input id="Control12" type="text" data-datafield="Department" data-type="SheetTextBox" class="" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="div543164" class="col-md-2"&gt;
+					&lt;label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" style="" class=""&gt;流水号&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div id="div420338" class="col-md-4"&gt;
+					&lt;label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" style="" class=""&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div946649" class="col-md-2"&gt;
+					&lt;span id="Label17" data-type="SheetLabel" data-datafield="Title" style="" class=""&gt;标题&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div438420" class="col-md-10"&gt;
+					&lt;input id="Control17" type="text" data-datafield="Title" data-type="SheetTextBox" style="" class=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title3" class="col-md-2"&gt;
+					&lt;span id="Label13" data-type="SheetLabel" data-datafield="Type" style=""&gt;来文类别&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control3" class="col-md-4"&gt;
+					
+				&lt;div data-datafield="Type" data-type="SheetRadioButtonList" id="ctl323980" class="" style="" data-defaultitems="集团工作联系单;集团内部传阅" data-defaultselected="false" data-repeatcolumns="2"&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;div id="title4" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="control4" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div402562" class="col-md-2"&gt;
+					&lt;span id="Label14" data-type="SheetLabel" data-datafield="LWNumbering" style="" class=""&gt;来文编号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div262642" class="col-md-4"&gt;
+					&lt;input id="Control14" type="text" data-datafield="LWNumbering" data-type="SheetTextBox" style="" class=""&gt;
+				&lt;/div&gt;
+				&lt;div id="div490032" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="div14956" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div742893" class="col-md-2"&gt;
+					&lt;span id="Label16" data-type="SheetLabel" data-datafield="LWDepartmeent" style="" class=""&gt;来文部门&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div791199" class="col-md-4"&gt;
+					&lt;input id="Control16" type="text" data-datafield="LWDepartmeent" data-type="SheetTextBox" style="" class=""&gt;
+				&lt;/div&gt;
+				&lt;div id="div830585" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="div913967" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title5" class="col-md-2"&gt;
+					&lt;span id="Label15" data-type="SheetLabel" data-datafield="RecriveDate" style=""&gt;收文日期&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control5" class="col-md-4"&gt;
+					&lt;input id="Control15" type="text" data-datafield="RecriveDate" data-type="SheetTime" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title6" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="control6" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title9" class="col-md-2"&gt;
+					&lt;span id="Label18" data-type="SheetLabel" data-datafield="HTAttach" style="" class=""&gt;来文附件&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control9" class="col-md-10"&gt;
+					&lt;div id="Control18" data-datafield="HTAttach" data-type="SheetAttachment" style=""&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div802745" class="col-md-2"&gt;
+					&lt;span id="Label26" data-type="SheetLabel" data-datafield="RequestDate" style="" class=""&gt;要求回复日期&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div167738" class="col-md-4"&gt;
+					&lt;input id="Control26" type="text" data-datafield="RequestDate" data-type="SheetTime" style="" class=""&gt;
+				&lt;/div&gt;
+				&lt;div id="div720575" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="div660145" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div494811" class="col-md-2"&gt;
+					&lt;span id="Label20" data-type="SheetLabel" data-datafield="CYDepart" style="" class=""&gt;是否需要部门查阅&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div681776" class="col-md-4"&gt;
+					
+				&lt;div data-datafield="CYDepart" data-type="SheetRadioButtonList" id="ctl191371" class="" style="" data-defaultitems="是;否" data-defaultselected="false"&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;div id="div142410" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="div330312" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div96463" class="col-md-2"&gt;
+					&lt;span id="Label27" data-type="SheetLabel" data-datafield="EmployeeView" style="" class=""&gt;部门主管传阅&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div637474" class="col-md-4"&gt;
+					&lt;div id="Control27" data-datafield="EmployeeView" data-type="SheetUser" style="" class=""&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id="div284819" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="div95944" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row tableContent"&gt;
+				&lt;div id="title13" class="col-md-2"&gt;
+					&lt;span id="Label21" data-type="SheetLabel" data-datafield="Note" style=""&gt;备注&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control13" class="col-md-10"&gt;
+					&lt;textarea id="Control21" data-datafield="Note" data-type="SheetRichTextBox" style=""&gt;					&lt;/textarea&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			
+			
+			
+		 &lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divFlowAdvice" data-en_us="Flow advice" class=""&gt;流转意见&lt;/label&gt;
+        &lt;/div&gt;
+			
+			
+			&lt;div class="row"&gt;
+				&lt;div id="div120340" class="col-md-2"&gt;
+					&lt;span id="Label19" data-type="SheetLabel" data-datafield="Receiver" style="" class=""&gt;公司领导查阅人&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div239692" class="col-md-4"&gt;
+					&lt;div id="Control19" data-datafield="Receiver" data-type="SheetUser" style="" class=""&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id="div238435" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="div211502" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div51536" class="col-md-2"&gt;
+					&lt;span id="Label30" data-type="SheetLabel" data-datafield="IntegratedOffice" style="" class=""&gt;综合办拟办意见&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div321485" class="col-md-10"&gt;
+					&lt;div id="Control30" data-datafield="IntegratedOffice" data-type="SheetComment" style="" class=""&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div421880" class="col-md-2"&gt;
+					&lt;span id="Label25" data-type="SheetLabel" data-datafield="ManagerSuggess" style="" class=""&gt;经理室意见&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div107574" class="col-md-10"&gt;
+					&lt;div id="Control25" data-datafield="ManagerSuggess" data-type="SheetComment" style="" class=""&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;div class="row"&gt;&lt;div id="div857207" class="col-md-2"&gt;&lt;span id="Label28" data-type="SheetLabel" data-datafield="ygcy" style="" class=""&gt;员工查阅&lt;/span&gt;&lt;/div&gt;&lt;div id="div458432" class="col-md-4"&gt;&lt;div id="Control28" data-datafield="ygcy" data-type="SheetUser" style="" class=""&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="div653318" class="col-md-2"&gt;&lt;/div&gt;&lt;div id="div871563" class="col-md-4"&gt;&lt;/div&gt;&lt;/div&gt;
+			
+			&lt;div class="row tableContent"&gt;
+				&lt;div id="title25" class="col-md-2"&gt;
+					&lt;span id="Label29" data-type="SheetLabel" data-datafield="DepartSuggess" style=""&gt;部门意见&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control25" class="col-md-10"&gt;
+					&lt;div id="Control29" data-datafield="DepartSuggess" data-type="SheetComment" style=""&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;div class="row"&gt;&lt;div id="div268545" class="col-md-2"&gt;&lt;label data-datafield="ReplyAttach" data-type="SheetLabel" id="ctl323678" class="" style=""&gt;回复附件&lt;/label&gt;&lt;/div&gt;&lt;div id="div165979" class="col-md-10"&gt;&lt;div data-datafield="ReplyAttach" data-type="SheetAttachment" id="ctl49862" class="" style=""&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+			&lt;div class="row tableContent"&gt;
+				&lt;div id="title29" class="col-md-2"&gt;
+					&lt;span id="Label31" data-type="SheetLabel" data-datafield="ygyj" style=""&gt;员工意见&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control29" class="col-md-10"&gt;
+					&lt;div id="Control31" data-datafield="ygyj" data-type="SheetComment" style=""&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+</RuntimeContent>
+      <EnabledCode>false</EnabledCode>
+      <CodeContent>using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace OThinker.H3.Portal.Sheets.DefaultEngine
+{
+    public partial class SExternalDocumentChild : OThinker.H3.Controllers.MvcPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+    }
+}
+</CodeContent>
+      <SheetAddress>SExternalDocumentChild.aspx</SheetAddress>
+      <MobileSheetAddress />
+      <IsMVC>true</IsMVC>
+    </BizSheet>
+  </BizSheets>
+  <WorkflowTemplates>
+    <WorkflowTemplate>
+      <WorkflowTemplateName>集团收文子流程</WorkflowTemplateName>
+      <WorkflowDocument>
+        <WorkflowCode>ExternalDocumentChild</WorkflowCode>
+        <BizObjectSchemaCode>ExternalDocumentChild</BizObjectSchemaCode>
+        <Description>
+        </Description>
+        <RequirePost>False</RequirePost>
+        <PlanUsedTime>
+        </PlanUsedTime>
+        <PlanRecurrences>0</PlanRecurrences>
+        <ShortText1>
+        </ShortText1>
+        <ShortText2>
+        </ShortText2>
+        <ShortText3>
+        </ShortText3>
+        <ShortText4>
+        </ShortText4>
+        <ShortText5>
+        </ShortText5>
+        <LongText6>
+        </LongText6>
+        <LongText7>
+        </LongText7>
+        <InstanceName>{Title}</InstanceName>
+        <OnCancelActions />
+        <OnStartActions />
+        <OnFinishActions />
+        <Activities>
+          <StartActivity>
+            <ActivityType>Start</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity1</ClassName>
+            <Custom>False</Custom>
+            <CustomCode />
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>0</SortKey>
+            <ActivityCode>Activity1</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Start</ActivityType>
+            <ID>1</ID>
+            <Text>开始</Text>
+            <ActivityCode>Activity1</ActivityCode>
+            <X>272</X>
+            <Y>90</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+          </StartActivity>
+          <EndActivity>
+            <ActivityType>End</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity4</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity4 : SmartActivity
+	{
+		public Activity4()
+		{
+			// 请不要在这里填写代码，因为在执行这段代码的时候会阻塞引擎的某些组件
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>0</SortKey>
+            <ActivityCode>Activity4</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>End</ActivityType>
+            <ID>4</ID>
+            <Text>结束</Text>
+            <ActivityCode>Activity4</ActivityCode>
+            <X>272</X>
+            <Y>347</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+          </EndActivity>
+          <FillSheetActivity>
+            <ActivityType>FillSheet</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity2</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity2 : FillSheetActivity
+	{
+		public Activity2()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity2</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>FillSheet</ActivityType>
+            <ID>2</ID>
+            <Text>部门查阅</Text>
+            <ActivityCode>Activity2</ActivityCode>
+            <X>272</X>
+            <Y>175</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SExternalDocumentChild</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Applyer</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LWNumbering</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RecriveDate</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LWDepartmeent</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Title</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>HTAttach</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Receiver</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>CYDepart</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Note</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ManagerSuggess</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RequestDate</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>EmployeeView</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ygcy</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>DepartSuggess</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>IntegratedOffice</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ygyj</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ReplyAttach</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>StartTime</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SExternalDocumentChild</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>False</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+          </FillSheetActivity>
+          <ApproveActivity>
+            <ActivityType>Approve</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity3</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity3 : FillSheetActivity
+	{
+		public Activity3()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity3</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Approve</ActivityType>
+            <ID>3</ID>
+            <Text>员工查阅</Text>
+            <ActivityCode>Activity3</ActivityCode>
+            <X>272</X>
+            <Y>261</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>MultiParticipants</ParticipateType>
+            <Participants>{ygcy}</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SExternalDocumentChild</SheetCode>
+            <NoParPolicy>Approve</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Applyer</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LWNumbering</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RecriveDate</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LWDepartmeent</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Title</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>HTAttach</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Receiver</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>CYDepart</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Note</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ManagerSuggess</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RequestDate</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>EmployeeView</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ygcy</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>DepartSuggess</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>IntegratedOffice</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ygyj</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ReplyAttach</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>StartTime</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>MultiParticipants</ParticipateType>
+            <Participants>{ygcy}</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SExternalDocumentChild</SheetCode>
+            <NoParPolicy>Approve</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>False</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>True</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+          </ApproveActivity>
+        </Activities>
+        <Rules>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>5</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Activity1</PreActivityCode>
+            <PostActivityCode>Activity2</PostActivityCode>
+            <Points>
+              <Point>272,110</Point>
+              <Point>272,155</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>6</ID>
+            <Text>Y</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>True</Formula>
+            <PreActivityCode>Activity2</PreActivityCode>
+            <PostActivityCode>Activity3</PostActivityCode>
+            <Points>
+              <Point>272,195</Point>
+              <Point>272,241</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>7</ID>
+            <Text>Y</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>True</Formula>
+            <PreActivityCode>Activity3</PreActivityCode>
+            <PostActivityCode>Activity4</PostActivityCode>
+            <Points>
+              <Point>272,281</Point>
+              <Point>272,327</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+        </Rules>
+      </WorkflowDocument>
+      <Simulations />
+      <WorkflowClause xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Serialized>true</Serialized>
+        <ObjectID>4b2c37bc-2161-4275-8ec3-58a8e11c8787</ObjectID>
+        <ParentObjectID />
+        <ParentIndex>0</ParentIndex>
+        <SortKey>0</SortKey>
+        <WorkflowName>集团收文子流程</WorkflowName>
+        <BizSchemaCode>ExternalDocumentChild</BizSchemaCode>
+        <WorkflowCode>ExternalDocumentChild</WorkflowCode>
+        <CurrentNewVersion>3</CurrentNewVersion>
+        <DefaultVersion>2</DefaultVersion>
+        <State>Active</State>
+        <MobileStart>true</MobileStart>
+        <SequenceCode />
+        <SeqNoResetType>None</SeqNoResetType>
+        <CalendarId>null</CalendarId>
+        <OwnerID />
+      </WorkflowClause>
+    </WorkflowTemplate>
+  </WorkflowTemplates>
+</BizWorkflowPackage>

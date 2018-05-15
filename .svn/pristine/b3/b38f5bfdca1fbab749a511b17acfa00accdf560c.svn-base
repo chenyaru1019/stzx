@@ -1,0 +1,51 @@
+﻿<!-- 首页轮播图模块 -->
+<div id="myCarousel" class="myCarousel carousel slide ">
+    <!--<ol class="carousel-indicators">-->
+        <!--<li data-target="#myCarousel" data-slide-to="0" ></li>-->
+        <!--<li data-target="#myCarousel" data-slide-to="1" class="active"></li>-->
+        <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+    <!--</ol>-->
+    <div class="carousel-inner">
+        <!--<div class="item">-->
+            <!--<a href="javascript:void(0);" >-->
+                <!--<img src="img/demo/banner2.png" />-->
+            <!--</a>-->
+        <!--</div>-->
+        <div class="item active">
+            <a href="javascript:void(0);" >
+                <img src="img/banner.jpg" />
+            </a>
+        </div>
+        <!--<div class="item">-->
+            <!--<a href="javascript:void(0);">-->
+                <!--<img src="img/demo/banner3.png" />-->
+            <!--</a>-->
+        <!--</div>-->
+    </div>
+    <!-- data-slide="prev"    data-slide="next"  href="#myCarousel" href="#myCarousel"-->
+    <!--<a class="carousel-control left prev-slide " style="position:absolute;">&lsaquo;</a>-->
+    <!--<a class="carousel-control right next-slide"  style="position:absolute;">&rsaquo;</a>-->
+</div>
+<!-- lazy -->
+<style>
+    .myCarousel .carousel-inner .item a img {
+        height:280px;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $('.carousel').carousel({
+            interval: 3000
+        });
+        $('.prev-slide').click(function () {
+            $('#myCarousel').carousel('prev');
+        });
+        $('.next-slide').click(function () {
+            $('#myCarousel').carousel('next');
+        });
+    });
+</script>
+
+
+
+

@@ -1,0 +1,165 @@
+<script>
+    $(document).ready(function() {
+        var list = $('.HYS_right li');
+//        $.cookie("applyData", "asdfdfad", { expires: 7 });
+        var HYS_string = '';
+//        list.on('click', function() {
+//            HYS_string = $(this).text();
+//        });
+
+
+        var initialLocaleCode = 'zh-cn';
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+//            defaultDate: '2017-05-12',
+            locale: initialLocaleCode,
+            navLinks: true, // can click day/week names to navigate views
+            selectable: true,
+            selectHelper: true,
+            select: function(start, end) {
+                var HYS_obj = {'start' : $.fullCalendar.formatDate(start,'Y-M-DD HH:m:s'), 'end' : $.fullCalendar.formatDate(end,'Y-M-DD HH:m:s'), 'hys_number' : HYS_string};
+                $.cookie('HYS_obj', JSON.stringify(HYS_obj), { expires: 7 });
+                $('#myModal').modal({keyboard: true, show: true, backdrop: false,});
+                $("#iframeId").attr("src", "StartInstance.html?WorkflowCode=car&PageAction=Close");
+            },
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            eventClick: function(calEvent, jsEvent, view) {
+//                console.log(calEvent);
+
+            },
+            viewRender: function( view, element ) {
+//                $.getJSON("http:/asdfasdfdf?stat=10230?end=1231312?"
+//
+//                );
+                var resultCollection  = [{title: 'test', start: '2017-05-12' , end:'2017-05-13', description:'adsfafafdsa'}, { title: 345, start: '2017-05-15',end:'2017-05-16'}, { title: 789, start: '2017-05-17',end:'2017-05-18'}];
+                $.each(resultCollection, function (index, term) {
+                    $("#calendar").fullCalendar('renderEvent', term, true);
+                });
+            },
+            eventRender: function(event, element) {
+//                console.log(event);
+                var element_html = '<div class="fc-content">';
+                element_html += '<div class="fc-title">' + event.title + '</div>';
+                element_html += '<div class="fc-description">adsfadf</div>';
+                element_html += '</div><div class="fc-resizer fc-end-resizer"></div>'
+//                console.log(element.html(element_html));
+            },
+
+        });
+
+    });
+
+</script>
+<style>
+    #calendar {
+        margin: 0 auto;
+        /* margin-top: 50px; */
+    }
+    .HYSsiyong {
+        padding:5px;
+        background: #F8F8F8;
+        width: 100%;
+        font-size:18px;
+    }
+    .HYSsiyong ul li {
+        list-style-type: none;
+        float:left;
+        text-align:center;
+    }
+    .HYS_left li {
+        height: 34px;
+        line-height: 31px;
+        width:9%;
+        margin-left: 10px;
+        background: #FCFCFC;
+        border: 1px solid #C1C1C1;
+        box-shadow: 1px 2px 4px 0 rgba(241,241,241,0.80);
+    }
+    .HYSsiyong ul li:hover{
+        cursor:pointer;
+        background-color: rgba(241,241,241,1.50);
+    }
+    .HYS_left li:nth-child(1) {
+        border-top:4px solid #FF9A00;
+    }
+    .HYS_left li:nth-child(2) {
+        border-top:4px solid #00ACC1;
+    }
+    .HYS_left li:nth-child(3) {
+        border-top:4px solid #9E60B2;
+    }
+    .HYS_left li:nth-child(4) {
+        border-top:4px solid #70C170;
+    }
+    .HYS_right  {
+        float: left;
+        padding-left: 20px;
+        width: 80%;
+    }
+    .HYS_right li {
+        margin-left: 11px;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        background-color: #CDCDCD;
+        border-radius: 50%;
+        margin-top: 4px;
+    }
+    .row {
+        margin:0;
+    }
+    #iframeId {
+        width: 100%;
+        height: 500px;
+    }
+</style>
+<div class="row HYSsiyong">
+    <div class="col-md-7">
+        <ul class="HYS_left">
+            <li><a href="">待审批</a></li>
+            <li><a href="">审批中</a></li>
+            <li><a href="">已审批</a></li>
+            <li><a href="">进行中</a></li>
+        </ul>
+    </div>
+    <div class="col-md-5">
+        <span style='float: left;line-height: 34px;'>会议室:</span>
+        <ul class="HYS_right">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</div>
+<div id='calendar'></div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    申请表单
+                </h4>
+            </div>
+            <div class="modal-body">
+                <iframe id="iframeId" src=""></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>

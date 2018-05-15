@@ -1,0 +1,464 @@
+﻿<!-- navbar header -->
+<div class="navbar-header {{app.settings.navbarHeaderColor}}" style="height:70px;    background-image: linear-gradient(-180deg, #FEFEFE 0%, #F4F4F4 93%);box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);">
+    <button class="pull-right visible-xs dk" ui-toggle-class="show" data-target=".navbar-collapse">
+        <i class="glyphicon glyphicon-cog"></i>
+    </button>
+    <button class="pull-right visible-xs" ui-toggle-class="off-screen" data-target=".app-aside" ui-scroll="app">
+        <i class="glyphicon glyphicon-align-justify"></i>
+    </button>
+    <!-- brand -->
+    <!--<a href="#/app/default" class="navbar-brand text-lt">-->
+    <a class="navbar-brand text-lt">
+        <div style="margin-top:0px;bottom:0px;padding-top:0px;">
+            <img class="m-1-xs" ng-src="{{app.logoSimple}}" style="width:30px;height:30px;" ng-if="app.settings.asideFolded" />
+            <img class="hidden-folded m-1-xs" ng-src="{{app.logoFull}}" ng-if="!app.settings.asideFolded" />
+        </div>
+
+    </a>
+    <!-- / brand -->
+</div>
+<!-- / navbar header -->
+<!-- navbar collapse -->
+<div class="collapse pos-rlt navbar-collapse box-shadow {{app.settings.navbarCollapseColor}}">
+    <!-- buttons -->
+    <!-- <div class="nav navbar-nav hidden-xs">
+        <a href class="btn no-shadow navbar-btn asideFolded" ng-click="app.settings.asideFolded = !app.settings.asideFolded">
+            <i class="fa {{app.settings.asideFolded ? 'fa-indent' : 'fa-dedent'}} fa-fw"></i>
+        </a>
+        <a href class="btn no-shadow navbar-btn" ui-toggle-class="show" target="#aside-user">
+            <i class="icon-user fa-fw"></i>
+        </a>
+    </div> -->
+    <!-- / buttons -->
+    <!-- link and dropdown -->
+<<<<<<< .mine
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" style='padding-left: 0px;width:100%'>
+                    <li class="dropdown"><a ui-sref="home">首页</a></li>
+                    <div class="navLine"></div>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">业务管理</a>
+                        <ul class="dropdown-menu animated fadeInDown" role='menu' style='padding-left: 0px;width: 208px;'>
+                            <li class="dropdown-submenu">
+                                <a ng-href='' >行政办公</a>
+                                <ul class="dropdown-menu animated fadeInDown list" style='padding-left: 0px'>
+                                    <li><a ui-sref="app.fileManagement({TopAppCode:'Workflow'})">文件管理</a></li>
+                                    <li><a ui-sref="app.logistics({TopAppCode:'Workflow'})" >后勤管理</a></li>
+                                    <li><a ui-sref="app.NewInformation({TopAppCode:'Workflow'})" >信息发布管理</a></li>
+                                    <li><a ui-sref='app.MyInstance({TopAppCode:"xxgl",SchemaCode:"VisitorApplication",State:"Finished",FunctionCode:"fkwificx"})'>信息化管理</a></li>
+                                    <li><a href="">资质维护</a></li>
+                                    <li><a href="">规章制度管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="">项目管理</a></li>
+                            <li class="dropdown-submenu"><a ui-sref='app.MyUnfinishedWorkItem({TopAppCode:"Workflow"})'>待办管理</a></li>
+                        </ul>
+                    </li>
+                    <div class="navLine"></div>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计中心 </a>
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="">Action</a></li>-->
+                        <!--<li><a href="">Another action</a></li>-->
+                        <!--<li><a href="">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="">Separated link</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="">One more separated link</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <div class="navLine"></div>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">办事指南</a>
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="">Action</a></li>-->
+                        <!--<li><a href="">Another action</a></li>-->
+                        <!--<li><a href="">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="">Separated link</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="">One more separated link</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <div class="navLine"></div>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">公司简介</a>
+                        <!--<ul class="dropdown-menu" style='padding-left: 0px'>-->
+                        <!--<li><a href="">Action</a></li>-->
+                        <!--<li><a href="">Another action</a></li>-->
+                        <!--<li><a href="">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="">Separated link</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="">One more separated link</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li class="dropdown" dropdown style="float: right;width:17%;">
+                        <a class="dropdown-toggle clear" dropdown-toggle style="text-align: right;">
+                            <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                                <img ng-src="{{user.ImageUrl}}" alt="..." style="width: 40px; height: 40px;" />
+                            </span>
+                            <span class="hidden-sm hidden-md" style="font-size: 15px;">{{user.Name}}</span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight w" style='width:95%;padding-left: 0px;'>
+                            <li ng-show="user.IsAdministrator&&ShowDesignMode">
+                                <a ui-sref="home" ng-click="StartEdit()">
+                                    <i class="marginRight5 fa fa-building-o"></i>
+                                    <span ng-show="!OT_EditorModel" translate="HomePage.DesignMode"></span>
+                                    <span ng-hide="!OT_EditorModel" translate="HomePage.ViewMode"></span>
+                                </a>
+                            </li>
+                            <li ng-show="user.IsAdministrator">
+                                <a ui-sref="appTemplate.PortalTemplates">
+                                    <i class="marginRight5 icon-home"></i>
+                                    <span translate="PortalTemplates.PortalManager">门户管理</span>
+                                </a>
+                            </li>
+||||||| .r72
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" style='padding-left: 0px;width:100%'>
+                    <li class="dropdown"><a ui-sref="home">首页</a></li>
+                    <div class="navLine"></div>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">业务管理</a>
+                        <ul class="dropdown-menu animated fadeInDown" role='menu' style='padding-left: 0px;width: 208px;'>
+                            <li class="dropdown-submenu">
+                                <a ng-href='' >行政办公</a>
+                                <ul class="dropdown-menu animated fadeInDown list" style='padding-left: 0px'>
+                                    <li><a href="">文件管理</a></li>
+                                    <li><a ui-sref="app.logistics({TopAppCode:'Workflow'})" >后勤管理</a></li>
+                                    <li><a ui-sref='app.BizQueryView({TopAppCode:"menhu",SchemaCode:"Notice",QueryCode:"viewALL",FunctionCode:"viewAll"})' >信息发布管理</a></li>
+                                    <li><a ui-sref='app.MyInstance({TopAppCode:"xxgl",SchemaCode:"VisitorApplication",State:"Finished",FunctionCode:"fkwificx"})'>信息化管理</a></li>
+                                    <li><a href="">资质维护</a></li>
+                                    <li><a href="">规章制度管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="">项目管理</a></li>
+                            <li class="dropdown-submenu"><a ui-sref='app.MyUnfinishedWorkItem({TopAppCode:"Workflow"})'>待办管理</a></li>
+                        </ul>
+                    </li>
+                    <div class="navLine"></div>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计中心 </a>
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="">Action</a></li>-->
+                            <!--<li><a href="">Another action</a></li>-->
+                            <!--<li><a href="">Something else here</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="">Separated link</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="">One more separated link</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <div class="navLine"></div>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">办事指南</a>
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="">Action</a></li>-->
+                            <!--<li><a href="">Another action</a></li>-->
+                            <!--<li><a href="">Something else here</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="">Separated link</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="">One more separated link</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <div class="navLine"></div>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">公司简介</a>
+                        <!--<ul class="dropdown-menu" style='padding-left: 0px'>-->
+                            <!--<li><a href="">Action</a></li>-->
+                            <!--<li><a href="">Another action</a></li>-->
+                            <!--<li><a href="">Something else here</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="">Separated link</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="">One more separated link</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li class="dropdown" dropdown style="float: right;width:17%;">
+                        <a class="dropdown-toggle clear" dropdown-toggle style="text-align: right;">
+                            <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                                <img ng-src="{{user.ImageUrl}}" alt="..." style="width: 40px; height: 40px;" />
+                            </span>
+                            <span class="hidden-sm hidden-md" style="font-size: 15px;">{{user.Name}}</span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight w" style='width:95%;padding-left: 0px;'>
+                            <li ng-show="user.IsAdministrator&&ShowDesignMode">
+                                <a ui-sref="home" ng-click="StartEdit()">
+                                    <i class="marginRight5 fa fa-building-o"></i>
+                                    <span ng-show="!OT_EditorModel" translate="HomePage.DesignMode"></span>
+                                    <span ng-hide="!OT_EditorModel" translate="HomePage.ViewMode"></span>
+                                </a>
+                            </li>
+                            <li ng-show="user.IsAdministrator">
+                                <a ui-sref="appTemplate.PortalTemplates">
+                                    <i class="marginRight5 icon-home"></i>
+                                    <span translate="PortalTemplates.PortalManager">门户管理</span>
+                                </a>
+                            </li>
+=======
+   <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" style='padding-left: 0px'>
+        <li class="dropdown"><a ui-sref="home">首页 <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">业务管理 <span class="caret"></span></a>
+          <ul class="dropdown-menu animated fadeInDown" role='menu' style='padding-left: 0px'>
+            <li class="dropdown-submenu">
+                <a ng-href='' >行政办公</a>
+                <ul class="dropdown-menu animated fadeInDown" style='padding-left: 0px'>
+                    <li><a href="">文件管理</a></li>
+                    <li><a ui-sref="app.logistics({TopAppCode:'Workflow'})" >后勤管理</a></li>
+                    <li><a  >信息发布管理</a></li>
+                    <li><a href="">信息化管理</a></li>
+                    <li><a href="">资质维护</a></li>
+                    <li><a href="">规章制度管理</a></li>
+                </ul>
+            </li>
+            <li><a href="#">项目管理</a></li>
+            <li><a href="">审批管理</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计中心 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Action</a></li>
+            <li><a href="">Another action</a></li>
+            <li><a href="">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">办事指南 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Action</a></li>
+            <li><a href="">Another action</a></li>
+            <li><a href="">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">公司简介 <span class="caret"></span></a>
+          <ul class="dropdown-menu" style='padding-left: 0px'>
+            <li><a href="">Action</a></li>
+            <li><a href="">Another action</a></li>
+            <li><a href="">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="搜索">
+        </div>
+      </form>
+      <ul id="ulHomeApps" class="nav navbar-nav right-navbar-nav navbar-right">
+        <!--消息通知-->
+        <li class="dropdown" dropdown>
+            <a href class="dropdown-toggle" dropdown-toggle>
+                <i class="menu-icon glyphicon glyphicon-th"></i>
+                <!--<span class="badge badge-sm up bg-danger pull-right-xs">{{user.FunctionViewModels.length}}</span>-->
+            </a>
+            <div class="dropdown-menu w-xl animated fadeInUp">
+                <div class="panel bg-white">
+                    <div class="list-group">
+                        <div ng-repeat="list in user.FunctionViewModels"
+                             ng-click="switchFuncton(list)"
+                             class="pull-left">
+                            <a class="media list-group-item"
+                               ng-if="(list.Children[0].Url?list.Children[0].Url:list.Children[0].Children[0].Url).indexOf('http')==-1" ui-sref="{{list.Children[0].Url?list.Children[0].Url:list.Children[0].Children[0].Url}}">
+                                <img ng-src="{{list.IconUrl}}" class="img-circle" style="height:64px;width:64px;">
+                                <div class="caption text-center" style="padding-top:5px;">
+                                    <span translate="HomePage.{{list.Code}}" translate-default="{{list.DisplayName}}">
+                                        {{list.DisplayName}}
+                                    </span>
+                                </div>
+                            </a>
+                            <!-- http地址 -->
+                            <a class="media list-group-item"
+                               ng-if="(list.Children[0].Url?list.Children[0].Url:list.Children[0].Children[0].Url).indexOf('http')!=-1" ng-href="{{list.Children[0].Url?list.Children[0].Url:list.Children[0].Children[0].Url}}" target="_blank">
+                                <img ng-src="{{list.IconUrl}}" class="img-circle" style="height:64px;width:64px;">
+                                <div class="caption text-center" style="padding-top:5px;">
+                                    <span translate="HomePage.{{list.Code}}" translate-default="{{list.DisplayName}}">
+                                        {{list.DisplayName}}
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="dropdown" dropdown>
+            <a class="dropdown-toggle clear" dropdown-toggle>
+                <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                    <img ng-src="{{user.ImageUrl}}" alt="..." style="width: 40px; height: 40px;" />
+                </span>
+                <span class="hidden-sm hidden-md">{{user.Name}}</span> <b class="caret"></b>
+            </a>
+            <!-- 下拉菜单Start -->
+            <ul class="dropdown-menu animated fadeInRight w" style='width: 201px;padding-left: 0px'>
+                <li ng-show="user.IsAdministrator&&ShowDesignMode">
+                    <a ui-sref="home" ng-click="StartEdit()">
+                        <i class="marginRight5 fa fa-building-o"></i>
+                        <span ng-show="!OT_EditorModel" translate="HomePage.DesignMode"></span>
+                        <span ng-hide="!OT_EditorModel" translate="HomePage.ViewMode"></span>
+                    </a>
+                </li>
+                <li ng-show="user.IsAdministrator">
+                    <a ui-sref="appTemplate.PortalTemplates">
+                        <i class="marginRight5 icon-home"></i>
+                        <span translate="PortalTemplates.PortalManager">门户管理</span>
+                    </a>
+                </li>
+>>>>>>> .r80
+
+
+<<<<<<< .mine
+                            <li ng-show="user.IsAdministrator||user.IsConsoleUser">
+                                <a href="admin/index.html">
+                                    <i class="marginRight5 icon-notebook"></i>
+                                    <span translate="HomePage.AdminManage"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-click="showUserInfoModal(user.ObjectID);">
+                                    <i class="marginRight5 icon-user"></i>
+                                    <span translate="HomePage.PersonalSetting"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-click="showUserPasswordModal();">
+                                    <i class="marginRight5 icon-key"></i>
+                                    <span translate="HomePage.PasswordSetting"></span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a ng-click="doLock();">
+                                    <i class="marginRight5 icon-lock"></i>
+                                    <span translate="HomePage.DoLock"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-click="loginOut();">
+                                    <i class="marginRight5 icon-logout"></i>
+                                    <span translate="HomePage.LoginOut"></span>
+                                </a>
+                            </li>
+                            </li>
+                        </ul>
+            </div>
+        </div>
+    </nav>
+||||||| .r72
+                            <li ng-show="user.IsAdministrator||user.IsConsoleUser">
+                                <a href="admin/index.html">
+                                    <i class="marginRight5 icon-notebook"></i>
+                                    <span translate="HomePage.AdminManage"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-click="showUserInfoModal(user.ObjectID);">
+                                    <i class="marginRight5 icon-user"></i>
+                                    <span translate="HomePage.PersonalSetting"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-click="showUserPasswordModal();">
+                                    <i class="marginRight5 icon-key"></i>
+                                    <span translate="HomePage.PasswordSetting"></span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a ng-click="doLock();">
+                                    <i class="marginRight5 icon-lock"></i>
+                                    <span translate="HomePage.DoLock"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-click="loginOut();">
+                                    <i class="marginRight5 icon-logout"></i>
+                                    <span translate="HomePage.LoginOut"></span>
+                                </a>
+                            </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+=======
+                <li ng-show="user.IsAdministrator||user.IsConsoleUser">
+                    <a href="admin/index.html">
+                        <i class="marginRight5 icon-notebook"></i>
+                        <span translate="HomePage.AdminManage"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="showUserInfoModal(user.ObjectID);">
+                        <i class="marginRight5 icon-user"></i>
+                        <span translate="HomePage.PersonalSetting"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="showUserPasswordModal();">
+                        <i class="marginRight5 icon-key"></i>
+                        <span translate="HomePage.PasswordSetting"></span>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <!--ui-sref="lock"-->
+                    <a ng-click="doLock();">
+                        <i class="marginRight5 icon-lock"></i>
+                        <span translate="HomePage.DoLock"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="loginOut();">
+                        <i class="marginRight5 icon-logout"></i>
+                        <span translate="HomePage.LoginOut"></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 下拉菜单End -->
+        </li>
+    </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!-- / navbar right -->
+>>>>>>> .r80
+</div>
+<!-- / navbar collapse -->
+<style>
+    .navbar-nav > li > a {
+        height: 70px;
+        line-height: 45px;
+        font-size: 20px;
+    }
+    .navbar-form .form-group input {
+        background: url('img/header_btn_search.png') no-repeat 5px center;
+        padding-left: 30px;
+
+    }
+</style>

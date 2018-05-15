@@ -1,0 +1,168 @@
+<!-- 首页地铁期刊/新闻模块 -->
+<div id="Periodical">
+    <div class="R_top">
+        <div><img src="img/main/ic_magazine.png" style='padding-right: 10px;width: 35px' alt="">地铁期刊
+            <a href="#/app/dtqk/BizQueryView/SubwayJournals/qkcx/dtqkcx" ui-sref='app.BizQueryView({TopAppCode:"dtqk",SchemaCode:"SubwayJournals",QueryCode:"qkcx",FunctionCode:"dtqkcx"})' class="S_more">更多</a>
+        </div>
+    </div>
+    <div class="line" style='width: 103%;margin-left:-6px;margin-bottom: 0'></div>
+    <ul id="Periodical_ul">
+        <li class="ul_right left M_active">申通咨询</li>
+        <li class="ul_left right">地铁画报</li>
+
+    </ul>
+    <div class="line" style='width: 103%;margin-left:-6px;margin-top: 0;margin-bottom: 5px'></div>
+    <div id="Periodical_content">
+        <div id="qk_content_right">
+            <ul id="STnew_content_ul"></ul>
+        </div>
+        <div id="qk_content_left" style="display: none;">
+            <ul id="qk_content_ul"></ul>
+        </div>
+
+    </div>
+</div>
+<div style="border-top:1px solid #e4e4e4;width: 103%;margin-left: -5px;"></div>
+<div id="New">
+    <div class="R_top">
+        <div><img src="img/main/ic_news.png" style='padding-right: 10px;width: 35px' alt="">地铁新闻
+            <a href="#/app/dtxw/BizQueryView/SubwayNews/dtxwcx/dtxwcx"  ui-sref='app.BizQueryView({TopAppCode:"dtxw",SchemaCode:"SubwayNews",QueryCode:"dtxwcx",FunctionCode:"dtxwcx"})' class="S_more">更多</a>
+        </div>
+    </div>
+    <div class="line" style='width: 103%;margin-left:-6px;margin-bottom: 5px;'></div>
+    <div id="New_content">
+        <ul id='New_ul'></ul>
+    </div>
+</div>
+<style>
+    #Periodical_ul {
+        width: 103%;
+        height: 30px;
+        background: #E9EAEF;
+        margin-left: -5px;
+        margin-top: 0px;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+
+    #Periodical_ul .ul_left,#Periodical_ul .ul_right {
+        padding: 0 8px;
+    }
+    #Periodical ul li:hover {
+        cursor:pointer;
+    }
+    #Periodical_content,#New_content,#qk_content_left,#qk_content_right {
+        height: 120px;
+        overflow: auto;
+    }
+    .R_top {
+        height:25px;
+        background: #FFFFFF;
+        font-size: 15px;
+        line-height:32px;
+        color: #4E4E4E;
+    }
+    .R_active {
+        border-bottom:3px solid #FAA20D;;
+    }
+    .S_more {
+        float: right;
+        color: #3d6889;
+    }
+    #Periodical_ul li{
+        line-height: 29px;
+        font-size: 15px;
+    }
+    #qk_content_ul li,#New_ul li,#qk_content_ul li {
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    #New_ul .left,#STnew_content_ul .col-md-9,#qk_content_ul .left {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    #New_ul .right,#qk_content_ul .right {
+        width: 30%;
+        display: inline-block;
+    }
+</style>
+<script type="text/javascript">
+    $(function(){
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/Portal/Sheets/handlers/LogisticsHandler.ashx?Command=QuerySubwayJournals",
+            success: function (data) {
+                if(data.pictorialtList.length>0){
+                    var qkHtml = '';
+                    $(data.pictorialtList).each(function (index,item){
+                        if(item.Flag == 1){
+                            qkHtml += '<li><a href="/Portal/Sheets/stzx/SubwayJournals/SSubwayJournals.aspx?SheetCode=SSubwayJournals&Mode=View&SchemaCode=SubwayJournals&BizObjectID='+item.ObjectID+'" target="_Blank"><span class="left" style="width: 70%"><img src=\'img/ic_new.png\' style=\'width: 32px;margin-top: -2px;margin-right: 3px;\'/>'+item.Title+' </span><span class="right" style="text-align: right">'+item.PublishTime+'</span></a></li>';
+                        }else {
+                            qkHtml += '<li><a href="/Portal/Sheets/stzx/SubwayJournals/SSubwayJournals.aspx?SheetCode=SSubwayJournals&Mode=View&SchemaCode=SubwayJournals&BizObjectID='+item.ObjectID+'" target="_Blank"><span class="left" style="width: 70%">'+item.Title+'</span><span class="right" style="text-align: right">'+item.PublishTime+'</span></a></li>';
+                        }
+
+                    })
+                }else {
+                    qkHtml = "<h3 style='padding: 12% 0;text-align: center;'>暂无内容</h3>"
+                }
+
+                if(data.newsList.length>0){
+                    var STnew='';
+                    $(data.newsList).each(function (index,item){
+                        if(item.Flag == 1){
+                            STnew += '<li><a href="/Portal/Sheets/stzx/SubwayJournals/SSubwayJournals.aspx?SheetCode=SSubwayJournals&Mode=View&SchemaCode=SubwayJournals&BizObjectID='+item.ObjectID+'" target="_Blank"><span class="col-md-12"><img src=\'img/ic_new.png\' style=\'width: 32px;margin-top: -2px;margin-right: 3px;\'/>'+item.Title +' </span></a></li>';
+                        }else {
+                            STnew += '<li><a href="/Portal/Sheets/stzx/SubwayJournals/SSubwayJournals.aspx?SheetCode=SSubwayJournals&Mode=View&SchemaCode=SubwayJournals&BizObjectID='+item.ObjectID+'" target="_Blank"><span class="col-md-12">'+item.Title+'</span></a></li>';
+                        }
+
+                    })
+                }else {
+                    STnew = "<h3 style='padding: 12% 0;text-align: center;'>暂无内容</h3>"
+                }
+                $(qkHtml).appendTo($('#qk_content_ul'));
+                $(STnew).appendTo($('#STnew_content_ul'));
+
+            }
+        });
+
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/Portal/Sheets/handlers/LogisticsHandler.ashx?Command=QuerySubwayNews",
+            success: function (data) {
+                if (data.length>0){
+                    var liHtml = '';
+                    $(data).each(function (index,item) {
+                        if(item.Flag == 1){
+                            liHtml += '<li><a href="/Portal/Sheets/stzx/SubwayNews/SSubwayNews.aspx?SheetCode=SSubwayNews&Mode=View&SchemaCode=SubwayNews&BizObjectID='+item.ObjectID+'" target="_Blank"><span class="left" style="width: 70%"><img src=\'img/ic_new.png\' style=\'width: 32px;margin-top: -2px;margin-right: 3px;\'/>'+item.Title+' </span><span class="right" style="text-align: right">'+item.PublishTime+'</span></a></li>';
+                        }else {
+                            liHtml +='<li><a href="/Portal/Sheets/stzx/SubwayNews/SSubwayNews.aspx?SheetCode=SSubwayNews&Mode=View&SchemaCode=SubwayNews&BizObjectID='+item.ObjectID+'" target="_Blank"><span class="left" style="width: 70%">'+item.Title+'</span><span class="right" style="text-align: right">'+item.PublishTime+'</span></a></li>';
+                        }
+
+
+                    });
+                }else {
+                    liHtml = "<h3 style='padding: 12% 0;text-align: center;'>暂无内容</h3>"
+                }
+
+                $(liHtml).appendTo($('#New_ul'));
+            }
+        });
+        $('#Periodical_ul').find('.ul_left').on('click', function() {
+            $('#qk_content_left').show();
+            $('.ul_left').addClass('M_active');
+            $('#qk_content_right').hide();
+            $('.ul_right').removeClass("M_active");
+        });
+        $('#Periodical_ul').find('.ul_right').on('click', function(event) {
+            $('#qk_content_left').hide();
+            $('.ul_left').removeClass("M_active");
+            $('#qk_content_right').show();
+            $('.ul_right').addClass('M_active');
+        });
+
+    });
+</script>

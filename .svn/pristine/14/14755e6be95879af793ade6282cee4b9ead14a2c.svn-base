@@ -1,0 +1,138 @@
+/* 会议室使用情况、车辆使用情况 样式 */
+ul,ol {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+#calendar {
+    margin: 0 auto;
+    position: relative;
+}
+#calendar-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+}
+.HYSsiyong,.carUse {
+    border-bottom: 1px solid #dee5e7;
+    height: 51px;
+    padding:5px;
+    background: #F6F8F8;
+    position: absolute;
+    font-size:18px;
+    width:100%;
+    z-index: 9;
+}
+.HYSsiyong ul li,.carUse ul li {
+    /*list-style-type: none;*/
+    float:left;
+    text-align:center;
+}
+.HYS_left li,.car_left li {
+    height: 34px;
+    line-height: 31px;
+    width:15%;
+    margin-left: 10px;
+    background: #FCFCFC;
+    border: 1px solid #C1C1C1;
+    box-shadow: 1px 2px 4px 0 rgba(241,241,241,0.80);
+}
+.HYS_right li:hover,.car_right li:hover {
+    cursor: pointer;
+}
+.HYS_left li:nth-child(1),.car_left li:nth-child(1) {
+    border-top:4px solid #FF9A00;
+}
+.HYS_left li:nth-child(2),.car_left li:nth-child(2) {
+    border-top:4px solid #00ACC1;
+}
+.HYS_left li:nth-child(3),.car_left li:nth-child(3) {
+    border-top:4px solid #9E60B2;
+}
+.HYS_left li:nth-child(4),.car_left li:nth-child(4) {
+    border-top:4px solid #70C170;
+}
+.HYS_right,.car_right  {
+    float: left;
+    padding-left: 20px;
+}
+.HYS_right li,.car_right li {
+    margin-left: 11px;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    background-color: #CDCDCD;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+.row {
+    margin:0;
+}
+#iframeId {
+    width: 100%;
+    height: 600px;
+}
+.HYS_right li input,.car_right li input {
+    display: none;
+}
+.fa-spinner {
+    animation: fa-spin 1s infinite steps(8);
+    font-size: 100px;
+    color: #fff;
+    top: 25%;
+    left: 50%;
+    position: absolute;
+}
+.pending {
+    background-color:#FF9A00;
+}
+.approval {
+    background-color: #00ACC1;
+}
+.approved {
+    background-color: #9E60B2;
+}
+.fc-day-grid-event {
+    border: 0px;
+    line-height: 25px;
+}
+.fc-time-grid-event {
+    border: 0px;
+}
+.fc-time-grid-event {
+    border: 0px;
+}
+#tip {
+    opacity: 0.9;
+    border-radius: 6px;
+    width: 14%;
+    padding: 10px;
+    text-align: center;
+}
+.meetingMsg div span,.carMsg div span {
+    font-weight: bold;
+}
+.meetingMsg,.carMsg {
+    font-size: 18px;
+    padding: 18px;
+}
+.meetingMsg p,.carMsg p {
+    line-height: 25px;
+}
+.meetingMsg_top,.carMsg_top {
+    border: 1px solid #D5D5D5;
+    /*height: 160px;*/
+    padding: 10px;
+    border-bottom: 0px;
+    overflow: auto;
+}
+.car_right li:first-child,.HYS_right li:first-child {
+    background-color: rgb(241, 241, 241);
+}

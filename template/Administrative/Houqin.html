@@ -1,0 +1,113 @@
+<!-- 后勤管理 -->
+<div id="wrap" class="bodywrap houqin">
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a href="#/app/hys/ConferenceRoomUsage" >
+                <img src="img/hqgl/hq_icon_hw.png" alt="">
+                <h4>会务管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#/app/clgl/VehicleUsage" >
+                <img src="img/hqgl/hq_icon_cl.png" alt="">
+                <h4>车辆管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#/app/kfgl/QueryInstance/kefan">
+                <img src="img/hqgl/hq_icon_kf.png" alt="">
+                <h4>客饭管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a  href="#/app/ccgl/travelview" ui-sref='app.houqinTravel({TopAppCode:"ccgl"})'>
+                <img src="img/hqgl/hq_icon_yg.png" alt="">
+                <h4>出差管理</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a  href="#/app/zzzlgl/QueryInstance/License" ui-sref='app.QueryInstance({TopAppCode:"zzzlgl",SchemaCode:"License"})'>
+                <img src="img/hqgl/hq_icon_zz.png" alt="">
+                <h4>证件资料管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#/app/yygl/BizQueryView/SealLibrary/yzcx/yzxxcx" ui-sref='app.BizQueryView({TopAppCode:"yygl",SchemaCode:"SealLibrary",QueryCode:"yzcx",FunctionCode:"yzxxcx"})'>
+                <img src="img/hqgl/hq_icon_yy.png" alt="">
+                <h4>用印管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#/app/gdzcgl/BizQueryView/FixedAsset/FAQuery/guzccx">
+                <img src="img/hqgl/hq_icon_gd.png" alt="">
+                <h4>固定资产管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#/app/Workflow/office">
+                <img src="img/hqgl/hq_icon_bg.png" alt="">
+                <h4>办公用品管理</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a href="#/app/pzsgl/QueryInstance/BottledWater" ui-sref='app.QueryInstance({TopAppCode:"pzsgl",SchemaCode:"BottledWater"})'>
+                <img src="img/hqgl/hq_icon-ys.png" alt="">
+                <h4>瓶装水管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#/app/kddgl/QueryInstance/ExpressOrder" ui-sref='app.QueryInstance({TopAppCode:"kddgl",SchemaCode:"ExpressOrder"})'>
+                <img src="img/hqgl/hq_icon_kd.png" alt="">
+                <h4>快递单件管理</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<style>
+    .app-aside {
+        display:none;
+    }
+    .app-content-body {
+        margin-left: -170px;
+    }
+    .row {
+        margin:0px;
+    }
+    .houqin {
+        width:110%;
+    }
+    .houqin .col-sm-3 {
+        text-align:center;
+    }
+    .houqin .col-sm-3 img {
+        width:120px;
+        margin-bottom: 20px;
+    }
+    .houqin .col-sm-12 {
+        width: 104%;
+        margin-left: -4px;
+    }
+    #wrap h4 {
+        /*font-family: PingFangSC-Regular;*/
+        font-size: 18px;
+        margin: 0px;
+    }
+    #wrap img {
+        width: 85px;
+        height: 85px;
+    }
+</style>
+<script>
+    $(function(){
+        var h4List = $('#wrap').find('h4');
+        for (var i = 0; i < h4List.length; i++) {
+            h4List[i].onclick = function (){
+                console.log();
+            }
+        }
+    })
+</script>

@@ -1,0 +1,120 @@
+﻿<!--
+    我的流程
+     -->
+<!--  ng-init="
+     app.settings.asideFolded=false;
+     app.settings.asideDock=false;" -->
+<div class="hbox hbox-auto-xs hbox-auto-sm">
+    <!-- main -->
+    <div class="col">
+        <!-- main header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <span class="h3" ng-bind="menuData.DisplayName"></span>
+                </div>
+                <div class="btn-group  pull-right">
+                    <button type="button" class="btn btn-default m-t-n-xs" title="分组模式"
+                            ui-sref="app.MyInstanceByGroup">
+                        <i class="fa fa-bars"></i>
+                        <span style=" margin-left:5px;" translate="QueryTableColumn.GroupMode"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--表格部分Start-->
+        <div class="wrapper-md paddingbottomNone">
+            <div class="panel panel-default">
+                <div class="table-responsive">
+                    <div class="form-inline">
+                        <div class="input-group searchContainer" style="float:left;">
+                            <div class="form-group">
+                                <input ng-model="InstanceName" style="width:180px;" maxlength="32" class="input-sm form-control"
+                                       placeholder="{{LanJson.ProcessName}}" />
+                            </div>
+                            <div class="form-group">
+                                <div ui-jq="SheetWorkflow" ui-options="WorkflowOptions" id="sheetWorkflow"></div>
+                            </div>
+                            <div class="form-group" style="padding-left:10px;">
+                                <select class="input-sm form-control" ng-model="InstanceState">
+                                    <option value="">{{LanJson.UnspecifiedText}}</option>
+                                    <option value="2">{{LanJson.UnfinishedText}}</option>
+                                    <option value="4">{{LanJson.FinishedText}}</option>
+                                    <option value="5">{{LanJson.CanceledText}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input ng-model="StartTime" ui-jq="wdatePicker" id="StartTime" style="width:100px;"
+                                           class="input-sm form-control"
+                                           placeholder="{{LanJson.StartTime}}" />
+                                    <span class="input-group-addon" style="border-left:0px;border-right:0px;" translate="QueryTableColumn.To"></span>
+                                    <input ng-model="EndTime" ui-jq="wdatePicker" id="EndTime" style="width:100px;"
+                                           class="input-sm form-control"
+                                           placeholder="{{LanJson.EndTime}}" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input ng-model="searchKey" type="text" class="input-sm form-control" style="width:200px;display:none;"
+                                       placeholder="{{LanJson.search}}">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-sm btn-default" type="button" style="height:30px;"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <table ui-jq="dataTable" id="tabMyInstance"
+                           ui-options="options_MyInstance"
+                           class="table table-striped m-b-none" style="width:99.5%;">
+                        <thead>
+                            <tr>
+                                <th class="hide1024" style="width:7%;">
+                                    <span translate="QueryTableColumn.Flag"></span>
+                                </th>
+                                <th  id="Index" class="hide1024" style="width:7%">
+                                    <span translate="QueryTableColumn.Index"></span>
+                                </th>
+                                <th id="ProcessName" style="width: 25%">
+                                    <span translate="QueryTableColumn.ProcessName"></span>
+                                </th>
+                                <th id="WorkFlow" style="width: 15%">
+                                    <span translate="QueryTableColumn.WorkFlow"></span>
+                                </th>
+                                <th id="CreatTime" class="hide1024" style="width: 15%">
+                                    <span translate="QueryTableColumn.CreatTime"></span>
+                                </th>
+                                <th ng-show="InstanceState==4" id="FinishTime" class="hide414" style="width: 15%">
+                                    <span translate="QueryTableColumn.FinishTime"></span>
+                                </th>
+
+                                <th ng-show="InstanceState==5" id="CancelTime" class="hide414" style="width: 15%">
+                                    <span translate="QueryTableColumn.CancelTime"></span>
+                                </th>
+
+                                <th ng-show="InstanceState==2 || InstanceState==''"  id="ApproverLink" class="hide414" style="width: 15%">
+                                    <span translate="QueryTableColumn.ApproverLink"></span>
+                                </th>
+                                <th ng-show="InstanceState==2 || InstanceState==''" id="Approver" class="hide414" style="width: 15%">
+                                    <span translate="QueryTableColumn.Approver"></span>
+                                </th>
+                                <th id="State" class="hide414" style="width: 10%" style="width: 10%">
+                                    <span translate="QueryTableColumn.State" ></span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--表格部分End-->
+    </div>
+    <!-- / main -->
+</div>
+<style type="text/css">
+    #Index {
+        width: 7%!important;
+    }
+</style>

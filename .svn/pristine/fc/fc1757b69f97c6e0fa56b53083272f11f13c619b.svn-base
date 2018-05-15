@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using OThinker.H3.DataModel;
+using OThinker.H3.Portal;
+
+namespace OThinker.H3.Portal.Sheets.stzx
+{
+    public partial class TaskChange : OThinker.H3.Controllers.MvcPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+
+
+        public String AddMembers(String TaskObjectId)
+        {
+
+            if (string.IsNullOrEmpty(TaskObjectId))
+            {
+                return "请先选TaskObjectId";
+            }
+
+            var sql = "SELECT pm.FullName, pm.PersonRole, pm.Department ,pm.UserId FROM" +
+                   "I_ProjectTask pt LEFT JOIN I_ProjectMembers pm ON pt.ObjectID = pm.ParentObjectID " +
+                   "WHERE pt.Status = '1' AND pt.ObjectID =" + "'" + TaskObjectId + "'";
+
+            System.Data.DataTable dt = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(sql);
+
+            if (dt.Rows.Count > 0)
+            {
+
+                BizObject[] bizObjects = new BizObject[dt.Rows.Count];
+                BizObjectSchema childSchema = this.ActionContext.Schema.GetProperty("MembersReduce").ChildSchema;
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    bizObjects[i] = new BizObject(this.ActionContext.Engine, childSchema, this.ActionContext.User.UserID);
+                    bizObjects[i]["FullName"] = dt.Rows[i]["FullName"].ToString();
+                    bizObjects[i]["PersonRole"] = dt.Rows[i]["PersonRole"].ToString();
+                    bizObjects[i]["Department"] = dt.Rows[i]["Department"].ToString();
+
+                }
+                this.ActionContext.InstanceData["MembersReduce"].Value = bizObjects;
+
+                return "调用成功" + TaskObjectId;
+            }
+        }
+    }
+}

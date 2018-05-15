@@ -1,0 +1,1486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="00289145-df50-4f52-87f6-185fdb0878a7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TempImages/NewNotice.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TempImages/News.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TempImages/Notice.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TempImages/wjcx.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/Administrative/newnews.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/custom/NewNewsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hybrid/js/controllers.js" afterPath="$PROJECT_DIR$/Hybrid/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MvcSheet.Master" afterPath="$PROJECT_DIR$/MvcSheet.Master" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.aspx.cs" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.aspx.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.aspx" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.aspx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.aspx.cs" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.aspx.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.css" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.aspx" afterPath="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.aspx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.css" afterPath="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TempImages/NewsView.xml" afterPath="$PROJECT_DIR$/TempImages/NewsView.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WFRes/css/MvcSheet.css" afterPath="$PROJECT_DIR$/WFRes/css/MvcSheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom/BizQueryView.css" afterPath="$PROJECT_DIR$/css/custom/BizQueryView.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/AppCenter/BizQueryViewController.js" afterPath="$PROJECT_DIR$/js/controllers/AppCenter/BizQueryViewController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/Administrative/Information.html" afterPath="$PROJECT_DIR$/template/Administrative/Information.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/projectManagement/attendance.html" afterPath="$PROJECT_DIR$/template/projectManagement/attendance.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/custom/attendance.js" afterPath="$PROJECT_DIR$/vendor/custom/attendance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/custom_app.js" afterPath="$PROJECT_DIR$/vendor/custom_app.js" />
+    </list>
+    <ignored path="Portal.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Portal" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="415967" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="474747" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="D2D4D5" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="4E5579" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BizQueryViewController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controllers/AppCenter/BizQueryViewController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+              <folding>
+                <marker date="1507706141455" expanded="true" signature="27255:27271" ph="..." />
+                <marker date="1507706141455" expanded="true" signature="27508:27526" ph="..." />
+                <marker date="1507706141455" expanded="true" signature="27581:27636" ph="..." />
+                <marker date="1507706141455" expanded="true" signature="27803:27821" ph="..." />
+                <marker date="1507706141455" expanded="true" signature="27938:27952" ph="..." />
+                <marker date="1507706141455" expanded="true" signature="28097:28115" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsView.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectHouseRental.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sheets/stzx/ProjectHouseRental/ProjectHouseRental.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-810">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SProjectHouseRental.aspx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sheets/DefaultEngine/ProjectHouseRental/SProjectHouseRental.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="316" column="12" lean-forward="true" selection-start-line="316" selection-start-column="12" selection-end-line="316" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#div#4;n#div#3;n#div#1;n#asp:Content#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#8;n#div#3;n#div#1;n#asp:Content#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>是否需要隐藏当前Header</find>
+      <find>content-wrapper</find>
+      <find>#praise-txt</find>
+      <find>newmsg</find>
+      <find>.praise .hover</find>
+      <find>x</find>
+      <find>xinwengonggao</find>
+      <find>新闻公告</find>
+      <find>新闻公告g</find>
+      <find>新闻公告guan</find>
+      <find>新闻公告guanli</find>
+      <find>新闻公告管理</find>
+      <find>#main-navbar</find>
+      <find>width: 74.3%!important;</find>
+      <find>width: 74.3%!;</find>
+      <find>width: 74.3%;</find>
+      <find>width: 74.3;</find>
+      <find>width: 74.;</find>
+      <find>width: 74;</find>
+      <find>width: 7;</find>
+      <find>width: ;</find>
+      <find>width:1040px;</find>
+      <find>filter</find>
+      <find>viewAllNews</find>
+      <find>公告</find>
+      <find>viewAll</find>
+      <find>main-navbar</find>
+      <find>.news</find>
+      <find>praise</find>
+      <find>btn</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal1385px</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\template\projectManagement</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\PortalCCAcceptanceDetails</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portalpanel</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Office</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Hybrid</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\template\Administrative</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\js\controllers\ProcessCenter</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\js\controllers</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\js</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/template/Administrative/InternalLibrary.html" />
+        <option value="$PROJECT_DIR$/WFRes/assets/stylesheets/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/template/platform/menu_items.html" />
+        <option value="$USER_HOME$/Desktop/考勤表/kaoqin.html" />
+        <option value="E:/Portal/js/controllers/ProcessCenter/QueryInstanceController.js" />
+        <option value="F:/Portal/template/ProcessCenter/QueryInstance.html" />
+        <option value="$PROJECT_DIR$/template/ProcessCenter/QueryInstance.html" />
+        <option value="E:/咨询公司OA/表单修改/MvcSheet.css" />
+        <option value="$PROJECT_DIR$/js/controllers/ProcessCenter/MyAgentsController.js" />
+        <option value="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnfinishedWorkItemController.js" />
+        <option value="$PROJECT_DIR$/js/controllers/ProcessCenter/QueryInstanceController.js" />
+        <option value="$PROJECT_DIR$/template/projectManagement/falseAttendance.html" />
+        <option value="$PROJECT_DIR$/vendor/Datatable/jquery.dataTables.js" />
+        <option value="$PROJECT_DIR$/vendor/custom/H_Mroom_use.js" />
+        <option value="$PROJECT_DIR$/template/Administrative/Huiwu/H_Mroom_use.html" />
+        <option value="$PROJECT_DIR$/vendor/custom/H_Car_use.js" />
+        <option value="$PROJECT_DIR$/template/WebParts/Slider.html" />
+        <option value="$PROJECT_DIR$/template/WebParts/WebPartPanel.html" />
+        <option value="$PROJECT_DIR$/vendor/Datatables/jquery.dataTables.css" />
+        <option value="$PROJECT_DIR$/template/projectManagement/logisticsGoods.html" />
+        <option value="$PROJECT_DIR$/template/platform/header.html" />
+        <option value="$PROJECT_DIR$/template/projectManagement/expertLibrary.html" />
+        <option value="$PROJECT_DIR$/template/WebParts/news.html" />
+        <option value="$USER_HOME$/Desktop/新闻页面.html" />
+        <option value="$PROJECT_DIR$/vendor/custom/attendance.js" />
+        <option value="$PROJECT_DIR$/template/projectManagement/attendance.html" />
+        <option value="$PROJECT_DIR$/vendor/Datatable/jquery.dataTables.css" />
+        <option value="$PROJECT_DIR$/newnews.html" />
+        <option value="$PROJECT_DIR$/vendor/custom/newnews.js" />
+        <option value="$PROJECT_DIR$/vendor/custom/NewNewsController.js" />
+        <option value="$PROJECT_DIR$/template/Administrative/newnews.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/Hybrid/form/formControllers.js" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controllers.js" />
+        <option value="$PROJECT_DIR$/vendor/custom_app.js" />
+        <option value="$PROJECT_DIR$/template/Administrative/Information.html" />
+        <option value="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/MvcSheetUI.js" />
+        <option value="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SnewNotice.css" />
+        <option value="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.css" />
+        <option value="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.aspx" />
+        <option value="$PROJECT_DIR$/WFRes/css/MvcSheet.css" />
+        <option value="$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.css" />
+        <option value="$PROJECT_DIR$/js/config.router.js" />
+        <option value="$PROJECT_DIR$/js/controllers/AppCenter/BizQueryViewController.js" />
+        <option value="$PROJECT_DIR$/css/custom/BizQueryView.css" />
+        <option value="$PROJECT_DIR$/MvcSheet.Master" />
+        <option value="$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.aspx" />
+        <option value="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.css" />
+        <option value="$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNotice.css" />
+        <option value="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.aspx" />
+        <option value="$PROJECT_DIR$/Sheets/DefaultEngine/ProjectHouseRental/SProjectHouseRental.aspx" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stzx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stzx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectTask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stzx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsView" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stzx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewNotice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Portal">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Portal">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="WFRes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Portal">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="WFRes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="images">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Portal">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="WFRes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="images">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyProImg">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.CSS" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../nodejs/node" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\template\Administrative" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\vendor\angular" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\img\main" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\img\file" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\img\hqgl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\img" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\vendor" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\js\controllers\ProcessCenter" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\WFRes\css" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+        <PATH vcs="svn" revision="254">D:\Program Files\Authine\H3 BPM\Portal\Sheets\DefaultEngine\ProjectHouseRental\SProjectHouseRental.aspx</PATH>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\LX\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Program Files\Authine\H3 BPM\Portal" />
+          <option name="myCopyRoot" value="D:\Program Files\Authine\H3 BPM\Portal" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Program Files\Authine\H3 BPM\Portal\.idea" />
+          <option name="myCopyRoot" value="D:\Program Files\Authine\H3 BPM\Portal\.idea" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Program Files\Authine\H3 BPM\Portal" />
+          <option name="myCopyRoot" value="D:\Program Files\Authine\H3 BPM\Portal" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00289145-df50-4f52-87f6-185fdb0878a7" name="Default" comment="" />
+      <created>1494253640163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1494253640163</updated>
+      <workItem from="1497161944467" duration="21796000" />
+      <workItem from="1497230994014" duration="23167000" />
+      <workItem from="1497272839856" duration="2544000" />
+      <workItem from="1497315399944" duration="26305000" />
+      <workItem from="1497402942453" duration="19215000" />
+      <workItem from="1497444453516" duration="6793000" />
+      <workItem from="1497490546170" duration="3224000" />
+      <workItem from="1497507107872" duration="6414000" />
+      <workItem from="1497597070124" duration="1608000" />
+      <workItem from="1497598730065" duration="2290000" />
+      <workItem from="1497766580473" duration="11783000" />
+      <workItem from="1497792073437" duration="3803000" />
+      <workItem from="1497835610158" duration="16668000" />
+      <workItem from="1497876712292" duration="5947000" />
+      <workItem from="1497920454184" duration="11539000" />
+      <workItem from="1497943921168" duration="21966000" />
+      <workItem from="1498008319793" duration="26448000" />
+      <workItem from="1498052324974" duration="2963000" />
+      <workItem from="1498056901157" duration="641000" />
+      <workItem from="1498094898299" duration="22208000" />
+      <workItem from="1498439815821" duration="25675000" />
+      <workItem from="1498481538436" duration="5908000" />
+      <workItem from="1498526130000" duration="18923000" />
+      <workItem from="1498567776099" duration="6922000" />
+      <workItem from="1498576825749" duration="1288000" />
+      <workItem from="1498612597102" duration="23768000" />
+      <workItem from="1498654552154" duration="4410000" />
+      <workItem from="1498698984012" duration="30819000" />
+      <workItem from="1498742158029" duration="2012000" />
+      <workItem from="1498786167654" duration="21706000" />
+      <workItem from="1498900569967" duration="1125000" />
+      <workItem from="1498901737673" duration="269000" />
+      <workItem from="1498902041259" duration="12237000" />
+      <workItem from="1498923609670" duration="481000" />
+      <workItem from="1498990956048" duration="3037000" />
+      <workItem from="1499045508546" duration="29422000" />
+      <workItem from="1499132523514" duration="14642000" />
+      <workItem from="1499154114572" duration="7944000" />
+      <workItem from="1499181111633" duration="1048000" />
+      <workItem from="1499184206952" duration="1340000" />
+      <workItem from="1499216989886" duration="21162000" />
+      <workItem from="1499260929568" duration="844000" />
+      <workItem from="1499304394931" duration="1276000" />
+      <workItem from="1499307090192" duration="21397000" />
+      <workItem from="1499345859667" duration="6162000" />
+      <workItem from="1499390929719" duration="24664000" />
+      <workItem from="1499591360615" duration="11713000" />
+      <workItem from="1499612148023" duration="94000" />
+      <workItem from="1499612287743" duration="3000" />
+      <workItem from="1499650276106" duration="31231000" />
+      <workItem from="1499735054864" duration="31339000" />
+      <workItem from="1499822942477" duration="24485000" />
+      <workItem from="1499863542459" duration="8391000" />
+      <workItem from="1499909641427" duration="27015000" />
+      <workItem from="1499951632650" duration="5352000" />
+      <workItem from="1499995552243" duration="24690000" />
+      <workItem from="1500198553611" duration="7252000" />
+      <workItem from="1500254591777" duration="22152000" />
+      <workItem from="1500298022231" duration="645000" />
+      <workItem from="1500340507719" duration="16913000" />
+      <workItem from="1500384197863" duration="729000" />
+      <workItem from="1500427087211" duration="23304000" />
+      <workItem from="1500513861524" duration="22871000" />
+      <workItem from="1500555056438" duration="7106000" />
+      <workItem from="1500600462514" duration="1981000" />
+      <workItem from="1500602536739" duration="19568000" />
+      <workItem from="1500626099053" duration="120000" />
+      <workItem from="1500626244549" duration="3961000" />
+      <workItem from="1500808468730" duration="3293000" />
+      <workItem from="1500859696720" duration="25243000" />
+      <workItem from="1500902610274" duration="4099000" />
+      <workItem from="1500944619029" duration="21812000" />
+      <workItem from="1501032269323" duration="11988000" />
+      <workItem from="1501072454729" duration="3929000" />
+      <workItem from="1501118114643" duration="16550000" />
+      <workItem from="1501205304833" duration="25171000" />
+      <workItem from="1501420082022" duration="769000" />
+      <workItem from="1501464422728" duration="20034000" />
+      <workItem from="1501550486429" duration="22534000" />
+      <workItem from="1501592821754" duration="319000" />
+      <workItem from="1501637070371" duration="107000" />
+      <workItem from="1501639165738" duration="22604000" />
+      <workItem from="1501723828132" duration="22072000" />
+      <workItem from="1501809714989" duration="1784000" />
+      <workItem from="1501811531142" duration="1658000" />
+      <workItem from="1501814403137" duration="1517000" />
+      <workItem from="1501816232014" duration="1767000" />
+      <workItem from="1501818061217" duration="2071000" />
+      <workItem from="1501822874121" duration="1309000" />
+      <workItem from="1501824688217" duration="1197000" />
+      <workItem from="1501826516042" duration="658000" />
+      <workItem from="1501828331305" duration="1234000" />
+      <workItem from="1501830156654" duration="1782000" />
+      <workItem from="1501831970971" duration="1522000" />
+      <workItem from="1501833675691" duration="1775000" />
+      <workItem from="1501835483368" duration="1778000" />
+      <workItem from="1501837293028" duration="1774000" />
+      <workItem from="1501839101246" duration="1383000" />
+      <workItem from="1502069686467" duration="1227000" />
+      <workItem from="1502071747563" duration="1782000" />
+      <workItem from="1502073578200" duration="1775000" />
+      <workItem from="1502075396224" duration="1701000" />
+      <workItem from="1502077222319" duration="1821000" />
+      <workItem from="1502082005796" duration="1492000" />
+      <workItem from="1502084060989" duration="1773000" />
+      <workItem from="1502085867695" duration="1536000" />
+      <workItem from="1502087679021" duration="1779000" />
+      <workItem from="1502089495895" duration="1752000" />
+      <workItem from="1502091301023" duration="1775000" />
+      <workItem from="1502093109310" duration="1777000" />
+      <workItem from="1502094919146" duration="1770000" />
+      <workItem from="1502096732379" duration="1399000" />
+      <workItem from="1502098576047" duration="1465000" />
+      <workItem from="1502157339876" duration="1439000" />
+      <workItem from="1502159469991" duration="1374000" />
+      <workItem from="1502161291481" duration="1778000" />
+      <workItem from="1502163102109" duration="1476000" />
+      <workItem from="1502168870153" duration="1774000" />
+      <workItem from="1502170778792" duration="9767000" />
+      <workItem from="1502183668938" duration="3076000" />
+      <workItem from="1502242317652" duration="24746000" />
+      <workItem from="1502327944057" duration="8371000" />
+      <workItem from="1502337505221" duration="12906000" />
+      <workItem from="1502414761833" duration="19635000" />
+      <workItem from="1502673789930" duration="4229000" />
+      <workItem from="1502678982107" duration="4081000" />
+      <workItem from="1502683096660" duration="14789000" />
+      <workItem from="1502704201413" duration="873000" />
+      <workItem from="1502763384808" duration="10399000" />
+      <workItem from="1502854924633" duration="14442000" />
+      <workItem from="1502935047588" duration="8867000" />
+      <workItem from="1503019324327" duration="11578000" />
+      <workItem from="1503285947974" duration="4039000" />
+      <workItem from="1503365460158" duration="5401000" />
+      <workItem from="1503451917198" duration="1211000" />
+      <workItem from="1503466744319" duration="1663000" />
+      <workItem from="1503540042745" duration="644000" />
+      <workItem from="1503559311027" duration="2200000" />
+      <workItem from="1503883628300" duration="11360000" />
+      <workItem from="1503973496328" duration="3804000" />
+      <workItem from="1504056311248" duration="8933000" />
+      <workItem from="1504142912132" duration="7341000" />
+      <workItem from="1504232557088" duration="1641000" />
+      <workItem from="1504255403827" duration="4209000" />
+      <workItem from="1504488663476" duration="5714000" />
+      <workItem from="1504577398306" duration="1389000" />
+      <workItem from="1504663801939" duration="2711000" />
+      <workItem from="1504766760659" duration="10767000" />
+      <workItem from="1504834054064" duration="23553000" />
+      <workItem from="1505095028260" duration="6700000" />
+      <workItem from="1505185128937" duration="8800000" />
+      <workItem from="1505352939446" duration="5187000" />
+      <workItem from="1505439317417" duration="8419000" />
+      <workItem from="1505698089836" duration="1146000" />
+      <workItem from="1505719400674" duration="8254000" />
+      <workItem from="1505878557466" duration="11154000" />
+      <workItem from="1505911772718" duration="7296000" />
+      <workItem from="1505919472241" duration="377000" />
+      <workItem from="1505957589184" duration="9781000" />
+      <workItem from="1505990030167" duration="1263000" />
+      <workItem from="1506044131936" duration="7018000" />
+      <workItem from="1506171346635" duration="613000" />
+      <workItem from="1506242279262" duration="755000" />
+      <workItem from="1506243070097" duration="4534000" />
+      <workItem from="1506303781185" duration="1051000" />
+      <workItem from="1506317149304" duration="4601000" />
+      <workItem from="1506389271483" duration="6515000" />
+      <workItem from="1506415035904" duration="5030000" />
+      <workItem from="1506476203907" duration="657000" />
+      <workItem from="1506479996268" duration="22142000" />
+      <workItem from="1506516312795" duration="3922000" />
+      <workItem from="1506562808629" duration="8817000" />
+      <workItem from="1506583588935" duration="598000" />
+      <workItem from="1506654896698" duration="9580000" />
+      <workItem from="1507513065410" duration="24564000" />
+      <workItem from="1507552624134" duration="1725000" />
+      <workItem from="1507557095476" duration="4453000" />
+      <workItem from="1507599102374" duration="22231000" />
+      <workItem from="1507685574674" duration="2261000" />
+      <workItem from="1507687967193" duration="17435000" />
+    </task>
+    <task id="LOCAL-00001" summary="阿的范德萨发发">
+      <created>1497598996739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497598996739</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1497599021198</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1497599021198</updated>
+    </task>
+    <task id="LOCAL-00003" summary="样式调整">
+      <created>1497599047490</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497599047490</updated>
+    </task>
+    <task id="LOCAL-00004" summary="样式调整">
+      <created>1506319148179</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1506319148179</updated>
+    </task>
+    <task id="LOCAL-00005" summary="样式调整">
+      <created>1506331367733</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1506331367733</updated>
+    </task>
+    <task id="LOCAL-00006" summary="样式调整">
+      <created>1506480087269</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1506480087269</updated>
+    </task>
+    <task id="LOCAL-00007" summary="样式调整">
+      <created>1506564332654</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1506564332654</updated>
+    </task>
+    <task id="LOCAL-00008" summary="样式调整">
+      <created>1506576412342</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1506576412342</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1534334000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22813688" sideWeight="0.84368736" order="1" side_tool="true" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5126743" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05107527" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.48732573" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22813688" sideWeight="0.15631263" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23521505" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23521505" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.086021505" sideWeight="0.50253487" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10887097" sideWeight="0.49746513" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24968314" sideWeight="0.8991935" order="1" side_tool="true" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05107527" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24968314" sideWeight="0.10080645" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="阿的范德萨发发" />
+    <MESSAGE value="初始导入" />
+    <MESSAGE value="样式调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="样式调整" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="51" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/dateSpanSearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/finishedworkitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3376">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/finishreadworkitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/instanceState.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2610">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/mulSheets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/myInstance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1170">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/organization.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4186">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/setpassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/startworkflow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1170">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/unfinishedworkitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1890">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/unreadworkitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3330">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1800">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-872">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/worksheet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1906">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4590">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/dateRangeSelectCtl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/dingTalk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2492">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/ui-load.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7140">
+          <caret line="238" column="45" lean-forward="false" selection-start-line="238" selection-start-column="45" selection-end-line="238" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/MvcSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7320">
+          <caret line="244" column="22" lean-forward="false" selection-start-line="244" selection-start-column="22" selection-end-line="244" selection-end-column="22" />
+          <folding>
+            <marker date="1506318570101" expanded="true" signature="24310:24487" ph="..." />
+            <marker date="1506318570101" expanded="true" signature="24596:24744" ph="..." />
+            <marker date="1506318570101" expanded="true" signature="25034:25067" ph="..." />
+            <marker date="1506318570101" expanded="true" signature="26800:26851" ph="..." />
+            <marker date="1506318570101" expanded="true" signature="28377:28427" ph="..." />
+            <marker date="1506318570101" expanded="true" signature="29361:29394" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/stzx/ProjectCarRental/ProjectCarRental.aspx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/form/formControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <marker date="1507626930044" expanded="true" signature="24709:24721" ph="..." />
+            <marker date="1507626930044" expanded="true" signature="25599:25611" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/custom_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Office/template/Administrative/Information.html.r73">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Administrative/Information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/MvcSheetUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding>
+            <marker date="1507689751431" expanded="true" signature="19379:19412" ph="..." />
+            <marker date="1507689751431" expanded="true" signature="24301:24308" ph="×" />
+            <marker date="1507689751431" expanded="true" signature="27102:27155" ph="..." />
+            <marker date="1507689751431" expanded="true" signature="49275:49291" ph="..." />
+            <marker date="1507689751431" expanded="true" signature="50480:50487" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/btn_liked.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/btn_unlike.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WFRes/assets/stylesheetsh3/h3-mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="116" column="5" lean-forward="true" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/config.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="357" column="22" lean-forward="false" selection-start-line="357" selection-start-column="22" selection-end-line="357" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WFRes/css/MvcSheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="612" column="1" lean-forward="false" selection-start-line="612" selection-start-column="1" selection-end-line="612" selection-end-column="1" />
+          <folding>
+            <marker date="1507703462681" expanded="true" signature="3073:3115" ph="{...}" />
+            <marker date="1507703462681" expanded="true" signature="3199:3241" ph="{...}" />
+            <marker date="1507703462681" expanded="true" signature="3324:3366" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#asp:Content#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#asp:Content#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#asp:Content#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvcSheet.Master">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="137" column="20" lean-forward="false" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNotice.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="77" lean-forward="true" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="312" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="327" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="341" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.aspx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="312" column="10" lean-forward="false" selection-start-line="312" selection-start-column="10" selection-end-line="312" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/DefaultEngine/NewsView/SNewsView.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="82" lean-forward="false" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#asp:Content#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#asp:Content#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#asp:Content#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNotice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="341" column="10" lean-forward="false" selection-start-line="341" selection-start-column="10" selection-end-line="341" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom/BizQueryView.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="113" column="25" lean-forward="true" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/stzx/ProjectHouseRental/ProjectHouseRental.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/AppCenter/BizQueryViewController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <marker date="1507706141455" expanded="true" signature="27255:27271" ph="..." />
+            <marker date="1507706141455" expanded="true" signature="27508:27526" ph="..." />
+            <marker date="1507706141455" expanded="true" signature="27581:27636" ph="..." />
+            <marker date="1507706141455" expanded="true" signature="27803:27821" ph="..." />
+            <marker date="1507706141455" expanded="true" signature="27938:27952" ph="..." />
+            <marker date="1507706141455" expanded="true" signature="28097:28115" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sheets/DefaultEngine/ProjectHouseRental/SProjectHouseRental.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="316" column="12" lean-forward="true" selection-start-line="316" selection-start-column="12" selection-end-line="316" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#4;n#div#3;n#div#1;n#asp:Content#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#div#3;n#div#1;n#asp:Content#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

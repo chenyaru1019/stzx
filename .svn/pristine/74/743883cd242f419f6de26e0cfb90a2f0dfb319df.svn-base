@@ -1,0 +1,220 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SSMaterialsAcceptance.aspx.cs" Inherits="OThinker.H3.Portal.Sheets.DefaultEngine.SSMaterialsAcceptance" EnableEventValidation="false" MasterPageFile="~/MvcSheet.master" %>
+<%@ OutputCache Duration="999999" VaryByParam="T" VaryByCustom="browser" %>
+<asp:Content ID="head" ContentPlaceHolderID="headContent" runat="Server">
+</asp:Content>
+<asp:Content ID="menu" ContentPlaceHolderID="cphMenu" runat="Server">
+</asp:Content>
+<asp:Content ID="master" ContentPlaceHolderID="masterContent" runat="Server">
+<script type="text/javascript">
+	$.MvcSheet.SubmitAction.OnActionDone = function() {
+
+
+
+	}
+</script>
+<div style="text-align: center;" class="DragContainer">
+	<label id="lblTitle" class="panel-title">专项物资验收</label>
+</div>
+<div class="panel-body sheetContainer">
+	<div class="nav-icon fa fa-chevron-right bannerTitle">
+		<label id="divBasicInfo" data-en_us="Basic information">基本信息</label>
+	</div>
+	<div class="divContent">
+		<div class="row">
+			<div id="divFullNameTitle" class="col-md-2">
+				<label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" style="">发起人</label>
+			</div>
+			<div id="divFullName" class="col-md-4">
+				<label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" style=""></label>
+			</div>
+			<div id="divOriginateDateTitle" class="col-md-2">
+				<label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" style="">发起时间</label>
+			</div>
+			<div id="divOriginateDate" class="col-md-4">
+				<label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" style=""></label>
+			</div>
+		</div>
+		<div class="row">
+			<div id="divOriginateOUNameTitle" class="col-md-2">
+				<label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" style="">所属组织</label>
+			</div>
+			<div id="divOriginateOUName" class="col-md-4">
+				<!--					<label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData">
+<span class="OnlyDesigner">Originator.OUName</span>
+					</label>-->
+					<select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style="">
+					</select>
+				</div>
+				<div id="divSequenceNoTitle" class="col-md-2">
+					<label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" style="">流水号</label>
+				</div>
+				<div id="divSequenceNo" class="col-md-4">
+					<label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" style=""></label>
+				</div>
+			</div>
+		</div>
+		<div class="nav-icon fa  fa-chevron-right bannerTitle">
+			<label id="divSheetInfo" data-en_us="Sheet information">表单信息</label>
+		</div>
+		<div class="divContent" id="divSheet">
+			<div class="row">
+				<div id="title1" class="col-md-2">
+					<span id="Label11" data-type="SheetLabel" data-datafield="Applyer" style="">申请人</span>
+				</div>
+				<div id="control1" class="col-md-4">
+					<input id="Control11" type="text" data-datafield="Applyer" data-type="SheetTextBox" style="">
+				</div>
+				<div id="title2" class="col-md-2">
+					<span id="Label12" data-type="SheetLabel" data-datafield="Department" style="">申请部门</span>
+				</div>
+				<div id="control2" class="col-md-4">
+					<input id="Control12" type="text" data-datafield="Department" data-type="SheetTextBox" style="">
+				</div>
+			</div><div class="row"><div id="div739625" class="col-md-2"><label data-datafield="SMaterials" data-type="SheetLabel" id="ctl969659" class="" style="">专项物资查询</label></div><div id="div420304" class="col-md-4"><input type="text" data-datafield="SMaterials" data-type="SheetTextBox" id="ctl259835" class="" style="" data-popupwindow="PopupWindow" data-schemacode="SpecialMaterials" data-querycode="zxwzcx" data-outputmappings="SMaterials:Title,SMId:ObjectID"></div><div id="div879604" class="col-md-2"></div><div id="div231225" class="col-md-4"></div></div>
+			
+			<div class="row tableContent">
+				<div id="title3" class="col-md-2">
+					<span id="Label13" data-type="SheetLabel" data-datafield="SMADetails" style="">验收物资明细</span>
+				</div>
+				<div id="control3" class="col-md-10">
+					<table id="Control13" data-datafield="SMADetails" data-type="SheetGridView" class="SheetGridView" data-displayadd="false">
+						<tbody>
+							
+							<tr class="header">
+								<td id="Control13_SerialNo" class="rowSerialNo">
+序号								</td>
+								<td id="Control13_Header3" data-datafield="SMADetails.Type">
+									<label id="Control13_Label3" data-datafield="SMADetails.Type" data-type="SheetLabel" style="">类别</label>
+								</td>
+								<td id="Control13_Header4" data-datafield="SMADetails.MaterialName">
+									<label id="Control13_Label4" data-datafield="SMADetails.MaterialName" data-type="SheetLabel" style="">物资名称</label>
+								</td>
+								<td id="Control13_Header5" data-datafield="SMADetails.Model">
+									<label id="Control13_Label5" data-datafield="SMADetails.Model" data-type="SheetLabel" style="">规格型号</label>
+								</td>
+								<td id="Control13_Header6" data-datafield="SMADetails.Brand">
+									<label id="Control13_Label6" data-datafield="SMADetails.Brand" data-type="SheetLabel" style="">品牌</label>
+								</td>
+								<td id="Control13_Header7" data-datafield="SMADetails.Num">
+									<label id="Control13_Label7" data-datafield="SMADetails.Num" data-type="SheetLabel" style="">物资数量</label>
+								</td>
+								<td id="Control13_Header8" data-datafield="SMADetails.Price">
+									<label id="Control13_Label8" data-datafield="SMADetails.Price" data-type="SheetLabel" style="">物资单价（元）</label>
+								</td>
+								<td id="Control13_Header9" data-datafield="SMADetails.Cost">
+									<label id="Control13_Label9" data-datafield="SMADetails.Cost" data-type="SheetLabel" style="">本次费用（元）</label>
+								</td>
+								<td class="rowOption hidden">
+删除								</td>
+							</tr>
+							<tr class="template">
+								<td id="Control13_Option" class="rowOption">
+								</td>
+								<td data-datafield="SMADetails.Type">
+									<input id="Control13_ctl3" type="text" data-datafield="SMADetails.Type" data-type="SheetTextBox" style="" class="">
+								</td>
+								<td data-datafield="SMADetails.MaterialName">
+									<input id="Control13_ctl4" type="text" data-datafield="SMADetails.MaterialName" data-type="SheetTextBox" style="" class="">
+								</td>
+								<td data-datafield="SMADetails.Model">
+									<input id="Control13_ctl5" type="text" data-datafield="SMADetails.Model" data-type="SheetTextBox" style="">
+								</td>
+								<td data-datafield="SMADetails.Brand">
+									<input id="Control13_ctl6" type="text" data-datafield="SMADetails.Brand" data-type="SheetTextBox" style="">
+								</td>
+								<td data-datafield="SMADetails.Num">
+									<input id="Control13_ctl7" type="text" data-datafield="SMADetails.Num" data-type="SheetTextBox" style="">
+								</td>
+								<td data-datafield="SMADetails.Price">
+									<input id="Control13_ctl8" type="text" data-datafield="SMADetails.Price" data-type="SheetTextBox" style="">
+								</td>
+								<td data-datafield="SMADetails.Cost">
+									<input id="Control13_ctl9" type="text" data-datafield="SMADetails.Cost" data-type="SheetTextBox" style="">
+								</td>
+								<td class="rowOption hidden">
+									<a class="delete">
+										<div class="fa fa-minus">
+										</div>
+									</a>
+									<a class="insert">
+										<div class="fa fa-arrow-down">
+										</div>
+									</a>
+								</td>
+							</tr>
+							<tr class="footer">
+								<td class="rowOption">
+								</td>
+								<td data-datafield="SMADetails.Type">
+								</td>
+								<td data-datafield="SMADetails.MaterialName">
+								</td>
+								<td data-datafield="SMADetails.Model">
+								</td>
+								<td data-datafield="SMADetails.Brand">
+								</td>
+								<td data-datafield="SMADetails.Num">
+									<label id="Control13_stat7" data-datafield="SMADetails.Num" data-type="SheetCountLabel" style=""></label>
+								</td>
+								<td data-datafield="SMADetails.Price">
+									<label id="Control13_stat8" data-datafield="SMADetails.Price" data-type="SheetCountLabel" style=""></label>
+								</td>
+								<td data-datafield="SMADetails.Cost">
+									<label id="Control13_stat9" data-datafield="SMADetails.Cost" data-type="SheetCountLabel" style=""></label>
+								</td>
+								<td class="rowOption hidden">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div><div class="row"><div id="div306584" class="col-md-2"><label data-datafield="Related_items" data-type="SheetLabel" id="ctl621416" class="" style="">关联项目</label></div><div id="div505202" class="col-md-4"><input type="text" data-datafield="Related_items" data-type="SheetTextBox" id="ctl930291" class="" style=""></div><div id="div163890" class="col-md-2"></div><div id="div985387" class="col-md-4"></div></div><div class="row"><div id="div840950" class="col-md-2"><label data-datafield="Workflow" data-type="SheetLabel" id="ctl193964" class="" style="">关联流程</label></div><div id="div901354" class="col-md-4"><input type="text" data-datafield="Workflow" data-type="SheetTextBox" id="ctl973640" class="" style=""></div><div id="div13852" class="col-md-2"></div><div id="div244805" class="col-md-4"></div></div><div class="row"><div id="div45025" class="col-md-2"><label data-datafield="Attachment" data-type="SheetLabel" id="ctl404433" class="" style="">附件</label></div><div id="div920000" class="col-md-10"><div data-datafield="Attachment" data-type="SheetAttachment" id="ctl493051" class="" style=""></div></div></div>
+			<div class="row hidden">
+				<div id="title5" class="col-md-2">
+					<span id="Label14" data-type="SheetLabel" data-datafield="SMId" style="">专项物资id</span>
+				</div>
+				<div id="control5" class="col-md-4">
+					<input id="Control14" type="text" data-datafield="SMId" data-type="SheetTextBox" style="" class="" data-onchange="	var smid= $.MvcSheetUI.GetControlValue(&quot;SMId&quot;);
+	var dtl = $.MvcSheetUI.GetElement(&quot;SMADetails&quot;).SheetGridView();
+	dtl._Clear();
+	$.MvcSheet.Action({
+		Action : &quot;GetSpecialMaterials&quot;, // 后台方法名称
+		Datas : [ smid], // 输入参数，格式 [&quot;{数据项名称}&quot;,&quot;String值&quot;,&quot;控件ID&quot;]，当包含数据项名称时 LoadControlValue必须为true
+		LoadControlValue : true, // 是否获取表单数据
+		PostSheetInfo : false, // 是否获取已经改变的表单数据
+		OnActionDone : function(e) {
+			if (e != null) {
+				var result = e[0].Table;
+				for (var i = 0; i < result.length; i++) {
+					dtl._AddRow();
+				}
+				$.each(result, function(index, term) {
+					//遍历，给子表赋值
+					 $.MvcSheetUI.SetControlValue(&quot;SMADetails.Type&quot;,
+							term.Type, index + 1);
+					 $.MvcSheetUI.SetControlValue(&quot;SMADetails.MaterialName&quot;,
+					 		term.MaterialName, index + 1);
+	                                 $.MvcSheetUI.SetControlValue(&quot;SMADetails.Model&quot;,
+					 		term.Model, index + 1);
+					 $.MvcSheetUI.SetControlValue(&quot;SMADetails.Brand&quot;,
+							term.Brand, index + 1);
+	                                 $.MvcSheetUI.SetControlValue(&quot;SMADetails.Num&quot;,
+							term.Num, index + 1);
+	                                 $.MvcSheetUI.SetControlValue(&quot;SMADetails.Price&quot;,
+							term.Price, index + 1);
+	                                 $.MvcSheetUI.SetControlValue(&quot;SMADetails.Cost&quot;,
+							term.Cost, index + 1);
+				})
+
+			}
+		}
+	})">
+				</div>
+				<div id="space6" class="col-md-2">
+				</div>
+				<div id="spaceControl6" class="col-md-4">
+				</div>
+			</div>
+		</div>
+	</div>
+</asp:Content>

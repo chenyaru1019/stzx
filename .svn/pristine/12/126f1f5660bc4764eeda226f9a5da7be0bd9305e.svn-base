@@ -1,0 +1,2511 @@
+<BizWorkflowPackage>
+  <PackageCode>News</PackageCode>
+  <PackageName>新闻</PackageName>
+  <FunctionNode xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Serialized>true</Serialized>
+    <ObjectID>6513f553-21b9-4c32-845b-6dc42e52f816</ObjectID>
+    <ParentObjectID />
+    <ParentIndex>0</ParentIndex>
+    <Code>News</Code>
+    <IsSystem>false</IsSystem>
+    <State>Unspecified</State>
+    <ParentCode>d1c64607-c83f-4cb2-b165-69fd54298526</ParentCode>
+    <DisplayName>新闻</DisplayName>
+    <LockedBy />
+    <Description />
+    <SortKey>0</SortKey>
+    <NodeType>BizWorkflowPackage</NodeType>
+    <OpenNewWindow>false</OpenNewWindow>
+    <IsInherit>false</IsInherit>
+    <IconType>Url</IconType>
+    <IconUrl />
+    <Url />
+  </FunctionNode>
+  <BizObjectSchema>
+    <SchemaCode>News</SchemaCode>
+    <DisplayName>数据模型</DisplayName>
+    <Description />
+    <StorageType>DataList</StorageType>
+    <TableName>I_News</TableName>
+    <MainVersion>8</MainVersion>
+    <SubVersion>2</SubVersion>
+    <NameSchema />
+    <SummarySchema />
+    <Properties>
+      <PropertySchema>
+        <Name>ObjectID</Name>
+        <DisplayName>ObjectID</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Name</Name>
+        <DisplayName>Name</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedBy</Name>
+        <DisplayName>CreatedBy</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedByParentId</Name>
+        <DisplayName>CreatedByParentId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>OwnerId</Name>
+        <DisplayName>OwnerId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>OwnerParentId</Name>
+        <DisplayName>OwnerParentId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedTime</Name>
+        <DisplayName>CreatedTime</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ModifiedBy</Name>
+        <DisplayName>ModifiedBy</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ModifiedTime</Name>
+        <DisplayName>ModifiedTime</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>RunningInstanceId</Name>
+        <DisplayName>RunningInstanceId</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>true</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Publisher</Name>
+        <DisplayName>发布人</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Department</Name>
+        <DisplayName>发布部门</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Type</Name>
+        <DisplayName>新闻类型</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Title</Name>
+        <DisplayName>标题</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Content</Name>
+        <DisplayName>正文</DisplayName>
+        <LogicType>Html</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Binary</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>PublishTime</Name>
+        <DisplayName>发布日期</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <dateTime>0001-01-01T00:00:00</dateTime>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Comment1</Name>
+        <DisplayName>审批意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Hits</Name>
+        <DisplayName>点击次数</DisplayName>
+        <LogicType>Int</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <int>0</int>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>VoteNum</Name>
+        <DisplayName>点赞</DisplayName>
+        <LogicType>Int</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <int>0</int>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Status</Name>
+        <DisplayName>状态</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+    </Properties>
+    <Methods>
+      <MethodGroupSchema>
+        <MethodName>Create</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Load</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Update</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Remove</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>GetList</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Filter</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+    </Methods>
+    <Associations />
+    <ViewCollection>
+    </ViewCollection>
+  </BizObjectSchema>
+  <BizListenerPolicy>
+    <PolicyType>OneByOne</PolicyType>
+    <IntervalSecond>600</IntervalSecond>
+    <FilterMethod />
+  </BizListenerPolicy>
+  <BizQueries>
+    <BizQuery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <SchemaCode>News</SchemaCode>
+      <QueryCode>getNews</QueryCode>
+      <DisplayName>管理新闻</DisplayName>
+      <ListMethod>GetList</ListMethod>
+      <ListDefault>True</ListDefault>
+      <Columns>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>d50b1330-f9f2-475f-a88b-fee9aa504861</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>ObjectID</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>ee15d9cc-8322-4eec-8eb6-208358f3db6e</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>Name</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>719d5a28-ce12-4667-86a8-85d048a05114</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>CreatedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>67af3719-d359-4b86-9c71-dbc53190cb04</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>CreatedByParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>f9ee44cf-db07-44df-9a9d-6e9298359c50</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>4</ParentIndex>
+          <PropertyName>OwnerId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>5bdca872-b660-4816-9be9-fd310464946e</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>5</ParentIndex>
+          <PropertyName>OwnerParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>d251539c-7107-4151-9b54-a854cf55ec5c</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>6</ParentIndex>
+          <PropertyName>CreatedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>62bb4359-2247-49a5-9e02-0c961af260cf</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>7</ParentIndex>
+          <PropertyName>ModifiedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>0fb40478-8dac-4447-93a6-824201e932e8</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>8</ParentIndex>
+          <PropertyName>ModifiedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>061fc3e1-17f2-442b-8e26-f7b80fb7ddc7</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>9</ParentIndex>
+          <PropertyName>RunningInstanceId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>19cbf919-8c82-4e4a-a7fc-7c5b5f5eb38b</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>10</ParentIndex>
+          <PropertyName>Publisher</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>febe2111-4ed1-4444-b61d-f3e77adb1b7f</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>11</ParentIndex>
+          <PropertyName>Department</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>65b1fef0-4b82-4187-868b-dcada7577aff</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>12</ParentIndex>
+          <PropertyName>Type</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>b40a585d-081a-49ea-b618-6b3b3e1be082</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>13</ParentIndex>
+          <PropertyName>Title</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>f401466b-55b2-4f67-ad9f-9adde79ccf40</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>14</ParentIndex>
+          <PropertyName>Content</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>43c0401a-09e5-43b2-afcf-2cd8402e59ef</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>15</ParentIndex>
+          <PropertyName>PublishTime</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>5600c323-3441-4b79-bb2e-e87e20ebff74</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>16</ParentIndex>
+          <PropertyName>Comment1</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>1f36489c-f424-4362-b3ce-4ea3d3de25bf</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>17</ParentIndex>
+          <PropertyName>Hits</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>0d3eb5c2-6115-4dad-bc57-a349a0dd9294</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>18</ParentIndex>
+          <PropertyName>Status</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>c6944bd3-c3dd-4f5e-ac0b-a4f21337d03e</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>19</ParentIndex>
+          <PropertyName>VoteNum</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+      </Columns>
+      <QueryItems>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>b69e15f2-210b-4b25-9112-467e37071a3c</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>Title</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Contains</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>7cda8a87-b53b-4c3a-84e8-507b6a1e3236</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>Type</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>DropdownList</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues>党建类;团委类;行政类</SelectedValues>
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>aed4538a-43fa-4f15-b2cb-5aeb2e69cd0b</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>Department</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Contains</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>b8acf51b-d448-4d34-8399-4d18183ba121</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>Status</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue>"1"</DefaultValue>
+        </BizQueryItem>
+      </QueryItems>
+      <BizActions>
+        <BizQueryAction>
+          <Serialized>true</Serialized>
+          <ObjectID>0ca779ed-7e52-4416-8c79-4f129e5ff26e</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>BizActions</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <ActionCode>AddNew</ActionCode>
+          <DisplayName>添加</DisplayName>
+          <ActionType>OpenBizSheet</ActionType>
+          <BizSheetCode>SNews</BizSheetCode>
+          <Confirm>False</Confirm>
+          <AfterSave>CloseAndRefreshParent</AfterSave>
+          <WithID>False</WithID>
+          <SortKey>0</SortKey>
+        </BizQueryAction>
+        <BizQueryAction>
+          <Serialized>true</Serialized>
+          <ObjectID>21ca3d43-11d2-4982-8255-1390c8fafe85</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>BizActions</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <ActionCode>Edit</ActionCode>
+          <DisplayName>编辑</DisplayName>
+          <ActionType>OpenBizSheet</ActionType>
+          <BizSheetCode>SNews</BizSheetCode>
+          <Confirm>False</Confirm>
+          <AfterSave>CloseAndRefreshParent</AfterSave>
+          <WithID>True</WithID>
+          <SortKey>0</SortKey>
+        </BizQueryAction>
+        <BizQueryAction>
+          <Serialized>true</Serialized>
+          <ObjectID>988c8c2f-e2e1-48d7-ba67-4aee7f64ff1a</ObjectID>
+          <ParentObjectID>21383946-dfe6-44be-874d-ee13b1a1d6eb</ParentObjectID>
+          <ParentPropertyName>BizActions</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <ActionCode>Delete</ActionCode>
+          <DisplayName>移除</DisplayName>
+          <ActionType>BizMethod</ActionType>
+          <BizMethodName>Remove</BizMethodName>
+          <Confirm>True</Confirm>
+          <AfterSave>Close</AfterSave>
+          <WithID>True</WithID>
+          <SortKey>0</SortKey>
+        </BizQueryAction>
+      </BizActions>
+    </BizQuery>
+    <BizQuery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <SchemaCode>News</SchemaCode>
+      <QueryCode>viewAllNews</QueryCode>
+      <DisplayName>viewAllNews</DisplayName>
+      <ListMethod>GetList</ListMethod>
+      <ListDefault>True</ListDefault>
+      <Columns>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>87f2b128-c046-4e62-ab7c-20dac2607731</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>ObjectID</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>704ff686-0a25-466b-97ee-574db5b5614b</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>Name</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>e41bca3c-ac9b-495c-a5bc-a3b58e130db9</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>CreatedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>60842a36-e305-425b-9405-3c4ff6659bd3</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>CreatedByParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>724533fd-0953-4cbe-89d9-eb36b0ff7a0f</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>4</ParentIndex>
+          <PropertyName>OwnerId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>b45c6c1b-8da2-4f1c-84d8-efdcf3e22f9e</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>5</ParentIndex>
+          <PropertyName>OwnerParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>67be0e0b-f1b7-48c0-9163-5e1cdad4eb78</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>6</ParentIndex>
+          <PropertyName>CreatedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>ff319af0-6932-460e-b2c9-43714473bb63</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>7</ParentIndex>
+          <PropertyName>ModifiedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>2c928a98-b732-46bc-b21d-d0fb0220d9b4</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>8</ParentIndex>
+          <PropertyName>ModifiedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>49c20184-173a-42db-b3e5-31014e733509</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>9</ParentIndex>
+          <PropertyName>RunningInstanceId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>f50a27fb-3eb5-48dd-b05c-d010396f282e</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>10</ParentIndex>
+          <PropertyName>Publisher</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>d1f28560-2e24-43ae-9938-9087a8b8b838</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>11</ParentIndex>
+          <PropertyName>Department</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>188bb318-9ec4-42de-bd18-9e73e8355eff</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>12</ParentIndex>
+          <PropertyName>Type</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>40000baa-3a04-4337-b795-4687fa274e78</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>13</ParentIndex>
+          <PropertyName>Title</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>68da1be3-ff8e-458a-aa43-5b64f2e5672c</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>14</ParentIndex>
+          <PropertyName>Content</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>720d61f2-9d1e-4524-963e-2af65b263132</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>15</ParentIndex>
+          <PropertyName>PublishTime</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>702ed2ae-37ed-49b8-bb52-411e6d314919</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>16</ParentIndex>
+          <PropertyName>Comment1</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>dd2992f1-58b8-417f-8e6a-f62ade976fc4</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>17</ParentIndex>
+          <PropertyName>Hits</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>d3e198ba-de86-48f3-8a7f-6a35c5c93089</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>18</ParentIndex>
+          <PropertyName>VoteNum</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>bc247575-cd6f-4b6f-beff-ce258293ce86</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>19</ParentIndex>
+          <PropertyName>Status</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+      </Columns>
+      <QueryItems>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>1ce7af8e-ed5f-4116-be5d-1b2c8c4fb344</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>Title</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Contains</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>caf876e1-a780-4e41-8366-cde6dd5fca22</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>PublishTime</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Scope</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>98fe27f6-24da-45b5-bc7c-07ef506289d9</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>Type</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>DropdownList</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues>党建类;团委类;行政类</SelectedValues>
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>5c736b3e-a7d5-4787-a078-4aee7e2d65aa</ObjectID>
+          <ParentObjectID>f9b119a8-3569-46b0-8bd9-11313d8ea9e6</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>Status</PropertyName>
+          <Visible>False</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue>1</DefaultValue>
+        </BizQueryItem>
+      </QueryItems>
+    </BizQuery>
+  </BizQueries>
+  <BizSheets>
+    <BizSheet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>e53b3d13-1bce-4545-bed6-bb2dc21494fb</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <BizObjectSchemaCode>News</BizObjectSchemaCode>
+      <SheetCode>SNews</SheetCode>
+      <DisplayName>表单信息</DisplayName>
+      <LastModifiedBy />
+      <LastModifiedTime>2017-09-30T12:03:50</LastModifiedTime>
+      <SheetType>DefaultSheet</SheetType>
+      <DesignModeContent>&lt;div style="text-align: center;" class="DragContainer" tabindex="0"&gt;
+	&lt;label id="lblTitle" class="panel-title" tabindex="0"&gt;新闻发布&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="panel-body sheetContainer" tabindex="0"&gt;
+	&lt;div class="nav-icon fa fa-chevron-right bannerTitle"&gt;
+		&lt;label id="divBasicInfo" data-en_us="Basic information" class="" tabindex="0"&gt;基本信息&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="divContent" tabindex="0"&gt;
+		&lt;div class="row" tabindex="0"&gt;
+			&lt;div id="divFullNameTitle" class="col-md-2" tabindex="0"&gt;
+				&lt;label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" class="" tabindex="0" style="z-index: 101; cursor: move;"&gt;查看人：&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divFullName" class="col-md-4" tabindex="0"&gt;
+				&lt;label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" tabindex="0" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;Originator.UserName&lt;/span&gt;&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDateTitle" class="col-md-2" tabindex="0"&gt;
+				&lt;label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" class="" tabindex="0" style="z-index: 101; cursor: move;"&gt;查看时间：&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDate" class="col-md-4" tabindex="0"&gt;
+				&lt;label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" tabindex="0" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;OriginateTime&lt;/span&gt;&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row" tabindex="0"&gt;
+			&lt;div id="divOriginateOUNameTitle" class="col-md-2" tabindex="0"&gt;
+				&lt;label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" class="" tabindex="0" style="z-index: 101; cursor: move;"&gt;所属部门：&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateOUName" class="col-md-4" tabindex="0"&gt;
+				&lt;!--					&lt;label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData"&gt;
+&lt;span class="OnlyDesigner"&gt;Originator.OUName&lt;/span&gt;
+					&lt;/label&gt;--&gt;
+					&lt;select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style="z-index: 101; cursor: move;"&gt;
+					&lt;/select&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNoTitle" class="col-md-2" tabindex="0"&gt;
+					&lt;label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" class="" tabindex="0" style="z-index: 101; cursor: move;"&gt;新闻编号：&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNo" class="col-md-4" tabindex="0"&gt;
+					&lt;label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" tabindex="0" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;SequenceNo&lt;/span&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+			&lt;label id="divSheetInfo" data-en_us="Sheet information" tabindex="0" class=""&gt;新闻内容&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class="divContent" id="divSheet" tabindex="0"&gt;
+			&lt;div class="row designer" tabindex="0"&gt;&lt;div id="div815563" class="designer col-md-2" tabindex="0"&gt;&lt;label data-datafield="Publisher" data-type="SheetLabel" id="ctl52025" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;发布人&lt;/label&gt;&lt;/div&gt;&lt;div id="div375664" class="designer col-md-4" tabindex="0"&gt;&lt;input type="text" data-datafield="Publisher" data-type="SheetTextBox" id="ctl851463" class="" style="z-index: 101; cursor: move;"&gt;&lt;/div&gt;&lt;div id="div570419" class="designer col-md-2" tabindex="0"&gt;&lt;label data-datafield="Department" data-type="SheetLabel" id="ctl742090" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;发布部门&lt;/label&gt;&lt;/div&gt;&lt;div id="div96567" class="designer col-md-4" tabindex="0"&gt;&lt;input type="text" data-datafield="Department" data-type="SheetTextBox" id="ctl953869" class="" style="z-index: 101; cursor: move;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row" tabindex="0"&gt;&lt;div id="div431636" class="col-md-2" tabindex="0"&gt;&lt;label data-datafield="Type" data-type="SheetLabel" id="ctl113916" class="" tabindex="0" style="z-index: 101; cursor: move;"&gt;新闻类型：&lt;/label&gt;&lt;/div&gt;&lt;div id="div338829" class="col-md-10" tabindex="0"&gt;&lt;div data-datafield="Type" data-type="SheetRadioButtonList" id="ctl417204" class="" style="z-index: 101; cursor: move;" data-defaultitems="党建类;团委类;行政类" data-defaultselected="false"&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="radio"&gt;选项一&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;input type="radio"&gt;选项二&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="div980797" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label11" data-type="SheetLabel" data-datafield="Title" class="" style="z-index: 101; cursor: move;"&gt;新闻标题：&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div742307" class="col-md-10" tabindex="0"&gt;
+					&lt;input id="Control11" type="text" data-datafield="Title" data-type="SheetTextBox" class="" data-onchange="var title = $.MvcSheetUI.GetControlValue(&amp;quot;Title&amp;quot;); 
+$(&amp;quot;#lblTitle&amp;quot;).text(title);" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row tableContent" tabindex="0"&gt;
+				&lt;div id="title3" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label12" data-type="SheetLabel" data-datafield="Content" class="" style="z-index: 101; cursor: move;"&gt;新闻正文：&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control3" class="col-md-10" tabindex="0"&gt;
+					&lt;textarea id="Control12" data-datafield="Content" data-richtextbox="true" data-type="SheetRichTextBox" class="" style="z-index: 101; cursor: move; height: 300px;"&gt;					&lt;/textarea&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;&lt;div id="div941419" class="col-md-2" tabindex="0"&gt;&lt;span id="Label14" data-type="SheetLabel" data-datafield="PublishTime" class="" style="z-index: 101; cursor: move;"&gt;新闻发布时间：&lt;/span&gt;&lt;/div&gt;&lt;div id="div158589" class="col-md-4" tabindex="0"&gt;&lt;input id="Control14" type="text" data-datafield="PublishTime" data-type="SheetTime" class="" disabled="true" style="z-index: 101; cursor: move;" data-timemode="FullTime"&gt;&lt;/div&gt;&lt;div id="div37291" class="col-md-2" tabindex="0"&gt;&lt;/div&gt;&lt;div id="div489223" class="col-md-4" tabindex="0"&gt;&lt;/div&gt;&lt;/div&gt;
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+</DesignModeContent>
+      <Javascript>
+        $.MvcSheet.PreInit = function () {
+
+               $("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label11');
+               $("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label12');
+               $("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#ctl113916');
+
+
+               var title = $.MvcSheetUI.GetControlValue("Title"); 
+                if(title){
+
+                    $("#lblTitle").text(title);
+
+                   }
+
+            // 将提交按钮文字改为通过
+
+         if ($.MvcSheetUI.SheetInfo.ActivityCode == "Approve") {
+
+                $.MvcSheet.SubmitAction.Text = "同意";
+            
+          // $("li[data-action='Submit']").find("span").html('同意');                    
+            }
+        };
+
+   // 保存前事件
+        $.MvcSheet.SaveAction.OnActionPreDo = function () {
+                 var title = $.MvcSheetUI.GetControlValue("Title"); 
+                 $("#lblTitle").text(title);
+
+        }
+
+        $.MvcSheet.SubmitAction.OnActionPreDo = function () {
+                 var title = $.MvcSheetUI.GetControlValue("Title"); 
+                 $("#lblTitle").text(title);
+
+        }
+
+
+
+
+
+</Javascript>
+      <RuntimeContent>&lt;script type="text/javascript"&gt;
+
+        $.MvcSheet.PreInit = function () {
+
+               $("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label11');
+               $("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label12');
+               $("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#ctl113916');
+
+
+               var title = $.MvcSheetUI.GetControlValue("Title"); 
+                if(title){
+
+                    $("#lblTitle").text(title);
+
+                   }
+
+            // 将提交按钮文字改为通过
+
+         if ($.MvcSheetUI.SheetInfo.ActivityCode == "Approve") {
+
+                $.MvcSheet.SubmitAction.Text = "同意";
+            
+          // $("li[data-action='Submit']").find("span").html('同意');                    
+            }
+        };
+
+   // 保存前事件
+        $.MvcSheet.SaveAction.OnActionPreDo = function () {
+                 var title = $.MvcSheetUI.GetControlValue("Title"); 
+                 $("#lblTitle").text(title);
+
+        }
+
+        $.MvcSheet.SubmitAction.OnActionPreDo = function () {
+                 var title = $.MvcSheetUI.GetControlValue("Title"); 
+                 $("#lblTitle").text(title);
+
+        }
+
+
+
+
+
+
+&lt;/script&gt;
+&lt;div style="text-align: center;" class="DragContainer"&gt;
+	&lt;label id="lblTitle" class="panel-title"&gt;新闻发布&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="panel-body sheetContainer"&gt;
+	&lt;div class="nav-icon fa fa-chevron-right bannerTitle"&gt;
+		&lt;label id="divBasicInfo" data-en_us="Basic information" class=""&gt;基本信息&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="divContent"&gt;
+		&lt;div class="row"&gt;
+			&lt;div id="divFullNameTitle" class="col-md-2"&gt;
+				&lt;label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" class="" style=""&gt;查看人：&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divFullName" class="col-md-4"&gt;
+				&lt;label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" style=""&gt;&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDateTitle" class="col-md-2"&gt;
+				&lt;label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" class="" style=""&gt;查看时间：&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDate" class="col-md-4"&gt;
+				&lt;label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" style=""&gt;&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row"&gt;
+			&lt;div id="divOriginateOUNameTitle" class="col-md-2"&gt;
+				&lt;label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" class="" style=""&gt;所属部门：&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateOUName" class="col-md-4"&gt;
+				&lt;!--					&lt;label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData"&gt;
+&lt;span class="OnlyDesigner"&gt;Originator.OUName&lt;/span&gt;
+					&lt;/label&gt;--&gt;
+					&lt;select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style=""&gt;
+					&lt;/select&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNoTitle" class="col-md-2"&gt;
+					&lt;label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" class="" style=""&gt;新闻编号：&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNo" class="col-md-4"&gt;
+					&lt;label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" style=""&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+			&lt;label id="divSheetInfo" data-en_us="Sheet information" class=""&gt;新闻内容&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class="divContent" id="divSheet"&gt;
+			&lt;div class="row"&gt;&lt;div id="div815563" class="col-md-2"&gt;&lt;label data-datafield="Publisher" data-type="SheetLabel" id="ctl52025" class="" style=""&gt;发布人&lt;/label&gt;&lt;/div&gt;&lt;div id="div375664" class="col-md-4"&gt;&lt;input type="text" data-datafield="Publisher" data-type="SheetTextBox" id="ctl851463" class="" style=""&gt;&lt;/div&gt;&lt;div id="div570419" class="col-md-2"&gt;&lt;label data-datafield="Department" data-type="SheetLabel" id="ctl742090" class="" style=""&gt;发布部门&lt;/label&gt;&lt;/div&gt;&lt;div id="div96567" class="col-md-4"&gt;&lt;input type="text" data-datafield="Department" data-type="SheetTextBox" id="ctl953869" class="" style=""&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div id="div431636" class="col-md-2"&gt;&lt;label data-datafield="Type" data-type="SheetLabel" id="ctl113916" class="" style=""&gt;新闻类型：&lt;/label&gt;&lt;/div&gt;&lt;div id="div338829" class="col-md-10"&gt;&lt;div data-datafield="Type" data-type="SheetRadioButtonList" id="ctl417204" class="" style="" data-defaultitems="党建类;团委类;行政类" data-defaultselected="false"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row"&gt;
+				&lt;div id="div980797" class="col-md-2"&gt;
+					&lt;span id="Label11" data-type="SheetLabel" data-datafield="Title" class="" style=""&gt;新闻标题：&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div742307" class="col-md-10"&gt;
+					&lt;input id="Control11" type="text" data-datafield="Title" data-type="SheetTextBox" class="" data-onchange="var title = $.MvcSheetUI.GetControlValue(&amp;quot;Title&amp;quot;); 
+$(&amp;quot;#lblTitle&amp;quot;).text(title);" style=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row tableContent"&gt;
+				&lt;div id="title3" class="col-md-2"&gt;
+					&lt;span id="Label12" data-type="SheetLabel" data-datafield="Content" class="" style=""&gt;新闻正文：&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control3" class="col-md-10"&gt;
+					&lt;textarea id="Control12" data-datafield="Content" data-richtextbox="true" data-type="SheetRichTextBox" class="" style="height: 300px;"&gt;					&lt;/textarea&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;&lt;div id="div941419" class="col-md-2"&gt;&lt;span id="Label14" data-type="SheetLabel" data-datafield="PublishTime" class="" style=""&gt;新闻发布时间：&lt;/span&gt;&lt;/div&gt;&lt;div id="div158589" class="col-md-4"&gt;&lt;input id="Control14" type="text" data-datafield="PublishTime" data-type="SheetTime" class="" disabled="true" style="" data-timemode="FullTime"&gt;&lt;/div&gt;&lt;div id="div37291" class="col-md-2"&gt;&lt;/div&gt;&lt;div id="div489223" class="col-md-4"&gt;&lt;/div&gt;&lt;/div&gt;
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+</RuntimeContent>
+      <EnabledCode>false</EnabledCode>
+      <CodeContent>using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace OThinker.H3.Portal.Sheets.DefaultEngine
+{
+    public partial class SNews : OThinker.H3.Controllers.MvcPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+    }
+}
+</CodeContent>
+      <SheetAddress>SNews.aspx</SheetAddress>
+      <MobileSheetAddress />
+      <IsMVC>true</IsMVC>
+    </BizSheet>
+  </BizSheets>
+  <WorkflowTemplates>
+    <WorkflowTemplate>
+      <WorkflowTemplateName>新闻发布流程</WorkflowTemplateName>
+      <WorkflowDocument>
+        <WorkflowCode>News</WorkflowCode>
+        <BizObjectSchemaCode>News</BizObjectSchemaCode>
+        <Description>
+        </Description>
+        <RequirePost>False</RequirePost>
+        <PlanUsedTime>
+        </PlanUsedTime>
+        <PlanRecurrences>0</PlanRecurrences>
+        <ShortText1>
+        </ShortText1>
+        <ShortText2>
+        </ShortText2>
+        <ShortText3>
+        </ShortText3>
+        <ShortText4>
+        </ShortText4>
+        <ShortText5>
+        </ShortText5>
+        <LongText6>
+        </LongText6>
+        <LongText7>
+        </LongText7>
+        <InstanceName>
+        </InstanceName>
+        <OnCancelActions />
+        <OnStartActions />
+        <OnFinishActions />
+        <Activities>
+          <StartActivity>
+            <ActivityType>Start</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity1</ClassName>
+            <Custom>False</Custom>
+            <CustomCode />
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>0</SortKey>
+            <ActivityCode>Activity1</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Start</ActivityType>
+            <ID>1</ID>
+            <Text>开始</Text>
+            <ActivityCode>Activity1</ActivityCode>
+            <X>272</X>
+            <Y>50</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+          </StartActivity>
+          <EndActivity>
+            <ActivityType>End</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity4</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity4 : SmartActivity
+	{
+		public Activity4()
+		{
+			// 请不要在这里填写代码，因为在执行这段代码的时候会阻塞引擎的某些组件
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity4</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>End</ActivityType>
+            <ID>4</ID>
+            <Text>发布完成</Text>
+            <ActivityCode>Activity4</ActivityCode>
+            <X>272</X>
+            <Y>485</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+          </EndActivity>
+          <FillSheetActivity>
+            <ActivityType>FillSheet</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity2</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity2 : FillSheetActivity
+	{
+		public Activity2()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity2</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>FillSheet</ActivityType>
+            <ID>2</ID>
+            <Text>发布新闻</Text>
+            <ActivityCode>Activity2</ActivityCode>
+            <X>272</X>
+            <Y>136</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SNews</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Title</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Content</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Publisher</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PublishTime</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Comment1</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Hits</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>VoteNum</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SNews</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>False</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>True</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+          </FillSheetActivity>
+          <ApproveActivity>
+            <ActivityType>Approve</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Approve</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Approve : FillSheetActivity
+	{
+		public Approve()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Approve</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <BeforeExecute>
+              <Receivers>
+              </Receivers>
+              <Title>
+              </Title>
+              <Content>
+              </Content>
+              <Condition>
+              </Condition>
+              <NotifyType>Unspecified</NotifyType>
+              <CancelParllelActivities>False</CancelParllelActivities>
+              <DataMaps />
+              <BizActions />
+            </BeforeExecute>
+            <Rejected>
+              <Receivers>
+              </Receivers>
+              <Title>
+              </Title>
+              <Content>
+              </Content>
+              <Condition>
+              </Condition>
+              <NotifyType>Unspecified</NotifyType>
+              <CancelParllelActivities>False</CancelParllelActivities>
+              <DataMaps />
+              <BizActions />
+            </Rejected>
+            <Approved>
+              <Receivers>
+              </Receivers>
+              <Title>
+              </Title>
+              <Content>
+              </Content>
+              <Condition>
+              </Condition>
+              <NotifyType>Default</NotifyType>
+              <CancelParllelActivities>False</CancelParllelActivities>
+              <DataMaps>
+                <Map>
+                  <DataItem>PublishTime</DataItem>
+                  <Value>{CurrentTime}</Value>
+                  <Disposal>Set</Disposal>
+                </Map>
+              </DataMaps>
+              <BizActions />
+            </Approved>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Approve</ActivityType>
+            <ID>9</ID>
+            <Text>新闻管理员审核</Text>
+            <ActivityCode>Approve</ActivityCode>
+            <X>272</X>
+            <Y>223</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>U(f56e6d3f-11a7-4b6f-90f1-bf5c6ca96625)</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SNews</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Title</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Content</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Publisher</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PublishTime</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Comment1</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Hits</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>VoteNum</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>U(f56e6d3f-11a7-4b6f-90f1-bf5c6ca96625)</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SNews</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>True</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+          </ApproveActivity>
+          <ApproveActivity>
+            <ActivityType>Approve</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Approve1</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Approve1 : FillSheetActivity
+	{
+		public Approve1()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Approve1</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <Approved>
+              <Receivers>
+              </Receivers>
+              <Title>
+              </Title>
+              <Content>
+              </Content>
+              <Condition>
+              </Condition>
+              <NotifyType>Default</NotifyType>
+              <CancelParllelActivities>False</CancelParllelActivities>
+              <DataMaps>
+                <Map>
+                  <DataItem>PublishTime</DataItem>
+                  <Value>NOW()</Value>
+                  <Disposal>Set</Disposal>
+                </Map>
+                <Map>
+                  <DataItem>Status</DataItem>
+                  <Value>"1"</Value>
+                  <Disposal>Set</Disposal>
+                </Map>
+              </DataMaps>
+              <BizActions />
+            </Approved>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Approve</ActivityType>
+            <ID>14</ID>
+            <Text>综合办主管审核</Text>
+            <ActivityCode>Approve1</ActivityCode>
+            <X>272</X>
+            <Y>310</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SNews</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Title</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Content</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Publisher</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PublishTime</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Comment1</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>True</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Hits</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>VoteNum</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SNews</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>True</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+          </ApproveActivity>
+          <SubInstanceActivity>
+            <ActivityType>SubInstance</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity23</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+namespace OThinker.H3.BPM
+{
+	public class Activity23 : SubInstanceActivity
+	{
+		public Activity23()
+		{
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity23</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>SubInstance</ActivityType>
+            <ID>23</ID>
+            <Text>子流程</Text>
+            <ActivityCode>Activity23</ActivityCode>
+            <X>272</X>
+            <Y>395</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <WorkflowCode>NewsView</WorkflowCode>
+            <WorkflowVersion>0</WorkflowVersion>
+            <Sync>True</Sync>
+            <FinishStartActivity>True</FinishStartActivity>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <DataMaps>
+              <DataMap>
+                <ParentDataName>PublishTime</ParentDataName>
+                <ChildDataName>PublishTime</ChildDataName>
+                <Type>In</Type>
+              </DataMap>
+              <DataMap>
+                <ParentDataName>Department</ParentDataName>
+                <ChildDataName>Department</ChildDataName>
+                <Type>In</Type>
+              </DataMap>
+              <DataMap>
+                <ParentDataName>Type</ParentDataName>
+                <ChildDataName>Type</ChildDataName>
+                <Type>In</Type>
+              </DataMap>
+              <DataMap>
+                <ParentDataName>Title</ParentDataName>
+                <ChildDataName>Title</ChildDataName>
+                <Type>In</Type>
+              </DataMap>
+              <DataMap>
+                <ParentDataName>Content</ParentDataName>
+                <ChildDataName>Content</ChildDataName>
+                <Type>In</Type>
+              </DataMap>
+              <DataMap>
+                <ParentDataName>Hits</ParentDataName>
+                <ChildDataName>Hits</ChildDataName>
+                <Type>In</Type>
+              </DataMap>
+              <DataMap>
+                <ParentDataName>VoteNum</ParentDataName>
+                <ChildDataName>VoteNum</ChildDataName>
+                <Type>In</Type>
+              </DataMap>
+            </DataMaps>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+            <FinishExit>1</FinishExit>
+            <Participants>{Originator}</Participants>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+          </SubInstanceActivity>
+        </Activities>
+        <Rules>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>5</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Activity1</PreActivityCode>
+            <PostActivityCode>Activity2</PostActivityCode>
+            <Points>
+              <Point>272,70</Point>
+              <Point>272,116</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>12</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Activity2</PreActivityCode>
+            <PostActivityCode>Approve</PostActivityCode>
+            <Points>
+              <Point>272,156</Point>
+              <Point>272,203</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>18</ID>
+            <Text>Y</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>True</Formula>
+            <PreActivityCode>Approve</PreActivityCode>
+            <PostActivityCode>Approve1</PostActivityCode>
+            <Points>
+              <Point>272,243</Point>
+              <Point>272,290</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>20</ID>
+            <Text>N</Text>
+            <UtilizeElse>True</UtilizeElse>
+            <FixedPoint>True</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Approve1</PreActivityCode>
+            <PostActivityCode>Activity2</PostActivityCode>
+            <Points>
+              <Point>344,310</Point>
+              <Point>448,310</Point>
+              <Point>448,136</Point>
+              <Point>344,136</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>22</ID>
+            <Text>N</Text>
+            <UtilizeElse>True</UtilizeElse>
+            <FixedPoint>True</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Approve</PreActivityCode>
+            <PostActivityCode>Activity2</PostActivityCode>
+            <Points>
+              <Point>344,223</Point>
+              <Point>448,223</Point>
+              <Point>448,136</Point>
+              <Point>344,136</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>24</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>True</Formula>
+            <PreActivityCode>Approve1</PreActivityCode>
+            <PostActivityCode>Activity23</PostActivityCode>
+            <Points>
+              <Point>272,330</Point>
+              <Point>272,375</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>25</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Activity23</PreActivityCode>
+            <PostActivityCode>Activity4</PostActivityCode>
+            <Points>
+              <Point>272,415</Point>
+              <Point>272,465</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+        </Rules>
+      </WorkflowDocument>
+      <Simulations />
+      <WorkflowClause xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Serialized>true</Serialized>
+        <ObjectID>c881e82f-d7dd-4245-a338-28aa73a72a6b</ObjectID>
+        <ParentObjectID />
+        <ParentIndex>0</ParentIndex>
+        <SortKey>0</SortKey>
+        <WorkflowName>新闻发布流程</WorkflowName>
+        <BizSchemaCode>News</BizSchemaCode>
+        <WorkflowCode>News</WorkflowCode>
+        <CurrentNewVersion>8</CurrentNewVersion>
+        <DefaultVersion>7</DefaultVersion>
+        <State>Active</State>
+        <MobileStart>false</MobileStart>
+        <SeqNoResetType>None</SeqNoResetType>
+      </WorkflowClause>
+    </WorkflowTemplate>
+  </WorkflowTemplates>
+</BizWorkflowPackage>

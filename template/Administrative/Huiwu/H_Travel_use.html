@@ -1,0 +1,31 @@
+<!-- 会议室使用情况 -->
+<script>
+    scheduleCalendarBytravelName.initCalendar();
+</script>
+
+<div class='hbox hbox-auto-xs hbox-auto-sm ng-scope'>
+    <div class="col" id='box' >
+        <div class=" HYSsiyong">
+            <div class="col-md-6" style="margin-top: 3px;">
+                <ul class="HYS_left">
+                    <li class="HYS_Pending">待审批</li>
+                    <li class="HYS_Approval">审批中</li>
+                    <li class="HYS_Approved">已审批</li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="margin-top: 4px;">
+                <span style='float: left;line-height:29px;'>出差对象:</span>
+                <input type="search" placeholder="请输入..." id="travelName" class="form-control" style="width: 30%;display: inline-block;">
+                <button class="btn btn-sm btn-default" type="button" style="height:30px;margin-top: -3px;" id="btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div id='calendar' class='calendarByTravel' style='margin-top: 50px;'>
+            <div id=calendar-overlay>
+                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+

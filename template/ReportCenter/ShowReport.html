@@ -1,0 +1,50 @@
+﻿<!--
+    报表中心
+     -->
+<!-- ng-init="
+     app.settings.asideFolded=false;
+     app.settings.asideDock=false;"  -->
+<div class="hbox hbox-auto-xs hbox-auto-sm" id="Report">
+    <!-- main -->
+    <div class="col">
+        <!-- main header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <span class="h3" ng-bind="menuData.DisplayName"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-md paddingbottomNone">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="form-inline">
+                        <div class="btn-group btn-default">
+                            <button ng-click="Search()" class="btn btn-default">
+                                <i class="fa fa-search"></i>
+                                <span style=" margin-left:5px;" translate="QueryTableColumn.DataFilter_Query"></span>
+                            </button>
+                            <button ng-click="ExportReport()" class="btn btn-default">
+                                <i class="fa fa-download"></i>
+                                <span style=" margin-left:5px;" translate="H3TreeTools.Button_Export"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="msg"></div>
+                <div class="panel-body" style="min-height: 300px">
+                    <div ui-jq="LoadReport" ui-options="options()" ui-refresh="iChange"
+                         id="ParamContent">
+                    </div>
+                    <div id="ReportView">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--表格部分Start-->
+        <!--表格部分End-->
+    </div>
+    <!-- / main -->
+</div>

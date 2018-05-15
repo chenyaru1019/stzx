@@ -1,0 +1,261 @@
+/*查询列表 样式二次修改*/
+
+/*信息化设备台账查询 固定资产库查询&&维护 页面调整*/
+.dataTable-sbxxhcx .divBox,.dataTable-FAQuery .divBox,.dataTable-FAManage .divBox{
+    margin: 0px!important;
+    padding: 6px;
+    border-bottom: 1px dashed #C4C4C4;
+}
+.dataTable-sbxxhcx .input-group-addon,.dataTable-FAQuery .input-group-addon,.dataTable-FAManage .input-group-addon {
+    border: 0;
+    background-color: #fff;
+    width: 12%!important;
+    text-align: left;
+    padding-left: 35px;
+}
+.dataTable-sbxxhcx .input-group label,.dataTable-FAQuery .input-group label,.dataTable-FAManage .input-group label {
+    padding-right: 12px;
+}
+.dataTable-sbxxhcx .divBox .form-control,.dataTable-FAQuery .divBox .form-control,.dataTable-FAManage .divBox .form-control {
+    width:15%;
+}
+.dataTable-sbxxhcx .select2-container,.dataTable-FAQuery .select2-container {
+    width:15%;
+}
+.search-sbxxhcx .divBox:first-child,.dataTable-FAQuery .divBox:first-child,.dataTable-FAManage .divBox:first-child {
+    border-top: 1px dashed #C4C4C4;
+}
+
+.filter-wlzycx,.filter-FAQuery,.filter-getConsumables,.filter-sbxxhcx,.filter-ViewNews,.filter-ggcx {
+    display: none;
+    text-align: center;
+    padding: 9px 5px!important;
+    /*border-bottom: 1px solid #C4C4C4;*/
+    margin: 0!important;
+}
+/*网络资源台账查询 易耗品查询样式调整*/
+.dataTable-wlzycx .divBox,.dataTable-getConsumables .divBox {
+    margin: 0px!important;
+    padding: 6px;
+    border-bottom: 1px dashed #C4C4C4;
+}
+.dataTable-wlzycx .input-group-addon,.dataTable-getConsumables  .input-group-addon {
+    border: 0;
+    background-color: #fff;
+    width: 12%!important;
+    padding-left: 35px;
+    text-align: left;
+}
+.dataTable-wlzycx .input-group label,.dataTable-getConsumables  .input-group label {
+    padding-right: 12px;
+}
+.dataTable-wlzycx .divBox .form-control, .dataTable-getConsumables  .divBox .form-control {
+    width:15%;
+}
+.dataTable-wlzycx .select2-container,.dataTable-getConsumables  .select2-container {
+    width:15%;
+}
+.search-wlzycx .divBox:first-child,.search-getConsumables  .divBox:first-child {
+    border-top: 1px dashed #C4C4C4;
+}
+/*信息化设备台账维护页面修改*/
+.dataTable-sbxxhwh .divBox,.dataTable-wlzygl .divBox {
+    margin: 0px!important;
+    padding: 6px;
+    border-top: 1px dashed #C4C4C4;
+}
+.dataTable-sbxxhwh .input-group-addon,.dataTable-wlzygl  .input-group-addon {
+    border: 0;
+    background-color: #fff;
+    width: 12%!important;
+    padding-left: 35px;
+    text-align: left;
+}
+.dataTable-sbxxhwh .input-group label,.dataTable-wlzygl  .input-group label {
+    padding-right: 12px;
+}
+.dataTable-sbxxhwh .divBox .form-control, .dataTable-wlzygl  .divBox .form-control {
+    width:15%;
+}
+.dataTable-sbxxhwh .select2-container,.dataTable-wlzygl .select2-container {
+    width:15%;
+}
+.search-sbxxhwh .divBox:last-child,.search-wlzygl  .divBox:last-child {
+    border-bottom: 1px dashed #C4C4C4;
+}
+.btn-yhpmlgl .btn-group:last-child,.btn-sbxxhwh .btn-group:last-child {
+    display: none;
+}
+
+/*新闻、公告页面调整*/
+/*.dataTable-ViewNews .divBox,.dataTable-ggcx .divBox {*/
+    /*margin: 0px!important;*/
+    /*padding: 6px;*/
+    /*border-top: 1px dashed #C4C4C4;*/
+    /*!*border-bottom: 1px dashed #C4C4C4;*!*/
+/*}*/
+.dataTable-ViewNews .divBox,.dataTable-ggcx .divBox {
+    margin: 0px!important;
+    padding: 6px;
+    /*border-top: 1px dashed #C4C4C4;*/
+    border-bottom: 1px dashed #C4C4C4;
+}
+.dataTable-ggcx .input-group-addon,.dataTable-ViewNews .input-group-addon {
+    border: 0;
+    background-color: #fff;
+    width: 12%!important;
+    padding-left: 35px;
+    text-align: left;
+}
+.dataTable-ggcx .divBox .form-control,.dataTable-ViewNews .divBox .form-control {
+    width: 16%;
+}
+.searchTime {
+    width: 36%!important;
+}
+.dataTable-ViewNews .input-group .searchTime .input-sm,.dataTable-ggcx .input-group .searchTime .input-sm {
+    width:100%;
+}
+.search-ggcx .divBox:first-child {
+    border-top: 1px dashed #C4C4C4;
+}
+.search-ViewNews .divBox:first-child {
+    border-top: 1px dashed #C4C4C4;
+}
+.search-FAQuery .searchTime {
+    width: 34%!important;
+}
+.search-FAQuery .searchTime .input-sm {
+    width: 100%;
+}
+/*易耗品目录库管理 证照资料库*/
+.dataTable-yhpmlgl .divBox,.dataTable-getLicense .divBox,.dataTable-LicenseManage .divBox{
+    margin: 0px!important;
+    padding: 6px;
+    border-top: 1px dashed #C4C4C4;
+}
+
+.dataTable-yhpmlgl .input-group-addon,.dataTable-getLicense .input-group-addon,.dataTable-LicenseManage  .input-group-addon {
+    border: 0;
+    background-color: #fff;
+    width: 12%!important;
+    padding-left: 35px;
+    text-align: left;
+}
+.dataTable-yhpmlgl .input-group label {
+    padding-right: 12px;
+}
+.dataTable-yhpmlgl .select2-container {
+    width:15%;
+}
+.dataTable-yhpmlgl .divBox .form-control,.dataTable-getLicense .divBox .form-control,.dataTable-LicenseManage .divBox .form-control {
+    width:15%;
+}
+.dataTable-yhpmlgl .radioBtn {
+    margin-top: 4px;
+}
+.search-yhpmlgl .divBox:last-child,.search-getLicense .divBox:last-child,.search-LicenseManage .divBox:last-child {
+    border-bottom: 1px dashed #C4C4C4;
+}
+.search-wlzygl,.search-sbxxhwh {
+    margin-top: 20px;
+}
+.file {
+    color: #58666e;
+    line-height: 16px;
+}
+.file input {
+    position: absolute;
+}
+
+.search-FAQuery .form-control,.search-sbxxhcx .form-control {
+    padding: 3px 6px;
+}
+/*通讯录页面样式调整 印章信息查询 印章信息维护*/
+.dataTable-TXLCX .divBox,.dataTable-yzcx  .divBox,.dataTable-yzwh  .divBox {
+    margin: 0px!important;
+    padding: 6px;
+    border-bottom: 1px dashed #C4C4C4;
+}
+.dataTable-TXLCX .input-group-addon,.dataTable-yzcx  .input-group-addon,.dataTable-yzwh  .input-group-addon {
+    border: 0;
+    background-color: #fff;
+    width: 12%!important;
+    padding-left: 35px;
+    text-align: left;
+}
+.dataTable-TXLCX .input-group label,.dataTable-yzcx  .input-group label,.dataTable-yzwh  .input-group label {
+    padding-right: 12px;
+}
+.dataTable-TXLCX .divBox .form-control,.dataTable-yzcx  .divBox .form-control,.dataTable-yzwh  .divBox .form-control {
+    width:15%;
+}
+.dataTable-TXLCXh .select2-container,.dataTable-yzcx  .select2-container,.dataTable-yzwh  .select2-container {
+    width:15%;
+}
+.dataTable-TXLCX .divBox:first-child,.search-yzcx  .divBox:first-child,.search-yzwh  .divBox:first-child {
+    border-top: 1px dashed #C4C4C4;
+}
+.filter-TXLCX,.filter-yzcx  {
+    text-align: center;
+}
+.search-TXLCX,.search-yzcx,.search-wlzycx,.search-FAQuery,.search-getConsumables,.search-sbxxhcx,.search-sbxxhwh,.search-ViewNews,.search-ggcx {
+    margin-bottom: 22px;
+}
+.btn-TXLCX .btn,.btn-wlzycx .btn,.btn-yzcx .btn,.btn-FAQuery .btn,.btn-getConsumables .btn,.btn-sbxxhcx .btn,.btn-ViewNews .btn,.btn-ggcx .btn   {
+    padding: 9px 35px;
+}
+
+
+.dataTable-zjkxxcx .divBox {
+    margin: 0px!important;
+    padding: 6px;
+    border-bottom: 1px dashed #C4C4C4;
+}
+.dataTable-zjkxxcx .input-group-addon {
+    border: 0;
+    background-color: #fff;
+    width: 12%!important;
+    padding-left: 35px;
+    text-align: left;
+}
+.dataTable-zjkxxcx .input-group label {
+    padding-right: 12px;
+}
+.dataTable-zjkxxcx .divBox .form-control {
+    width:15%;
+}
+.dataTable-zjkxxcx .select2-container {
+    width:15%;
+}
+.dataTable-zjkxxcx .divBox:first-child{
+    border-top: 1px dashed #C4C4C4;
+}
+.filter-zjkxxcx,.filter-yzcx  {
+    text-align: center;
+}
+.search-zjkxxcx {
+    margin-bottom: 22px;
+}
+.btn-TXLCX .btn,.btn-wlzycx .btn,.btn-yzcx .btn,.btn-FAQuery .btn,.btn-getConsumables .btn,.btn-sbxxhcx .btn,.btn-ViewNews .btn,.btn-zjkxxcx .btn  {
+    padding: 9px 35px;
+}
+
+.dropDown {
+    height: 1px;
+    background: #dee5e7;
+    margin-top: -1px;
+    position: relative;
+}
+.Btn_dropDown {
+    background: url(../../img/icon_arrow.png) no-repeat -61px 0px;
+    width: 61px;
+    height: 17px;
+    position: absolute;
+    top: 1px;
+    margin-left: -30px;
+    left: 50%;
+}
+.Btn_dropup {
+    background: url(../../img/icon_arrow.png) no-repeat 0px 0px;
+}

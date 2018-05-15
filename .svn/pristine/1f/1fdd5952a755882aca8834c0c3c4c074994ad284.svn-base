@@ -1,0 +1,103 @@
+<!-- 首页新闻模块 -->
+<div id="carousel-example-generic" class="carousel slide"  data-ride="carousel">
+    <!-- Indicators -->
+    <div class="BG">
+        <ol class="carousel-indicators">
+        </ol>
+    </div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner lunbo" role="listbox">
+
+    </div>
+</div>
+<style>
+    #carousel-example-generic {
+        height: 235px;
+        width:100%;
+    }
+    .carousel-caption {
+        text-shadow: 0 0px 0px rgba(0, 0, 0,0);
+    }
+    .carousel-inner > .item {
+        /* position: static; */
+    }
+    .panel-body {
+        padding: 5px;
+    }
+    .BG {
+        width: 100%;
+        height: 30px;
+        background: rgba(0, 0, 0, .4);;
+        z-index: 2;
+        position: absolute;
+        top: 183px;
+
+    }
+    .BG  ol li {
+        margin-right: 5px;
+    }
+    .lunbo img {
+        width: 100%;
+        height: 213px;
+    }
+    .item {
+        height: 236px;
+    }
+    .item p {
+        padding: 0px;
+        position: absolute;
+        bottom: 0px;
+        color: black;
+        text-align: left;
+        left: 0px;
+        right: 0px;
+        font-size: 14px;
+    }
+    .BG .carousel-indicators .active {
+        margin-right: 4px;
+    }
+</style>
+<script>
+    $(function(){
+        $('.carousel').carousel({
+            interval: 3000
+        });
+        $.ajax({
+            type: "GET",
+            async: false,
+            url: url+'news/list',
+            dataType: "jsonp",//加入这个选项即可
+            jsonpCallback: "callbackName",
+            //traditional: true,
+            success: function (msg) {
+                var html1 = '';
+                var html2 = '';
+                msg.forEach(function(item, index){
+                    if(index<=2){
+                        if (item.firstImage === null) {
+                            item.firstImage = 'img/timg.jpg';
+                        }
+                        if (index == 0) {
+                            item.objectid = 'http://'+location.hostname+':'+location.port+'/Portal/MvcDefaultSheet.aspx?SheetCode=SNews&Mode=View&SchemaCode=News&BizObjectID='+item.objectid;
+//                            item.objectid = 'http://localhost:8010/Portal/MvcDefaultSheet.aspx?SheetCode=SNews&Mode=View&SchemaCode=News&BizObjectID='+item.objectid;
+//                            console.log(item.objectid)
+                            html1 = '<li data-target="#carousel-example-generic" data-slide-to="'+index+'" class="active"></li>';
+                            html2 = '<div class="item active"><a href="'+item.objectid+'"  target="_Blank"><img src="' +item.firstImage+'" alt=""><p class="carousel-caption">'+item.title+'</p></a></div>';
+                        }else{
+//                            item.objectid = 'http://localhost:8010/Portal/MvcDefaultSheet.aspx?SheetCode=SNews&Mode=View&SchemaCode=News&BizObjectID='+item.objectid;
+                            item.objectid = 'http://'+location.hostname+':'+location.port+'/Portal/MvcDefaultSheet.aspx?SheetCode=SNews&Mode=View&SchemaCode=News&BizObjectID='+item.objectid;
+//                            console.log(item.objectid)
+                            html1 += '<li data-target="#carousel-example-generic" data-slide-to="'+(index)+'"></li>';
+                            html2 += '<div class="item"><a href="'+item.objectid+'"  target="_Blank"><img src="' +item.firstImage+'" alt=""><p class="carousel-caption">'+item.title+'</p></a></div>';
+                        }
+                    }
+
+                });
+                    $(html1).appendTo($('#carousel-example-generic .carousel-indicators'));
+                    $(html2).appendTo($('#carousel-example-generic .carousel-inner'));
+
+            }
+        });
+    })
+</script>

@@ -1,0 +1,325 @@
+/* author Romey
+   2016-09-13
+*/
+/*动态点赞开始*/
+.praise{
+    margin: 50px auto;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+}
+#praise{
+    display:block;
+    width:80px;
+    height:80px;
+    margin:0 auto;
+}
+#praise-txt{
+    height:25px;
+    line-height:45px;
+    font-size: 22px;
+}
+
+.praise {
+    text-align: center
+}
+
+.praise img{
+    width:80px;
+    height:80px;
+    display:block;
+    margin: 0 auto;
+}
+.praise img.animation{
+    animation: myfirst 0.5s;
+    -moz-animation: myfirst 0.5s;	/* Firefox */
+    -webkit-animation: myfirst 0.5s;	/* Safari 和 Chrome */
+    -o-animation: myfirst 0.5s;	/* Opera */
+}
+#add-num{
+    display:none;
+}
+#add-num .add-animation{
+    color: #000;
+    position:absolute;
+    top: -16px;
+    left: 50%;
+    font-size: 22px;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -moz-opacity:0;
+    animation: mypraise 0.5s ;
+    -moz-animation: mypraise 0.5s ;	/* Firefox */
+    -webkit-animation: mypraise 0.5s ;	/* Safari 和 Chrome */
+    -o-animation: mypraise 0.5s ;	/* Opera */
+    font-style:normal;
+}
+.praise .hover  , #praise-txt.hover{
+    color: #419bdd;
+    font-size: 22px;
+}
+
+#add-num .add-animation.hover {
+    color: #EB4F38;
+}
+
+.news,.liulanNum {
+    /*font-family:'PingFangJ SFDRegular';*/
+    color: #000000;
+    font-size: 22px;
+    line-height: 40px;
+    height: 40px;
+}
+.news label span {
+    /*font-family:'PingFangJ SFDMedium';*/
+    font-size: 22px;
+    color: #de2d2d;
+    line-height: 35px;
+}
+
+.liulanNum #control3 span {
+    /*font-family:'PingFangJ SFDRegular';*/
+    color: #000000;
+    font-size: 17px!important;
+    line-height: 35px;
+}
+.liulanNum .col-md-4 label {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.yizan {
+    /*font-family: "PingFangJ SFDBold";*/
+    /*color: #419bdd;*/
+    font-size: 22px;
+}
+
+.yizan span label span {
+    font-size: 22px;
+}
+
+
+.title label span {
+    /*font-family:'PingFangJ SFDMedium';*/
+    font-size: 26px;
+    color: #000;
+    /*line-height: 35px;*/
+}
+.newmsg #control2 span,.newmsg  label{
+    /*font-family:'PingFangJ SFDRegular';*/
+    color: #6f6f6f;
+    font-size: 15px;
+}
+
+
+.divContent {
+    width: 90%;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding: 0px;
+}
+
+.col-md-1 span, .col-md-2 span, .col-md-3 span, .col-md-4 span, .col-md-5 span, .col-md-6 span, .col-md-7 span, .col-md-8 span, .col-md-9 span, .col-md-10 span, .col-md-11 span, .col-md-12 span, .col-md-1 label, .col-md-2 label, .col-md-3 label, .col-md-4 label, .col-md-5 label, .col-md-6 label, .col-md-7 label, .col-md-8 label, .col-md-9 label, .col-md-10 label, .col-md-11 label, .col-md-12 label {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+    border:0;
+}
+
+.unlike {
+    background: url('btn_unlike.png') no-repeat;
+    -webkit-background-size:88px 88px;
+    background-size:88px 88px;
+}
+.like {
+    background: url('btn_liked.png') no-repeat;
+    -webkit-background-size:88px 88px;
+    background-size:88px 88px;
+}
+
+#div174950 input {
+    height: 88px;
+    width: 88px;
+    border: 0px;
+    outline:none;
+}
+
+#div174950 input:focus {
+    border: 0px;
+}
+
+#zan {
+    text-align: center;
+    margin-top: 30px;
+}
+.zanNum {
+    text-align: center;
+}
+.zanNum span {
+    display: inline-block!important;
+    font-size: 22px;
+    line-height: 35px;
+}
+.zanNum #div908988 span {
+    font-size: 22px;
+    line-height: 35px;
+}
+#hitCount {
+    /*font-family: 'PingFangJ SFDRegular';*/
+    color: #000000;
+    width: 20%;
+    font-size: 17px!important;
+    line-height: 35px;
+    pointer-events:none
+}
+.inputMouseOut {
+    border: 0px;
+}
+.list {
+    background-color: #fff;
+}
+
+/*点赞图标放大动画结束*/
+/*点赞数量加减动画开始*/
+@keyframes mypraise
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-moz-keyframes mypraise /* Firefox */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-webkit-keyframes mypraise /* Safari 和 Chrome */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-o-keyframes mypraise /* Opera */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+/*点赞数量加减动画结束*/
+/*动态点赞结束*/

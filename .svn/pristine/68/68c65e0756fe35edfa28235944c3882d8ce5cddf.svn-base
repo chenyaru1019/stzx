@@ -1,0 +1,3760 @@
+<BizWorkflowPackage>
+  <PackageCode>TQSQ</PackageCode>
+  <PackageName>探亲申请</PackageName>
+  <FunctionNode xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Serialized>true</Serialized>
+    <ObjectID>add80cbd-13a5-4633-b59f-a4a76a1f6f90</ObjectID>
+    <ParentObjectID />
+    <ParentIndex>0</ParentIndex>
+    <Code>TQSQ</Code>
+    <IsSystem>false</IsSystem>
+    <State>Unspecified</State>
+    <ParentCode>c50e392f-aa5e-4925-9087-55ff638c288b</ParentCode>
+    <DisplayName>探亲申请</DisplayName>
+    <LockedBy />
+    <Description />
+    <SortKey>0</SortKey>
+    <NodeType>BizWorkflowPackage</NodeType>
+    <OpenNewWindow>false</OpenNewWindow>
+    <IsInherit>false</IsInherit>
+    <IconType>Url</IconType>
+    <IconUrl />
+    <Url />
+  </FunctionNode>
+  <BizObjectSchema>
+    <SchemaCode>TQSQ</SchemaCode>
+    <DisplayName>数据模型</DisplayName>
+    <Description />
+    <StorageType>DataList</StorageType>
+    <TableName>I_TQSQ</TableName>
+    <MainVersion>11</MainVersion>
+    <SubVersion>3</SubVersion>
+    <NameSchema />
+    <SummarySchema />
+    <Properties>
+      <PropertySchema>
+        <Name>ObjectID</Name>
+        <DisplayName>ObjectID</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Name</Name>
+        <DisplayName>Name</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedBy</Name>
+        <DisplayName>CreatedBy</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedByParentId</Name>
+        <DisplayName>CreatedByParentId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>OwnerId</Name>
+        <DisplayName>OwnerId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>OwnerParentId</Name>
+        <DisplayName>OwnerParentId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedTime</Name>
+        <DisplayName>CreatedTime</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ModifiedBy</Name>
+        <DisplayName>ModifiedBy</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ModifiedTime</Name>
+        <DisplayName>ModifiedTime</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>RunningInstanceId</Name>
+        <DisplayName>RunningInstanceId</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>true</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Applyer</Name>
+        <DisplayName>申请人</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Department</Name>
+        <DisplayName>所属部门</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Type</Name>
+        <DisplayName>探亲类别</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Address1</Name>
+        <DisplayName>地点</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Address2</Name>
+        <DisplayName>至</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Date1</Name>
+        <DisplayName>出差期限</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <dateTime>0001-01-01T00:00:00</dateTime>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Date2</Name>
+        <DisplayName>至</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <dateTime>0001-01-01T00:00:00</dateTime>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Days</Name>
+        <DisplayName>出差天数</DisplayName>
+        <LogicType>Double</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <double>0</double>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Traffic</Name>
+        <DisplayName>交通工具</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>BackAddress1</Name>
+        <DisplayName>地点</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>BackAddress2</Name>
+        <DisplayName>至</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>BackTraffic</Name>
+        <DisplayName>交通工具</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Remark</Name>
+        <DisplayName>出差事由</DisplayName>
+        <LogicType>String</LogicType>
+        <MaxLength>2000</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>RelatedItems</Name>
+        <DisplayName>关联项目</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Workflow</Name>
+        <DisplayName>关联流程</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Attachment</Name>
+        <DisplayName>关联附件</DisplayName>
+        <LogicType>Attachment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>DepartmentOpinion</Name>
+        <DisplayName>部门领导审批意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ProjectManager</Name>
+        <DisplayName>项目部门领导意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>LeadersInCharge</Name>
+        <DisplayName>分管领导意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>GeneralManager</Name>
+        <DisplayName>总经理意见</DisplayName>
+        <LogicType>Comment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Prompt</Name>
+        <DisplayName>提示</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>PManager</Name>
+        <DisplayName>项目经理</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Status</Name>
+        <DisplayName>Status</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+    </Properties>
+    <Methods>
+      <MethodGroupSchema>
+        <MethodName>Create</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Load</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Update</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Remove</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>GetList</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Filter</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+    </Methods>
+    <Associations />
+    <ViewCollection>
+    </ViewCollection>
+  </BizObjectSchema>
+  <BizListenerPolicy>
+    <PolicyType>OneByOne</PolicyType>
+    <IntervalSecond>600</IntervalSecond>
+    <FilterMethod />
+  </BizListenerPolicy>
+  <BizSheets>
+    <BizSheet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>036815f0-512a-4728-a9bc-2274096bae2d</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <BizObjectSchemaCode>TQSQ</BizObjectSchemaCode>
+      <SheetCode>STQSQ</SheetCode>
+      <DisplayName>表单信息</DisplayName>
+      <LastModifiedBy />
+      <LastModifiedTime>2017-09-26T17:12:18</LastModifiedTime>
+      <SheetType>DefaultSheet</SheetType>
+      <DesignModeContent>    &lt;div style="text-align: center;" class="DragContainer" tabindex="0"&gt;
+        &lt;label id="lblTitle" class="panel-title" tabindex="0"&gt;探亲申请&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body sheetContainer" tabindex="0"&gt;
+        &lt;div class="nav-icon fa fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divBasicInfo" data-en_us="Basic information" tabindex="0"&gt;基本信息&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="divContent" tabindex="0"&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="divFullNameTitle" class="col-md-2" tabindex="0"&gt;
+                    &lt;label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" style="z-index: 101; cursor: move;" tabindex="0"&gt;发起人：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divFullName" class="col-md-4" tabindex="0"&gt;
+                    &lt;label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" style="z-index: 101; cursor: move;" tabindex="0"&gt;&lt;span class="OnlyDesigner"&gt;Originator.UserName&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divOriginateDateTitle" class="col-md-2" tabindex="0"&gt;
+                    &lt;label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" style="z-index: 101; cursor: move;" tabindex="0"&gt;发起时间：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divOriginateDate" class="col-md-4" tabindex="0"&gt;
+                    &lt;label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" style="z-index: 101; cursor: move;" tabindex="0"&gt;&lt;span class="OnlyDesigner"&gt;OriginateTime&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="divOriginateOUNameTitle" class="col-md-2" tabindex="0"&gt;
+                    &lt;label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" style="z-index: 101; cursor: move;" tabindex="0"&gt;所属组织：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divOriginateOUName" class="col-md-4" tabindex="0"&gt;
+                    &lt;!--					&lt;label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData"&gt;
+    &lt;span class="OnlyDesigner"&gt;Originator.OUName&lt;/span&gt;
+                        &lt;/label&gt;--&gt;
+                    &lt;select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style="z-index: 101; cursor: move;"&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;div id="divSequenceNoTitle" class="col-md-2" tabindex="0"&gt;
+                    &lt;label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;申请单号：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divSequenceNo" class="col-md-4" tabindex="0"&gt;
+                    &lt;label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" style="z-index: 101; cursor: move;" tabindex="0"&gt;&lt;span class="OnlyDesigner"&gt;SequenceNo&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divSheetInfo" data-en_us="Sheet information" tabindex="0"&gt;表单信息&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="divContent" id="divSheet" tabindex="0"&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="title1" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label11" data-type="SheetLabel" data-datafield="Applyer" class="" style="z-index: 101; cursor: move;"&gt;申请人：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control1" class="col-md-4" tabindex="0"&gt;
+                    &lt;input id="Control11" type="text" data-datafield="Applyer" data-type="SheetTextBox" class="" data-defaultvalue="{Originator.UserName}" style="z-index: 101; cursor: move;"&gt;
+                &lt;/div&gt;
+                &lt;div id="title2" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label12" data-type="SheetLabel" data-datafield="Deaprtment" class="" style="z-index: 101; cursor: move;"&gt;申请部门：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control2" class="col-md-4" tabindex="0"&gt;
+                    
+                &lt;input type="text" data-datafield="Department" data-type="SheetTextBox" id="ctl667574" class="" style="z-index: 101; cursor: move;" data-defaultvalue="{Originator.OUName}"&gt;&lt;/div&gt;
+            &lt;/div&gt;&lt;div class="row" tabindex="0"&gt;&lt;div id="div95920" class="col-md-2" tabindex="0"&gt;&lt;label data-datafield="Type" data-type="SheetLabel" id="ctl598201" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;探亲类别：&lt;/label&gt;&lt;/div&gt;&lt;div id="div692878" class="col-md-4" tabindex="0"&gt;&lt;div data-datafield="Type" data-type="SheetRadioButtonList" id="ctl35971" class="" data-repeatcolumns="2" data-defaultitems="部门安排探亲;项目安排探亲" data-onchange=" var type=$.MvcSheetUI.GetControlValue(&amp;quot;Type&amp;quot;);
+if(type===&amp;quot;项目安排探亲&amp;quot;){
+ $(&amp;quot;#tq&amp;quot;).css('display','block');   
+
+}else{
+ $(&amp;quot;#tq&amp;quot;).css('display','none');  
+}
+" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="radio"&gt;选项一&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;input type="radio"&gt;选项二&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="div699229" class="col-md-2" tabindex="0"&gt;&lt;/div&gt;&lt;div id="div225462" class="col-md-4" tabindex="0"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row" style="display:none" id="tq" tabindex="0"&gt;&lt;div id="div106791" class="col-md-2" tabindex="0"&gt;&lt;label data-datafield="PManager" data-type="SheetLabel" id="ctl156513" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;项目经理&lt;/label&gt;&lt;/div&gt;&lt;div id="div870869" class="col-md-4" tabindex="0"&gt;&lt;div data-datafield="PManager" data-type="SheetUser" id="ctl997945" class="" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="text"&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="div763239" class="col-md-2" tabindex="0"&gt;&lt;/div&gt;&lt;div id="div462530" class="col-md-4" tabindex="0"&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="title3" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label13" data-type="SheetLabel" data-datafield="Address1" class="" style="z-index: 101; cursor: move;"&gt;去程始发地：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control3" class="col-md-4" tabindex="0"&gt;
+                    &lt;input id="Control13" type="text" data-datafield="Address1" data-type="SheetTextBox" class="" data-regularexpression="/^[\u4e00-\u9fa5]{0,}$/" data-regularinvalidtext="请输入中文字符" data-placeholder="请填写始发地名称" style="z-index: 101; cursor: move;"&gt;
+                &lt;/div&gt;
+                &lt;div id="title4" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label14" data-type="SheetLabel" data-datafield="Address2" class="" style="z-index: 101; cursor: move;"&gt;目的地：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control4" class="col-md-4" tabindex="0"&gt;
+                    &lt;input id="Control14" type="text" data-datafield="Address2" data-type="SheetTextBox" class="" data-regularexpression="/^[\u4e00-\u9fa5]{0,}$/" data-regularinvalidtext="请输入中文字符" data-placeholder="请填写目的地名称" style="z-index: 101; cursor: move;"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="title7" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label17" data-type="SheetLabel" data-datafield="Traffic" class="" style="z-index: 101; cursor: move;"&gt;交通工具：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control7" class="col-md-4" tabindex="0"&gt;
+
+                    &lt;select data-datafield="Traffic" data-type="SheetDropDownList" id="ctl522991" class="" data-displayemptyitem="true" data-emptyitemtext="请选择交通工具" data-masterdatacategory="交通工具" style="z-index: 101; cursor: move;" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+                &lt;div id="title8" class="col-md-2" tabindex="0"&gt;
+                &lt;/div&gt;
+                &lt;div id="control8" class="col-md-4" tabindex="0"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="div796967" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label18" data-type="SheetLabel" data-datafield="BackAddress1" class="" style="z-index: 101; cursor: move;"&gt;返程始发地：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="div761220" class="col-md-4" tabindex="0"&gt;
+                    &lt;input id="Control18" type="text" data-datafield="BackAddress1" data-type="SheetTextBox" class="" data-regularexpression="/^[\u4e00-\u9fa5]{0,}$/" data-regularinvalidtext="请输入中文字符" data-placeholder="请填写始发地名称" style="z-index: 101; cursor: move;"&gt;
+                &lt;/div&gt;
+                &lt;div id="div325020" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label19" data-type="SheetLabel" data-datafield="BackAddress2" class="" style="z-index: 101; cursor: move;"&gt;目的地：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="div883295" class="col-md-4" tabindex="0"&gt;
+                    &lt;input id="Control19" type="text" data-datafield="BackAddress2" data-type="SheetTextBox" class="" data-regularexpression="/^[\u4e00-\u9fa5]{0,}$/" data-regularinvalidtext="请输入中文字符" data-onchange="         var  Address1=  $.MvcSheetUI.GetControlValue(&amp;quot;Address1&amp;quot;);
+          var BackAddress2=  $.MvcSheetUI.GetControlValue(&amp;quot;BackAddress2&amp;quot;);
+
+
+        if(Address1!=BackAddress2){
+                document.getElementById(&amp;quot;span12345&amp;quot;).style.display=&amp;quot;block&amp;quot;;
+      }else{
+   document.getElementById(&amp;quot;span12345&amp;quot;).style.display=&amp;quot;none&amp;quot;;
+}" data-placeholder="请填写目的地名称" style="z-index: 101; cursor: move;"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="title11" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label22" data-type="SheetLabel" data-datafield="BackTraffic" class="" style="z-index: 101; cursor: move;"&gt;交通工具：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control11" class="col-md-4" tabindex="0"&gt;
+
+                    &lt;select data-datafield="BackTraffic" data-type="SheetDropDownList" id="ctl282916" class="" data-displayemptyitem="true" data-emptyitemtext="请选择交通工具" data-masterdatacategory="交通工具" style="z-index: 101; cursor: move;" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+                &lt;div id="title12" class="col-md-2" tabindex="0"&gt;
+                &lt;/div&gt;
+                &lt;div id="control12" class="col-md-4" tabindex="0"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="div347981" class="col-md-2" tabindex="0"&gt;&lt;span id="Label15" data-type="SheetLabel" data-datafield="Date1" class="" style="z-index: 101; cursor: move;"&gt;探亲开始时间：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="div369692" class="col-md-4" tabindex="0"&gt;&lt;input id="Control15" type="text" data-datafield="Date1" data-type="SheetTime" class="" style="z-index: 101; cursor: move;"&gt;
+                &lt;/div&gt;
+                &lt;div id="div851612" class="col-md-2" tabindex="0"&gt;&lt;span id="Label16" data-type="SheetLabel" data-datafield="Date2" class="" style="z-index: 101; cursor: move;"&gt;结束时间：&lt;/span&gt;&lt;/div&gt;
+                &lt;div id="div802829" class="col-md-4" tabindex="0"&gt;&lt;input id="Control16" type="text" data-datafield="Date2" data-type="SheetTime" class="" style="z-index: 101; cursor: move;"&gt;&lt;/div&gt;
+            &lt;/div&gt;&lt;div class="row" tabindex="0"&gt;&lt;div id="div912000" class="col-md-2" tabindex="0"&gt;&lt;label data-datafield="Days" data-type="SheetLabel" id="ctl437593" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;出差天数&lt;/label&gt;&lt;/div&gt;&lt;div id="div589338" class="col-md-4" tabindex="0"&gt;&lt;input type="text" onfocus="this.blur()" data-datafield="Days" data-type="SheetTextBox" id="ctl149069" class="" style="z-index: 101; cursor: move;" data-computationrule="({Date1}-{Date2})+1"&gt;&lt;/div&gt;&lt;div id="div996291" class="col-md-2" tabindex="0"&gt;&lt;/div&gt;&lt;div id="div985441" class="col-md-4" tabindex="0"&gt;&lt;/div&gt;&lt;/div&gt;
+
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="div944434" class="col-md-12" tabindex="0"&gt;
+                    &lt;span style="color:#F00;font-size:15px" class="" id="span12345"&gt;提醒：您的去程始发地与返程的目的地不一致，请在事由中写清理由&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row tableContent" tabindex="0"&gt;
+                &lt;div id="title13" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label23" data-type="SheetLabel" data-datafield="Remark" class="" style="z-index: 101; cursor: move;"&gt;探亲事由：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control13" class="col-md-10" tabindex="0"&gt;
+                    &lt;textarea id="Control23" data-datafield="Remark" data-type="SheetRichTextBox" class="" data-placeholder="请填写申请探亲事由" style="z-index: 101; cursor: move;"&gt;					&lt;/textarea&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divAssInfo" data-en_us="Associated information" class="" tabindex="0"&gt;关联信息&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="divContent" tabindex="0"&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="title15" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label24" data-type="SheetLabel" data-datafield="RelatedItems" class="" style="z-index: 101; cursor: move;"&gt;关联项目：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control15" class="col-md-4" tabindex="0"&gt;
+                    &lt;input id="Control24" type="text" data-datafield="RelatedItems" data-type="SheetTextBox" class="" data-placeholder="可关联相关项目编号" style="z-index: 101; cursor: move;"&gt;
+                &lt;/div&gt;
+                &lt;div id="title16" class="col-md-2" tabindex="0"&gt;
+                &lt;/div&gt;
+                &lt;div id="control16" class="col-md-4" tabindex="0"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="div369668" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label25" data-type="SheetLabel" data-datafield="Workflow" class="" style="z-index: 101; cursor: move;"&gt;关联流程：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="div647569" class="col-md-4" tabindex="0"&gt;
+                    &lt;input id="Control25" type="text" data-datafield="Workflow" data-type="SheetTextBox" class="" data-placeholder="可关联相关业务流程" style="z-index: 101; cursor: move;"&gt;
+                &lt;/div&gt;
+                &lt;div id="div812287" class="col-md-2" tabindex="0"&gt;
+                &lt;/div&gt;
+                &lt;div id="div454345" class="col-md-4" tabindex="0"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="title17" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label26" data-type="SheetLabel" data-datafield="Attachment" class="" style="z-index: 101; cursor: move;"&gt;关联附件：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control17" class="col-md-10" tabindex="0"&gt;
+                    &lt;div id="Control26" data-datafield="Attachment" data-type="SheetAttachment" class="" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;input type="file"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divFlowAdvice" data-en_us="Flow advice" class="" tabindex="0"&gt;流转意见&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="divContent" tabindex="0"&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="div181384" class="col-md-2" tabindex="0"&gt;
+                    &lt;label data-datafield="ProjectManager" data-type="SheetLabel" id="ctl294280" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;项目经理意见：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="div432565" class="col-md-10" tabindex="0"&gt;
+                    &lt;div data-datafield="ProjectManager" data-type="SheetComment" id="ctl678035" class="" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;textarea style="height:80px;"&gt;&lt;/textarea&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row tableContent" tabindex="0"&gt;
+                &lt;div id="title19" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label27" data-type="SheetLabel" data-datafield="DepartmentOpinion" class="" style="z-index: 101; cursor: move;"&gt;申请部门主管意见：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control19" class="col-md-10" tabindex="0"&gt;
+                    &lt;div id="Control27" data-datafield="DepartmentOpinion" data-type="SheetComment" class="" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;textarea style="height:80px;"&gt;&lt;/textarea&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" tabindex="0"&gt;
+                &lt;div id="div905291" class="col-md-2" tabindex="0"&gt;
+                    &lt;label data-datafield="LeadersInCharge" data-type="SheetLabel" id="ctl709753" class="" style="z-index: 101; cursor: move;" tabindex="0"&gt;分管领导意见：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="div575805" class="col-md-10" tabindex="0"&gt;
+                    &lt;div data-datafield="LeadersInCharge" data-type="SheetComment" id="ctl15269" class="" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;textarea style="height:80px;"&gt;&lt;/textarea&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row tableContent" tabindex="0"&gt;
+                &lt;div id="title23" class="col-md-2" tabindex="0"&gt;
+                    &lt;span id="Label30" data-type="SheetLabel" data-datafield="GeneralManager" class="" style="z-index: 101; cursor: move;"&gt;总经理意见：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control23" class="col-md-10" tabindex="0"&gt;
+                    &lt;div id="Control30" data-datafield="GeneralManager" data-type="SheetComment" style="z-index: 101; cursor: move;"&gt;&lt;span class="OnlyDesigner"&gt;&lt;textarea style="height:80px;"&gt;&lt;/textarea&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</DesignModeContent>
+      <Javascript>     // 表单验证接口
+        $.MvcSheet.Validate = function () {
+            // this.Action 表示当前操作的按钮名称
+            var Reason= $.MvcSheetUI.GetControlValue("Remark");    // 根据数据项编码获取页面控件的值
+            // 填写申请单环节，设置 mvcName 必填
+            if ($.MvcSheetUI.SheetInfo.ActivityCode == "Activity2") {
+                if (this.Action == "Submit"||this.Action == "Save") {
+	            var str = "&lt;(\S*?)[^&gt;]*&gt;.*?|&lt;.*? /&gt;";  
+	         var reg = new RegExp(str);
+	         if(reg.test(Reason)){
+                   alert("输入内容包含非法字符,请重新输入!");
+	          return false;
+       }
+                }
+            }
+            return true;
+        }
+
+
+
+  $.MvcSheet.SubmitAction.OnActionPreDo = function () {
+            // this.Action  // 获取当前按钮名称
+         // this.Action 表示当前操作的按钮名称
+     var StartTime=new Date($.MvcSheetUI.GetControlValue("Date1"));
+     var EndTime =new Date($.MvcSheetUI.GetControlValue("Date2"));
+        if(StartTime.getTime()&gt;EndTime .getTime()){
+             //alert("探亲开始开始时间需小于结束时间");
+              	$('#message-module')
+					.find('.modal-body')
+					.html('&lt;h4 style="text-align: center;padding: 50px;"&gt;探亲开始时间需小于结束时间&lt;/h4&gt;');
+			$('#message-module').modal({
+				keyboard : true,
+				show : true,
+				backdrop : true
+			});
+           return false;
+        }
+         }
+
+     $.MvcSheet.PreInit = function () {
+               $('#Control11').attr("disabled",true); //设置经办人和所属部门无法修改
+                $('#Control12').attr("disabled",true); 
+             document.getElementById("span12345").style.display="none";
+
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#ctl598201');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label13');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label14');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label15');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label16');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label17');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label18');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label19');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label20');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label21');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label22');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label23');
+        };</Javascript>
+      <RuntimeContent>&lt;script type="text/javascript"&gt;
+     // 表单验证接口
+        $.MvcSheet.Validate = function () {
+            // this.Action 表示当前操作的按钮名称
+            var Reason= $.MvcSheetUI.GetControlValue("Remark");    // 根据数据项编码获取页面控件的值
+            // 填写申请单环节，设置 mvcName 必填
+            if ($.MvcSheetUI.SheetInfo.ActivityCode == "Activity2") {
+                if (this.Action == "Submit"||this.Action == "Save") {
+	            var str = "&lt;(\S*?)[^&gt;]*&gt;.*?|&lt;.*? /&gt;";  
+	         var reg = new RegExp(str);
+	         if(reg.test(Reason)){
+                   alert("输入内容包含非法字符,请重新输入!");
+	          return false;
+       }
+                }
+            }
+            return true;
+        }
+
+
+
+  $.MvcSheet.SubmitAction.OnActionPreDo = function () {
+            // this.Action  // 获取当前按钮名称
+         // this.Action 表示当前操作的按钮名称
+     var StartTime=new Date($.MvcSheetUI.GetControlValue("Date1"));
+     var EndTime =new Date($.MvcSheetUI.GetControlValue("Date2"));
+        if(StartTime.getTime()&gt;EndTime .getTime()){
+             //alert("探亲开始开始时间需小于结束时间");
+              	$('#message-module')
+					.find('.modal-body')
+					.html('&lt;h4 style="text-align: center;padding: 50px;"&gt;探亲开始时间需小于结束时间&lt;/h4&gt;');
+			$('#message-module').modal({
+				keyboard : true,
+				show : true,
+				backdrop : true
+			});
+           return false;
+        }
+         }
+
+     $.MvcSheet.PreInit = function () {
+               $('#Control11').attr("disabled",true); //设置经办人和所属部门无法修改
+                $('#Control12').attr("disabled",true); 
+             document.getElementById("span12345").style.display="none";
+
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#ctl598201');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label13');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label14');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label15');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label16');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label17');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label18');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label19');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label20');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label21');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label22');
+$("&lt;span style='color:#F00' &gt;*&lt;/span&gt;").appendTo('#Label23');
+        };
+&lt;/script&gt;
+    &lt;div style="text-align: center;" class="DragContainer"&gt;
+        &lt;label id="lblTitle" class="panel-title"&gt;探亲申请&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body sheetContainer"&gt;
+        &lt;div class="nav-icon fa fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divBasicInfo" data-en_us="Basic information"&gt;基本信息&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="divContent"&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="divFullNameTitle" class="col-md-2"&gt;
+                    &lt;label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" style=""&gt;发起人：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divFullName" class="col-md-4"&gt;
+                    &lt;label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" style=""&gt;&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divOriginateDateTitle" class="col-md-2"&gt;
+                    &lt;label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" style=""&gt;发起时间：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divOriginateDate" class="col-md-4"&gt;
+                    &lt;label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" style=""&gt;&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="divOriginateOUNameTitle" class="col-md-2"&gt;
+                    &lt;label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" style=""&gt;所属组织：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divOriginateOUName" class="col-md-4"&gt;
+                    &lt;!--					&lt;label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData"&gt;
+    &lt;span class="OnlyDesigner"&gt;Originator.OUName&lt;/span&gt;
+                        &lt;/label&gt;--&gt;
+                    &lt;select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style=""&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;div id="divSequenceNoTitle" class="col-md-2"&gt;
+                    &lt;label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" class="" style=""&gt;申请单号：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="divSequenceNo" class="col-md-4"&gt;
+                    &lt;label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" style=""&gt;&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divSheetInfo" data-en_us="Sheet information"&gt;表单信息&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="divContent" id="divSheet"&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="title1" class="col-md-2"&gt;
+                    &lt;span id="Label11" data-type="SheetLabel" data-datafield="Applyer" class="" style=""&gt;申请人：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control1" class="col-md-4"&gt;
+                    &lt;input id="Control11" type="text" data-datafield="Applyer" data-type="SheetTextBox" class="" data-defaultvalue="{Originator.UserName}" style=""&gt;
+                &lt;/div&gt;
+                &lt;div id="title2" class="col-md-2"&gt;
+                    &lt;span id="Label12" data-type="SheetLabel" data-datafield="Deaprtment" class="" style=""&gt;申请部门：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control2" class="col-md-4"&gt;
+                    
+                &lt;input type="text" data-datafield="Department" data-type="SheetTextBox" id="ctl667574" class="" style="" data-defaultvalue="{Originator.OUName}"&gt;&lt;/div&gt;
+            &lt;/div&gt;&lt;div class="row"&gt;&lt;div id="div95920" class="col-md-2"&gt;&lt;label data-datafield="Type" data-type="SheetLabel" id="ctl598201" class="" style=""&gt;探亲类别：&lt;/label&gt;&lt;/div&gt;&lt;div id="div692878" class="col-md-4"&gt;&lt;div data-datafield="Type" data-type="SheetRadioButtonList" id="ctl35971" class="" data-repeatcolumns="2" data-defaultitems="部门安排探亲;项目安排探亲" data-onchange=" var type=$.MvcSheetUI.GetControlValue(&amp;quot;Type&amp;quot;);
+if(type===&amp;quot;项目安排探亲&amp;quot;){
+ $(&amp;quot;#tq&amp;quot;).css('display','block');   
+
+}else{
+ $(&amp;quot;#tq&amp;quot;).css('display','none');  
+}
+" style=""&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="div699229" class="col-md-2"&gt;&lt;/div&gt;&lt;div id="div225462" class="col-md-4"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row" style="display:none" id="tq"&gt;&lt;div id="div106791" class="col-md-2"&gt;&lt;label data-datafield="PManager" data-type="SheetLabel" id="ctl156513" class="" style=""&gt;项目经理&lt;/label&gt;&lt;/div&gt;&lt;div id="div870869" class="col-md-4"&gt;&lt;div data-datafield="PManager" data-type="SheetUser" id="ctl997945" class="" style=""&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="div763239" class="col-md-2"&gt;&lt;/div&gt;&lt;div id="div462530" class="col-md-4"&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="title3" class="col-md-2"&gt;
+                    &lt;span id="Label13" data-type="SheetLabel" data-datafield="Address1" class="" style=""&gt;去程始发地：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control3" class="col-md-4"&gt;
+                    &lt;input id="Control13" type="text" data-datafield="Address1" data-type="SheetTextBox" class="" data-regularexpression="/^[\u4e00-\u9fa5]{0,}$/" data-regularinvalidtext="请输入中文字符" data-placeholder="请填写始发地名称" style=""&gt;
+                &lt;/div&gt;
+                &lt;div id="title4" class="col-md-2"&gt;
+                    &lt;span id="Label14" data-type="SheetLabel" data-datafield="Address2" class="" style=""&gt;目的地：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control4" class="col-md-4"&gt;
+                    &lt;input id="Control14" type="text" data-datafield="Address2" data-type="SheetTextBox" class="" data-regularexpression="/^[\u4e00-\u9fa5]{0,}$/" data-regularinvalidtext="请输入中文字符" data-placeholder="请填写目的地名称" style=""&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="row"&gt;
+                &lt;div id="title7" class="col-md-2"&gt;
+                    &lt;span id="Label17" data-type="SheetLabel" data-datafield="Traffic" class="" style=""&gt;交通工具：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control7" class="col-md-4"&gt;
+
+                    &lt;select data-datafield="Traffic" data-type="SheetDropDownList" id="ctl522991" class="" data-displayemptyitem="true" data-emptyitemtext="请选择交通工具" data-masterdatacategory="交通工具" style="" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+                &lt;div id="title8" class="col-md-2"&gt;
+                &lt;/div&gt;
+                &lt;div id="control8" class="col-md-4"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="div796967" class="col-md-2"&gt;
+                    &lt;span id="Label18" data-type="SheetLabel" data-datafield="BackAddress1" class="" style=""&gt;返程始发地：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="div761220" class="col-md-4"&gt;
+                    &lt;input id="Control18" type="text" data-datafield="BackAddress1" data-type="SheetTextBox" class="" data-regularexpression="/^[\u4e00-\u9fa5]{0,}$/" data-regularinvalidtext="请输入中文字符" data-placeholder="请填写始发地名称" style=""&gt;
+                &lt;/div&gt;
+                &lt;div id="div325020" class="col-md-2"&gt;
+                    &lt;span id="Label19" data-type="SheetLabel" data-datafield="BackAddress2" class="" style=""&gt;目的地：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="div883295" class="col-md-4"&gt;
+                    &lt;input id="Control19" type="text" data-datafield="BackAddress2" data-type="SheetTextBox" class="" data-regularexpression="/^[\u4e00-\u9fa5]{0,}$/" data-regularinvalidtext="请输入中文字符" data-onchange="         var  Address1=  $.MvcSheetUI.GetControlValue(&amp;quot;Address1&amp;quot;);
+          var BackAddress2=  $.MvcSheetUI.GetControlValue(&amp;quot;BackAddress2&amp;quot;);
+
+
+        if(Address1!=BackAddress2){
+                document.getElementById(&amp;quot;span12345&amp;quot;).style.display=&amp;quot;block&amp;quot;;
+      }else{
+   document.getElementById(&amp;quot;span12345&amp;quot;).style.display=&amp;quot;none&amp;quot;;
+}" data-placeholder="请填写目的地名称" style=""&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="row"&gt;
+                &lt;div id="title11" class="col-md-2"&gt;
+                    &lt;span id="Label22" data-type="SheetLabel" data-datafield="BackTraffic" class="" style=""&gt;交通工具：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control11" class="col-md-4"&gt;
+
+                    &lt;select data-datafield="BackTraffic" data-type="SheetDropDownList" id="ctl282916" class="" data-displayemptyitem="true" data-emptyitemtext="请选择交通工具" data-masterdatacategory="交通工具" style="" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+                &lt;div id="title12" class="col-md-2"&gt;
+                &lt;/div&gt;
+                &lt;div id="control12" class="col-md-4"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="div347981" class="col-md-2"&gt;&lt;span id="Label15" data-type="SheetLabel" data-datafield="Date1" class="" style=""&gt;探亲开始时间：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="div369692" class="col-md-4"&gt;&lt;input id="Control15" type="text" data-datafield="Date1" data-type="SheetTime" class="" style=""&gt;
+                &lt;/div&gt;
+                &lt;div id="div851612" class="col-md-2"&gt;&lt;span id="Label16" data-type="SheetLabel" data-datafield="Date2" class="" style=""&gt;结束时间：&lt;/span&gt;&lt;/div&gt;
+                &lt;div id="div802829" class="col-md-4"&gt;&lt;input id="Control16" type="text" data-datafield="Date2" data-type="SheetTime" class="" style=""&gt;&lt;/div&gt;
+            &lt;/div&gt;&lt;div class="row"&gt;&lt;div id="div912000" class="col-md-2"&gt;&lt;label data-datafield="Days" data-type="SheetLabel" id="ctl437593" class="" style=""&gt;出差天数&lt;/label&gt;&lt;/div&gt;&lt;div id="div589338" class="col-md-4"&gt;&lt;input type="text" onfocus="this.blur()" data-datafield="Days" data-type="SheetTextBox" id="ctl149069" class="" style="" data-computationrule="({Date1}-{Date2})+1"&gt;&lt;/div&gt;&lt;div id="div996291" class="col-md-2"&gt;&lt;/div&gt;&lt;div id="div985441" class="col-md-4"&gt;&lt;/div&gt;&lt;/div&gt;
+
+            &lt;div class="row"&gt;
+                &lt;div id="div944434" class="col-md-12"&gt;
+                    &lt;span style="color:#F00;font-size:15px" class="" id="span12345"&gt;提醒：您的去程始发地与返程的目的地不一致，请在事由中写清理由&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row tableContent"&gt;
+                &lt;div id="title13" class="col-md-2"&gt;
+                    &lt;span id="Label23" data-type="SheetLabel" data-datafield="Remark" class="" style=""&gt;探亲事由：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control13" class="col-md-10"&gt;
+                    &lt;textarea id="Control23" data-datafield="Remark" data-type="SheetRichTextBox" class="" data-placeholder="请填写申请探亲事由" style=""&gt;					&lt;/textarea&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divAssInfo" data-en_us="Associated information" class=""&gt;关联信息&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="divContent"&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="title15" class="col-md-2"&gt;
+                    &lt;span id="Label24" data-type="SheetLabel" data-datafield="RelatedItems" class="" style=""&gt;关联项目：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control15" class="col-md-4"&gt;
+                    &lt;input id="Control24" type="text" data-datafield="RelatedItems" data-type="SheetTextBox" class="" data-placeholder="可关联相关项目编号" style=""&gt;
+                &lt;/div&gt;
+                &lt;div id="title16" class="col-md-2"&gt;
+                &lt;/div&gt;
+                &lt;div id="control16" class="col-md-4"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="div369668" class="col-md-2"&gt;
+                    &lt;span id="Label25" data-type="SheetLabel" data-datafield="Workflow" class="" style=""&gt;关联流程：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="div647569" class="col-md-4"&gt;
+                    &lt;input id="Control25" type="text" data-datafield="Workflow" data-type="SheetTextBox" class="" data-placeholder="可关联相关业务流程" style=""&gt;
+                &lt;/div&gt;
+                &lt;div id="div812287" class="col-md-2"&gt;
+                &lt;/div&gt;
+                &lt;div id="div454345" class="col-md-4"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="title17" class="col-md-2"&gt;
+                    &lt;span id="Label26" data-type="SheetLabel" data-datafield="Attachment" class="" style=""&gt;关联附件：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control17" class="col-md-10"&gt;
+                    &lt;div id="Control26" data-datafield="Attachment" data-type="SheetAttachment" class="" style=""&gt;&lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+            &lt;label id="divFlowAdvice" data-en_us="Flow advice" class=""&gt;流转意见&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="divContent"&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="div181384" class="col-md-2"&gt;
+                    &lt;label data-datafield="ProjectManager" data-type="SheetLabel" id="ctl294280" class="" style=""&gt;项目经理意见：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="div432565" class="col-md-10"&gt;
+                    &lt;div data-datafield="ProjectManager" data-type="SheetComment" id="ctl678035" class="" style=""&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row tableContent"&gt;
+                &lt;div id="title19" class="col-md-2"&gt;
+                    &lt;span id="Label27" data-type="SheetLabel" data-datafield="DepartmentOpinion" class="" style=""&gt;申请部门主管意见：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control19" class="col-md-10"&gt;
+                    &lt;div id="Control27" data-datafield="DepartmentOpinion" data-type="SheetComment" class="" style=""&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div id="div905291" class="col-md-2"&gt;
+                    &lt;label data-datafield="LeadersInCharge" data-type="SheetLabel" id="ctl709753" class="" style=""&gt;分管领导意见：&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div id="div575805" class="col-md-10"&gt;
+                    &lt;div data-datafield="LeadersInCharge" data-type="SheetComment" id="ctl15269" class="" style=""&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row tableContent"&gt;
+                &lt;div id="title23" class="col-md-2"&gt;
+                    &lt;span id="Label30" data-type="SheetLabel" data-datafield="GeneralManager" class="" style=""&gt;总经理意见：&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div id="control23" class="col-md-10"&gt;
+                    &lt;div id="Control30" data-datafield="GeneralManager" data-type="SheetComment" style=""&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</RuntimeContent>
+      <EnabledCode>false</EnabledCode>
+      <CodeContent>using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace OThinker.H3.Portal.Sheets.DefaultEngine
+{
+    public partial class STQSQ : OThinker.H3.Controllers.MvcPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+    }
+}
+</CodeContent>
+      <SheetAddress>STQSQ.aspx</SheetAddress>
+      <MobileSheetAddress />
+      <IsMVC>true</IsMVC>
+    </BizSheet>
+  </BizSheets>
+  <WorkflowTemplates>
+    <WorkflowTemplate>
+      <WorkflowTemplateName>探亲申请</WorkflowTemplateName>
+      <WorkflowDocument>
+        <WorkflowCode>TQSQ</WorkflowCode>
+        <BizObjectSchemaCode>TQSQ</BizObjectSchemaCode>
+        <Description>
+        </Description>
+        <RequirePost>False</RequirePost>
+        <PlanUsedTime>
+        </PlanUsedTime>
+        <PlanRecurrences>0</PlanRecurrences>
+        <ShortText1>
+        </ShortText1>
+        <ShortText2>
+        </ShortText2>
+        <ShortText3>
+        </ShortText3>
+        <ShortText4>
+        </ShortText4>
+        <ShortText5>
+        </ShortText5>
+        <LongText6>
+        </LongText6>
+        <LongText7>
+        </LongText7>
+        <InstanceName>
+        </InstanceName>
+        <OnCancelActions />
+        <OnStartActions />
+        <OnFinishActions />
+        <Activities>
+          <StartActivity>
+            <ActivityType>Start</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity1</ClassName>
+            <Custom>False</Custom>
+            <CustomCode />
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity1</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Start</ActivityType>
+            <ID>1</ID>
+            <Text>流程开始</Text>
+            <ActivityCode>Activity1</ActivityCode>
+            <X>148</X>
+            <Y>49</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+          </StartActivity>
+          <EndActivity>
+            <ActivityType>End</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity4</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity4 : SmartActivity
+	{
+		public Activity4()
+		{
+			// 请不要在这里填写代码，因为在执行这段代码的时候会阻塞引擎的某些组件
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity4</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>End</ActivityType>
+            <ID>4</ID>
+            <Text>流程结束</Text>
+            <ActivityCode>Activity4</ActivityCode>
+            <X>148</X>
+            <Y>372</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+          </EndActivity>
+          <FillSheetActivity>
+            <ActivityType>FillSheet</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity2</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity2 : FillSheetActivity
+	{
+		public Activity2()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity2</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>FillSheet</ActivityType>
+            <ID>2</ID>
+            <Text>申请人填写申请表</Text>
+            <ActivityCode>Activity2</ActivityCode>
+            <X>148</X>
+            <Y>179</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Applyer</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address1</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address2</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date1</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date2</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Traffic</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress1</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress2</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackTraffic</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Remark</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RelatedItems</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Workflow</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Attachment</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>DepartmentOpinion</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>GeneralManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>True</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ProjectManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LeadersInCharge</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Prompt</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PManager</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Days</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{Originator}</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>False</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>True</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+          </FillSheetActivity>
+          <ApproveActivity>
+            <ActivityType>Approve</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity3</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity3 : FillSheetActivity
+	{
+		public Activity3()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity3</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Approve</ActivityType>
+            <ID>3</ID>
+            <Text>项目经理审批</Text>
+            <ActivityCode>Activity3</ActivityCode>
+            <X>458</X>
+            <Y>76</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{PManager}</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Applyer</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Traffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackTraffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Remark</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RelatedItems</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Workflow</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Attachment</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>DepartmentOpinion</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>GeneralManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ProjectManager</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LeadersInCharge</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Prompt</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Days</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>{PManager}</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>False</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>True</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+          </ApproveActivity>
+          <ApproveActivity>
+            <ActivityType>Approve</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity14</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity14 : FillSheetActivity
+	{
+		public Activity14()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity14</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <Approved>
+              <Receivers>
+              </Receivers>
+              <Title>
+              </Title>
+              <Content>
+              </Content>
+              <Condition>
+              </Condition>
+              <NotifyType>Default</NotifyType>
+              <CancelParllelActivities>False</CancelParllelActivities>
+              <DataMaps>
+                <Map>
+                  <DataItem>Status</DataItem>
+                  <Value>"1"</Value>
+                  <Disposal>Set</Disposal>
+                </Map>
+              </DataMaps>
+              <BizActions />
+            </Approved>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Approve</ActivityType>
+            <ID>14</ID>
+            <Text>总经理审批</Text>
+            <ActivityCode>Activity14</ActivityCode>
+            <X>458</X>
+            <Y>372</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>U(b9a882a7-ba21-4289-a03c-925ed9faa65b)</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>CopyLastApproval</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Applyer</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Traffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackTraffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Remark</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RelatedItems</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Workflow</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Attachment</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>DepartmentOpinion</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>GeneralManager</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ProjectManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LeadersInCharge</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Prompt</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Days</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>U(b9a882a7-ba21-4289-a03c-925ed9faa65b)</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>CopyLastApproval</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>True</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+          </ApproveActivity>
+          <ApproveActivity>
+            <ActivityType>Approve</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity20</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity20 : FillSheetActivity
+	{
+		public Activity20()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity20</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Approve</ActivityType>
+            <ID>20</ID>
+            <Text>申请部门主管审批</Text>
+            <ActivityCode>Activity20</ActivityCode>
+            <X>458</X>
+            <Y>179</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>OUManagerOf({Originator})</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Approve</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Applyer</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Traffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackTraffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Remark</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RelatedItems</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Workflow</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Attachment</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>DepartmentOpinion</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>GeneralManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ProjectManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LeadersInCharge</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Prompt</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Days</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>OUManagerOf({Originator})</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Approve</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>True</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+          </ApproveActivity>
+          <ApproveActivity>
+            <ActivityType>Approve</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity23</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity23 : FillSheetActivity
+	{
+		public Activity23()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity23</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Approve</ActivityType>
+            <ID>23</ID>
+            <Text>分管领导审批</Text>
+            <ActivityCode>Activity23</ActivityCode>
+            <X>661</X>
+            <Y>126</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>ManagerOf(ManagerOf({Originator}))</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Applyer</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Traffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackTraffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Remark</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RelatedItems</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Workflow</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Attachment</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>DepartmentOpinion</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>GeneralManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ProjectManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LeadersInCharge</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Prompt</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Days</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>ManagerOf(ManagerOf({Originator}))</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>True</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+          </ApproveActivity>
+          <ApproveActivity>
+            <ActivityType>Approve</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity32</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity32 : FillSheetActivity
+	{
+		public Activity32()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity32</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Approve</ActivityType>
+            <ID>32</ID>
+            <Text>分管领导审批</Text>
+            <ActivityCode>Activity32</ActivityCode>
+            <X>458</X>
+            <Y>285</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>ManagerOf({Originator})</Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>Applyer</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Type</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Address2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Date2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Traffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress1</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackAddress2</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BackTraffic</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Remark</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>RelatedItems</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Workflow</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Attachment</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>DepartmentOpinion</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>ProjectManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>LeadersInCharge</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>GeneralManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Prompt</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>PManager</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Days</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Department</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>False</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>ManagerOf({Originator})</Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>STQSQ</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>False</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>True</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+            <ApprovalDataItem>
+            </ApprovalDataItem>
+            <CommentDataItem>
+            </CommentDataItem>
+            <ApproveExit>100%</ApproveExit>
+            <DisaproveExit>1</DisaproveExit>
+          </ApproveActivity>
+        </Activities>
+        <Rules>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>5</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Activity1</PreActivityCode>
+            <PostActivityCode>Activity2</PostActivityCode>
+            <Points>
+              <Point>148,69</Point>
+              <Point>148,159</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>25</ID>
+            <Text>Y</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>True</Formula>
+            <PreActivityCode>Activity23</PreActivityCode>
+            <PostActivityCode>Activity14</PostActivityCode>
+            <Points>
+              <Point>661,146</Point>
+              <Point>661,372</Point>
+              <Point>530,372</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>29</ID>
+            <Text>Y</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>True</Formula>
+            <PreActivityCode>Activity3</PreActivityCode>
+            <PostActivityCode>Activity23</PostActivityCode>
+            <Points>
+              <Point>530,75</Point>
+              <Point>559,75</Point>
+              <Point>559,126</Point>
+              <Point>589,126</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>30</ID>
+            <Text>项目安排探亲</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>True</FixedPoint>
+            <Formula>{Type}=="项目安排探亲"</Formula>
+            <PreActivityCode>Activity2</PreActivityCode>
+            <PostActivityCode>Activity3</PostActivityCode>
+            <Points>
+              <Point>220,179</Point>
+              <Point>260,179</Point>
+              <Point>260,75</Point>
+              <Point>386,75</Point>
+            </Points>
+            <TextX>323</TextX>
+            <TextY>75</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>31</ID>
+            <Text>部门安排探亲</Text>
+            <UtilizeElse>True</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>{Type}=="部门安排探亲"</Formula>
+            <PreActivityCode>Activity2</PreActivityCode>
+            <PostActivityCode>Activity20</PostActivityCode>
+            <Points>
+              <Point>220,179</Point>
+              <Point>386,179</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>33</ID>
+            <Text>部门主管发起申请</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>True</FixedPoint>
+            <Formula>IIF(IsMemberOf({Originator},U(6e29efc9-eaed-45f4-a7cc-a80f1b9653dc) ),True,False)</Formula>
+            <PreActivityCode>Activity2</PreActivityCode>
+            <PostActivityCode>Activity32</PostActivityCode>
+            <Points>
+              <Point>220,179</Point>
+              <Point>260,179</Point>
+              <Point>260,285</Point>
+              <Point>386,285</Point>
+            </Points>
+            <TextX>325</TextX>
+            <TextY>285</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>35</ID>
+            <Text>Y</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>True</Formula>
+            <PreActivityCode>Activity32</PreActivityCode>
+            <PostActivityCode>Activity14</PostActivityCode>
+            <Points>
+              <Point>458,305</Point>
+              <Point>458,352</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>37</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Activity14</PreActivityCode>
+            <PostActivityCode>Activity4</PostActivityCode>
+            <Points>
+              <Point>386,372</Point>
+              <Point>220,372</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>38</ID>
+            <Text>Y</Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>True</Formula>
+            <PreActivityCode>Activity20</PreActivityCode>
+            <PostActivityCode>Activity23</PostActivityCode>
+            <Points>
+              <Point>530,179</Point>
+              <Point>559,179</Point>
+              <Point>559,126</Point>
+              <Point>589,126</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+        </Rules>
+      </WorkflowDocument>
+      <Simulations />
+      <WorkflowClause xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Serialized>true</Serialized>
+        <ObjectID>81b1b8dd-5e35-4752-82b8-d97fad6f2e8b</ObjectID>
+        <ParentObjectID />
+        <ParentIndex>0</ParentIndex>
+        <SortKey>0</SortKey>
+        <WorkflowName>探亲申请</WorkflowName>
+        <BizSchemaCode>TQSQ</BizSchemaCode>
+        <WorkflowCode>TQSQ</WorkflowCode>
+        <CurrentNewVersion>24</CurrentNewVersion>
+        <DefaultVersion>23</DefaultVersion>
+        <State>Active</State>
+        <MobileStart>true</MobileStart>
+        <SequenceCode>SRC-TQ-</SequenceCode>
+        <SeqNoResetType>None</SeqNoResetType>
+        <CalendarId>null</CalendarId>
+        <OwnerID>SRC-TQ-</OwnerID>
+      </WorkflowClause>
+    </WorkflowTemplate>
+  </WorkflowTemplates>
+</BizWorkflowPackage>

@@ -1,0 +1,106 @@
+﻿using OThinker.H3.Controllers;
+using OThinker.H3.DataModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace OThinker.H3.Portal.Sheets.stzx
+{
+    public partial class NewsView : OThinker.H3.Controllers.MvcPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+         {
+         }
+      
+             public override MvcViewContext LoadDataFields()
+        {
+            String newid = (String)ActionContext.BizObject.GetValue("ObjectID"); 
+            String userid = (String)ActionContext.BizObject.GetValue("OwnerId");
+            System.Data.DataTable dt = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+               "SELECT * FROM BrowseTimes WHERE UserId=" + "'" + userid + "'AND ArticleId = " + "'" + newid + "'");
+            if (dt.Rows.Count > 0)
+            {
+                 //存在，则访问过，不操作
+            }
+            else {
+                //不存在，第一次浏览，增加到数据库
+                var browsetime = DateTime.Now.ToString();
+                String type = "news";
+                System.Data.DataTable dt1 = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+               "INSERT INTO BrowseTimes(UserId, ArticleId, BrowseTime, Type)VALUES" +
+               "( " + "'" + userid + "','" + newid + "','" + browsetime + "','" + type + "'" + ")");
+            }
+
+            //查询浏览次数
+            System.Data.DataTable dt2 = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+            "SELECT COUNT(*) as count FROM[dbo].[BrowseTimes] WHERE ArticleId = " + "'" + newid + "'");
+             this.ActionContext.InstanceData["Hits"].Value = dt2.Rows[0]["count"].ToString();
+
+            //查询点赞状态
+            System.Data.DataTable dt3 = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+            "SELECT Status  FROM [dbo].[Vote] WHERE ArticleId = " + "'" + userid + "'AND ArticleId = " + "'" + newid + "'");
+            if (dt3.Rows.Count > 0)
+            {
+                //存在，查询状态
+                this.ActionContext.InstanceData["VoteStatus"].Value = dt3.Rows[0]["Status"].ToString();
+            }
+            else {
+                //不存在，设置状态为设置为未赞
+                this.ActionContext.InstanceData["VoteStatus"].Value = "0";
+            }
+
+            //查询点赞次数已赞为1
+            System.Data.DataTable dt4 = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+            "SELECT COUNT(id) as count FROM [dbo].[Vote] WHERE ArticleId = " + "'" + newid  +"'AND Status = '1'");
+            this.ActionContext.InstanceData["VoteNum"].Value = dt4.Rows[0]["count"].ToString();
+            this.ActionContext.InstanceData.Submit();
+             return base.LoadDataFields();
+        }
+
+
+
+        public string vote() {
+              String newid = (String)ActionContext.BizObject.GetValue("ObjectID"); 
+            String userid = (String)ActionContext.BizObject.GetValue("OwnerId");
+            System.Data.DataTable dt = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+              "SELECT Status FROM Vote WHERE UserId=" + "'" + userid + "'AND ArticleId = " + "'" + newid + "'");
+            var status = "";
+            if (dt.Rows.Count > 0)
+            {
+                if ("0".Equals(dt.Rows[0]["Status"].ToString()))
+                {
+                   
+                    //未赞时设置为已赞
+                    OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+                   "UPDATE Vote SET Status='1' WHERE Userid = " + "'" + userid + "'AND ArticleId = " + "'" + newid + "'");
+                    status = "1";
+                }
+                else
+                {
+                    //已赞时设置为未赞
+                    OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+                   "UPDATE Vote SET Status='0' WHERE Userid = " + "'" + userid + "'AND ArticleId = " + "'" + newid + "'");
+                    status = "0";
+                }
+            }
+            else {
+                //不存在，增加到数据库
+                var votetime = DateTime.Now.ToString();
+                 status = "1";
+                OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+               "INSERT INTO Vote(UserId, ArticleId, VoteTime, Status)VALUES" +
+               "( " + "'" + userid + "','" + newid + "','" + votetime + "','" + status + "'" + ")");
+            }
+            System.Data.DataTable dt2 = OThinker.H3.Controllers.AppUtility.Engine.EngineConfig.CommandFactory.CreateCommand().ExecuteDataTable(
+           "SELECT COUNT(id) as count FROM [dbo].[Vote] WHERE ArticleId = " + "'" + newid + "'AND Status = '1'");
+            var num = dt2.Rows[0]["count"].ToString();
+            
+            return num;
+        }
+
+
+    }
+}

@@ -1,0 +1,135 @@
+<!-- 首页新闻模块 -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <div class="BG">
+        <ol class="carousel-indicators"></ol>
+    </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner lunbo" role="listbox">
+    </div>
+</div>
+<style>
+    #carousel-example-generic {
+        min-height: 235px;
+        width: 100%;
+    }
+
+    .carousel-caption {
+        text-shadow: 0 0px 0px rgba(0, 0, 0,0);
+    }
+
+    .carousel-inner > .item {
+    }
+
+    .panel-body {
+        padding: 5px;
+    }
+
+    .BG {
+        width: 100%;
+        height: 30px;
+        background: rgba(0, 0, 0, .4);
+        ;
+        z-index: 2;
+        position: absolute;
+        bottom: 11%;
+    }
+
+        .BG ol li {
+            margin-right: 5px;
+        }
+
+    .lunbo img {
+        width: 100%;
+        height: 100%;
+        min-height: 236px;
+    }
+
+    .item {
+        height: 100%;
+
+    }
+        .item p {
+            padding: 0px;
+            position: absolute;
+            bottom: 0px;
+            color: black;
+            text-align: left;
+            left: 0px;
+            right: 0px;
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            background-color: #fff;
+            line-height: 31px;
+            padding-top: 5px;
+        }
+
+    .BG .carousel-indicators .active {
+        margin-right: 4px;
+    }
+</style>
+<script>
+    $(function () {
+        $('.carousel').carousel({
+            interval: 3000
+        });
+        var height = $('#carousel-example-generic').width() * 0.75;
+        $('#carousel-example-generic').height(height);
+        $.ajax({
+            type: "POST",    //页面请求的类型
+            url: "/Portal/template/PortalService/PortalService.ashx?Command=ViewNews",   //处理页的相对地址
+            data: {
+
+            },
+            async: false,
+            success: function (msg) {
+                var html1 = '';
+                var html2 = '';
+                msg.forEach(function (item, index) {
+                    // console.log(item);
+                    if (index <= 4) {
+                        if (item.firstimage === "") {
+                            item.firstimage = 'img/timg.jpg';
+                        }
+                        if (index == 0) {
+                            newsSrc= 'http://' + location.hostname + ':' + location.port + '/Portal/Sheets/stzx/NewsView/NewsView.aspx?SheetCode=NewsView&Mode=View&SchemaCode=NewsView&BizObjectID=' + item.NewsId;
+                            html1 = '<li data-target="#carousel-example-generic" data-slide-to="' + index + '" class="active"></li>';
+                            html2 = '<div class="item active"><a href="' + newsSrc + '"  target="_Blank"><img src="' + item.firstimage + '" alt="" ><p class="carousel-caption">' + item.Title + '</p></a></div>';
+                        } else {
+                            newsSrc = 'http://' + location.hostname + ':' + location.port + '/Portal/Sheets/stzx/NewsView/NewsView.aspx?SheetCode=NewsView&Mode=View&SchemaCode=NewsView&BizObjectID=' + item.NewsId;
+                            html1 += '<li data-target="#carousel-example-generic" data-slide-to="' + (index) + '"></li>';
+                            html2 += '<div class="item"><a href="' + newsSrc + '"  target="_Blank"><img src="' + item.firstimage + '" alt="" ><p class="carousel-caption">' + item.Title + '</p></a></div>';
+                        }
+                    }
+
+                });
+                $(html1).appendTo($('#carousel-example-generic .carousel-indicators'));
+                $(html2).appendTo($('#carousel-example-generic .carousel-inner'));
+
+            },
+            complete:function(){
+                $(".item img").height(height);
+            },
+        });
+        $(window).resize(function() {
+            var height = $('#carousel-example-generic').width() * 0.75;
+            $('#carousel-example-generic').height(height);
+            $(".item img").height(height);
+            $('.myTable1 ').height($('#carousel-example-generic').height()/2-42-36);
+            $('.meeting').height(($('#carousel-example-generic').height()+42)/2+37);
+            $('#container').height($('.meeting').height()-97);
+            $('#container1').height($('.meeting').height()-97);
+            $('.T_content').height(($('#carousel-example-generic').height()-58));
+            $('#weather-test').height($('#carousel-example-generic').height()+43);
+
+        });
+        $('.myTable1 ').height($('#carousel-example-generic').height()/2-42-36);
+        $('.meeting').height(($('#carousel-example-generic').height()+42)/2+37);
+        $('#container').height($('.meeting').height()-97);
+        $('#container1').height($('.meeting').height()-97);
+        $('.T_content').height(($('#carousel-example-generic').height()-58));
+        $('#weather-test').height($('#carousel-example-generic').height()+43);
+    })
+</script>

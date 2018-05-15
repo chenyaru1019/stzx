@@ -1,0 +1,58 @@
+<!-- 办公室用品 -->
+<div id="wrap" class="bodywrap houqin">
+    <div class="row" style='margin-top: 70px;'>
+        <div class="col-sm-3">
+            <a href="" ui-sref='app.BizQueryView({TopAppCode:"yhpgl",SchemaCode:"Consumables",QueryCode:"getConsumables",FunctionCode:"yhpk"})' href="#/app/yhpgl/BizQueryView/Consumables/getConsumables/yhpk">
+                <img src="img/hq_icon_yhp.png" alt="">
+                <h4>易耗品管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.MyInstance({TopAppCode:"CarManage",SchemaCode:"Car",State:"Unfinished",FunctionCode:"wdsq"})' href="#/app/CarManage/MyInstance/Car/Unfinished">
+                <img src="img/hq_icon_zxwz.png" alt="">
+                <h4>专项物资管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.MyInstance({TopAppCode:"kfgl",SchemaCode:"kefan",State:"Unfinished",FunctionCode:"kfdcx"})' href="#/app/kfgl/MyInstance/kefan/Unfinished">
+                <img src="img/hq_icon_kd.png" alt="">
+                <h4>快递单件管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+        </div>
+    </div>
+</div>
+<style>
+    .app-aside {
+        display:none;
+    }
+    .app-content-body {
+        margin-left: -200px;
+    }
+    .row {
+        margin:0px;
+    }
+    .houqin {
+        width:110%;
+    }
+    .houqin .col-sm-3 {
+        text-align:center;
+    }
+    .houqin .col-sm-3 img {
+        width:120px;
+        margin-bottom: 20px;
+    }
+   /*  .breadcrumb {
+       font-family: PingFangSC-Medium;
+       font-size: 16px;
+       color: #4B4B4B;
+       background: #F6F6F6;
+       border-top:1px solid #C4C4C4;
+       border-bottom: 1px solid #C4C4C4;
+   } */
+    .houqin .col-sm-12 {
+        width: 104%;
+        margin-left: -4px;
+    }
+</style>

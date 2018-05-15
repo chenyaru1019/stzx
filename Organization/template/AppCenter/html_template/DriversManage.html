@@ -1,0 +1,30 @@
+{#foreach $T as record}
+<div class="row M_room">
+    <div class="col-sm-9 M_room_content">
+        <h2>{$T.record.DName}</h2>
+        <p class="p">周一 周二 周三 周四 周五开放预约</p>
+        <p></p>
+        <ul class="M_room_ul">
+            <li class="M_room_li">
+                <ul class="M_room_li2">
+                    <li>
+                        <p>30</p>
+                        <p>座位</p>
+                    </li>
+                    <li>
+                        <p>董事会式</p>
+                        <p>类型</p>
+                    </li>
+                    <li>
+                        <p>张海峰</p>
+                        <p>管理员</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-3 M_room_img">
+        <img src="img/hw_image.png" alt="">
+    </div>
+</div>
+{#/for}

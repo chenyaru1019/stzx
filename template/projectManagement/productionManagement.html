@@ -1,0 +1,83 @@
+<!-- 后勤管理 -->
+<div id="wrap" class="bodywrap houqin">
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a href="#/app/hys/MyInstance/meeting/null"  ui-sref='app.houqinHys({TopAppCode:"hys"})' >
+                <img src="img/hqgl/hq_icon_hw.png" alt="">
+                <h4>项目信息</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.houqinCar({TopAppCode:"clgl"})' href="#/app/clgl/Conference//">
+                <img src="img/hqgl/hq_icon_cl.png" alt="">
+                <h4>项目前期管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryParticipantWorkItem({TopAppCode:"kfgl",SchemaCode:"kefan"})' href="#/app/kfgl/QueryParticipantWorkItem">
+                <img src="img/hqgl/hq_icon_kf.png" alt="">
+                <h4>项目实施管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryParticipantWorkItem({TopAppCode:"ccgl",SchemaCode:"BusinessTravel"})' href="#/app/ccgl/QueryParticipantWorkItem/BusinessTravel">
+                <img src="img/hqgl/hq_icon_yg.png" alt="">
+                <h4>项目收尾管理</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryParticipantWorkItem({TopAppCode:"zzzlgl",SchemaCode:"License"})' href="#/app/zzzlgl/QueryParticipantWorkItem/License">
+                <img src="img/hqgl/hq_icon_zz.png" alt="">
+                <h4>项目销项管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryParticipantWorkItem({TopAppCode:"yygl",SchemaCode:"Seal"})' href="#/app/yygl/QueryParticipantWorkItem/Seal">
+                <img src="img/hqgl/hq_icon_yy.png" alt="">
+                <h4>项目总结</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.BizQueryView({TopAppCode:"gdzcgl",SchemaCode:"FixedAsset",QueryCode:"FixedAssetList",FunctionCode:"guzccx"}) '>
+                <img src="img/hqgl/hq_icon_gd.png" alt="">
+                <h4>项目报告</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<style>
+    .app-aside {
+        display:none;
+    }
+    .app-content-body {
+        margin-left: -170px;
+    }
+    .row {
+        margin:0px;
+    }
+    .houqin {
+        width:110%;
+    }
+    .houqin .col-sm-3 {
+        text-align:center;
+    }
+    .houqin .col-sm-3 img {
+        width:120px;
+        margin-bottom: 20px;
+    }
+    .houqin .col-sm-12 {
+        width: 104%;
+        margin-left: -4px;
+    }
+    #wrap h4 {
+        /*font-family: PingFangSC-Regular;*/
+        font-size: 18px;
+        margin: 0;
+    }
+    #wrap img {
+        width: 85px;
+        height: 85px;
+    }
+</style>

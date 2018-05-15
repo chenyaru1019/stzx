@@ -1,0 +1,78 @@
+<div class="R_top">
+    <div><img src="img/main_icon_form.png" style='padding-right: 10px;' alt="">我的报表
+    <a href="#" class="R_more">更多</a>
+    </div>
+</div>
+<div class="line" style='width: 102%;margin-left:-6px;'></div>
+<div class="R_content">
+        <ul>
+            <li class="R_li_left R_active">项目阶段</li>
+            <li class="R_li_right">文件有效性</li>
+        </ul>
+    <div>
+        <div class="R_left" >
+            项目阶段项目阶段项目阶段项目阶段项目阶段项目阶段项目阶段
+        </div>
+        <div class="R_right" style='display: none;'>
+            文件有效性文件有效性文件有效性文件有效性文件有效性文件有效性
+        </div>
+    </div>
+</div>
+<style>
+    .R_top {
+        height:30px;
+        background: #FFFFFF;
+        /*font-family: PingFangSC-Medium;*/
+        font-size: 15px;
+        line-height:32px;
+        color: #4E4E4E;
+    }
+    .R_more {
+        float:right;
+        color: #FAA20D;
+        /*font-family: PingFangSC-Regular;*/
+    }
+    .line {
+        width:104%;
+        margin-left: -5px;
+        height:.125rem/* 2px */;
+        background: #D7D7D7;
+    }
+    .R_content ul {
+        width: 102%;
+        height: 30px;
+        background: #E9EAEF;
+        margin-left: -6px;
+        margin-top: -10px;
+        padding-left: 10px;
+    }
+    .R_content ul li {
+        float:left;
+        font-size: 15px;
+        padding: 4px;
+    }
+    .R_content div {
+        margin-top: 10px;
+        height: 200px;
+    }
+    .R_active {
+        border-bottom:3px solid #FAA20D;;
+    }
+</style>
+<script type="text/javascript">
+    $(function(){
+    $('.R_content').find('.R_li_left').on('click', function() {
+        $('.R_left').show();
+        $('.R_li_left').addClass('R_active');
+        $('.R_right').hide();
+        $('.R_li_right').removeClass("R_active");
+    });
+    $('.R_content').find('.R_li_right').on('click', function(event) {
+        event.preventDefault();
+         $('.R_left').hide();
+         $('.R_li_left').removeClass("R_active");
+        $('.R_right').show();
+        $('.R_li_right').addClass('R_active');
+    });
+   });
+</script>

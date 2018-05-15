@@ -1,0 +1,21 @@
+<!-- 首页天气模块 -->
+<div id="weather-test"></div>
+<style>
+    .weatherTop {
+        padding:50px 0px;
+        color: #fff;
+        height: 225px;
+        text-align: center;
+    }
+    .weatherBottom {
+        padding: 7px 0px;
+        text-align: center;
+    }
+    #weather-test {
+        font-family: PingFangSC-Regular;
+        height: 280px;
+    }
+</style>
+<script type="text/javascript">
+    $('#weather-test').weather();
+</script>

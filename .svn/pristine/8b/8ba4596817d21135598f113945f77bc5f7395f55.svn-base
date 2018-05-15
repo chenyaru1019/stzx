@@ -1,0 +1,95 @@
+<!-- 车辆使用情况 -->
+<script>
+        scheduleCalendarByCar.initCalendarCar();
+</script>
+<div class='hbox hbox-auto-xs hbox-auto-sm ng-scope'>
+    <div class="col" id='box' >
+        <div class="row carUse">
+            <div class="col-md-7" style="margin-top: 3px;">
+                <ul class="car_left">
+                    <li>已批准</li>
+                    <li>使用中</li>
+                    <li>已归还</li>
+                </ul>
+            </div>
+            <div class="col-md-5" style="margin-top: 4px;">
+                <span style='float: left;line-height: 34px;'>车辆:</span>
+                <ul class="car_right">
+                    <!--<li class="has-active" style='background: rgb(241, 241, 241)'><input type="text" value="别克SGM6517"/>1</li>-->
+                    <!--<li ><input type="text" value="别克SGM6521ATA商务车"/>2</li>-->
+                    <!--<li ><input type="text" value="大众汽车牌SVW72010KJ"/>3</li>-->
+                    <!--<li ><input type="text" value="丰田海狮客车"/>4</li>-->
+                </ul>
+            </div>
+        </div>
+        <div id='calendar' class='calendarByCar' style='margin-top: 50px;'>
+            <div id='calendar-overlay'>
+                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹出框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    申请表单
+                </h4>
+            </div>
+            <div class="modal-body" style='padding: 0px'>
+                <iframe id="iframeId" src=""></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<div class="modal fade" id="myModal-meeting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style='width: 100%;margin: 0 auto;'>
+    <div class="modal-dialog" style='width: 50%'>
+        <div class="modal-content" style="background: #FFFFFF;border: 1px solid #C3C3C3;box-shadow: 3px 3px 29px 10px rgba(203,203,203,0.50);">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel-meeting" style="text-align: center">
+                    车辆配置信息
+                </h4>
+            </div>
+            <div class="modal-body" style='padding: 0px' id='modal-body'>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<script>
+    $(function () {
+        console.log(2222222);
+        $.ajax({
+            type: "GET",
+            async: false,
+            url: url + '//car/vehicleinfo',
+            data:{month:1},
+            cache: 'false',
+            dataType: "jsonp",//加入这个选项即可
+            success: function (msg){
+                console.log(msg);
+                var html = '';
+                console.log(url + '//car/vehicleinfo', msg.length);
+                $(msg).each(function (index,term) {
+                    html+='<li ><input type="text" value="'+term.model+'">'+(index+1)+'</li>';
+                    $('.car_right').html(html);
+                });
+//
+            }
+        });
+        //利用鼠标滚动事件实现固定定位
+        $('div').scroll(function () {
+            $(".carUse").css({"top": $(this).scrollTop()});
+        });
+    })
+</script>

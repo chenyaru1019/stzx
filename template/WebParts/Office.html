@@ -1,0 +1,61 @@
+<!-- 首页办公助手模块 -->
+<div class="M_top">
+    <div><img src="img/main/main_icon_helpe.png" style='padding-right: 10px;' alt="">办公助手
+    <a href="#/app//Information" class="M_more" style="color: #F07374;">更多</a>
+    </div>
+</div>
+<div class="line"></div>
+<div class="O_content">
+    <div class="O_top clear row" style='margin-top: 30px'>
+        <a href="" class="left col-md-4" ui-sref='app.BizQueryView({TopAppCode:"lczn",SchemaCode:"FlowForm",QueryCode:"lczncx",FunctionCode:"lczncx"})'>
+            <img src="img/main/ST_sy-lz.png" alt="">
+        </a>
+        <p class="left col-md-8">
+            <a href="" ui-sref='app.BizQueryView({TopAppCode:"lczn",SchemaCode:"FlowForm",QueryCode:"lczncx",FunctionCode:"lczncx"})'>办事指南</a>
+        </p>
+    </div>
+    <div class="O_center clear row" >
+         <a href='#/app/zlzx/BizQueryView/MaterialCenter/zlzxcx/zlcx' class="left col-md-4"  ui-sref='app.BizQueryView({TopAppCode:"zlzx",SchemaCode:"MaterialCenter",QueryCode:"zlzxcx",FunctionCode:"zlcx"})'>
+            <img src="img/main/ST_sy_zl.png" alt="">
+        </a>
+        <p class="left col-md-8">
+            <a href='#/app/zlzx/BizQueryView/MaterialCenter/zlzxcx/zlcx' ui-sref='app.BizQueryView({TopAppCode:"zlzx",SchemaCode:"MaterialCenter",QueryCode:"zlzxcx",FunctionCode:"zlcx"})'>资料中心</a>
+        </p>
+    </div>
+    <div class="O_bottom clear row" >
+         <a href="#/app/Contacts/BizQueryView/AddressBook/TXLCX/qytxlcx" ui-sref='app.BizQueryView({TopAppCode:"Contacts",SchemaCode:"AddressBook",QueryCode:"TXLCX",FunctionCode:"qytxlcx"})' class="left col-md-4">
+            <img src="img/main/main_helpe_list.png" alt="">
+        </a>
+        <p class="left col-md-8">
+            <a href="#/app/Contacts/BizQueryView/AddressBook/TXLCX/qytxlcx" ui-sref='app.BizQueryView({TopAppCode:"Contacts",SchemaCode:"AddressBook",QueryCode:"TXLCX",FunctionCode:"qytxlcx"})'>企业通讯录</a>
+        </p>
+    </div>
+</div>
+<style>
+    .O_content {
+        padding: 10px;
+        padding-top: 10px;
+        height: 310px;
+    }
+    .O_center,.O_top,.O_bottom {
+        margin-bottom: 35px;
+    }
+    .O_top p,.O_center p,.O_bottom p {
+        margin-top: 15px;
+        padding-left: 10%;
+    }
+    .left {
+        float:left;
+    }
+    .O_content p a {
+        font-size: 15px;
+        /*font-family: PingFangSC-Regular;*/
+    }
+    .O_top a img,.O_center a img,.O_bottom a img {
+        width: 50px;
+        height: 50px;
+    }
+    .O_center .col-md-4,.O_top .col-md-4,.O_bottom .col-md-4 {
+        text-align: center;
+    }
+</style>

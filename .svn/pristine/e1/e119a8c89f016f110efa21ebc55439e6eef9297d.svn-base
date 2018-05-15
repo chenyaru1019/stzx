@@ -1,0 +1,252 @@
+
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+     app.settings.asideFolded=false;
+     app.settings.asideDock=false;">
+    <!-- main -->
+    <div class="col">
+        <!-- main header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row" style=" padding-right: 15px; ">
+                <div class="col-sm-6 col-xs-12">
+                    <span class="h3" title-name function-view-models="user.FunctionViewModels"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--表格部分Start-->
+        <div class="wrapper-md paddingbottomNone QueryList">
+            <div class="panel panel-default">
+                <div class='search'>
+                    <div class='row'>
+                        <div class='col-md-4'>
+                            <label>查询部门：</label>
+                            <select id='Rule_Department'>
+                                <option value="" class="ng-binding" selected = "selected">请选择部门</option>
+                                <option value="总经理室" class="ng-binding">总经理室</option>
+                                <option value="项目管理室" class="ng-binding">项目管理室</option>
+                                <option value="综合办公室" class="ng-binding">综合办公室</option>
+                                <option value="运营管理部" class="ng-binding">运营管理部</option>
+                                <option value="项目管理室" class="ng-binding">项目管理室</option>
+                            </select>
+                        </div>
+                        <div class='col-md-4'>
+                            <label>查询年份：</label>
+                            <select id='Rule_Year'>
+                                <option value="" class="ng-binding" selected = "selected">请选择</option>
+                                <option value="2015" class="ng-binding">2015</option>
+                                <option value="2016" class="ng-binding">2016</option>
+                                <option value="2017" class="ng-binding">2017</option>
+                            </select>
+                        </div>
+                        <div class='col-md-4' style='border-right: 0px'>
+                            <label>查询月份：</label>
+                            <select id='Rule_Month'>
+                                <option value="" class="ng-binding" selected = "selected">请选择</option>
+                                <option value="01" class="ng-binding">01</option>
+                                <option value="02" class="ng-binding">02</option>
+                                <option value="03" class="ng-binding">03</option>
+                                <option value="04" class="ng-binding">04</option>
+                                <option value="05" class="ng-binding">05</option>
+                                <option value="06" class="ng-binding">06</option>
+                                <option value="07" class="ng-binding">07</option>
+                                <option value="08" class="ng-binding">08</option>
+                                <option value="09" class="ng-binding">09</option>
+                                <option value="10" class="ng-binding">10</option>
+                                <option value="11" class="ng-binding">11</option>
+                                <option value="12" class="ng-binding">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class='col-md-4' style='border-bottom: 0px'>
+                            <label>查询员工：</label>
+                            <input type="text" id='Rule_Staff' />
+                        </div>
+                        <div class='col-md-4' style='border-bottom: 0px'>
+                            <button class='btn'>查询</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class='table_title'>上海申通轨道交通研究咨询有限公司员工考勤明细表</h4>
+                    <table id="table_id" class="display">
+                        <thead>
+                        <tr class='one'>
+                            <th rowspan="2">序号</th>
+                            <th rowspan="2">姓名</th>
+                            <th rowspan="2">天</th>
+                            <th  class='Workdays'>考勤工日</th>
+                        </tr>
+                        <tr class='two'>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <div style='text-align: center;padding-top: 10px'>考勤符号：法定休假日│；出勤（工时数）；事假√；病假〇；公差△；旷工╳；公休☆；婚丧★；产假◇；工伤●；探亲、回沪□</div>
+                </div>
+                <div style='margin-top: 40px;'>
+                    <h4  class='table_title'>上海申通轨道交通研究咨询有限公司员工考勤汇总表</h4>
+                    <table id="table_id_two" class="display">
+                        <thead>
+                        <tr>
+                            <th rowspan="2">姓名</th>
+                            <th colspan="10">出勤/缺勤工日(天)</th>
+                        </tr>
+                        <tr>
+                            <th>出勤工时</th>
+                            <th>病假</th>
+                            <th>探亲</th>
+                            <th>公休</th>
+                            <th>丧假</th>
+                            <th>产假</th>
+                            <th>外出</th>
+                            <th>事假</th>
+                            <th>公差</th>
+                            <th>回沪</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--表格部分End-->
+    </div>
+    <!-- / main -->
+</div>
+
+<style>
+    table.dataTable thead .sorting {
+        text-align: center;
+    }
+    table.dataTable tbody th, table.dataTable tbody td {
+        padding: 8px 4px;
+    }
+    .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > thead > tr > th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > thead > tr > td, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > td {
+        text-align: center;
+        border-right: 1px solid #dee5e7;
+    }
+    .dataTables_wrapper {
+        position: relative;
+        clear: both;
+        zoom: 1;
+        border: 1px solid #dee5e7;
+        border-radius: 2px;
+        margin: 20px;
+    }
+    table.dataTable.no-footer {
+        border-bottom: 1px solid #dee5e7;
+        background: #F8FAFD;
+    }
+    table.dataTable thead th, table.dataTable thead td {
+        border-bottom: 1px solid #dee5e7;
+        text-align: center;
+        border-right: 1px solid  #dee5e7;
+    }
+    table.dataTable thead .sorting_asc {
+        border-right: 1px solid #dee5e7;
+    }
+    table.dataTable thead .sorting {
+        border-right: 1px solid #dee5e7;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+        z-index: 2;
+        color: #fff!important;
+        cursor: default;
+        background-color: #428bca!important;
+        border-color: #428bca!important;
+    }
+    .table_title {
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .search {
+        margin: 20px;
+        border: 1px solid #dee5e7;
+        border-radius: 2px;
+    }
+    .search .row .col-md-4 label {
+        height: 40px;
+        display: inline-block;
+        border-right: 1px solid #dee5e7;
+        line-height: 40px;
+        width: 25%;
+        text-align: center;
+    }
+    .search .row .col-md-4 {
+        line-height: 40px;
+        height: 40px;
+        border-right: 1px solid #dee5e7;
+        border-bottom: 1px solid #dee5e7;
+    }
+    input, button, select, textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        height: 30px;
+        width: 70%;
+    }
+    select:hover,input:hover {
+        border: 1px solid #23B7E5;
+    }
+    .btn {
+        width: 20%;
+        height: 30px;
+        border-radius: 7px;
+        background-color:#F9F9F9;
+        border: 1px solid #C0C0C0;
+    }
+</style>
+<script type='text/javascript'>
+    $(function () {
+        var dataTableDom = $('#table_id');
+        var cottageDom = $('#table_id_two');
+        window.dataTableApp.setdataTableHeader();
+        window.dataTableApp.dataTableInit(dataTableDom);
+        window.cottageApp.dataTableInit(cottageDom);
+//    dataTableObj.DataTable().ajax.reload();
+//    cottageObj.DataTable().ajax.reload();
+
+
+        $('.btn').on('click',function () {
+
+            window.dataTableApp.dataTableobj.fnClearTable();
+            window.dataTableApp.dataTableobj.fnDestroy();
+            dataTableDom.DataTable().destroy();
+            window.dataTableApp.userName = $('#Rule_Staff').val();
+            window.dataTableApp.year = $('#Rule_Year').val();
+            window.dataTableApp.month = $('#Rule_Month').val();
+            window.dataTableApp.Department = $('#Rule_Department').val();
+
+
+            window.cottageApp.cottageObj.fnClearTable();
+            window.cottageApp.cottageObj.fnDestroy();
+            cottageDom.DataTable().destroy();
+
+            window.cottageApp.userName = $('#Rule_Staff').val();
+            window.cottageApp.year = $('#Rule_Year').val();
+            window.cottageApp.month = $('#Rule_Month').val();
+            window.cottageApp.Department = $('#Rule_Department').val();
+            window.dataTableApp.setdataTableHeader(new Date(window.dataTableApp.year, window.dataTableApp.month, 0).getDate());
+            window.dataTableApp.dataTableInit(dataTableDom);
+            window.cottageApp.dataTableInit(cottageDom);
+            dataTableDom.DataTable().ajax.reload();
+            cottageDom.DataTable().ajax.reload();
+        });
+        //利用鼠标滚动事件实现固定定位
+        $('div').scroll(function () {
+            $(".lter").css({ "top": $(this).scrollTop()});
+        });
+
+    })
+</script>

@@ -1,0 +1,85 @@
+<!-- 文件管理 -->
+<div id="wrap" class="bodywrap houqin">
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a  href="#/app/gwgl/QueryParticipantWorkItem/ExternalDocument">
+                <img src="img/file/ST_yw_wj_gw.png" alt="">
+                <h4>公文管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a  href="#/app/gzlxd/QueryInstance/ContactList" ui-sref='app.QueryInstance({TopAppCode:"gzlxd",SchemaCode:"ContactList"})'>
+                <img src="img/file/ST_yw_wj_gzlx.png" alt="">
+                <h4>内部工作联系单管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a  href="#/app/cpjgl/QueryInstance/Documented" ui-sref='app.QueryInstance({TopAppCode:"cpjgl",SchemaCode:"Documented"})'>
+                <img src="img/file/ST_yw_wj_cpjgl.png" alt="">
+                <h4>内部呈批件管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a  ui-sref='app.QueryInstance({TopAppCode:"hyjygl",SchemaCode:"MinutesMeeting",QueryCode:"null",FunctionCode:"hyjycx"})'>
+                <img src="img/file/会议纪要管理.png" alt="">
+                <h4>会议纪要管理</h4>
+            </a>
+            <!--<a ui-sref='app.BizQueryView({TopAppCode:"cs",SchemaCode:"UserName",QueryCode:"getUserName",FunctionCode:"cs2"})'>-->
+                <!--<img src='img/file/ST_yw_wj_dagl.png' alt="">-->
+                <!--<h4>档案管理</h4>-->
+            <!--</a>-->
+        </div>
+    </div>
+    <!--<div class="row" style='margin-top: 40px;'>-->
+        <!--<div class="col-sm-3">-->
+            <!--<a  ui-sref='app.QueryInstance({TopAppCode:"hyjygl",SchemaCode:"MinutesMeeting",QueryCode:"null",FunctionCode:"hyjycx"})'>-->
+                <!--<img src="img/file/会议纪要管理.png" alt="">-->
+                <!--<h4>会议纪要管理</h4>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<style>
+    .app-aside {
+        display:none;
+    }
+    .app-content-body {
+        margin-left: -170px;
+    }
+    .row {
+        margin:0px;
+    }
+    .houqin {
+        width:110%;
+    }
+    .houqin .col-sm-3 {
+        text-align:center;
+    }
+    .houqin .col-sm-3 img {
+        width:120px;
+        margin-bottom: 20px;
+    }
+    .houqin .col-sm-12 {
+        width: 104%;
+        margin-left: -4px;
+    }
+    #wrap h4 {
+        /*font-family: PingFangSC-Regular;*/
+        font-size: 18px;
+        margin: 0px;
+    }
+    #wrap img {
+        width: 85px;
+        height: 85px;
+    }
+</style>
+<script>
+    $(function(){
+        var h4List = $('#wrap').find('h4');
+        for (var i = 0; i < h4List.length; i++) {
+            h4List[i].onclick = function (){
+                console.log();
+            }
+        }
+    })
+</script>

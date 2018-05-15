@@ -1,0 +1,178 @@
+﻿<ion-view view-title="待办任务">
+    <style type="text/css">
+        .item-icon-right {
+            padding-right: 5px;
+        }
+
+        .normalflow {
+            color: aquamarine;
+        }
+    </style>
+    <ion-nav-bar class="bar-stable">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-ios-arrow-left"
+                    ng-click="$ionicGoBack()">
+                返回
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <!--<ion-nav-bar class="bar-calm">-->
+        <!--<ion-nav-buttons side="left">-->
+            <!--<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>-->
+        <!--</ion-nav-buttons>-->
+    <!--</ion-nav-bar>-->
+
+    <div class="bar {{$root.dingMobile.dingHeaderClass}}" style="top: 44px">
+        <button class="button button-stable" ng-click="goToSearch()" style="width:100%;margin-top:0px;margin-bottom:0px;">
+            <i class="icon ion-search placeholder-icon"></i>搜索
+        </button>
+    </div>
+    <div class="ng-hide animated fadeIn scrollTop" ng-show="displayTop" ng-click="scrollTop()">
+        <i class="icon ion-arrow-up-a"></i>
+    </div>
+    <ion-content class="scroll-content ionic-scroll {{$root.dingMobile.dingSubHeaderClass}} has-tabs" on-scroll="getScrollPosition();" style="top: 100px">
+        <ion-refresher on-refresh="refreshUnfinishedWorkItem()">
+        </ion-refresher>
+        <ion-list>
+            <!-- 没有加急任务时隐藏-->
+            <ion-item class="item-divider" ng-if="HighPriorityItems.length>0">
+                加急
+            </ion-item>
+            <ion-item ng-repeat="workItem in HighPriorityItems"
+                      class="item-icon-right"
+                      style="cursor:pointer;padding-left:36px" ng-click="openWorkItem('{{workItem.ObjectID}}')">
+                <!--流程优先级显示-->
+                <i class="icon ion-ios-bell highflow"
+                   style="font-size:20px;left:15px;right:initial;"></i>
+                <div>
+                    <h2>{{workItem.InstanceName}}</h2>
+                    <p>
+                        {{workItem.OrigiantorOUName}}：{{workItem.OrigiantorName}} 发起
+                        <span style="padding-left:10px;float:right;margin-right:10px;">{{workItem.ReceiveTime| limitTo:-11}}</span>
+                    </p>
+                </div>
+            </ion-item>
+            <!-- 没有加急任务时隐藏 -->
+            <ion-item class="item-divider" ng-show="HighPriorityItems.length>0 && NormalPriorityItems.length>0">
+                普通
+            </ion-item>
+            <ion-item ng-repeat="workItem in NormalPriorityItems"
+                      class="item-icon-right"
+                      style="cursor:pointer;" ng-click="openWorkItem('{{workItem.ObjectID}}')">
+                <!--流程优先级显示-->
+                <!--<i class="icon ion-ios-bell normalflow"-->
+                   <!--style="font-size:20px;left:15px;right:initial;"></i>-->
+                <div>
+                    <h2>{{workItem.InstanceName}}</h2>
+                    <p>
+                        {{workItem.OrigiantorOUName}}：{{workItem.OrigiantorName}} 发起
+                        <span style="padding-left: 10px; float: right; margin-right: 10px;">{{workItem.ReceiveTime| limitTo:-11}}</span>
+                    </p>
+                </div>
+            </ion-item>
+            <ion-item ng-if="(HighPriorityItems.length > 0 || NormalPriorityItems.length>0) && loadCompleted"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-android-happy"></i>
+                    <h2 style="margin-left:10px;">全部加载完成</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="(HighPriorityItems.length == 0 && NormalPriorityItems.length == 0)  && loadCompleted && searchKey=='' && !exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-checkmark"></i>
+                    <h2 style="margin-left:10px;">您的待办已经全部处理完成</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="(HighPriorityItems.length == 0 && NormalPriorityItems.length == 0) && loadCompleted && searchKey!='' && !exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-information-circled"></i>
+                    <h2 style="margin-left:10px;">没有找到任务</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-information-circled"></i>
+                    <h2 style="margin-left:10px;">系统数据加载失败，请稍候再试！</h2>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll ng-if="!loadCompleted"
+                             icon="ion-loading-c"
+                             distance="10%"
+                             on-infinite="loadMoreUnfishedWorkItem()">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
+
+
+<script id="Search.html" type="text/ng-template">
+    <ion-modal-view ng-controller="SearchUnFinishCtr">
+        <form role="form" ng-submit="doSearch(searchKey)">
+            <div class="bar bar-header item-input-inset">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input id="searchInput" type="search" placeholder="搜索"
+                           ng-model="searchKey" ng-change="doSearch(searchKey)">
+                </label>
+                <button class="button button-clear" ng-click="closeModal()">
+                    取消
+                </button>
+            </div>
+        </form>
+        <ion-content class="scroll-content ionic-scroll has-tabs has-header" on-scroll="getScrollPosition();">
+            <ion-list>
+                <!-- 没有加急任务时隐藏-->
+                <ion-item class="item-divider" ng-if="HighPriorityItems_Search.length>0">
+                    加急
+                </ion-item>
+                <ion-item ng-repeat="workItem in HighPriorityItems_Search"
+                          class="item-icon-right"
+                          style="cursor:pointer;" ng-click="openWorkItem('{{workItem.ObjectID}}')">
+                    <!--流程优先级显示-->
+                    <!--<i class="icon ion-ios-bell normalflow" ng-if="workItem.ItemType==4"-->
+                       <!--style="font-size:20px;left:15px;right:initial;"></i>-->
+                    <div>
+                        <h2>{{workItem.InstanceName}}</h2>
+                        <p>
+                            {{workItem.OrigiantorOUName}}：{{workItem.OrigiantorName}} 发起
+                            <span style="padding-left:10px;float:right;margin-right:10px;">{{workItem.ReceiveTime| limitTo:-11}}</span>
+                        </p>
+                    </div>
+                </ion-item>
+                <!-- 没有加急任务时隐藏 -->
+                <ion-item class="item-divider" ng-show="HighPriorityItems_Search.length>0 && NormalPriorityItems_Search.length>0">
+                    普通
+                </ion-item>
+                <ion-item ng-repeat="workItem in NormalPriorityItems_Search"
+                          class="item-icon-right"
+                          style="cursor:pointer;" ng-click="openWorkItem('{{workItem.ObjectID}}')">
+                    <!--流程优先级显示-->
+                    <!--<i class="icon ion-ios-bell normalflow" ng-if="workItem.ItemType!=4"-->
+                       <!--style="font-size:20px;left:15px;right:initial;"></i>-->
+                    <div>
+                        <h2>{{workItem.InstanceName}}</h2>
+                        <p>
+                            {{workItem.OrigiantorOUName}}：{{workItem.OrigiantorName}} 发起
+                            <span style="padding-left: 10px; float: right; margin-right: 10px;">{{workItem.ReceiveTime| limitTo:-11}}</span>
+                        </p>
+                    </div>
+                </ion-item>
+                <ion-item ng-if="(HighPriorityItems_Search.length > 0 || NormalPriorityItems_Search.length>0) && loadCompleted_Search"
+                          style="cursor:pointer">
+                    <div class="item-icon-left" style="padding-left:20px;">
+                        <i class="icon ion-android-happy"></i>
+                        <h2 style="margin-left:10px;">全部加载完成</h2>
+                    </div>
+                </ion-item>
+            </ion-list>
+            <ion-infinite-scroll ng-if="!loadCompleted_Search"
+                                 icon="ion-loading-c"
+                                 distance="10%"
+                                 on-infinite="loadMoreUnfishedWorkItem()">
+            </ion-infinite-scroll>
+        </ion-content>
+    </ion-modal-view>
+</script>

@@ -1,0 +1,5 @@
+/**
+ * Created by LX on 2017/8/9.
+ *  请求java接口地址
+ */
+var url = 'http://192.168.17.50:8080/stzx/';

@@ -1,0 +1,178 @@
+﻿module.controller('organizationCtrl', function ($rootScope, $scope, $state, $stateParams, $timeout, $ionicModal, $http, $ionicScrollDelegate, commonJS) {
+    $scope.userId = "";
+    $scope.parentParentId = "";
+    $scope.loadComplete = false;
+    $scope.init = function () {
+        $scope.isCompany = false;
+        $scope.OrgUnits = [];
+        $scope.OrgUsers = [];
+        $scope.parentId = "";
+        $scope.parentParentId = "";
+        $scope.ParentName = "";
+        $scope.DividerDisplay = false;
+        $scope.displaySearchButton = false;
+        //commonJS.loadingShow();
+        $scope.loadComplete = false;
+    };
+    // 每次进入View时触发
+    $scope.$on("$ionicView.enter", function (scopes, states) {
+        if ($rootScope.dingMobile.isDingMobile) {
+            $scope.SetDingDingHeader("通讯录");
+        }
+        if ($scope.userId != $scope.user.ObjectID) {
+            $scope.init();
+            $scope.loadOrg();
+            $scope.userId = $scope.user.ObjectID;
+        }
+        $ionicScrollDelegate.resize();
+    });
+    //加载组织
+    $scope.loadOrg = function () {
+        var orgId = $stateParams.id;
+        var url = "";
+        var params = null;
+        if (window.cordova) {
+            url = $scope.setting.httpUrl + "/GetOrganizationByParent?callback=JSON_CALLBACK";
+            url += "&userCode=" + $scope.user.Code;
+            url += "&mobileToken=" + $scope.user.MobileToken;
+            url += "&parentId=" + orgId;
+        } else {
+            url = $scope.setting.httpUrl + "/Mobile/GetOrganizationByParent";
+            params = {
+                userId: $scope.user.ObjectID,
+                userCode: $scope.user.Code,
+                mobileToken: $scope.user.MobileToken,
+                parentId: orgId
+            }
+        }
+        commonJS.getHttpData(url, params)
+        .success(function (result) {
+            var resultValue = result;
+            if (!resultValue) return;
+            $scope.OrgUnits = resultValue.orgUnits;
+            $scope.OrgUsers = resultValue.orgUsers;
+            if ($scope.OrgUnits.length > 0 && $scope.OrgUsers.length > 0) {
+                $scope.DividerDisplay = true;
+            }
+            $scope.ParentName = resultValue.parentName;
+            $scope.loadComplete = true;
+            $scope.parentId = resultValue.parentId;
+            $scope.parentParentId = resultValue.parentParentId || "";
+            $scope.userOU = resultValue.userOU;
+            $scope.parentUnits = resultValue.parentUnits;
+            $scope.isCompany = $scope.parentParentId == "";
+            commonJS.loadingHide();
+        }).error(function (e) {
+            commonJS.loadingHide();
+        });
+    }
+    // 打开指定组织
+    $scope.openUnit = function (objectId) {
+        if (objectId == "") {
+            $state.go("home.index")
+        } else {
+            $state.go("organization", {
+                id: objectId
+            });
+        }
+    }
+    //打开用户OU 
+    $scope.openUserOU = function () {
+        if ($scope.userOU.objectId != "") {
+            $state.go("organization", {
+                id: $scope.userOU.objectId
+            });
+        }
+    }
+    // 打开指定用户
+    $scope.openUser = function (objectId, index) {
+        $scope.modal.hide();
+        $rootScope.userIndex = index;
+        $state.go("user", {
+            id: objectId
+        });
+    }
+    // 点击电话
+    $scope.openTel = function () {
+        event.stopPropagation();
+    }
+
+    $ionicModal.fromTemplateUrl('Search.html', {
+        scope: $scope,
+        animation: 'slide-in-up',
+        focusFirstInput: true
+    }).then(function (modal) {
+        $scope.modal = modal;
+    });
+
+    //点击搜索
+    $scope.goToSearch = function () {
+        var inputEle = angular.element(document.querySelector('#searchInput'));
+        if (inputEle.length > 0) {
+            angular.element(document.querySelector('#searchInput'))[0].value = "";
+        }
+        $scope.modal.show();
+    }
+
+    // Cleanup the modal when we're done with it!
+    $scope.$on('$destroy', function () {
+        $scope.modal.remove();
+    });
+});
+
+module.controller('SearchOrgCtr', function ($rootScope, $scope, $state, $stateParams, $timeout, $ionicModal, $http, $ionicScrollDelegate, commonJS) {
+    // 搜索用户
+    $scope.doSearch = function (searchKey) {
+        $ionicScrollDelegate.scrollTop(true);
+        searchKey = searchKey || "";
+        if (searchKey == "") {
+            $scope.OrgUsers_Search = [];
+            return;
+        }
+        $scope.loadComplete = false;
+        var url = "";
+        var params = null;
+        if (window.cordova) {
+            url = $scope.setting.httpUrl + "/SearchUser?callback=JSON_CALLBACK";
+            url += "&userCode=" + $scope.user.Code;
+            url += "&mobileToken=" + $scope.user.MobileToken;
+            url += "&parentId=";// + $scope.parentId;
+            url += "&searchKey=" + searchKey;
+        }
+        else {
+            url = $scope.setting.httpUrl + "/Mobile/SearchUser";
+            params = {
+                userId: $scope.user.ObjectID,
+                userCode: $scope.user.Code,
+                mobileToken: $scope.user.MobileToken,
+                parentId: "",// $scope.parentId,
+                searchKey: searchKey
+            }
+        }
+        commonJS.getHttpData(url, params)
+        .success(function (result) {
+            if (!result) return
+            $scope.OrgUsers_Search = result.orgUsers;
+            $scope.loadComplete = true;
+            commonJS.loadingHide();
+        }).error(function () {
+            commonJS.loadingHide();
+        });
+    }
+    // 打开指定用户
+    $scope.openUser = function (objectId, index) {
+        $scope.searchKey = "";
+        $scope.OrgUsers_Search = [];
+        $scope.modal.hide();
+        $rootScope.userIndex = index;
+        $state.go("user", {
+            id: objectId
+        });
+    }
+    //关闭
+    $scope.closeModal = function () {
+        $scope.searchKey = "";
+        $scope.OrgUsers_Search = [];
+        $scope.modal.hide();
+    };
+})

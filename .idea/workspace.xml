@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="00289145-df50-4f52-87f6-185fdb0878a7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/img/top_logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/js/controller/newView.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/js/controller/noticeCtrl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/js/ionic-image-lazy-load.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/js/layer_mobile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/js/layer_mobile/layer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/js/layer_mobile/need" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/js/layer_mobile/need/layer.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/templates/home/newView.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/templates/home/noticeView.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hybrid/templates/home/welcome.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/Logistics" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/Logistics/CarService.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/common" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/common/Common.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/common/CommonService.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/handlers" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/handlers/CommonHandler.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/handlers/DingTalkHandler.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/handlers/DingTalkService.asmx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/handlers/FileHandler.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/handlers/LogisticsHandler.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/handlers/WorkflowHandler.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ContractWillSign" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ContractWillSign/SContractWillSign.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ContractWillSign/SContractWillSign.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNoticeMobile.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/NewsView/btn_liked.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/NewsView/btn_unlike.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/SOfficeTemplate.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/SOfficeTemplate.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/SOfficeTemplate.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/SOfficeTemplate.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/SOfficeTemplate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/images" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/images/ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/images/ico/btn_officedl.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/images/ico/imgHover.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/images/ico/imgHoverBg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/images/ico/picSlideLeft.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/OfficeTemplate/images/ico/picSlideRight.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectCarRental/SProjectCarRental.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectCarRental/SProjectCarRental.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectCarRental/SProjectCarRental.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectCarRental/SProjectCarRental.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectCost" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectCost/SProjectCost.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectCost/SProjectCost.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectHouseRental/SProjectHouseRental.ashx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectHouseRental/SProjectHouseRental.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectHouseRental/SProjectHouseRental.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectHouseRental/SProjectHouseRental.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectTask/SProjectTask.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/ProjectTask/SProjectTask.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SpareMoney" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SpareMoney/SSpareMoney.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SpareMoney/SSpareMoney.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubsidyEnabled" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubsidyEnabled/SSubsidyEnabled.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubsidyEnabled/SSubsidyEnabled.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubwayNews" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubwayNews/SSubwayNews.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubwayNews/SSubwayNews.aspx.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubwayNews/SSubwayNews.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubwayNews/btn_liked.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sheets/stzx/SubwayNews/btn_unlike.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WFRes/_Scripts/jquery/mTips.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WFRes/css/Attachment.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Webservices/DingTalkService.asmx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/custom/CompanyProfile.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/ic_hefei.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/ic_link_beijing.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/ic_link_nanchang.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/ic_link_shenzhen.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/ic_link_suzhou.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/img_companyframe.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/img_performance.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/img_result.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/img_strategy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/上海申通轨道交通研究咨询有限公司甲级资格证书.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/合同信用等级认定证书.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/图片1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/图片2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/图片3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/图片4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/图片5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/守合同重信用企业证书.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/环境管理体系认证证书.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/甲级设计资质.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/职业健康安全管理体系认证证书.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/质量管理体系认证证书.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/CompanyProfile/项目合同会签.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/file/地铁新闻.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/file/地铁期刊.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/ic_new.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/ic_stick.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/main/ic_index_meeting.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/main/ic_magazine.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/main/ic_news.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/project/立项建议.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/project/项目资料登记.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/project/项目销项管理.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyFinishedWorkItemControllerByGroup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyInstanceControllerByGroup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyReadWorkItemByGroupController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnReadWorkItemByGroupController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/Administrative/Huiwu/H_Travel_use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/CompanyProfile.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyFinishedWorkItemByGroup.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyInstanceByGroup.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyReadWorkItemByGroup.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyUnReadWorkItemByGroup.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/WebParts/Notice.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/WebParts/SubwayNews.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/projectManagement/ProjectInfo.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/projectManagement/ProjectTransaction.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/custom/CompanyProfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/custom/H_Travel_use.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/custom/ProjectInfo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/dist" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/dist/zoomify.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/dist/zoomify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/dist/zoomify.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/dist/zoomify.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/src" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/src/zoomify.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/src/zoomify.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/form/formControllers.js" afterPath="$PROJECT_DIR$/Hybrid/form/formControllers.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/img/logo.png" afterPath="$PROJECT_DIR$/Hybrid/img/logo.png" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/index.html" afterPath="$PROJECT_DIR$/Hybrid/index.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/app.js" afterPath="$PROJECT_DIR$/Hybrid/js/app.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/config.js" afterPath="$PROJECT_DIR$/Hybrid/js/config.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/controller/finishedWorkItemCtrl.js" afterPath="$PROJECT_DIR$/Hybrid/js/controller/finishedWorkItemCtrl.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/controller/finishreadworkitemCtrl.js" afterPath="$PROJECT_DIR$/Hybrid/js/controller/finishreadworkitemCtrl.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js" afterPath="$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/controller/organizationCtrl.js" afterPath="$PROJECT_DIR$/Hybrid/js/controller/organizationCtrl.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/controller/startworkflowCtrl.js" afterPath="$PROJECT_DIR$/Hybrid/js/controller/startworkflowCtrl.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/controller/unfinishedWorkItemCtrl.js" afterPath="$PROJECT_DIR$/Hybrid/js/controller/unfinishedWorkItemCtrl.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/controller/unreadworkitemCtrl.js" afterPath="$PROJECT_DIR$/Hybrid/js/controller/unreadworkitemCtrl.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/controllers.js" afterPath="$PROJECT_DIR$/Hybrid/js/controllers.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/js/services.js" afterPath="$PROJECT_DIR$/Hybrid/js/services.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/lib/ionic/js/ionic-angular.js" afterPath="$PROJECT_DIR$/Hybrid/lib/ionic/js/ionic-angular.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/lib/ionic/js/ionic.bundle.js" afterPath="$PROJECT_DIR$/Hybrid/lib/ionic/js/ionic.bundle.js" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home/finishedworkitem.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home/finishedworkitem.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home/finishreadworkitem.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home/finishreadworkitem.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home/index.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home/index.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home/myInstance.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home/myInstance.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home/organization.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home/organization.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home/unfinishedworkitem.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home/unfinishedworkitem.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home/unreadworkitem.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home/unreadworkitem.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/home/user.html" afterPath="$PROJECT_DIR$/Hybrid/templates/home/user.html" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/templates/login.html" afterPath="$PROJECT_DIR$/Hybrid/templates/login.html" />
+      <change beforePath="$PROJECT_DIR$/MvcSheet.Master" afterPath="$PROJECT_DIR$/MvcSheet.Master" />
+      <change beforePath="$PROJECT_DIR$/OThinker.H3.Portal.csproj" afterPath="$PROJECT_DIR$/OThinker.H3.Portal.csproj" />
+      <change beforePath="$PROJECT_DIR$/Office/template/Administrative/Information.html" afterPath="$PROJECT_DIR$/Office/template/Administrative/Information.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/Administrative/fileManagement.html" afterPath="$PROJECT_DIR$/Office/template/Administrative/fileManagement.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/AppCenter/BizQueryView.html" afterPath="$PROJECT_DIR$/Office/template/AppCenter/BizQueryView.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/AppCenter/HuiyishiPeizhi.html" afterPath="$PROJECT_DIR$/Office/template/AppCenter/HuiyishiPeizhi.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/Login.html" afterPath="$PROJECT_DIR$/Office/template/Login.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/WebParts/Meeting.html" afterPath="$PROJECT_DIR$/Office/template/WebParts/Meeting.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/WebParts/MyReports.html" afterPath="$PROJECT_DIR$/Office/template/WebParts/MyReports.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/WebParts/Notice.html" afterPath="$PROJECT_DIR$/Office/template/WebParts/Notice.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/ddhome.html" afterPath="$PROJECT_DIR$/Office/template/ddhome.html" />
+      <change beforePath="$PROJECT_DIR$/Office/template/platform/top_nav.html" afterPath="$PROJECT_DIR$/Office/template/platform/top_nav.html" />
+      <change beforePath="$PROJECT_DIR$/Organization/template/Administrative/Information.html" afterPath="$PROJECT_DIR$/Organization/template/Administrative/Information.html" />
+      <change beforePath="$PROJECT_DIR$/Organization/template/Administrative/fileManagement.html" afterPath="$PROJECT_DIR$/Organization/template/Administrative/fileManagement.html" />
+      <change beforePath="$PROJECT_DIR$/Organization/template/ddhome.html" afterPath="$PROJECT_DIR$/Organization/template/ddhome.html" />
+      <change beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/ExpertInfo/SExpertInfo.aspx" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/ExpertInfo/SExpertInfo.aspx" />
+      <change beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.aspx" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.aspx" />
+      <change beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.aspx.cs" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/NewNotice/SNewNotice.aspx.cs" />
+      <change beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/SMaterialsAcceptance/SSMaterialsAcceptance.aspx" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/SMaterialsAcceptance/SSMaterialsAcceptance.aspx" />
+      <change beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/SMaterialsAcceptance/SSMaterialsAcceptance.aspx.cs" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/SMaterialsAcceptance/SSMaterialsAcceptance.aspx.cs" />
+      <change beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/SMaterialsReceive/SSMaterialsReceive.aspx" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/SMaterialsReceive/SSMaterialsReceive.aspx" />
+      <change beforePath="$PROJECT_DIR$/Sheets/DefaultEngine/SMaterialsReceive/SSMaterialsReceive.aspx.cs" afterPath="$PROJECT_DIR$/Sheets/DefaultEngine/SMaterialsReceive/SSMaterialsReceive.aspx.cs" />
+      <change beforePath="$PROJECT_DIR$/Sheets/stzx/EvaluationResult/EvaluationResult.aspx" afterPath="$PROJECT_DIR$/Sheets/stzx/EvaluationResult/EvaluationResult.aspx" />
+      <change beforePath="$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNotice.aspx" afterPath="$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNotice.aspx" />
+      <change beforePath="$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNotice.css" afterPath="$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNotice.css" />
+      <change beforePath="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.aspx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.aspx.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/WFRes/_Content/themes/ligerUI/Aqua/css/ligerui-common.css" afterPath="$PROJECT_DIR$/WFRes/_Content/themes/ligerUI/Aqua/css/ligerui-common.css" />
+      <change beforePath="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/Controls/SheetAttachment.js" afterPath="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/Controls/SheetAttachment.js" />
+      <change beforePath="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/Controls/SheetUser.js" afterPath="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/Controls/SheetUser.js" />
+      <change beforePath="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/MvcSheet.js" afterPath="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/MvcSheet.js" />
+      <change beforePath="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/MvcSheetUI.js" afterPath="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/MvcSheetUI.js" />
+      <change beforePath="$PROJECT_DIR$/WFRes/_Scripts/bizquery.js" afterPath="$PROJECT_DIR$/WFRes/_Scripts/bizquery.js" />
+      <change beforePath="$PROJECT_DIR$/WFRes/_Scripts/ligerUI/ligerui.all.js" afterPath="$PROJECT_DIR$/WFRes/_Scripts/ligerUI/ligerui.all.js" />
+      <change beforePath="$PROJECT_DIR$/WFRes/assets/stylesheets/pixel-admin.min.css" afterPath="$PROJECT_DIR$/WFRes/assets/stylesheets/pixel-admin.min.css" />
+      <change beforePath="$PROJECT_DIR$/WFRes/css/MvcSheet.css" afterPath="$PROJECT_DIR$/WFRes/css/MvcSheet.css" />
+      <change beforePath="$PROJECT_DIR$/WFRes/editor/asp.net/upload_json.ashx" afterPath="$PROJECT_DIR$/WFRes/editor/asp.net/upload_json.ashx" />
+      <change beforePath="$PROJECT_DIR$/WFRes/editor/kindeditor-all.js" afterPath="$PROJECT_DIR$/WFRes/editor/kindeditor-all.js" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
+      <change beforePath="$PROJECT_DIR$/css/appExtend.css" afterPath="$PROJECT_DIR$/css/appExtend.css" />
+      <change beforePath="$PROJECT_DIR$/css/custom/BizQueryView.css" afterPath="$PROJECT_DIR$/css/custom/BizQueryView.css" />
+      <change beforePath="$PROJECT_DIR$/css/custom/Usage.css" afterPath="$PROJECT_DIR$/css/custom/Usage.css" />
+      <change beforePath="$PROJECT_DIR$/css/font.css" afterPath="$PROJECT_DIR$/css/font.css" />
+      <change beforePath="$PROJECT_DIR$/fonts/YouYuan/幼圆.eot" afterPath="$PROJECT_DIR$/fonts/YouYuan/幼圆.eot" />
+      <change beforePath="$PROJECT_DIR$/fonts/YouYuan/幼圆.ttf" afterPath="$PROJECT_DIR$/fonts/YouYuan/幼圆.ttf" />
+      <change beforePath="$PROJECT_DIR$/fonts/YouYuan/幼圆.woff" afterPath="$PROJECT_DIR$/fonts/YouYuan/幼圆.woff" />
+      <change beforePath="$PROJECT_DIR$/fonts/YouYuan/幼圆.woff2" afterPath="$PROJECT_DIR$/fonts/YouYuan/幼圆.woff2" />
+      <change beforePath="$PROJECT_DIR$/img/file/资料中心.png" afterPath="$PROJECT_DIR$/img/file/资料中心.png" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/js/config.lazyload.js" afterPath="$PROJECT_DIR$/js/config.lazyload.js" />
+      <change beforePath="$PROJECT_DIR$/js/config.router.js" afterPath="$PROJECT_DIR$/js/config.router.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/AppCenter/BizQueryViewController.js" afterPath="$PROJECT_DIR$/js/controllers/AppCenter/BizQueryViewController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/DefaultController.js" afterPath="$PROJECT_DIR$/js/controllers/DefaultController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/InstanceDetailController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/InstanceDetailController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyFinishedWorkItemController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyFinishedWorkItemController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyInstanceController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyInstanceController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyReadWorkItemController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyReadWorkItemController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnReadWorkItemController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnReadWorkItemController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnfinishedWorkItemByBatchController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnfinishedWorkItemByBatchController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnfinishedWorkItemByGroupController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnfinishedWorkItemByGroupController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnfinishedWorkItemController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyUnfinishedWorkItemController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyWorkflowController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/MyWorkflowController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/QueryInstanceController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/QueryInstanceController.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/QueryInstanceController1.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/QueryInstanceController1.js" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/ProcessCenter/QueryParticipantWorkItemController.js" afterPath="$PROJECT_DIR$/js/controllers/ProcessCenter/QueryParticipantWorkItemController.js" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/js/services/app-service.js" afterPath="$PROJECT_DIR$/js/services/app-service.js" />
+      <change beforePath="$PROJECT_DIR$/lang/zh_CN.js" afterPath="$PROJECT_DIR$/lang/zh_CN.js" />
+      <change beforePath="$PROJECT_DIR$/template/Administrative/ConsumableQuery.html" afterPath="$PROJECT_DIR$/template/Administrative/ConsumableQuery.html" />
+      <change beforePath="$PROJECT_DIR$/template/Administrative/Houqin.html" afterPath="$PROJECT_DIR$/template/Administrative/Houqin.html" />
+      <change beforePath="$PROJECT_DIR$/template/Administrative/Huiwu/H_Car_use.html" afterPath="$PROJECT_DIR$/template/Administrative/Huiwu/H_Car_use.html" />
+      <change beforePath="$PROJECT_DIR$/template/Administrative/Huiwu/H_Mroom_use.html" afterPath="$PROJECT_DIR$/template/Administrative/Huiwu/H_Mroom_use.html" />
+      <change beforePath="$PROJECT_DIR$/template/Administrative/Information.html" afterPath="$PROJECT_DIR$/template/Administrative/Information.html" />
+      <change beforePath="$PROJECT_DIR$/template/Administrative/OfficeSupplies.html" afterPath="$PROJECT_DIR$/template/Administrative/OfficeSupplies.html" />
+      <change beforePath="$PROJECT_DIR$/template/Administrative/fileManagement.html" afterPath="$PROJECT_DIR$/template/Administrative/fileManagement.html" />
+      <change beforePath="$PROJECT_DIR$/template/Login.html" afterPath="$PROJECT_DIR$/template/Login.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/InstanceDetail.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/InstanceDetail.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/MyFinishedWorkItem.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyFinishedWorkItem.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/MyInstance.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyInstance.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/MyReadWorkItem.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyReadWorkItem.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/MyUnReadWorkItem.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyUnReadWorkItem.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/MyUnfinishedWorkItem.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyUnfinishedWorkItem.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/MyUnfinishedWorkItemByBatch.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyUnfinishedWorkItemByBatch.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/MyUnfinishedWorkItemByGroup.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/MyUnfinishedWorkItemByGroup.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/QueryInstance.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/QueryInstance.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/QueryParticipantWorkItem.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/QueryParticipantWorkItem.html" />
+      <change beforePath="$PROJECT_DIR$/template/ProcessCenter/UserInfo.html" afterPath="$PROJECT_DIR$/template/ProcessCenter/UserInfo.html" />
+      <change beforePath="$PROJECT_DIR$/template/WebParts/Foot.html" afterPath="$PROJECT_DIR$/template/WebParts/Foot.html" />
+      <change beforePath="$PROJECT_DIR$/template/WebParts/Meeting.html" afterPath="$PROJECT_DIR$/template/WebParts/Meeting.html" />
+      <change beforePath="$PROJECT_DIR$/template/WebParts/MyReports.html" afterPath="$PROJECT_DIR$/template/WebParts/MyReports.html" />
+      <change beforePath="$PROJECT_DIR$/template/WebParts/MyTodo.html" afterPath="$PROJECT_DIR$/template/WebParts/MyTodo.html" />
+      <change beforePath="$PROJECT_DIR$/template/WebParts/Office.html" afterPath="$PROJECT_DIR$/template/WebParts/Office.html" />
+      <change beforePath="$PROJECT_DIR$/template/WebParts/Slider.html" afterPath="$PROJECT_DIR$/template/WebParts/Slider.html" />
+      <change beforePath="$PROJECT_DIR$/template/WebParts/Weather.html" afterPath="$PROJECT_DIR$/template/WebParts/Weather.html" />
+      <change beforePath="$PROJECT_DIR$/template/WebParts/news.html" afterPath="$PROJECT_DIR$/template/WebParts/news.html" />
+      <change beforePath="$PROJECT_DIR$/template/ddhome.html" afterPath="$PROJECT_DIR$/template/ddhome.html" />
+      <change beforePath="$PROJECT_DIR$/template/default.html" afterPath="$PROJECT_DIR$/template/default.html" />
+      <change beforePath="$PROJECT_DIR$/template/platform/header.html" afterPath="$PROJECT_DIR$/template/platform/header.html" />
+      <change beforePath="$PROJECT_DIR$/template/platform/menu_items.html" afterPath="$PROJECT_DIR$/template/platform/menu_items.html" />
+      <change beforePath="$PROJECT_DIR$/template/platform/nav.html" afterPath="$PROJECT_DIR$/template/platform/nav.html" />
+      <change beforePath="$PROJECT_DIR$/template/platform/top_nav.html" afterPath="$PROJECT_DIR$/template/platform/top_nav.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/PersonnelManagement.html" afterPath="$PROJECT_DIR$/template/projectManagement/PersonnelManagement.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/assessmentManagement.html" afterPath="$PROJECT_DIR$/template/projectManagement/assessmentManagement.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/attendance.html" afterPath="$PROJECT_DIR$/template/projectManagement/attendance.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/contractManagement.html" afterPath="$PROJECT_DIR$/template/projectManagement/contractManagement.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/costControl.html" afterPath="$PROJECT_DIR$/template/projectManagement/ProjectProduction.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/expertLibrary.html" afterPath="$PROJECT_DIR$/template/projectManagement/expertLibrary.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/falseAttendance.html" afterPath="$PROJECT_DIR$/template/projectManagement/falseAttendance.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/logisticsGoods.html" afterPath="$PROJECT_DIR$/template/projectManagement/logisticsGoods.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/productionManagement.html" afterPath="$PROJECT_DIR$/template/projectManagement/productionManagement.html" />
+      <change beforePath="$PROJECT_DIR$/template/projectManagement/projectFile.html" afterPath="$PROJECT_DIR$/template/projectManagement/projectFile.html" />
+      <change beforePath="$PROJECT_DIR$/vendor/Datatable/jquery.dataTables.css" afterPath="$PROJECT_DIR$/vendor/Datatable/jquery.dataTables.css" />
+      <change beforePath="$PROJECT_DIR$/vendor/Datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/vendor/Datatables/jquery.dataTables.js" />
+      <change beforePath="$PROJECT_DIR$/vendor/custom/H_Car_use.js" afterPath="$PROJECT_DIR$/vendor/custom/H_Car_use.js" />
+      <change beforePath="$PROJECT_DIR$/vendor/custom/H_Mroom_use.js" afterPath="$PROJECT_DIR$/vendor/custom/H_Mroom_use.js" />
+      <change beforePath="$PROJECT_DIR$/vendor/custom/attendance.js" afterPath="$PROJECT_DIR$/vendor/custom/attendance.js" />
+      <change beforePath="$PROJECT_DIR$/vendor/custom_app.js" afterPath="$PROJECT_DIR$/vendor/custom_app.js" />
+      <change beforePath="$PROJECT_DIR$/vendor/fullcalendar/fullcalendar.js" afterPath="$PROJECT_DIR$/vendor/fullcalendar/fullcalendar.js" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/1.jpg" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/1.jpg" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/2.jpg" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/2.jpg" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/3.jpg" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/3.jpg" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/4.jpg" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/4.jpg" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/5.jpg" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/5.jpg" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/6.jpg" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/6.jpg" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/7.jpg" afterPath="$PROJECT_DIR$/vendor/jquery/jquery-enlargement20160816/img/7.jpg" />
+      <change beforePath="$PROJECT_DIR$/vendor/wether.js" afterPath="$PROJECT_DIR$/vendor/wether.js" />
+    </list>
+    <ignored path="Portal.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Portal" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="415967" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="474747" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="D2D4D5" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="4E5579" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dataModelCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/dataModelCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2783">
+              <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcomeCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/welcomeCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+              <folding>
+                <element signature="e#438#493#0" expanded="false" />
+                <element signature="e#529#692#0" expanded="false" />
+                <element signature="e#747#914#0" expanded="false" />
+                <element signature="e#1004#2101#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1242">
+              <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="163" lean-forward="false" selection-start-line="14" selection-start-column="163" selection-end-line="14" selection-end-column="163" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1517906895801" expanded="true" signature="1668:1924" ph="{&quot;app-header-fixed&quot;: app.settings.headerFixed...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4853">
+              <caret line="211" column="26" lean-forward="true" selection-start-line="211" selection-start-column="26" selection-end-line="211" selection-end-column="26" />
+              <folding>
+                <element signature="e#16592#17333#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startworkflowCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/startworkflowCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2300">
+              <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SheetComment</find>
+      <find>Submit</find>
+      <find>SheetToolBar</find>
+      <find>SheetGridView</find>
+      <find>PopupWindow</find>
+      <find>WFRes/_Content/Login/images/main_logo.png</find>
+      <find>办公管理平台</find>
+      <find>btn-default</find>
+      <find>travelName</find>
+      <find>欢迎使用办公管理平台管理中心。</find>
+      <find>top_logo</find>
+      <find>img/Big-top.png</find>
+      <find>内部公文</find>
+      <find>Portal/Sheets/handlers/Logistics.js</find>
+      <find>Logistics</find>
+      <find>formUrl1</find>
+      <find>Logistics.js</find>
+      <find>后勤物品</find>
+      <find>辅助人员</find>
+      <find>scheduleCalendarByMeetingroom</find>
+      <find>home-index</find>
+      <find>user.Code</find>
+      <find>setting.autoLogin</find>
+      <find>ios</find>
+      <find>alert('自动登陆')</find>
+      <find>$state.go(&quot;home.index&quot;)</find>
+      <find>android</find>
+      <find>home.index</find>
+      <find>ddReady</find>
+      <find>OThinker.H3.Mobile.User</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>h3</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal1385px</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\template\projectManagement</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\PortalCCAcceptanceDetails</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portalpanel</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Office</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\template\Administrative</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\js\controllers</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\img\project</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\WFRes\_Scripts</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\template</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\js</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\vendor</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\vendor\Datatable</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\vendor\Datatables</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\vendor\jquery\datatables</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\WFRes</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\js\controllers\ProcessCenter</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Sheets\handlers</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Hybrid\js\controller</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Hybrid\templates\home</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Hybrid\templates</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Hybrid\js</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\vendor\custom</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal</dir>
+      <dir>D:\Program Files\Authine\H3 BPM\Portal\Hybrid</dir>
+      <dir>C:\Program Files\Authine\H3 BPM\Portal\Hybrid</dir>
+      <dir>C:\Program Files\Authine\H3 BPM\Portal</dir>
+      <dir>C:\Program Files\Authine\H3 BPM\Portal\WFRes</dir>
+      <dir>D:\Documents\Desktop\H3 BPM\Portal</dir>
+      <dir>D:\Documents\Desktop\H3 BPM\Portal\Hybrid</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Sheets/handlers/DingTalkHandler.ashx" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/notice.html" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/notice.js" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/organization.html" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/unreadworkitem.html" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/myInstance.html" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/mulSheets.html" />
+        <option value="$PROJECT_DIR$/Hybrid/form/templates/formDetail.html" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/newView.html" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/noticeView.html" />
+        <option value="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsView.css" />
+        <option value="$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNotice.css" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/welcome.html" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/unfinishedworkitem.html" />
+        <option value="$PROJECT_DIR$/Sheets/stzx/NewsView/NewsViewMobile.aspx" />
+        <option value="$PROJECT_DIR$/Sheets/stzx/NewNotice/NewNoticeMobile.aspx" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/newView.js" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/unfinishedWorkItemCtrl.js" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/finishedWorkItemCtrl.js" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/noticeCtrl.js" />
+        <option value="$USER_HOME$/Desktop/回车跳转页面.html" />
+        <option value="$PROJECT_DIR$/template/ddhome.html" />
+        <option value="$PROJECT_DIR$/Organization/template/ddhome.html" />
+        <option value="$PROJECT_DIR$/Office/template/ddhome.html" />
+        <option value="$PROJECT_DIR$/Hybrid/js/services.js" />
+        <option value="$PROJECT_DIR$/js/controllers/AppCenter/BizQueryViewController.js" />
+        <option value="$PROJECT_DIR$/Webservices/DingTalkService.asmx" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/finishreadworkitem.html" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/unreadworkitemCtrl.js" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/finishedworkitem.html" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/finishreadworkitemCtrl.js" />
+        <option value="$PROJECT_DIR$/Hybrid/form/formControllers.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home/index.html" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js" />
+        <option value="$PROJECT_DIR$/MvcSheet.Master" />
+        <option value="$PROJECT_DIR$/Sheets/stzx/ProjectHouseRental/SProjectHouseRental.aspx" />
+        <option value="$PROJECT_DIR$/WFRes/_Scripts/MVCSheet/Controls/SheetTextBox.js" />
+        <option value="$PROJECT_DIR$/../../随手练/jsDemo.js" />
+        <option value="$PROJECT_DIR$/template/projectManagement/ProjectTransaction.html" />
+        <option value="$PROJECT_DIR$/vendor/custom/attendance.js" />
+        <option value="$PROJECT_DIR$/template/projectManagement/attendance.html" />
+        <option value="$PROJECT_DIR$/../../随手练/jsDemo.html" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/login.html" />
+        <option value="$PROJECT_DIR$/Hybrid/js/app.js" />
+        <option value="$PROJECT_DIR$/Hybrid/index.html" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/welcomeCtrl.js" />
+        <option value="$PROJECT_DIR$/Hybrid/templates/home.html" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/home.js" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controller/login.js" />
+        <option value="$PROJECT_DIR$/Hybrid/js/controllers.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="19" />
+    <option name="width" value="1320" />
+    <option name="height" value="689" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>LossyEncoding</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+              <item name="Hybrid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+              <item name="Hybrid" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+              <item name="Hybrid" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+              <item name="Hybrid" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+              <item name="Hybrid" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="Administrative" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="Administrative" type="462c0819:PsiDirectoryNode" />
+              <item name="Huiwu" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../echarts" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Program Files/Authine/H3 BPM/Portal/WFRes/_Scripts/ReportDesigner/ReportTemplateCross.js" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/MvcSheet.master.cs" />
+  </component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\Webservices" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\Sheets\handlers" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\Sheets\stzx\NewsView" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\Sheets\stzx\NewNotice" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\Hybrid\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\template\Administrative" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\vendor\angular" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\img\main" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\img\file" />
+      <recent name="D:\Program Files\Authine\H3 BPM\Portal\img\hqgl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\SCD\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00289145-df50-4f52-87f6-185fdb0878a7" name="Default" comment="" />
+      <created>1494253640163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1494253640163</updated>
+      <workItem from="1497161944467" duration="21796000" />
+      <workItem from="1497230994014" duration="23167000" />
+      <workItem from="1497272839856" duration="2544000" />
+      <workItem from="1497315399944" duration="26305000" />
+      <workItem from="1497402942453" duration="19215000" />
+      <workItem from="1497444453516" duration="6793000" />
+      <workItem from="1497490546170" duration="3224000" />
+      <workItem from="1497507107872" duration="6414000" />
+      <workItem from="1497597070124" duration="1608000" />
+      <workItem from="1497598730065" duration="2290000" />
+      <workItem from="1497766580473" duration="11783000" />
+      <workItem from="1497792073437" duration="3803000" />
+      <workItem from="1497835610158" duration="16668000" />
+      <workItem from="1497876712292" duration="5947000" />
+      <workItem from="1497920454184" duration="11539000" />
+      <workItem from="1497943921168" duration="21966000" />
+      <workItem from="1498008319793" duration="26448000" />
+      <workItem from="1498052324974" duration="2963000" />
+      <workItem from="1498056901157" duration="641000" />
+      <workItem from="1498094898299" duration="22208000" />
+      <workItem from="1498439815821" duration="25675000" />
+      <workItem from="1498481538436" duration="5908000" />
+      <workItem from="1498526130000" duration="18923000" />
+      <workItem from="1498567776099" duration="6922000" />
+      <workItem from="1498576825749" duration="1288000" />
+      <workItem from="1498612597102" duration="23768000" />
+      <workItem from="1498654552154" duration="4410000" />
+      <workItem from="1498698984012" duration="30819000" />
+      <workItem from="1498742158029" duration="2012000" />
+      <workItem from="1498786167654" duration="21706000" />
+      <workItem from="1498900569967" duration="1125000" />
+      <workItem from="1498901737673" duration="269000" />
+      <workItem from="1498902041259" duration="12237000" />
+      <workItem from="1498923609670" duration="481000" />
+      <workItem from="1498990956048" duration="3037000" />
+      <workItem from="1499045508546" duration="29422000" />
+      <workItem from="1499132523514" duration="14642000" />
+      <workItem from="1499154114572" duration="7944000" />
+      <workItem from="1499181111633" duration="1048000" />
+      <workItem from="1499184206952" duration="1340000" />
+      <workItem from="1499216989886" duration="21162000" />
+      <workItem from="1499260929568" duration="844000" />
+      <workItem from="1499304394931" duration="1276000" />
+      <workItem from="1499307090192" duration="21397000" />
+      <workItem from="1499345859667" duration="6162000" />
+      <workItem from="1499390929719" duration="24664000" />
+      <workItem from="1499591360615" duration="11713000" />
+      <workItem from="1499612148023" duration="94000" />
+      <workItem from="1499612287743" duration="3000" />
+      <workItem from="1499650276106" duration="31231000" />
+      <workItem from="1499735054864" duration="31339000" />
+      <workItem from="1499822942477" duration="24485000" />
+      <workItem from="1499863542459" duration="8391000" />
+      <workItem from="1499909641427" duration="27015000" />
+      <workItem from="1499951632650" duration="5352000" />
+      <workItem from="1499995552243" duration="24690000" />
+      <workItem from="1500198553611" duration="7252000" />
+      <workItem from="1500254591777" duration="22152000" />
+      <workItem from="1500298022231" duration="645000" />
+      <workItem from="1500340507719" duration="16913000" />
+      <workItem from="1500384197863" duration="729000" />
+      <workItem from="1500427087211" duration="23304000" />
+      <workItem from="1500513861524" duration="22871000" />
+      <workItem from="1500555056438" duration="7106000" />
+      <workItem from="1500600462514" duration="1981000" />
+      <workItem from="1500602536739" duration="19568000" />
+      <workItem from="1500626099053" duration="120000" />
+      <workItem from="1500626244549" duration="3961000" />
+      <workItem from="1500808468730" duration="3293000" />
+      <workItem from="1500859696720" duration="25243000" />
+      <workItem from="1500902610274" duration="4099000" />
+      <workItem from="1500944619029" duration="21812000" />
+      <workItem from="1501032269323" duration="11988000" />
+      <workItem from="1501072454729" duration="3929000" />
+      <workItem from="1501118114643" duration="16550000" />
+      <workItem from="1501205304833" duration="25171000" />
+      <workItem from="1501420082022" duration="769000" />
+      <workItem from="1501464422728" duration="20034000" />
+      <workItem from="1501550486429" duration="22534000" />
+      <workItem from="1501592821754" duration="319000" />
+      <workItem from="1501637070371" duration="107000" />
+      <workItem from="1501639165738" duration="22604000" />
+      <workItem from="1501723828132" duration="22072000" />
+      <workItem from="1501809714989" duration="1784000" />
+      <workItem from="1501811531142" duration="1658000" />
+      <workItem from="1501814403137" duration="1517000" />
+      <workItem from="1501816232014" duration="1767000" />
+      <workItem from="1501818061217" duration="2071000" />
+      <workItem from="1501822874121" duration="1309000" />
+      <workItem from="1501824688217" duration="1197000" />
+      <workItem from="1501826516042" duration="658000" />
+      <workItem from="1501828331305" duration="1234000" />
+      <workItem from="1501830156654" duration="1782000" />
+      <workItem from="1501831970971" duration="1522000" />
+      <workItem from="1501833675691" duration="1775000" />
+      <workItem from="1501835483368" duration="1778000" />
+      <workItem from="1501837293028" duration="1774000" />
+      <workItem from="1501839101246" duration="1383000" />
+      <workItem from="1502069686467" duration="1227000" />
+      <workItem from="1502071747563" duration="1782000" />
+      <workItem from="1502073578200" duration="1775000" />
+      <workItem from="1502075396224" duration="1701000" />
+      <workItem from="1502077222319" duration="1821000" />
+      <workItem from="1502082005796" duration="1492000" />
+      <workItem from="1502084060989" duration="1773000" />
+      <workItem from="1502085867695" duration="1536000" />
+      <workItem from="1502087679021" duration="1779000" />
+      <workItem from="1502089495895" duration="1752000" />
+      <workItem from="1502091301023" duration="1775000" />
+      <workItem from="1502093109310" duration="1777000" />
+      <workItem from="1502094919146" duration="1770000" />
+      <workItem from="1502096732379" duration="1399000" />
+      <workItem from="1502098576047" duration="1465000" />
+      <workItem from="1502157339876" duration="1439000" />
+      <workItem from="1502159469991" duration="1374000" />
+      <workItem from="1502161291481" duration="1778000" />
+      <workItem from="1502163102109" duration="1476000" />
+      <workItem from="1502168870153" duration="1774000" />
+      <workItem from="1502170778792" duration="9767000" />
+      <workItem from="1502183668938" duration="3076000" />
+      <workItem from="1502242317652" duration="24746000" />
+      <workItem from="1502327944057" duration="8371000" />
+      <workItem from="1502337505221" duration="12906000" />
+      <workItem from="1502414761833" duration="19635000" />
+      <workItem from="1502673789930" duration="4229000" />
+      <workItem from="1502678982107" duration="4081000" />
+      <workItem from="1502683096660" duration="14789000" />
+      <workItem from="1502704201413" duration="873000" />
+      <workItem from="1502763384808" duration="10399000" />
+      <workItem from="1502854924633" duration="14442000" />
+      <workItem from="1502935047588" duration="8867000" />
+      <workItem from="1503019324327" duration="11578000" />
+      <workItem from="1503285947974" duration="4039000" />
+      <workItem from="1503365460158" duration="5401000" />
+      <workItem from="1503451917198" duration="1211000" />
+      <workItem from="1503466744319" duration="1663000" />
+      <workItem from="1503540042745" duration="644000" />
+      <workItem from="1503559311027" duration="2200000" />
+      <workItem from="1503883628300" duration="11360000" />
+      <workItem from="1503973496328" duration="3804000" />
+      <workItem from="1504056311248" duration="8933000" />
+      <workItem from="1504142912132" duration="7341000" />
+      <workItem from="1504232557088" duration="1641000" />
+      <workItem from="1504255403827" duration="4209000" />
+      <workItem from="1504488663476" duration="5714000" />
+      <workItem from="1504577398306" duration="1389000" />
+      <workItem from="1504663801939" duration="2711000" />
+      <workItem from="1504766760659" duration="10767000" />
+      <workItem from="1504834054064" duration="23553000" />
+      <workItem from="1505095028260" duration="6700000" />
+      <workItem from="1505185128937" duration="8800000" />
+      <workItem from="1505352939446" duration="5187000" />
+      <workItem from="1505439317417" duration="8419000" />
+      <workItem from="1505698089836" duration="1146000" />
+      <workItem from="1505719400674" duration="8254000" />
+      <workItem from="1505878557466" duration="11154000" />
+      <workItem from="1505911772718" duration="7296000" />
+      <workItem from="1505919472241" duration="377000" />
+      <workItem from="1505957589184" duration="9781000" />
+      <workItem from="1505990030167" duration="1263000" />
+      <workItem from="1506044131936" duration="7018000" />
+      <workItem from="1506171346635" duration="613000" />
+      <workItem from="1506242279262" duration="755000" />
+      <workItem from="1506243070097" duration="4534000" />
+      <workItem from="1506303781185" duration="1051000" />
+      <workItem from="1506317149304" duration="4601000" />
+      <workItem from="1506389271483" duration="6515000" />
+      <workItem from="1506415035904" duration="5030000" />
+      <workItem from="1506476203907" duration="657000" />
+      <workItem from="1506479996268" duration="22142000" />
+      <workItem from="1506516312795" duration="3922000" />
+      <workItem from="1506562808629" duration="8817000" />
+      <workItem from="1506583588935" duration="598000" />
+      <workItem from="1506654896698" duration="9580000" />
+      <workItem from="1507513065410" duration="24564000" />
+      <workItem from="1507552624134" duration="1725000" />
+      <workItem from="1507557095476" duration="4453000" />
+      <workItem from="1507599102374" duration="22231000" />
+      <workItem from="1507685574674" duration="2261000" />
+      <workItem from="1507687967193" duration="25280000" />
+      <workItem from="1507770225013" duration="25209000" />
+      <workItem from="1507858697421" duration="24129000" />
+      <workItem from="1508121579332" duration="637000" />
+      <workItem from="1508124406330" duration="4900000" />
+      <workItem from="1508150911417" duration="139000" />
+      <workItem from="1508161927458" duration="3631000" />
+      <workItem from="1508204238916" duration="27338000" />
+      <workItem from="1508310733777" duration="7848000" />
+      <workItem from="1508376914185" duration="18841000" />
+      <workItem from="1508463026104" duration="16711000" />
+      <workItem from="1508895022477" duration="24278000" />
+      <workItem from="1508981067540" duration="2851000" />
+      <workItem from="1508985175486" duration="23390000" />
+      <workItem from="1509067811852" duration="16536000" />
+      <workItem from="1509088467072" duration="7397000" />
+      <workItem from="1509327184816" duration="12257000" />
+      <workItem from="1509413544096" duration="23546000" />
+      <workItem from="1509452626714" duration="6130000" />
+      <workItem from="1509501249529" duration="26855000" />
+      <workItem from="1509540951177" duration="5770000" />
+      <workItem from="1509547818484" duration="4558000" />
+      <workItem from="1509585706960" duration="5029000" />
+      <workItem from="1509590946160" duration="20293000" />
+      <workItem from="1509672459916" duration="22952000" />
+      <workItem from="1509874413175" duration="2630000" />
+      <workItem from="1509877579529" duration="1013000" />
+      <workItem from="1509932304203" duration="17486000" />
+      <workItem from="1510018184586" duration="7357000" />
+      <workItem from="1510026605975" duration="16023000" />
+      <workItem from="1510104930492" duration="8577000" />
+      <workItem from="1510190738945" duration="14085000" />
+      <workItem from="1510277535727" duration="279000" />
+      <workItem from="1510280879021" duration="1665000" />
+      <workItem from="1510292238232" duration="1003000" />
+      <workItem from="1510536356398" duration="4376000" />
+      <workItem from="1510544582344" duration="9631000" />
+      <workItem from="1510623080692" duration="1423000" />
+      <workItem from="1510709410512" duration="597000" />
+      <workItem from="1510809393151" duration="10400000" />
+      <workItem from="1510882245768" duration="7041000" />
+      <workItem from="1510908685695" duration="4760000" />
+      <workItem from="1511142667190" duration="14793000" />
+      <workItem from="1511227986256" duration="17371000" />
+      <workItem from="1511314796080" duration="628000" />
+      <workItem from="1511327823380" duration="12823000" />
+      <workItem from="1511400605112" duration="19336000" />
+      <workItem from="1511487037762" duration="11836000" />
+      <workItem from="1511506828924" duration="735000" />
+      <workItem from="1511508250653" duration="7712000" />
+      <workItem from="1511746445523" duration="3335000" />
+      <workItem from="1511832909341" duration="24920000" />
+      <workItem from="1511872101614" duration="3961000" />
+      <workItem from="1511919234996" duration="25487000" />
+      <workItem from="1512005418114" duration="25924000" />
+      <workItem from="1512091905840" duration="23093000" />
+      <workItem from="1512351088961" duration="26651000" />
+      <workItem from="1512437508643" duration="25250000" />
+      <workItem from="1512525284399" duration="24976000" />
+      <workItem from="1512610320351" duration="6186000" />
+      <workItem from="1512697278012" duration="9911000" />
+      <workItem from="1512956378523" duration="4018000" />
+      <workItem from="1513042287237" duration="3079000" />
+      <workItem from="1513128703084" duration="7797000" />
+      <workItem from="1513215306010" duration="24461000" />
+      <workItem from="1513301728780" duration="23322000" />
+      <workItem from="1513561285622" duration="10025000" />
+      <workItem from="1513582258710" duration="8806000" />
+      <workItem from="1513648987234" duration="19800000" />
+      <workItem from="1513733866952" duration="23940000" />
+      <workItem from="1513820264821" duration="23092000" />
+      <workItem from="1513906202415" duration="7967000" />
+      <workItem from="1513923023615" duration="2153000" />
+      <workItem from="1513933541365" duration="2769000" />
+      <workItem from="1514165337255" duration="26443000" />
+      <workItem from="1514251819918" duration="20003000" />
+      <workItem from="1514338921788" duration="12903000" />
+      <workItem from="1514424728988" duration="16649000" />
+      <workItem from="1514857865753" duration="23000" />
+      <workItem from="1514858261275" duration="10000" />
+      <workItem from="1514858925762" duration="78000" />
+      <workItem from="1514859705033" duration="827000" />
+      <workItem from="1514860562789" duration="82000" />
+      <workItem from="1514860668371" duration="228000" />
+      <workItem from="1514860921009" duration="21721000" />
+      <workItem from="1514943114485" duration="212000" />
+      <workItem from="1514943354931" duration="14853000" />
+      <workItem from="1515029908506" duration="5672000" />
+      <workItem from="1515115974070" duration="14489000" />
+      <workItem from="1515137521504" duration="246000" />
+      <workItem from="1515137813422" duration="7943000" />
+      <workItem from="1515375711902" duration="17670000" />
+      <workItem from="1515461418770" duration="8531000" />
+      <workItem from="1515552805359" duration="7770000" />
+      <workItem from="1515632656728" duration="11493000" />
+      <workItem from="1515719950242" duration="14678000" />
+      <workItem from="1515979514171" duration="10662000" />
+      <workItem from="1516065343257" duration="10375000" />
+      <workItem from="1516151740050" duration="6827000" />
+      <workItem from="1516238929847" duration="14070000" />
+      <workItem from="1516324730890" duration="5948000" />
+      <workItem from="1516330717007" duration="19202000" />
+      <workItem from="1516592555023" duration="18105000" />
+      <workItem from="1516670290664" duration="24613000" />
+      <workItem from="1516709740598" duration="2089000" />
+      <workItem from="1516756529821" duration="18346000" />
+      <workItem from="1516844293900" duration="1963000" />
+      <workItem from="1516929895337" duration="599000" />
+      <workItem from="1517189961511" duration="26107000" />
+      <workItem from="1517275252526" duration="7560000" />
+      <workItem from="1517301732884" duration="3866000" />
+      <workItem from="1517361482596" duration="7063000" />
+      <workItem from="1517377562902" duration="1139000" />
+      <workItem from="1517380370283" duration="5162000" />
+      <workItem from="1517388834179" duration="3229000" />
+      <workItem from="1517448260612" duration="8809000" />
+      <workItem from="1517534554969" duration="25561000" />
+      <workItem from="1517637786441" duration="8176000" />
+      <workItem from="1517793978208" duration="4702000" />
+      <workItem from="1517800980887" duration="7257000" />
+      <workItem from="1517835994655" duration="1151000" />
+      <workItem from="1517880986921" duration="14213000" />
+      <workItem from="1517920585952" duration="3562000" />
+      <workItem from="1517968728563" duration="24120000" />
+      <workItem from="1518054353926" duration="1273000" />
+      <workItem from="1518332151067" duration="7840000" />
+      <workItem from="1519608514153" duration="19625000" />
+      <workItem from="1519694404180" duration="20151000" />
+      <workItem from="1519781584753" duration="26984000" />
+      <workItem from="1519821469054" duration="8436000" />
+      <workItem from="1519867824084" duration="26877000" />
+      <workItem from="1519910994875" duration="2012000" />
+      <workItem from="1519954180793" duration="27146000" />
+      <workItem from="1520213546894" duration="12758000" />
+      <workItem from="1520299882990" duration="599000" />
+      <workItem from="1520312639256" duration="3195000" />
+      <workItem from="1520386242711" duration="7430000" />
+      <workItem from="1520405729671" duration="4929000" />
+      <workItem from="1520475817818" duration="11049000" />
+      <workItem from="1520819022192" duration="577000" />
+      <workItem from="1520825214184" duration="415000" />
+      <workItem from="1520846280366" duration="726000" />
+      <workItem from="1520904500711" duration="591000" />
+      <workItem from="1520911816607" duration="1645000" />
+      <workItem from="1520925438564" duration="4325000" />
+      <workItem from="1520991479297" duration="1789000" />
+      <workItem from="1521009239548" duration="6926000" />
+      <workItem from="1521077652159" duration="9282000" />
+      <workItem from="1521095609049" duration="6738000" />
+      <workItem from="1521164011911" duration="896000" />
+      <workItem from="1521165437820" duration="10639000" />
+      <workItem from="1521182105462" duration="2323000" />
+      <workItem from="1522219616969" duration="2816000" />
+      <workItem from="1522290501553" duration="1226000" />
+      <workItem from="1522373301385" duration="591000" />
+      <workItem from="1522395908348" duration="1254000" />
+      <workItem from="1522634266972" duration="5686000" />
+      <workItem from="1522654942645" duration="6629000" />
+      <workItem from="1522719131711" duration="6546000" />
+      <workItem from="1522806823158" duration="264000" />
+      <workItem from="1522835044138" duration="692000" />
+      <workItem from="1523238227156" duration="12034000" />
+      <workItem from="1523425182204" duration="4643000" />
+      <workItem from="1523500127567" duration="4152000" />
+      <workItem from="1523517867938" duration="4000" />
+      <workItem from="1523582407362" duration="1198000" />
+      <workItem from="1523598142908" duration="1468000" />
+      <workItem from="1523611566043" duration="707000" />
+      <workItem from="1524036220535" duration="59000" />
+      <workItem from="1524188755266" duration="15371000" />
+      <workItem from="1524447229879" duration="1207000" />
+      <workItem from="1524461457451" duration="6000" />
+      <workItem from="1524463694512" duration="6000" />
+      <workItem from="1524470388024" duration="161000" />
+      <workItem from="1524536743382" duration="53000" />
+      <workItem from="1524548686641" duration="172000" />
+    </task>
+    <task id="LOCAL-00001" summary="阿的范德萨发发">
+      <created>1497598996739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497598996739</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1497599021198</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1497599021198</updated>
+    </task>
+    <task id="LOCAL-00003" summary="样式调整">
+      <created>1497599047490</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497599047490</updated>
+    </task>
+    <task id="LOCAL-00004" summary="样式调整">
+      <created>1506319148179</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1506319148179</updated>
+    </task>
+    <task id="LOCAL-00005" summary="样式调整">
+      <created>1506331367733</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1506331367733</updated>
+    </task>
+    <task id="LOCAL-00006" summary="样式调整">
+      <created>1506480087269</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1506480087269</updated>
+    </task>
+    <task id="LOCAL-00007" summary="样式调整">
+      <created>1506564332654</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1506564332654</updated>
+    </task>
+    <task id="LOCAL-00008" summary="样式调整">
+      <created>1506576412342</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1506576412342</updated>
+    </task>
+    <task id="LOCAL-00009" summary="样式调整">
+      <created>1508205518480</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1508205518481</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3212787000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="19" width="1320" height="689" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21855828" sideWeight="0.8991935" order="1" side_tool="true" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.008896797" sideWeight="0.517744" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31108144" sideWeight="0.48225603" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1311787" sideWeight="0.10080645" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20912547" sideWeight="0.8986486" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.013351135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05340454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.013351135" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.517744" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31108144" sideWeight="0.48225603" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1647145" sideWeight="0.8991935" order="1" side_tool="true" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05340454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1311787" sideWeight="0.10080645" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20912547" sideWeight="0.8986486" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="阿的范德萨发发" />
+    <MESSAGE value="初始导入" />
+    <MESSAGE value="样式调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="样式调整" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="78" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4876">
+          <caret line="212" column="52" lean-forward="false" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+          <folding>
+            <element signature="e#16592#17333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2024">
+          <caret line="88" column="67" lean-forward="false" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/dataModelCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2783">
+          <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/welcomeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="e#438#493#0" expanded="false" />
+            <element signature="e#529#692#0" expanded="false" />
+            <element signature="e#747#914#0" expanded="false" />
+            <element signature="e#1004#2101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="163" lean-forward="false" selection-start-line="14" selection-start-column="163" selection-end-line="14" selection-end-column="163" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/startworkflowCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4876">
+          <caret line="212" column="52" lean-forward="false" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+          <folding>
+            <element signature="e#16592#17333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2024">
+          <caret line="88" column="67" lean-forward="false" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/dataModelCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2783">
+          <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/welcomeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="e#438#493#0" expanded="false" />
+            <element signature="e#529#692#0" expanded="false" />
+            <element signature="e#747#914#0" expanded="false" />
+            <element signature="e#1004#2101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="163" lean-forward="false" selection-start-line="14" selection-start-column="163" selection-end-line="14" selection-end-column="163" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/startworkflowCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4876">
+          <caret line="212" column="52" lean-forward="false" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+          <folding>
+            <element signature="e#16592#17333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/dataModelCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2783">
+          <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2024">
+          <caret line="88" column="67" lean-forward="false" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/welcomeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="e#438#493#0" expanded="false" />
+            <element signature="e#529#692#0" expanded="false" />
+            <element signature="e#747#914#0" expanded="false" />
+            <element signature="e#1004#2101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="163" lean-forward="false" selection-start-line="14" selection-start-column="163" selection-end-line="14" selection-end-column="163" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/startworkflowCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4876">
+          <caret line="212" column="52" lean-forward="true" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+          <folding>
+            <element signature="e#16592#17333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2024">
+          <caret line="88" column="67" lean-forward="false" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/dataModelCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2783">
+          <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/welcomeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="163" lean-forward="false" selection-start-line="14" selection-start-column="163" selection-end-line="14" selection-end-column="163" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/startworkflowCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4439">
+          <caret line="193" column="28" lean-forward="false" selection-start-line="193" selection-start-column="28" selection-end-line="193" selection-end-column="28" />
+          <folding>
+            <element signature="e#16592#17333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2024">
+          <caret line="88" column="67" lean-forward="false" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/dataModelCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2783">
+          <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/welcomeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/indexCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/startworkflowCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4853">
+          <caret line="211" column="26" lean-forward="true" selection-start-line="211" selection-start-column="26" selection-end-line="211" selection-end-column="26" />
+          <folding>
+            <element signature="e#16592#17333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/js/controller/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="e#438#493#0" expanded="false" />
+            <element signature="e#529#692#0" expanded="false" />
+            <element signature="e#747#914#0" expanded="false" />
+            <element signature="e#1004#2101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hybrid/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="163" lean-forward="false" selection-start-line="14" selection-start-column="163" selection-end-line="14" selection-end-column="163" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517906895801" expanded="true" signature="1668:1924" ph="{&quot;app-header-fixed&quot;: app.settings.headerFixed...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

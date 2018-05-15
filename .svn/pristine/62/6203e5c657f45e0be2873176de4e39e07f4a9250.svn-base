@@ -1,0 +1,2773 @@
+<BizWorkflowPackage>
+  <PackageCode>ExpertInfo</PackageCode>
+  <PackageName>专家信息</PackageName>
+  <FunctionNode xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Serialized>true</Serialized>
+    <ObjectID>51fc6329-126e-48db-a934-f60871e0b811</ObjectID>
+    <ParentObjectID />
+    <ParentIndex>0</ParentIndex>
+    <Code>ExpertInfo</Code>
+    <IsSystem>false</IsSystem>
+    <State>Unspecified</State>
+    <ParentCode>82209744-5866-4de0-9a6b-457170107c56</ParentCode>
+    <DisplayName>专家信息</DisplayName>
+    <Description />
+    <SortKey>0</SortKey>
+    <NodeType>BizWorkflowPackage</NodeType>
+    <OpenNewWindow>false</OpenNewWindow>
+    <IsInherit>false</IsInherit>
+    <IconType>Url</IconType>
+    <IconUrl />
+    <Url />
+  </FunctionNode>
+  <BizObjectSchema>
+    <SchemaCode>ExpertInfo</SchemaCode>
+    <DisplayName>数据模型</DisplayName>
+    <Description />
+    <StorageType>DataList</StorageType>
+    <TableName>I_ExpertInfo</TableName>
+    <MainVersion>3</MainVersion>
+    <SubVersion>0</SubVersion>
+    <NameSchema />
+    <SummarySchema />
+    <Properties>
+      <PropertySchema>
+        <Name>ObjectID</Name>
+        <DisplayName>ObjectID</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Name</Name>
+        <DisplayName>Name</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedBy</Name>
+        <DisplayName>CreatedBy</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedByParentId</Name>
+        <DisplayName>CreatedByParentId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>OwnerId</Name>
+        <DisplayName>OwnerId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>OwnerParentId</Name>
+        <DisplayName>OwnerParentId</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>CreatedTime</Name>
+        <DisplayName>CreatedTime</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ModifiedBy</Name>
+        <DisplayName>ModifiedBy</DisplayName>
+        <LogicType>SingleParticipant</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>ModifiedTime</Name>
+        <DisplayName>ModifiedTime</DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>RunningInstanceId</Name>
+        <DisplayName>RunningInstanceId</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>ForeignKey</SerializeMethod>
+        <Indexed>true</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>EName</Name>
+        <DisplayName>姓名</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Sex</Name>
+        <DisplayName>性别</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>BirthDate</Name>
+        <DisplayName>出生日期 </DisplayName>
+        <LogicType>DateTime</LogicType>
+        <MaxLength>0</MaxLength>
+        <DefaultValue>
+          <dateTime>0001-01-01T00:00:00</dateTime>
+        </DefaultValue>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>WorkUnit</Name>
+        <DisplayName>工作单位</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Job</Name>
+        <DisplayName>职务</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>IdentificationCard</Name>
+        <DisplayName>身份证</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>TechnicalTitle</Name>
+        <DisplayName>技术职称/职业资格</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Byyx</Name>
+        <DisplayName>毕业院校</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Zgxl</Name>
+        <DisplayName>最高学历</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Zynx</Name>
+        <DisplayName>专业年限</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Cszy1</Name>
+        <DisplayName>从事专业</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Cszy2</Name>
+        <DisplayName>Cszy2</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Cszy3</Name>
+        <DisplayName>Cszy3</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Lxdh</Name>
+        <DisplayName>联系电话</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Yx</Name>
+        <DisplayName>邮箱</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Txdz</Name>
+        <DisplayName>通讯地址</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Gzjlhyj</Name>
+        <DisplayName>主要工作简历和业绩</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Fj</Name>
+        <DisplayName>附件</DisplayName>
+        <LogicType>Attachment</LogicType>
+        <MaxLength>0</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>None</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+      <PropertySchema>
+        <Name>Status</Name>
+        <DisplayName>可用状态</DisplayName>
+        <LogicType>ShortString</LogicType>
+        <MaxLength>200</MaxLength>
+        <SourceType>Normal</SourceType>
+        <MetadataItemName />
+        <Formula />
+        <DisplayValueFormula />
+        <Trackable>false</Trackable>
+        <SerializeMethod>Auto</SerializeMethod>
+        <Indexed>false</Indexed>
+        <Searchable>false</Searchable>
+        <Abstract>false</Abstract>
+      </PropertySchema>
+    </Properties>
+    <Methods>
+      <MethodGroupSchema>
+        <MethodName>Create</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Load</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Update</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>Remove</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Normal</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+      <MethodGroupSchema>
+        <MethodName>GetList</MethodName>
+        <DisplayName />
+        <TransactionalAsDefault>false</TransactionalAsDefault>
+        <UpdateAfterInvoking>false</UpdateAfterInvoking>
+        <MethodType>Filter</MethodType>
+        <MethodMaps />
+      </MethodGroupSchema>
+    </Methods>
+    <Associations />
+    <ViewCollection>
+    </ViewCollection>
+  </BizObjectSchema>
+  <BizListenerPolicy>
+    <PolicyType>OneByOne</PolicyType>
+    <IntervalSecond>600</IntervalSecond>
+    <FilterMethod />
+  </BizListenerPolicy>
+  <BizQueries>
+    <BizQuery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <SchemaCode>ExpertInfo</SchemaCode>
+      <QueryCode>zjcx</QueryCode>
+      <DisplayName>专家查询</DisplayName>
+      <ListMethod>GetList</ListMethod>
+      <ListDefault>True</ListDefault>
+      <Columns>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>12622ac7-7d1a-4b99-9c5f-2cbd31d7fe75</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>ObjectID</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>b773695c-1bfd-4c2d-8754-6581dc67d6f0</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>Name</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>684cf86b-5109-4ab6-b77b-f66fc9cd6834</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>CreatedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>b30d89bc-973d-489f-bea0-336812f9e535</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>CreatedByParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>20e3d4be-73cd-4492-819f-92252e42a2ce</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>4</ParentIndex>
+          <PropertyName>OwnerId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>4549d54b-9b95-4ec6-a6f3-d49b44154c91</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>5</ParentIndex>
+          <PropertyName>OwnerParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>39275eee-b330-48a4-b6b4-f97244e6bd2d</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>6</ParentIndex>
+          <PropertyName>CreatedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>2498e075-68c1-4565-93cb-592ab26f2b1e</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>7</ParentIndex>
+          <PropertyName>ModifiedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>4878782c-86d5-4614-b45f-e141cb6d2fcc</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>8</ParentIndex>
+          <PropertyName>ModifiedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>2b804209-1cf6-4a3a-8bfe-87b9b05654a2</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>9</ParentIndex>
+          <PropertyName>RunningInstanceId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>c5240182-5319-40e0-b6db-25a160e31511</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>10</ParentIndex>
+          <PropertyName>EName</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>c0907c79-77c3-4f65-aa84-86034a49e37e</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>11</ParentIndex>
+          <PropertyName>Sex</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>c02660ef-26be-4bba-9327-e151d2aef8b1</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>12</ParentIndex>
+          <PropertyName>BirthDate</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>bbb72495-4fe9-460d-9a45-9f9e2864d062</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>13</ParentIndex>
+          <PropertyName>WorkUnit</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>d6da7d09-42e5-4947-bf67-e0a71cec7f05</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>14</ParentIndex>
+          <PropertyName>Job</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>b0ca7c25-170d-4522-b444-6f3dcc0ffe31</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>15</ParentIndex>
+          <PropertyName>IdentificationCard</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>0bc1c6ba-7422-4429-8167-3921815c9b05</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>16</ParentIndex>
+          <PropertyName>TechnicalTitle</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>241176b6-ce7d-4b42-a06c-e9e3ba26e95e</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>17</ParentIndex>
+          <PropertyName>Byyx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>e97ee5cc-35ac-4eaf-9399-d0d52c786163</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>18</ParentIndex>
+          <PropertyName>Zgxl</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>d935d717-346b-42a5-bde1-ede678ca13d1</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>19</ParentIndex>
+          <PropertyName>Cszy1</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>a0f20215-0662-44ee-9ac7-71539b5cc7ef</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>20</ParentIndex>
+          <PropertyName>Cszy2</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>e06da846-1aed-4c90-8de6-1c188012a2a3</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>21</ParentIndex>
+          <PropertyName>Cszy3</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>e7e99133-80d2-4442-be6b-4030c397d299</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>22</ParentIndex>
+          <PropertyName>Lxdh</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>278e86ca-dcd9-4df9-9a3a-f03992a7be27</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>23</ParentIndex>
+          <PropertyName>Yx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>403bc9f7-0768-4390-bcda-fe985cc2b7fd</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>24</ParentIndex>
+          <PropertyName>Txdz</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>020e9bc6-320d-4fa6-bfc1-6281fc02ddc3</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>25</ParentIndex>
+          <PropertyName>Gzjlhyj</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>a12ec0f6-b0f6-4669-a61e-d70720164aea</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>26</ParentIndex>
+          <PropertyName>Fj</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>4e82c974-1c4a-41fd-b8ee-e37d99749aba</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>27</ParentIndex>
+          <PropertyName>Status</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>991b64b9-ff83-4cfb-aff5-7c9d2ebd360f</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>28</ParentIndex>
+          <PropertyName>Zynx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+      </Columns>
+      <QueryItems>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>795b0907-e49a-46fa-a6da-b0f4b082fab6</ObjectID>
+          <ParentObjectID>eba45d0b-3e4a-4258-b0f9-3303e00d0e57</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>Cszy1</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Contains</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+      </QueryItems>
+      <BizActions />
+    </BizQuery>
+    <BizQuery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <SchemaCode>ExpertInfo</SchemaCode>
+      <QueryCode>zjxxcx</QueryCode>
+      <DisplayName>专家信息查询</DisplayName>
+      <ListMethod>GetList</ListMethod>
+      <ListDefault>True</ListDefault>
+      <Columns>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>a9285c44-4009-47b9-8a65-32c079e239e1</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>ObjectID</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>ccbcf643-fd7c-41f3-8a4d-605c4308bedc</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>Name</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>142fe17c-5f53-4568-a34d-c04d0b7bc20f</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>CreatedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>7f16e68b-e144-4ff7-b17c-f12cb415d2d9</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>CreatedByParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>7b7b5e15-19fd-4b73-8481-fbd7a7a69180</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>4</ParentIndex>
+          <PropertyName>OwnerId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>9ebfea31-aab6-4c81-93ae-25b4ffa47773</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>5</ParentIndex>
+          <PropertyName>OwnerParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>1660568a-d22b-403b-8836-6084b2936160</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>6</ParentIndex>
+          <PropertyName>CreatedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>b341bc94-7105-4502-ad52-1bba705c8ce0</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>7</ParentIndex>
+          <PropertyName>ModifiedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>9dc30587-7b8f-4e44-bf84-48c1efce8c0c</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>8</ParentIndex>
+          <PropertyName>ModifiedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>ca4f2b59-96e6-4522-a008-31890632c0bc</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>9</ParentIndex>
+          <PropertyName>RunningInstanceId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>778b2d24-b676-44f8-a310-c36b7136d698</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>10</ParentIndex>
+          <PropertyName>EName</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>d35bb686-5ce4-40ba-a610-6488ca4045ed</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>11</ParentIndex>
+          <PropertyName>Sex</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>59aa85de-d91a-4963-8ef1-5336034a43de</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>12</ParentIndex>
+          <PropertyName>BirthDate</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>32ab224e-41d3-4330-a68e-1742c44dcae1</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>13</ParentIndex>
+          <PropertyName>WorkUnit</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>003a8c9e-78b0-405a-a849-faea4b306ba4</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>14</ParentIndex>
+          <PropertyName>Job</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>408bc29f-edc7-4764-85a3-8f3f656a8559</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>15</ParentIndex>
+          <PropertyName>IdentificationCard</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>63e28afc-576b-4914-82fb-47e37b4e86d2</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>16</ParentIndex>
+          <PropertyName>TechnicalTitle</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>0479c848-14a1-4a1d-b595-16af7b3f09c0</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>17</ParentIndex>
+          <PropertyName>Byyx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>688e30cc-ce7c-4a3a-ae6a-8149cf5a8266</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>18</ParentIndex>
+          <PropertyName>Zgxl</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>b52fe172-8a58-4ad5-82a8-644905198e39</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>19</ParentIndex>
+          <PropertyName>Zynx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>7d2f468b-53c2-4533-b6c2-d600e7a48feb</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>20</ParentIndex>
+          <PropertyName>Cszy1</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>ff484b05-65e1-4222-ad96-050816b41237</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>21</ParentIndex>
+          <PropertyName>Cszy2</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>8b49ce87-bb05-4188-ac80-95668659e858</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>22</ParentIndex>
+          <PropertyName>Cszy3</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>c6a8e9d1-37af-433f-8d80-933eae042cf5</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>23</ParentIndex>
+          <PropertyName>Lxdh</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>19d9086c-50b1-4a1d-9f97-0d23b4ca363a</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>24</ParentIndex>
+          <PropertyName>Yx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>6cab9d28-95b7-4f7c-ac07-596f92f160a8</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>25</ParentIndex>
+          <PropertyName>Txdz</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>fb981748-2647-4420-9586-0a589013c81c</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>26</ParentIndex>
+          <PropertyName>Gzjlhyj</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>610c777f-7a98-4f26-8ec3-d0838fcde921</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>27</ParentIndex>
+          <PropertyName>Fj</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>4ecd9c9d-a054-4537-9526-4ca31cf9262c</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>28</ParentIndex>
+          <PropertyName>Status</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+      </Columns>
+      <QueryItems>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>3b12fd7f-ba83-4dad-b68c-5bb7b044bc6f</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>Cszy1</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>9857b03e-a1b1-4d1a-bd38-e43a676eed13</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>Cszy2</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>54f4ea22-69da-41a9-b95a-c1f3a88c3291</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>Cszy3</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>d4928cfd-ca58-4359-b38b-b4c0c43d04a3</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>Sex</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>DropdownList</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues>男;女</SelectedValues>
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>35e235c2-b331-46b3-a330-eb0306e81a6d</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>4</ParentIndex>
+          <PropertyName>EName</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Contains</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>2ffad96b-8eda-4c40-bae7-3fe8613a9eb0</ObjectID>
+          <ParentObjectID>aaae0112-21dd-4933-9b71-092196e4037e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>5</ParentIndex>
+          <PropertyName>Status</PropertyName>
+          <Visible>False</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue>使用中</DefaultValue>
+        </BizQueryItem>
+      </QueryItems>
+      <BizActions />
+    </BizQuery>
+    <BizQuery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <SchemaCode>ExpertInfo</SchemaCode>
+      <QueryCode>zjxxwh</QueryCode>
+      <DisplayName>专家信息维护</DisplayName>
+      <ListMethod>GetList</ListMethod>
+      <ListDefault>True</ListDefault>
+      <Columns>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>0ef0f4c0-6b56-4cbe-9272-e20f2d972b2d</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>ObjectID</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>99bab4b7-1097-4156-bb15-80bd4a1be89b</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>Name</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>12362e6e-49c6-426b-8d0c-9d97842cb33c</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>CreatedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>73cac031-0e84-4678-a7fd-c4dda920d77c</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>CreatedByParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>ac3b021c-a808-4820-8cfe-8f6e2a656106</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>4</ParentIndex>
+          <PropertyName>OwnerId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>2a120d00-e463-40c3-8146-fe1240800e17</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>5</ParentIndex>
+          <PropertyName>OwnerParentId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>0040f6cd-7bbf-4500-9c54-7fe1b6d0b297</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>6</ParentIndex>
+          <PropertyName>CreatedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>97583a5a-5be1-4536-9ce1-fe50e889abc9</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>7</ParentIndex>
+          <PropertyName>ModifiedBy</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>2babe50a-ff07-4ddf-b4c8-aeac6486efce</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>8</ParentIndex>
+          <PropertyName>ModifiedTime</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>231d40dc-1226-4338-9a7a-78d45c6f3930</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>9</ParentIndex>
+          <PropertyName>RunningInstanceId</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>e5acb315-1639-4b7b-9be1-2174fea49e5c</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>10</ParentIndex>
+          <PropertyName>EName</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>82fd51bb-f3f4-4bcf-a54c-4ee1f0100de1</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>11</ParentIndex>
+          <PropertyName>Sex</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>46b804e6-b903-4b33-b97e-2c8ae992ea2a</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>12</ParentIndex>
+          <PropertyName>BirthDate</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>9194074a-f19b-4100-8a89-b3fa4200c7b6</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>13</ParentIndex>
+          <PropertyName>WorkUnit</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>a59ca8d2-a2ef-4584-96b3-12718caa440d</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>14</ParentIndex>
+          <PropertyName>Job</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>8b6e17f1-e5bc-42f1-ba87-442cb2a3560e</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>15</ParentIndex>
+          <PropertyName>IdentificationCard</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>ac45c69a-112c-44ff-aa74-afba2403ef5d</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>16</ParentIndex>
+          <PropertyName>TechnicalTitle</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>2d9bab42-db8c-4ac6-9515-df162b0daad3</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>17</ParentIndex>
+          <PropertyName>Byyx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>380fc2fe-4f52-42dc-b126-652d0ebbdc92</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>18</ParentIndex>
+          <PropertyName>Zgxl</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>fdc3430d-e6d7-40ba-a3ce-e0cdab6a3edf</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>19</ParentIndex>
+          <PropertyName>Zynx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>86d9b71b-6667-4f47-a885-c630003cd30f</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>20</ParentIndex>
+          <PropertyName>Cszy1</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>61f9996c-d6f2-4c8c-a5ba-b07737b198a9</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>21</ParentIndex>
+          <PropertyName>Cszy2</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>634311c2-1517-43d4-ba98-8518b1f3e092</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>22</ParentIndex>
+          <PropertyName>Cszy3</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>5c7484c4-9245-47ca-a146-2a45555ee2a9</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>23</ParentIndex>
+          <PropertyName>Lxdh</PropertyName>
+          <Visible>True</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>5ea2e978-9169-4068-9660-f86fc0f08de7</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>24</ParentIndex>
+          <PropertyName>Yx</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>7d821b7b-e408-43e1-a78d-960cf7e81ddf</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>25</ParentIndex>
+          <PropertyName>Txdz</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>206d2337-cffa-49d3-9aad-8d50632cc257</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>26</ParentIndex>
+          <PropertyName>Gzjlhyj</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>aaadd8bf-76a6-489e-9df6-ffa0a9d79c4f</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>27</ParentIndex>
+          <PropertyName>Fj</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+        <BizQueryColumn>
+          <Serialized>true</Serialized>
+          <ObjectID>6e6ce7ce-23ea-4375-8b15-dfa8ab955583</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>Columns</ParentPropertyName>
+          <ParentIndex>28</ParentIndex>
+          <PropertyName>Status</PropertyName>
+          <Visible>False</Visible>
+          <Sortable>False</Sortable>
+          <Width>0</Width>
+          <DisplayFormat />
+        </BizQueryColumn>
+      </Columns>
+      <QueryItems>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>4dee398b-b425-49d7-ae3f-74d16dbe4141</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <PropertyName>Cszy1</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>1434f09a-2b87-4739-96b0-b1cb9d93cd22</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <PropertyName>Cszy2</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>db8818ad-883c-4041-bc8a-35ae0b130531</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <PropertyName>Cszy3</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>bb797d90-6d10-4368-8c68-5a583b70c7e0</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>3</ParentIndex>
+          <PropertyName>Sex</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>DropdownList</DisplayType>
+          <FilterType>Equals</FilterType>
+          <SelectedValues>男;女</SelectedValues>
+          <DefaultValue />
+        </BizQueryItem>
+        <BizQueryItem>
+          <Serialized>true</Serialized>
+          <ObjectID>7e0edb77-e2e7-488c-ae9a-9106c211b2b6</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>QueryItems</ParentPropertyName>
+          <ParentIndex>4</ParentIndex>
+          <PropertyName>EName</PropertyName>
+          <Visible>True</Visible>
+          <PropertyType>String</PropertyType>
+          <DisplayType>TextBox</DisplayType>
+          <FilterType>Contains</FilterType>
+          <SelectedValues />
+          <DefaultValue />
+        </BizQueryItem>
+      </QueryItems>
+      <BizActions>
+        <BizQueryAction>
+          <Serialized>true</Serialized>
+          <ObjectID>82c08e72-2588-4202-875c-4550dc9fca8a</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>BizActions</ParentPropertyName>
+          <ParentIndex>0</ParentIndex>
+          <ActionCode>AddNew</ActionCode>
+          <DisplayName>添加</DisplayName>
+          <ActionType>OpenBizSheet</ActionType>
+          <BizSheetCode>SExpertInfo</BizSheetCode>
+          <Confirm>False</Confirm>
+          <AfterSave>CloseAndRefreshParent</AfterSave>
+          <WithID>False</WithID>
+          <SortKey>0</SortKey>
+        </BizQueryAction>
+        <BizQueryAction>
+          <Serialized>true</Serialized>
+          <ObjectID>7b9235e3-afbb-4c5b-81a9-e7620d9a298d</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>BizActions</ParentPropertyName>
+          <ParentIndex>1</ParentIndex>
+          <ActionCode>Edit</ActionCode>
+          <DisplayName>编辑</DisplayName>
+          <ActionType>OpenBizSheet</ActionType>
+          <BizSheetCode>SExpertInfo</BizSheetCode>
+          <Confirm>False</Confirm>
+          <AfterSave>CloseAndRefreshParent</AfterSave>
+          <WithID>True</WithID>
+          <SortKey>0</SortKey>
+        </BizQueryAction>
+        <BizQueryAction>
+          <Serialized>true</Serialized>
+          <ObjectID>5e578491-632a-4533-897c-470b65124123</ObjectID>
+          <ParentObjectID>589a9979-e625-4815-8f8a-bb751f24f23e</ParentObjectID>
+          <ParentPropertyName>BizActions</ParentPropertyName>
+          <ParentIndex>2</ParentIndex>
+          <ActionCode>Delete</ActionCode>
+          <DisplayName>移除</DisplayName>
+          <ActionType>BizMethod</ActionType>
+          <BizMethodName>Remove</BizMethodName>
+          <Confirm>True</Confirm>
+          <AfterSave>Close</AfterSave>
+          <WithID>True</WithID>
+          <SortKey>0</SortKey>
+        </BizQueryAction>
+      </BizActions>
+    </BizQuery>
+  </BizQueries>
+  <BizSheets>
+    <BizSheet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Serialized>true</Serialized>
+      <ObjectID>1ec5f333-1907-4a1b-8210-03a71c38b115</ObjectID>
+      <ParentObjectID />
+      <ParentIndex>0</ParentIndex>
+      <BizObjectSchemaCode>ExpertInfo</BizObjectSchemaCode>
+      <SheetCode>SExpertInfo</SheetCode>
+      <DisplayName>默认表单</DisplayName>
+      <LastModifiedTime>2017-09-28T17:18:31.9943555+08:00</LastModifiedTime>
+      <SheetType>DefaultSheet</SheetType>
+      <DesignModeContent>&lt;div style="text-align: center;" class="DragContainer" tabindex="0"&gt;
+	&lt;label id="lblTitle" class="panel-title" tabindex="0"&gt;专家信息&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="panel-body sheetContainer" tabindex="0"&gt;
+	&lt;div class="nav-icon fa fa-chevron-right bannerTitle hidden"&gt;
+		&lt;label id="divBasicInfo" data-en_us="Basic information" tabindex="0" class=""&gt;基本信息&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="divContent" tabindex="0"&gt;
+		&lt;div class="row hidden" tabindex="0"&gt;
+			&lt;div id="divFullNameTitle" class="col-md-2" tabindex="0"&gt;
+				&lt;label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" tabindex="0" style="z-index: 101; cursor: move;"&gt;发起人&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divFullName" class="col-md-4" tabindex="0"&gt;
+				&lt;label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" tabindex="0" style="z-index: 101; cursor: move;"&gt;
+&lt;span class="OnlyDesigner"&gt;Originator.UserName&lt;/span&gt;
+				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDateTitle" class="col-md-2" tabindex="0"&gt;
+				&lt;label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" tabindex="0" style="z-index: 101; cursor: move;"&gt;发起时间&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDate" class="col-md-4" tabindex="0"&gt;
+				&lt;label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" tabindex="0" style="z-index: 101; cursor: move;"&gt;
+&lt;span class="OnlyDesigner"&gt;OriginateDate&lt;/span&gt;
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row hidden" tabindex="0"&gt;
+			&lt;div id="divOriginateOUNameTitle" class="col-md-2" tabindex="0"&gt;
+				&lt;label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" tabindex="0" style="z-index: 101; cursor: move;"&gt;所属组织&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateOUName" class="col-md-4" tabindex="0"&gt;
+				&lt;!--					&lt;label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData"&gt;
+&lt;span class="OnlyDesigner"&gt;Originator.OUName&lt;/span&gt;
+					&lt;/label&gt;--&gt;
+					&lt;select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style="z-index: 101; cursor: move;"&gt;
+					&lt;/select&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNoTitle" class="col-md-2" tabindex="0"&gt;
+					&lt;label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" tabindex="0" style="z-index: 101; cursor: move;"&gt;流水号&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNo" class="col-md-4" tabindex="0"&gt;
+					&lt;label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" tabindex="0" style="z-index: 101; cursor: move;"&gt;
+&lt;span class="OnlyDesigner"&gt;SequenceNo&lt;/span&gt;
+					&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+			&lt;label id="divSheetInfo" data-en_us="Sheet information" tabindex="0" class=""&gt;专家信息&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class="divContent" id="divSheet" tabindex="0"&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title1" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label11" data-type="SheetLabel" data-datafield="EName" style="z-index: 101; cursor: move;"&gt;姓名&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control1" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control11" type="text" data-datafield="EName" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title2" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label12" data-type="SheetLabel" data-datafield="Sex" style="z-index: 101; cursor: move;"&gt;性别&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control2" class="col-md-4" tabindex="0"&gt;
+					
+				&lt;select data-datafield="Sex" data-type="SheetDropDownList" id="ctl781725" class="" style="z-index: 101; cursor: move;" data-defaultitems="男;女" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title3" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label13" data-type="SheetLabel" data-datafield="BirthDate" style="z-index: 101; cursor: move;"&gt;出生日期 &lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control3" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control13" type="text" data-datafield="BirthDate" data-type="SheetTime" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title4" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label14" data-type="SheetLabel" data-datafield="WorkUnit" style="z-index: 101; cursor: move;"&gt;工作单位&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control4" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control14" type="text" data-datafield="WorkUnit" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title5" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label15" data-type="SheetLabel" data-datafield="Job" style="z-index: 101; cursor: move;"&gt;职务&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control5" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control15" type="text" data-datafield="Job" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title6" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label16" data-type="SheetLabel" data-datafield="IdentificationCard" style="z-index: 101; cursor: move;"&gt;身份证&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control6" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control16" type="text" data-datafield="IdentificationCard" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title7" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label17" data-type="SheetLabel" data-datafield="TechnicalTitle" style="z-index: 101; cursor: move;"&gt;技术职称/职业资格&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control7" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control17" type="text" data-datafield="TechnicalTitle" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title8" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label18" data-type="SheetLabel" data-datafield="Byyx" style="z-index: 101; cursor: move;"&gt;毕业院校&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control8" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control18" type="text" data-datafield="Byyx" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title9" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label19" data-type="SheetLabel" data-datafield="Zgxl" style="z-index: 101; cursor: move;"&gt;最高学历&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control9" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control19" type="text" data-datafield="Zgxl" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title10" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label29" data-type="SheetLabel" data-datafield="Zynx" style="z-index: 101; cursor: move;" class=""&gt;专业年限&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control10" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control29" type="text" data-datafield="Zynx" data-type="SheetTextBox" style="z-index: 101; cursor: move;" class=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row designer" tabindex="0"&gt;
+				&lt;div id="div732703" class="designer col-md-2" tabindex="0"&gt;
+					&lt;span id="Label20" data-type="SheetLabel" data-datafield="Cszy1" class="" style="z-index: 101; cursor: move;"&gt;从事专业&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div705177" class="designer col-md-3" tabindex="0"&gt;
+					
+				&lt;select data-datafield="Cszy1" data-type="SheetDropDownList" id="ctl313765" class="" style="z-index: 101; cursor: move;" data-schemacode="zjkcx" data-querycode="zjklb" data-filter="0:Pid" data-datavaluefield="Cid" data-datatextfield="TypeName" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+				&lt;div id="div937294" class="designer col-md-3" tabindex="0"&gt;
+					
+				&lt;select data-datafield="Cszy2" data-type="SheetDropDownList" id="ctl334419" class="" style="z-index: 101; cursor: move;" data-schemacode="zjkcx" data-querycode="zjklb" data-filter="Cszy1:Pid" data-datavaluefield="Cid" data-datatextfield="TypeName" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+				&lt;div id="div977097" class="designer col-md-3" tabindex="0"&gt;
+					
+				&lt;select data-datafield="Cszy3" data-type="SheetDropDownList" id="ctl935379" class="" style="z-index: 101; cursor: move;" data-schemacode="zjkcx" data-querycode="zjklb" data-filter="Cszy2:Pid" data-datavaluefield="Cid" data-datatextfield="TypeName" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+				&lt;div id="div588112" class="designer col-md-1" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title13" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label23" data-type="SheetLabel" data-datafield="Lxdh" style="z-index: 101; cursor: move;"&gt;联系电话&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control13" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control23" type="text" data-datafield="Lxdh" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title14" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label24" data-type="SheetLabel" data-datafield="Yx" style="z-index: 101; cursor: move;"&gt;邮箱&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control14" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control24" type="text" data-datafield="Yx" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title15" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label25" data-type="SheetLabel" data-datafield="Txdz" style="z-index: 101; cursor: move;"&gt;通讯地址&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control15" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control25" type="text" data-datafield="Txdz" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title16" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label26" data-type="SheetLabel" data-datafield="Gzjlhyj" style="z-index: 101; cursor: move;"&gt;主要工作简历和业绩&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control16" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control26" type="text" data-datafield="Gzjlhyj" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title17" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label27" data-type="SheetLabel" data-datafield="Fj" style="z-index: 101; cursor: move;"&gt;附件&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control17" class="col-md-10" tabindex="0"&gt;
+					&lt;div id="Control27" data-datafield="Fj" data-type="SheetAttachment" style="z-index: 101; cursor: move;"&gt;
+						&lt;span class="OnlyDesigner"&gt;未选择任何文件&lt;input type="button" value="浏览..."&gt;
+						&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row" tabindex="0"&gt;
+				&lt;div id="title19" class="col-md-2" tabindex="0"&gt;
+					&lt;span id="Label28" data-type="SheetLabel" data-datafield="Status" style="z-index: 101; cursor: move;" class=""&gt;可用状态&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control19" class="col-md-4" tabindex="0"&gt;
+					&lt;input id="Control28" type="text" data-datafield="Status" data-type="SheetTextBox" style="z-index: 101; cursor: move;"&gt;
+				&lt;/div&gt;
+				&lt;div id="title20" class="col-md-2" tabindex="0"&gt;
+				&lt;/div&gt;
+				&lt;div id="control20" class="col-md-4" tabindex="0"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+</DesignModeContent>
+      <RuntimeContent>&lt;script type="text/javascript"&gt;
+
+&lt;/script&gt;
+&lt;div style="text-align: center;" class="DragContainer"&gt;
+	&lt;label id="lblTitle" class="panel-title"&gt;专家信息&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="panel-body sheetContainer"&gt;
+	&lt;div class="nav-icon fa fa-chevron-right bannerTitle hidden"&gt;
+		&lt;label id="divBasicInfo" data-en_us="Basic information" class=""&gt;基本信息&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="divContent"&gt;
+		&lt;div class="row hidden"&gt;
+			&lt;div id="divFullNameTitle" class="col-md-2"&gt;
+				&lt;label id="lblFullNameTitle" data-type="SheetLabel" data-datafield="Originator.UserName" data-en_us="Originator" data-bindtype="OnlyVisiable" style=""&gt;发起人&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divFullName" class="col-md-4"&gt;
+				&lt;label id="lblFullName" data-type="SheetLabel" data-datafield="Originator.UserName" data-bindtype="OnlyData" style=""&gt;
+
+				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDateTitle" class="col-md-2"&gt;
+				&lt;label id="lblOriginateDateTitle" data-type="SheetLabel" data-datafield="OriginateTime" data-en_us="Originate Date" data-bindtype="OnlyVisiable" style=""&gt;发起时间&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateDate" class="col-md-4"&gt;
+				&lt;label id="lblOriginateDate" data-type="SheetLabel" data-datafield="OriginateTime" data-bindtype="OnlyData" style=""&gt;
+
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row hidden"&gt;
+			&lt;div id="divOriginateOUNameTitle" class="col-md-2"&gt;
+				&lt;label id="lblOriginateOUNameTitle" data-type="SheetLabel" data-datafield="Originator.OUName" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" style=""&gt;所属组织&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div id="divOriginateOUName" class="col-md-4"&gt;
+				&lt;!--					&lt;label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData"&gt;
+&lt;span class="OnlyDesigner"&gt;Originator.OUName&lt;/span&gt;
+					&lt;/label&gt;--&gt;
+					&lt;select data-datafield="Originator.OUName" data-type="SheetOriginatorUnit" id="ctlOriginaotrOUName" class="" style=""&gt;
+					&lt;/select&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNoTitle" class="col-md-2"&gt;
+					&lt;label id="lblSequenceNoTitle" data-type="SheetLabel" data-datafield="SequenceNo" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" style=""&gt;流水号&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div id="divSequenceNo" class="col-md-4"&gt;
+					&lt;label id="lblSequenceNo" data-type="SheetLabel" data-datafield="SequenceNo" data-bindtype="OnlyData" style=""&gt;
+
+					&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="nav-icon fa  fa-chevron-right bannerTitle"&gt;
+			&lt;label id="divSheetInfo" data-en_us="Sheet information" class=""&gt;专家信息&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class="divContent" id="divSheet"&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title1" class="col-md-2"&gt;
+					&lt;span id="Label11" data-type="SheetLabel" data-datafield="EName" style=""&gt;姓名&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control1" class="col-md-4"&gt;
+					&lt;input id="Control11" type="text" data-datafield="EName" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title2" class="col-md-2"&gt;
+					&lt;span id="Label12" data-type="SheetLabel" data-datafield="Sex" style=""&gt;性别&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control2" class="col-md-4"&gt;
+					
+				&lt;select data-datafield="Sex" data-type="SheetDropDownList" id="ctl781725" class="" style="" data-defaultitems="男;女" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title3" class="col-md-2"&gt;
+					&lt;span id="Label13" data-type="SheetLabel" data-datafield="BirthDate" style=""&gt;出生日期 &lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control3" class="col-md-4"&gt;
+					&lt;input id="Control13" type="text" data-datafield="BirthDate" data-type="SheetTime" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title4" class="col-md-2"&gt;
+					&lt;span id="Label14" data-type="SheetLabel" data-datafield="WorkUnit" style=""&gt;工作单位&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control4" class="col-md-4"&gt;
+					&lt;input id="Control14" type="text" data-datafield="WorkUnit" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title5" class="col-md-2"&gt;
+					&lt;span id="Label15" data-type="SheetLabel" data-datafield="Job" style=""&gt;职务&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control5" class="col-md-4"&gt;
+					&lt;input id="Control15" type="text" data-datafield="Job" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title6" class="col-md-2"&gt;
+					&lt;span id="Label16" data-type="SheetLabel" data-datafield="IdentificationCard" style=""&gt;身份证&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control6" class="col-md-4"&gt;
+					&lt;input id="Control16" type="text" data-datafield="IdentificationCard" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title7" class="col-md-2"&gt;
+					&lt;span id="Label17" data-type="SheetLabel" data-datafield="TechnicalTitle" style=""&gt;技术职称/职业资格&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control7" class="col-md-4"&gt;
+					&lt;input id="Control17" type="text" data-datafield="TechnicalTitle" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title8" class="col-md-2"&gt;
+					&lt;span id="Label18" data-type="SheetLabel" data-datafield="Byyx" style=""&gt;毕业院校&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control8" class="col-md-4"&gt;
+					&lt;input id="Control18" type="text" data-datafield="Byyx" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title9" class="col-md-2"&gt;
+					&lt;span id="Label19" data-type="SheetLabel" data-datafield="Zgxl" style=""&gt;最高学历&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control9" class="col-md-4"&gt;
+					&lt;input id="Control19" type="text" data-datafield="Zgxl" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title10" class="col-md-2"&gt;
+					&lt;span id="Label29" data-type="SheetLabel" data-datafield="Zynx" style="" class=""&gt;专业年限&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control10" class="col-md-4"&gt;
+					&lt;input id="Control29" type="text" data-datafield="Zynx" data-type="SheetTextBox" style="" class=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="div732703" class="col-md-2"&gt;
+					&lt;span id="Label20" data-type="SheetLabel" data-datafield="Cszy1" class="" style=""&gt;从事专业&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="div705177" class="col-md-3"&gt;
+					
+				&lt;select data-datafield="Cszy1" data-type="SheetDropDownList" id="ctl313765" class="" style="" data-schemacode="zjkcx" data-querycode="zjklb" data-filter="0:Pid" data-datavaluefield="Cid" data-datatextfield="TypeName" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+				&lt;div id="div937294" class="col-md-3"&gt;
+					
+				&lt;select data-datafield="Cszy2" data-type="SheetDropDownList" id="ctl334419" class="" style="" data-schemacode="zjkcx" data-querycode="zjklb" data-filter="Cszy1:Pid" data-datavaluefield="Cid" data-datatextfield="TypeName" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+				&lt;div id="div977097" class="col-md-3"&gt;
+					
+				&lt;select data-datafield="Cszy3" data-type="SheetDropDownList" id="ctl935379" class="" style="" data-schemacode="zjkcx" data-querycode="zjklb" data-filter="Cszy2:Pid" data-datavaluefield="Cid" data-datatextfield="TypeName" data-queryable="false"&gt;&lt;/select&gt;&lt;/div&gt;
+				&lt;div id="div588112" class="col-md-1"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title13" class="col-md-2"&gt;
+					&lt;span id="Label23" data-type="SheetLabel" data-datafield="Lxdh" style=""&gt;联系电话&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control13" class="col-md-4"&gt;
+					&lt;input id="Control23" type="text" data-datafield="Lxdh" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title14" class="col-md-2"&gt;
+					&lt;span id="Label24" data-type="SheetLabel" data-datafield="Yx" style=""&gt;邮箱&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control14" class="col-md-4"&gt;
+					&lt;input id="Control24" type="text" data-datafield="Yx" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title15" class="col-md-2"&gt;
+					&lt;span id="Label25" data-type="SheetLabel" data-datafield="Txdz" style=""&gt;通讯地址&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control15" class="col-md-4"&gt;
+					&lt;input id="Control25" type="text" data-datafield="Txdz" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title16" class="col-md-2"&gt;
+					&lt;span id="Label26" data-type="SheetLabel" data-datafield="Gzjlhyj" style=""&gt;主要工作简历和业绩&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control16" class="col-md-4"&gt;
+					&lt;input id="Control26" type="text" data-datafield="Gzjlhyj" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title17" class="col-md-2"&gt;
+					&lt;span id="Label27" data-type="SheetLabel" data-datafield="Fj" style=""&gt;附件&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control17" class="col-md-10"&gt;
+					&lt;div id="Control27" data-datafield="Fj" data-type="SheetAttachment" style=""&gt;
+						
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="row"&gt;
+				&lt;div id="title19" class="col-md-2"&gt;
+					&lt;span id="Label28" data-type="SheetLabel" data-datafield="Status" style="" class=""&gt;可用状态&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div id="control19" class="col-md-4"&gt;
+					&lt;input id="Control28" type="text" data-datafield="Status" data-type="SheetTextBox" style=""&gt;
+				&lt;/div&gt;
+				&lt;div id="title20" class="col-md-2"&gt;
+				&lt;/div&gt;
+				&lt;div id="control20" class="col-md-4"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+</RuntimeContent>
+      <EnabledCode>false</EnabledCode>
+      <CodeContent>using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace OThinker.H3.Portal.Sheets.DefaultEngine
+{
+    public partial class SExpertInfo : OThinker.H3.Controllers.MvcPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+    }
+}
+</CodeContent>
+      <SheetAddress>SExpertInfo.aspx</SheetAddress>
+      <MobileSheetAddress />
+      <IsMVC>true</IsMVC>
+    </BizSheet>
+  </BizSheets>
+  <WorkflowTemplates>
+    <WorkflowTemplate>
+      <WorkflowTemplateName>专家信息</WorkflowTemplateName>
+      <WorkflowDocument>
+        <WorkflowCode>ExpertInfo</WorkflowCode>
+        <BizObjectSchemaCode>ExpertInfo</BizObjectSchemaCode>
+        <Description>
+        </Description>
+        <RequirePost>False</RequirePost>
+        <PlanUsedTime>
+        </PlanUsedTime>
+        <PlanRecurrences>0</PlanRecurrences>
+        <ShortText1>
+        </ShortText1>
+        <ShortText2>
+        </ShortText2>
+        <ShortText3>
+        </ShortText3>
+        <ShortText4>
+        </ShortText4>
+        <ShortText5>
+        </ShortText5>
+        <LongText6>
+        </LongText6>
+        <LongText7>
+        </LongText7>
+        <InstanceName>
+        </InstanceName>
+        <OnCancelActions />
+        <OnStartActions />
+        <OnFinishActions />
+        <Activities>
+          <StartActivity>
+            <ActivityType>Start</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity1</ClassName>
+            <Custom>False</Custom>
+            <CustomCode />
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity1</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>Start</ActivityType>
+            <ID>1</ID>
+            <Text>开始</Text>
+            <ActivityCode>Activity1</ActivityCode>
+            <X>272</X>
+            <Y>90</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+          </StartActivity>
+          <EndActivity>
+            <ActivityType>End</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity4</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity4 : SmartActivity
+	{
+		public Activity4()
+		{
+			// 请不要在这里填写代码，因为在执行这段代码的时候会阻塞引擎的某些组件
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity4</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>End</ActivityType>
+            <ID>4</ID>
+            <Text>结束</Text>
+            <ActivityCode>Activity4</ActivityCode>
+            <X>272</X>
+            <Y>304</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+          </EndActivity>
+          <FillSheetActivity>
+            <ActivityType>FillSheet</ActivityType>
+            <NameSpace>OThinker.H3.BPM</NameSpace>
+            <ClassName>Activity9</ClassName>
+            <Custom>False</Custom>
+            <CustomCode>using System;
+using OThinker.H3.SmartFlow;
+using OThinker.H3;
+
+
+namespace OThinker.H3.BPM
+{
+	public class Activity9 : FillSheetActivity
+	{
+		public Activity9()
+		{
+           //这里不要写代码
+		}
+       public override bool OnExecute(Messages.ActivateActivityMessage Message)
+		{
+           //在这里写代码
+           return base.OnExecute(Message);
+		}
+	}
+}</CustomCode>
+            <EntryCondition>Any</EntryCondition>
+            <SortKey>1</SortKey>
+            <ActivityCode>Activity9</ActivityCode>
+            <Description>
+            </Description>
+            <ExpectedDuration>
+            </ExpectedDuration>
+            <InstanceProgress>0</InstanceProgress>
+            <PlanUsedTime>
+            </PlanUsedTime>
+            <AllowedTime>
+            </AllowedTime>
+            <OvertimePolicy>None</OvertimePolicy>
+            <Recurrence>0</Recurrence>
+            <ShortText1>
+            </ShortText1>
+            <ShortText2>
+            </ShortText2>
+            <ShortText3>
+            </ShortText3>
+            <ShortText4>
+            </ShortText4>
+            <ShortText5>
+            </ShortText5>
+            <LongText6>
+            </LongText6>
+            <LongText7>
+            </LongText7>
+            <ActivityType>FillSheet</ActivityType>
+            <ID>9</ID>
+            <Text>手工</Text>
+            <ActivityCode>Activity9</ActivityCode>
+            <X>272</X>
+            <Y>197</Y>
+            <Height>40</Height>
+            <Width>144</Width>
+            <Brush>black</Brush>
+            <FontSize>13</FontSize>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>
+            </Participants>
+            <WorkItemDisplayName>
+            </WorkItemDisplayName>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SExpertInfo</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <DataItemPermissions>
+              <Permission>
+                <ItemName>EName</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Sex</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>BirthDate</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>WorkUnit</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Job</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>IdentificationCard</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>TechnicalTitle</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Byyx</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Zgxl</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Cszy1</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Cszy2</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Cszy3</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Lxdh</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Yx</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Txdz</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Gzjlhyj</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Fj</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Status</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+              <Permission>
+                <ItemName>Zynx</ItemName>
+                <Editable>True</Editable>
+                <Visible>True</Visible>
+                <TrackVisible>False</TrackVisible>
+                <Required>False</Required>
+                <MobileVisible>True</MobileVisible>
+                <ViewName>
+                </ViewName>
+              </Permission>
+            </DataItemPermissions>
+            <PageScript>
+            </PageScript>
+            <WorkItemFlag>
+            </WorkItemFlag>
+            <Summary>
+            </Summary>
+            <RequireGroup>False</RequireGroup>
+            <RequirePost>False</RequirePost>
+            <ParticipateType>SingleParticipant</ParticipateType>
+            <Participants>
+            </Participants>
+            <Assistants>
+            </Assistants>
+            <Circulatees>
+            </Circulatees>
+            <Consultants>
+            </Consultants>
+            <ParticipateMethod>Parallel</ParticipateMethod>
+            <BatchProcessing>False</BatchProcessing>
+            <EmailNotification>True</EmailNotification>
+            <SMSApprove>False</SMSApprove>
+            <MobileProcessing>True</MobileProcessing>
+            <SheetCode>SExpertInfo</SheetCode>
+            <NoParPolicy>Default</NoParPolicy>
+            <DupParPolicy>Default</DupParPolicy>
+            <OriginatorParPolicy>Default</OriginatorParPolicy>
+            <ParticipatedParPolicy>Default</ParticipatedParPolicy>
+            <Forward>False</Forward>
+            <Consult>False</Consult>
+            <Backward>False</Backward>
+            <RejectToStart>False</RejectToStart>
+            <Choose>False</Choose>
+            <Jump>False</Jump>
+            <Retrieve>False</Retrieve>
+            <CancelIfUnfinished>False</CancelIfUnfinished>
+            <CancelIfFinished>False</CancelIfFinished>
+            <Cancel>False</Cancel>
+            <Suspend>False</Suspend>
+            <ViewInstanceState>True</ViewInstanceState>
+            <AdjustParticipant>False</AdjustParticipant>
+            <Circulate>False</Circulate>
+            <Recirculate>False</Recirculate>
+            <Reject>False</Reject>
+            <ViewData>False</ViewData>
+            <RejectToAny>False</RejectToAny>
+            <RejectToFixed>False</RejectToFixed>
+            <SubmitToRejectedActivity>False</SubmitToRejectedActivity>
+            <RejectToActivityCodes />
+            <Assist>False</Assist>
+            <FinishInstance>False</FinishInstance>
+            <PreviewParticipant>False</PreviewParticipant>
+            <LockPolicy>None</LockPolicy>
+            <LockLevel>Warning</LockLevel>
+            <SubmittingValidation>None</SubmittingValidation>
+            <PageScript>
+            </PageScript>
+            <FinishExit>1</FinishExit>
+          </FillSheetActivity>
+        </Activities>
+        <Rules>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>10</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Activity1</PreActivityCode>
+            <PostActivityCode>Activity9</PostActivityCode>
+            <Points>
+              <Point>272,110</Point>
+              <Point>272,177</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+          <Rule>
+            <FontSize>11</FontSize>
+            <FontColor>black</FontColor>
+            <ID>11</ID>
+            <Text>
+            </Text>
+            <UtilizeElse>False</UtilizeElse>
+            <FixedPoint>False</FixedPoint>
+            <Formula>
+            </Formula>
+            <PreActivityCode>Activity9</PreActivityCode>
+            <PostActivityCode>Activity4</PostActivityCode>
+            <Points>
+              <Point>272,217</Point>
+              <Point>272,284</Point>
+            </Points>
+            <TextX>0</TextX>
+            <TextY>0</TextY>
+          </Rule>
+        </Rules>
+      </WorkflowDocument>
+      <Simulations />
+      <WorkflowClause xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Serialized>true</Serialized>
+        <ObjectID>6b470fcd-8b42-4bdd-b09b-474fd459ecd3</ObjectID>
+        <ParentObjectID />
+        <ParentIndex>0</ParentIndex>
+        <SortKey>0</SortKey>
+        <WorkflowName>专家信息</WorkflowName>
+        <BizSchemaCode>ExpertInfo</BizSchemaCode>
+        <WorkflowCode>ExpertInfo</WorkflowCode>
+        <CurrentNewVersion>4</CurrentNewVersion>
+        <DefaultVersion>3</DefaultVersion>
+        <State>Active</State>
+        <MobileStart>false</MobileStart>
+        <SeqNoResetType>None</SeqNoResetType>
+      </WorkflowClause>
+    </WorkflowTemplate>
+  </WorkflowTemplates>
+</BizWorkflowPackage>

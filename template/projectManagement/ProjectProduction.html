@@ -1,0 +1,125 @@
+<!-- 项目生产 -->
+<div id="wrap" class="bodywrap houqin">
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a ui-sref='app.BizQueryView({TopAppCode:"xmxxgl",SchemaCode:"ProjectInfo",QueryCode:"xmxxcx",FunctionCode:"xmxxcx"})' href="#/app/xmxxgl/BizQueryView/ProjectInfo/xmxxcx/xmxxcx">
+                <img src="img/project/项目信息.png" alt="">
+                <h4>项目信息管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"ylxgl",SchemaCode:"PreProject"})'>
+                <img src="img/project/项目前期管理.png" alt="">
+                <h4>预立项管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"lxjy",SchemaCode:"ProjectPropose"})'>
+                <img src="img/project/立项建议.png" alt="">
+                <h4>立项建议</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"xmrwsgl",SchemaCode:"ProjectTask",QueryCode:"TaskList",FunctionCode:"xmsqcx"})' >
+                <img src="img/project/项目任务书管理.png" alt="">
+                <h4>项目任务书管理</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"xmdggl",SchemaCode:"ProjectOutline",QueryCode:"null",FunctionCode:"xmdgsqcx"})'>
+                <img src="img/project/项目大纲管理.png" alt="">
+                <h4>项目大纲管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"xmwwsqgl",SchemaCode:"ProjectOutside"})'>
+                <img src="img/project/项目委外申请.png" alt="">
+                <h4>项目委外申请管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"xmzldj",SchemaCode:"ProjectReview"})'>
+                <img src="img/project/项目资料登记.png" alt="">
+                <h4>项目资料登记</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"jscgshgl",SchemaCode:"ConsultativeTRR"})'>
+                <img src="img/project/技术成果审核.png" alt="">
+                <h4>技术成果审核</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"xmzjygd",SchemaCode:"ProjectSummary"})'>
+                <img src="img/project/项目收尾管理.png" alt="">
+                <h4>项目总结与归档</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"xmxiaoxianggl",SchemaCode:"ProjectRevoked"})'>
+                <img src="img/project/项目销项管理.png" alt="">
+                <h4>项目销项管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"xmbggl",SchemaCode:"ProjectWeekly"})'>
+                <img src="img/project/项目报告.png" alt="">
+                <h4>项目报告管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryInstance({TopAppCode:"khgl",SchemaCode:"ProjectAssessment"})'>
+                <img src="img/project/项目考核管理.png" alt="">
+                <h4>考核管理</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<style>
+    .app-aside {
+        display:none;
+    }
+    .app-content-body {
+        margin-left: -170px;
+    }
+    .row {
+        margin:0px;
+    }
+    .houqin {
+        width:110%;
+    }
+    .houqin .col-sm-3 {
+        text-align:center;
+    }
+    .houqin .col-sm-3 img {
+        width:120px;
+        margin-bottom: 20px;
+    }
+    .houqin .col-sm-12 {
+        width: 104%;
+        margin-left: -4px;
+    }
+    #wrap h4 {
+        /*font-family: PingFangSC-Regular;*/
+        font-size: 18px;
+        margin: 0;
+    }
+    #wrap img {
+        width: 85px;
+        height: 85px;
+    }
+</style>
+<script>
+    $(function(){
+        var h4List = $('#wrap').find('h4');
+        for (var i = 0; i < h4List.length; i++) {
+            h4List[i].onclick = function (){
+                console.log();
+            }
+        }
+    })
+</script>

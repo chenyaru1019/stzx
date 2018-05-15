@@ -1,0 +1,236 @@
+﻿<!-- 视图内容，title会替换主页中的Header信息-->
+<ion-view view-title="申通咨询" hide-nav-bar="{{$root.dingMobile.hideHeader}}">
+    <!--header中的按钮显示-->
+    <ion-nav-bar class="bar-calm ">
+        <!--左边按钮-->
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="scroll-content ionic-scroll has-tabs" id="mobile-content">
+        <ion-slide-box auto-play="true" does-continue="true" ng-if="SlideShows && SlideShowDisplay"
+                       slide-interval=2000 show-pager="false" active-slide="model.activeIndex">
+            <ion-slide ng-repeat="slide in SlideShows track by $index">
+                <div class="box" style="border-bottom: 1px solid #c4c4c4" ng-if="slide.firstimage" ng-click="openCirculateItem('{{slide.NewsId}}')">
+                    <img  ng-src="{{url+slide.firstimage}}" style="width: 100%;background:url(img/loading.gif) no-repeat;" ng-style="{'height':'{{imgHeight}}px'}">
+                    <p ng-bind="slide.Title" style="text-align: center;margin: 0px"></p>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div style="margin-top: 3%">
+            <div class="banner" style="width: 100%;padding: 0 5px">个人事务</div>
+            <div class="float-row float-left clearfix" style="text-align:center; vertical-align:middle;">
+                <a class="function" href="#/home/unfinishedworkitem">
+                    <span class="badge" ng-bind="{{'badge.'+'unfinishedworkitem'}}"></span>
+                    <!--<i class="icon {{menu.IconUrl}}"></i>-->
+                    <img src="img/AppImg/unfinished.png" alt="" style="width: 80%;height: auto;">
+                    <div>待办</div>
+                </a>
+            </div>
+            <div class="float-row float-left clearfix" style="text-align:center; vertical-align:middle;">
+                <a class="function" href="#/home/unreadworkitem">
+                    <span class="badge" ng-bind="{{'badge.'+'unreadworkitem'}}"></span>
+                    <!--<i class="icon {{menu.IconUrl}}"></i>-->
+                    <img src="img/AppImg/unread.png" alt="" style="width: 80%;height: auto;">
+                    <div>待阅</div>
+                </a>
+            </div>
+            <div class="float-row float-left clearfix" style="text-align:center; vertical-align:middle;">
+                <a class="function" href="#/finishedworkitem">
+                    <!--<span class="badge" ng-show="{{'badge.'+menu.EdgeCode}}!='0'" ng-bind="{{'badge.'+menu.EdgeCode}}"></span>-->
+                    <!--<i class="icon {{menu.IconUrl}}"></i>-->
+                    <img src="img/AppImg/finished.png" alt="" style="width: 80%;height: auto;">
+                    <div>已办</div>
+                </a>
+            </div>
+            <div class="float-row float-left clearfix" style="text-align:center; vertical-align:middle;">
+                <a class="function" href="#/finishreadworkitem">
+                    <!--<span class="badge" ng-show="{{'badge.'+menu.EdgeCode}}!='0'" ng-bind="{{'badge.'+menu.EdgeCode}}"></span>-->
+                    <!--<i class="icon {{menu.IconUrl}}"></i>-->
+                    <img src="img/AppImg/read.png" alt="" style="width: 80%;height: auto;">
+                    <div>已阅</div>
+                </a>
+            </div>
+            <div class="float-row float-left clearfix" style="text-align:center; vertical-align:middle;">
+                <a class="function" href="#/home/myinstance">
+                    <!--<span class="badge" ng-show="{{'badge.'+menu.EdgeCode}}!='0'" ng-bind="{{'badge.'+menu.EdgeCode}}"></span>-->
+                    <!--<i class="icon {{menu.IconUrl}}"></i>-->
+                    <img src="img/AppImg/MyProcess.png" alt="" style="width: 80%;height: auto;">
+                    <div>我的流程</div>
+                </a>
+            </div>
+            <div class="float-row float-left clearfix" style="text-align:center; vertical-align:middle;">
+                <a class="function" href="#/organization/">
+                    <!--<span class="badge" ng-show="{{'badge.'+menu.EdgeCode}}!='0'" ng-bind="{{'badge.'+menu.EdgeCode}}"></span>-->
+                    <!--<i class="icon {{menu.IconUrl}}"></i>-->
+                    <img src="img/AppImg/ST_yw_xx_txl.png" alt="" style="width: 80%;height: auto;">
+                    <div>通讯录</div>
+                </a>
+            </div>
+        </div>
+        <div style="padding-top: 3%;border-top: 1px solid #c4c4c4">
+            <div style="width: 100%;padding: 0 5px">行政办公 < 信息发布管理</div>
+            <div class="float-row float-left clearfix" style="text-align:center; vertical-align:middle;">
+                <a class="function" href="#/newView">
+                    <!--<span class="badge" ng-show="{{'badge.'+menu.EdgeCode}}!='0'" ng-bind="{{'badge.'+menu.EdgeCode}}"></span>-->
+                    <!--<i class="icon {{menu.IconUrl}}"></i>-->
+                    <img src="img/AppImg/new.png" alt="" style="width: 80%;height: auto;">
+                    <div>新闻查询</div>
+                </a>
+            </div>
+            <div class="float-row float-left clearfix" style="text-align:center; vertical-align:middle;">
+                <a class="function" href="#/affiche">
+                    <!--<span class="badge" ng-show="{{'badge.'+menu.EdgeCode}}!='0'" ng-bind="{{'badge.'+menu.EdgeCode}}"></span>-->
+                    <!--<i class="icon {{menu.IconUrl}}"></i>-->
+                    <img src="img/AppImg/notice.png" alt="" style="width: 80%;height: auto;">
+                    <div>公告查询</div>
+                </a>
+            </div>
+        </div>
+        <div style="padding-top: 3%;border-top: 1px solid #c4c4c4">
+            <div style="width: 100%;padding: 0 5px">项目管理 < 项目事务 < 人员管理</div>
+            <div ng-click="startWorkflow1('WorkDaily')" class="ProcessCenter">
+                <img src="img/AppImg/daily.png" alt="" style="width: 80%;height: auto%;">
+                <div>工作日报</div>
+            </div>
+        </div>
+        <div style="padding-top: 3%;border-top: 1px solid #c4c4c4">
+            <div style="width: 100%;padding: 0 5px">项目管理 < 项目事务 < 后勤物品</div>
+            <div ng-click="startWorkflow1('ProjectHouseRental')" class="ProcessCenter">
+                <img src="img/AppImg/Rental.png" alt="" style="width: 80%;height: auto%;">
+                <div>项目租房</div>
+            </div>
+            <div ng-click="startWorkflow1('ProjectCarRental')" class="ProcessCenter">
+                <img src="img/AppImg/CarRental.png" alt="" style="width: 80%;height: auto%;">
+                <div>项目租车</div>
+            </div>
+        </div>
+        <div style="padding-top: 3%;border-top: 1px solid #c4c4c4">
+            <div style="width: 100%;padding: 0 5px">项目管理 < 项目事务 < 考勤管理</div>
+            <div ng-click="startWorkflow1('BackSH')" class="ProcessCenter">
+                <img src="img/AppImg/YGHH.png" alt="" style="width: 80%;height: auto%;">
+                <div>因公回沪</div>
+            </div>
+            <div ng-click="startWorkflow1('Leave')" class="ProcessCenter">
+                <img src="img/AppImg/leave.png" alt="" style="width: 80%;height: auto%;">
+                <div>请假流程</div>
+            </div>
+            <div ng-click="startWorkflow1('TQSQ')" class="ProcessCenter">
+                <img src="img/AppImg/Tq.png" alt="" style="width: 80%;height: auto%;">
+                <div>探亲申请</div>
+            </div>
+        </div>
+        <div style="padding-top: 3%;border-top: 1px solid #c4c4c4">
+            <div style="width: 100%;padding: 0 5px">文件管理 < 公文管理</div>
+            <div ng-click="startWorkflow1('ExternalDocument')" class="ProcessCenter">
+                <img src="img/AppImg/JTSW.png" alt="" style="width: 80%;height: auto%;">
+                <div>集团收文</div>
+            </div>
+        </div>
+        <div style="padding-top: 3%;border-top: 1px solid #c4c4c4">
+            <div style="width: 100%;padding: 0 5px">后勤管理</div>
+            <div ng-click="startWorkflow1('Seal')" class="ProcessCenter">
+                <img src="img/AppImg/India.png" alt="" style="width: 80%;height: auto%;">
+                <div>用印申请</div>
+            </div>
+            <div ng-click="startWorkflow1('Car')" class="ProcessCenter">
+                <img src="img/AppImg/car.png" alt="" style="width: 80%;height: auto%;">
+                <div>公务用车</div>
+            </div>
+            <div ng-click="startWorkflow1('License')" class="ProcessCenter">
+                <img src="img/AppImg/licence.png" alt="" style="width: 80%;height: auto%;">
+                <div>证照申请</div>
+            </div>
+            <div ng-click="startWorkflow1('meeting')" class="ProcessCenter">
+                <img src="img/AppImg/meeting.png" alt="" style="width: 80%;height: auto%;">
+                <div>会务申请</div>
+            </div>
+        </div>
+        <div style="padding-top: 3%;border-top: 1px solid #c4c4c4">
+            <div style="width: 100%;padding: 0 5px">后勤管理 < 出差申请</div>
+            <div ng-click="startWorkflow1('BusinessTravel')" class="ProcessCenter">
+                <img src="img/AppImg/travel.png" alt="" style="width: 80%;height: auto%;">
+                <div>出差申请</div>
+            </div>
+        </div>
+        <!--<div ng-repeat="category in categories" class="clear" style="padding-top: 3%;border-top: 1px solid #c4c4c4">-->
+            <!--<div style="width: 100%">{{category.DisplayName}}</div>-->
+            <!--<div  ng-repeat="workflow in category.Workflows" ng-click="startWorkflow1('{{workflow.WorkflowCode}}')" class="ProcessCenter">-->
+                <!--<img src="{{workflow.img}}" alt="" style="width: 80%;height: auto%;">-->
+                <!--<div>{{workflow.DisplayName}}</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </ion-content>
+</ion-view>
+
+<style>
+    　　.clearfix:before,.clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+    img:not([src]) {
+        opacity: 0;
+    }
+    .ProcessCenter:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+    .clear {
+        clear: both;
+        content: '';
+        display: block;
+    }
+    .badge {
+        position: absolute;
+        top: 4%;
+        right: 33%;
+        right: calc(50% - 26px);
+        padding: 1px 6px;
+        height: auto;
+        font-size: 12px;
+        line-height: 16px;
+        background-color: #CF0808;
+        color: #FFFFFF;
+
+    }
+    .float-row,.ProcessCenter {
+        width: 24%;
+        display: inline-block;
+        height: auto;
+        padding: 8px;
+        text-align: center;
+        /*border-bottom: solid 1px #f2e8e8;*/
+    }
+
+        .float-row i {
+            font-size: 28px;
+        }
+
+        .float-row .badge {
+            background-color: #CF0808;
+            color: #FFFFFF;
+        }
+
+    .function {
+        position: relative;
+        text-decoration: none;
+        color: black;
+    }
+
+        .function .badge {
+            position: absolute;
+            right: 33%;
+            right: calc(50% - 26px);
+            padding: 1px 6px;
+            height: auto;
+            font-size: 12px;
+            line-height: 16px;
+        }
+</style>

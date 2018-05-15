@@ -1,0 +1,157 @@
+<!-- 内部公文库查询 -->
+
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+     app.settings.asideFolded=false;
+     app.settings.asideDock=false;">
+    <!-- main -->
+    <div class="col">
+        <!-- main header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row" style=" padding-right: 15px; ">
+                <div class="col-sm-6 col-xs-12">
+                    <span class="h3" title-name function-view-models="user.FunctionViewModels"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--表格部分Start-->
+        <div class="wrapper-md paddingbottomNone QueryList">
+            <div class="panel panel-default">
+                <form class="form-inline searchContainer ng-pristine ng-valid ng-valid-maxlength" role="form">
+                    <div class="form-group" >
+                        <!--<span class='span'>发文时间</span>-->
+                        <div class="input-group" style='border-top:0'>
+                            <input ng-model="StartTime" ui-jq="wdatePicker" id="StartTime" class="input-sm form-control ng-pristine ng-untouched ng-valid" placeholder="开始时间">
+                            <span class="input-group-addon ng-scope" style="border-left:0px;border-right:0px;" translate="QueryTableColumn.To">至</span>
+                            <input ng-model="EndTime" ui-jq="wdatePicker" id="EndTime" class="input-sm form-control ng-pristine ng-untouched ng-valid" placeholder="结束时间">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--<span class='span'>发文部门</span>-->
+                        <select class="input-sm form-control ng-pristine ng-valid ng-touched">
+                            <option value="0" class="ng-binding" selected = "selected">请选择部门</option>
+                            <option value="1" class="ng-binding">总经理室</option>
+                            <option value="2" class="ng-binding">项目管理室</option>
+                            <option value="2" class="ng-binding">综合办公室</option>
+                            <option value="2" class="ng-binding">运营管理部</option>
+                            <option value="2" class="ng-binding">项目管理室</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <!--<span class='span'>文件名</span>-->
+                        <input ng-model="SearchKey" maxlength="32" class="form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength" placeholder="文件名">
+                    </div>
+                    <div class="form-group" style='margin-right: 0px'>
+                        <!--<span class='span'>发文编号</span>-->
+                        <input ng-model="SearchKey" maxlength="32" class="form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength" placeholder="发文编号">
+                    </div>
+                    <div class="form-group">
+                        <input ng-model="searchKey" type="text" class="input-sm form-control ng-pristine ng-untouched ng-valid" style="width:200px;display:none;" placeholder="搜索...">
+                        <button class="btn btn-sm btn-default" type="button" style="height:30px;padding:5px 18px">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="table-responsive" style="width: 100%;position: relative;min-height:123px;">
+                    <table id="cs_table" class="datatable" style="width: 100%"></table>
+                    <div class='total'></div>
+                </div>
+            </div>
+        </div>
+        <!--表格部分End-->
+    </div>
+    <!-- / main -->
+</div>
+<style>
+    .form-group {
+        margin-right: 5px;
+    }
+    .dropUp {
+        margin-top: 0px;
+    }
+    .Btn_dropDown {
+        background: url(img/icon_arrow.png) no-repeat -61px 0px;
+        width: 61px;
+        height: 17px;
+        position: absolute;
+        top: 1px;
+        margin-left: -30px;
+        left: 50%;
+    }
+    .Btn_dropup {
+        background: url(img/icon_arrow.png) no-repeat 0px 0px;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+
+        var html = '';
+        var data = [
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+            {id:0,num:'001',name:'1号文件',department:'运营',date:'2017'},
+            {id:1,num:'002',name:'2号文件',department:'市场',date:'2015'},
+            {id:2,num:'003',name:'3号文件',department:'项目',date:'2013'},
+            {id:3,num:'004',name:'4号文件',department:'行政',date:'2012'},
+            {id:4,num:'005',name:'5号文件',department:'综合',date:'2011'},
+
+        ];
+        html='<div class="totalData">共'+data.length+'条数据</div>';
+        for(var i=0;i<data.length;i++){
+            data[i] = {id:i+1,num:data[i].num,name:data[i].name,department:data[i].department,date:data[i].date};
+        }
+        new table({
+            "tableId":"cs_table",  //必须
+            "headers":["序号","发文编号","文件名","发文部门","发文日期"],  //必须
+            "data":data,    //必须
+            "displayNum": 10,  //必须  默认 10
+            "groupDataNum":5 //可选  默认 10
+        });
+        $('.total').html(html);
+        $('#cs_table tbody').find('tr').css('cursor','pointer').on('click',function () {
+            $(".app-aside-right").find('iframe').attr('src','InstanceSheets.html?InstanceId=ec4e5231-c417-4e53-b645-958f607a36ef');
+            $('.app-aside-right').addClass('show');
+        });
+//        console.log($('#cs_table tbody').find('tr'));
+
+    })
+</script>

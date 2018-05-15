@@ -1,0 +1,76 @@
+<!-- 首页待办事项模块 -->
+<div class="M_top">
+    <div><img src="img/main/main_icon_matter.png" style='padding-right: 10px;' alt="">待办事项
+    <a ui-sref='app.MyUnfinishedWorkItem({TopAppCode:"Workflow"})'
+       href="#/app/Workflow/MyUnfinishedWorkItem" class="M_more" style='color: #03B2C5;'>更多</a>
+    </div>
+</div>
+<div class="line"></div>
+<div class="T_content" style='height: 280px'>
+    <div class="T_top clear row">
+        <a href="" class="left col-md-6" style="padding-left:25px">
+            <img src="img/main/main_matter_bum.png" alt="">
+        </a>
+        <div class="left col-md-6">
+            <a class="auto ng-scope"  ui-sref="app.MyUnReadWorkItem({TopAppCode:'Workflow'})"  href="#/app/Workflow/MyUnReadWorkItem">
+                <p translate="HomePage.Workspace_MyUnReadWorkItem" translate-default="待阅任务" class="ng-scope">待阅任务</p>
+                <b class="badge bg-info pull-right ng-binding ng-scope" ng-class="MyCount.UnreadWorkItemCountClass">共{{MyCount.UnreadWorkItemCount}}项</b>
+            </a>
+        </div>
+    </div>
+    <div class="T_bottom clear row" style='margin-top: 50px;'>
+         <a href="" class="left col-md-6" style="padding-left:25px">
+            <img src="img/main/main_matter_look.png" alt="">
+        </a>
+        <div class="left col-md-6">
+            <a class="auto ng-scope"  ui-sref="app.MyUnfinishedWorkItem({TopAppCode:'Workflow'})"  href="#/app/Workflow/MyUnfinishedWorkItem">
+                <p translate="HomePage.Workspace_MyUnfinishedWorkItem" translate-default="待办任务" class="ng-scope">待办任务</p>
+                <b class="badge bg-info pull-right ng-binding ng-scope" ng-class="MyCount.UnfinishedWorkItemCountClass">共{{MyCount.UnfinishedWorkItemCount}}项</b>
+            </a>
+        </div>
+    </div>
+</div>
+<style>
+    .M_top {
+        height:30px;
+        background: #FFFFFF;
+        font-family: PingFangSC-Medium;
+        font-size: 15px;
+        line-height:32px;
+        color: #4E4E4E;
+    }
+    .T_content {
+        padding: 20px;
+        padding-top: 34px;
+    }
+    .T_content .T_top div,.T_content .T_bottom div {
+        margin-top: 14px;
+    }
+    .T_top {
+        vertical-align:middle;
+    }
+    .left {
+        float:left;
+    }
+    .T_content .left  a p {
+        font-size: 24px;
+        font-family: PingFangSC-Regular;
+    }
+    .T_content .left  a b {
+        position: absolute;
+        left: 10px;
+        top: 40px;
+        font-family: PingFangSC-Regular;
+        color: #fff;
+    }
+    .T_top a img,.T_bottom a img {
+        width: 80px;
+        height: 80px;
+    }
+    .red {
+        background-color: #f05050;
+    }
+    .blue {
+        background-color:#23b7e5;
+    }
+</style>

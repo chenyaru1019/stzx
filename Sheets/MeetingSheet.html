@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/jquery/bootstrap.js"></script>
+</head>
+<style>
+    body {
+        position:relative;
+        font-size:15px;
+    }
+    .sheetDiv {
+        position:absolute;
+        top: 5px;
+        right: 70px;
+    }
+    .line {
+        height: 1px;
+        background-color:  #D6D6D6;
+    }
+    .p {
+        padding-left: 15px;
+    }
+    a:hover {
+        text-decoration:none;
+    }
+    .sheetDiv span a,.sheetDiv span  {
+        display: inline-block;
+        width: 90px;
+        text-align: center;
+        height: 33px;
+        line-height: 33px;
+        color:white;
+    }
+    .sheetDiv span:nth-child(1){
+        background-color: skyblue;
+    }
+    .sheetDiv span:nth-child(2){
+        background-color: lightgray;
+    }
+    .sheetDiv span:nth-child(3){
+        background-color: seagreen;
+    }
+    .top {
+        margin:40px 0px;
+        text-align:center;
+    }
+    .center {
+        margin-bottom: 50px;
+    }
+    .form {
+        padding: 20px 112px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .ziyuan li {
+        list-style:none;
+        float:left;
+    }
+</style>
+<body>
+<ul id="myTab" class="nav nav-tabs">
+    <li>
+        <a href="#FlowForm" data-toggle="tab" target="_self">
+             流程表单
+        </a>
+    </li>
+    <li>
+        <a href="#FlowState" data-toggle="tab" target="_self">
+             流程状态
+        </a>
+    </li>
+    <li>
+        <a href="#FlowSituation" data-toggle="tab" target="_self">
+             流程详细情况
+        </a>
+    </li>
+</ul>
+<div class="sheetDiv">
+    <span><a href="">提交</a></span>
+    <span><a href="">保存</a></span>
+    <span><a href="">预览</a></span>
+</div>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="FlowForm">
+        <div class="top">
+            <p style='font-size: 25px;margin-bottom:20px;'>上海申通轨道交通研究咨询有限公司</p>
+            <p>会务申请</p>
+        </div>
+        <div class="center">
+            <p class="p">会务信息</p>
+            <div class="line"></div>
+                <form action="" method="get" class="form">
+                    <div class="row">
+                        <div class="col-md-3">
+                           申请单号 :
+                        </div>
+                        <div class="form-group col-md-9">
+                            111111111111
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-md-6">
+                            <label for="inputEmail3" class="col-sm-3 control-label">经办人 :</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" id="inputEmail3" >
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail3" class="col-sm-3 control-label">所属部门 :</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" id="inputEmail3" >
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-md-6">
+                            <label for="inputEmail3" class="col-sm-3 control-label">与会人数 :</label>
+                            <div class="col-sm-9">
+                              <input type="number" name="points" min="0" max="10" step="1" class="form-control" id="inputEmail3" placeholder="0">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail3" class="col-sm-3 control-label">会议主持人 :</label>
+                            <div class="col-sm-9">
+                              <input type="search" class="form-control" id="inputEmail3" placeholder="请输入...">
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-md-6">
+                            <label for="inputEmail3" class="col-sm-3 control-label">会议类型 :</label>
+                            <div class="col-sm-9">
+                                <select  class="form-control">
+                                    <option>请选择</option>
+                                    <option>行政会议</option>
+                                    <option>专题会议</option>
+                                    <option>部门会议</option>
+                                    <option>日常接待</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail3" class="col-sm-3 control-label">使用会议室 :</label>
+                            <div class="col-sm-9">
+                               <select  class="form-control">
+                                    <option>请选择</option>
+                                    <option>1号会议室</option>
+                                    <option>2号会议室</option>
+                                    <option>3号会议室</option>
+                                    <option>4号会议室</option>
+                                    <option>5号会议室</option>
+                                </select>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-md-12">
+                            <label for="inputEmail3" class="col-sm-3 control-label">会议时间 :</label>
+                            <div class="col-sm-9">
+                              <input type="date" > 至   <input type="date" >
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-md-3">
+                            申请资源 ：
+                        </div>
+                        <div class="form-group col-md-9">
+                            <ul class="ziyuan">
+                                <li><input type="checkbox" name="">投影仪</li>
+                                <li><input type="checkbox" name="">饮水机</li>
+                                <li><input type="checkbox" name="">网络资源申请</li>
+                                <li><input type="checkbox" name="">硬件会议电脑</li>
+                                <li><input type="checkbox" name="">视频会议系统</li>
+                                <li><input type="checkbox" name="">客饭</li>
+                                <li><input type="checkbox" name="">车位</li>
+                                <li><input type="checkbox" name="">其他</li>
+                                <li><input type="text" name=""></li>
+
+                            </ul>
+                        </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-md-3">
+                            会议是由 :
+                        </div>
+                        <div class="form-group col-md-9">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                   </div>
+                </form>
+        </div>
+        <div class="bottom">
+            <p class="p">相关信息</p>
+            <div class="line"></div>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <div class="row">
+                         <label for="exampleInputEmail1" >关联项目 ：</label>
+                    <input type="search" class="form-control  id="exampleInputEmail1" placeholder="请选择相关项目编号">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">关联流程 ：</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请选择相关项目流程">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputFile">关联附件 ：</label>
+                    <input type="file" id="exampleInputFile">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="FlowState">
+        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+    </div>
+    <div class="tab-pane fade" id="FlowSituation">
+        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+    </div>
+</div>
+</body>
+</html>

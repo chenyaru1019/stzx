@@ -1,0 +1,81 @@
+<!-- 后勤管理 -->
+<div id="wrap" class="bodywrap houqin">
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a ui-sref='app.Attendance({TopAppCode:"kqbgl"})' >
+                <img src="img/project/考勤表管理.png" alt="">
+                <h4>考勤表管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.EditBizObject({TopAppCode:"XMccgl",SchemaCode:"BusinessTravel",SheetCode:"SBusinessTravel",Mode:"Originate",FunctionCode:"XMygcc"})'>
+                <img src="img/project/出差管理.png" alt="">
+                <h4>出差管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.EditBizObject({TopAppCode:"XMtqgl",SchemaCode:"TQSQ",SheetCode:"STQSQ",Mode:"Originate",FunctionCode:"XMtq"})'>
+                <img src="img/project/探亲管理.png" alt="">
+                <h4>探亲管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryParticipantWorkItem({TopAppCode:"ccgl",SchemaCode:"BusinessTravel"})' href="#/app/ccgl/QueryParticipantWorkItem/BusinessTravel">
+                <img src="img/project/因公回沪.png" alt="">
+                <h4>因公回沪</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a ui-sref='app.QueryParticipantWorkItem({TopAppCode:"zzzlgl",SchemaCode:"License"})' href="#/app/zzzlgl/QueryParticipantWorkItem/License">
+                <img src="img/hqgl/hq_icon_zz.png" alt="">
+                <h4>其他休假</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<style>
+    .app-aside {
+        display:none;
+    }
+    .app-content-body {
+        margin-left: -170px;
+    }
+    .row {
+        margin:0px;
+    }
+    .houqin {
+        width:110%;
+    }
+    .houqin .col-sm-3 {
+        text-align:center;
+    }
+    .houqin .col-sm-3 img {
+        width:120px;
+        margin-bottom: 20px;
+    }
+    .houqin .col-sm-12 {
+        width: 104%;
+        margin-left: -4px;
+    }
+    #wrap h4 {
+        /*font-family: PingFangSC-Regular;*/
+        font-size: 18px;
+        margin: 0;
+    }
+    #wrap img {
+        width: 85px;
+        height: 85px;
+    }
+</style>
+<script>
+    $(function(){
+        var h4List = $('#wrap').find('h4');
+        for (var i = 0; i < h4List.length; i++) {
+            h4List[i].onclick = function (){
+                console.log();
+            }
+        }
+    })
+</script>

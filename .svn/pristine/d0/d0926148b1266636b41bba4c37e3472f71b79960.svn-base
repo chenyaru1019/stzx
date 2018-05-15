@@ -1,0 +1,90 @@
+﻿<script>
+    $(function () {
+        $("#ToolBar").AspLinkToolBar();
+        CreateLigerGrid(
+            $("#AgentList"),
+            GetCategoryColumns(),
+            $.Controller.Agent.GetAgentList,
+            true
+        );
+    })
+
+    function GetCategoryColumns() {
+        var UserName = $.Lang("Agent.UserName");
+        var workflowCode = $.Lang("Agent.WorkflowCode");
+        var workflowName = $.Lang("Agent.WorkflowName");
+        var agentName = $.Lang("Agent.AgentName");
+        var startTime = $.Lang("DataSettings.StartTime");
+        var endTime = $.Lang("DataSettings.EndTime");
+        var edit = $.Lang("GlobalButton.Edit");
+        return [
+           { display: "ObjectID", name: "ObjectID", hide: true },
+           { display: UserName, name: "UserName", width: '10%' },
+           { display: workflowCode, name: "WorkflowCode", width: '20%' },
+           { display: workflowName, name: "WorkflowName", width: '20%' },
+           { display: agentName, name: "AgentName", width: '10%' },
+           { display: startTime, name: "StartTime", width: '15%' },
+           { display: endTime, name: "EndTime", width: '15%' },
+           {
+               display: edit, code: "edit", width: '5%', render: function (row) {
+                   return "<a href='#' id='" + row.ObjectID + "' onclick='RowEditClick(this)'>" + edit + "</a>";
+               }
+           }
+        ];
+    }
+    //新增委托设置
+    function AddFun() {
+        var title = $.Lang("Agent.AddAgency");
+        ShowDialog(title, _PORTALROOT_GLOBAL+ "/admin/TabMaster.html?url=SysParam/EditAgent.html");
+    }
+
+    //编辑委托设置
+    function RowEditClick(obj) {
+        var title = $.Lang("Agent.EditAgency");
+        ShowDialog(title, _PORTALROOT_GLOBAL+ "/admin/TabMaster.html?url=SysParam/EditAgent.html&Mode=2&AgentID=" + obj.id);
+    }
+
+    //删除委托设置
+    function DeleteFun(obj) {
+        var SelectItemName = $.Lang("msgGlobalString.SelectItem");
+        var rows = H3GridManager.getSelectedRows();
+        if (rows == null || rows.length == 0) {
+            $.H3Dialog.Warn({ content: SelectItemName });
+            return false;
+        }
+        if (ConfirmDel(obj)) {
+            var ids = "";
+            for (var i = 0; i < rows.length; i++) {
+                ids = ids + rows[i].ObjectID + ",";
+            }
+            $.ajax({
+                url: $.Controller.Agent.DelAgent,
+                type: 'post',
+                dataType: "json",
+                data: { ids: ids },
+                success: function (result) {
+                    if (result.Success) {
+                        top.workTab.reload(top.workTab.getSelectedTabItemID());
+                    } else {
+                        $.H3Dialog.Error({ content: result.Message });
+                    }
+                }
+            });
+        }
+    }
+
+    //重新加载表格数据
+    function ReloadGrid() {
+        var manager = $("#AgentList").ligerGetGridManager();
+        manager.reload();
+    }
+</script>
+
+
+<div id="ToolBar">
+    <a href="#" id="lnkAdd" data-icon="fa fa-plus" onclick="AddFun()" data-lang="GlobalButton.Add">添加</a>
+    <a onclick="DeleteFun(this);" data-lang="GlobalButton.Delete" data-icon="fa fa-minus" href="#">删除</a>
+</div>
+<div class="H3Panel">
+    <div id="AgentList"></div>
+</div>

@@ -1,0 +1,178 @@
+﻿<ion-view view-title="待阅任务" hide-nav-bar="{{$root.dingMobile.hideHeader}}">
+    <style>
+        .subbar {
+            display: block;
+        }
+    </style>
+    <ion-nav-bar class="bar-calm">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <div class="bar subbar {{$root.dingMobile.dingHeaderClass}}">
+        <div ng-show="!selectItemMode">
+            <button class="button button-stable" ng-click="goToSearch()" style="width:75%;margin-top:0px;margin-bottom:0px;">
+                <i class="icon ion-search placeholder-icon"></i>搜索
+            </button>
+            <button class="button button-icon button-clear"
+                    style="margin-top:0px;margin-bottom:0px;float:right;margin-right:10px;"
+                    ng-click="goToRead()" ng-disabled="circulateItems.length == 0">
+                <span class="h5">标记已阅</span>
+            </button>
+        </div>
+        <div ng-show="selectItemMode">
+            <button class="button button-icon button-clear "
+                    ng-click="goToUnread()">
+                <span class="h5">取消</span>
+            </button>
+            <button class="button button-icon button-clear icon-right"
+                    style="float:right;margin-right:10px;"
+                    ng-click="readItem()">
+                <span class="h5" ng-show="allRead">全部已阅</span>
+                <span class="h5" ng-show="!allRead">已阅</span>
+            </button>
+        </div>
+    </div>
+    <div class="ng-hide animated fadeIn scrollTop" ng-show="displayTop" ng-click="scrollTop()">
+        <i class="icon ion-arrow-up-a"></i>
+    </div>
+    <ion-content class="scroll-content ionic-scroll {{$root.dingMobile.dingSubHeaderClass}} has-tabs" on-scroll="getScrollPosition();">
+        <ion-refresher on-refresh="RefreshCirculateItem()">
+        </ion-refresher>
+        <ion-list>
+            <ion-item class="item-icon-right" ng-repeat="circulateItem in circulateItems"
+                      style="padding:1px 1px;background-color:#fff;" ng-click="openCirculateItem('{{circulateItem.ObjectID}}')">
+                <div class="user-item">
+                    <div class="avatar-wrap" style="flex: 0 0 30px;width: 20px;height: 20px;">
+                        <i class="icon ion-clipboard"
+                           style="font-size:20px;left:15px;right:initial;" ng-show="!selectItemMode"></i>
+                        <div class="item-checkbox">
+                            <div class="checkbox" style="padding-left:0px;">
+                                <input type="checkbox" ng-show="selectItemMode" ng-click="itemChangeed($event,'{{circulateItem.ObjectID}}')" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h2>{{circulateItem.InstanceName}}</h2>
+                        <p>
+                            <label>
+                                {{circulateItem.OrigiantorName}} 发起
+                            </label>
+                            &nbsp;&nbsp;
+                            <label ng-if="circulateItem.CreatorName!=''">
+                                {{circulateItem.CreatorName}} 传阅
+                            </label>
+                        </p>
+                    </div>
+                    <div class="tel">
+                        {{circulateItem.ReceiveTime}}
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item ng-if="circulateItems.length > 0 && loadCompleted"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-android-happy"></i>
+                    <h2 style="margin-left:10px;">全部加载完成</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="circulateItems.length == 0 && loadCompleted && !exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-checkmark"></i>
+                    <h2 style="margin-left:10px;">您的待阅已经全部处理完成</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-information-circled"></i>
+                    <h2 style="margin-left:10px;">系统数据加载失败，请稍候再试！</h2>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll ng-if="!loadCompleted"
+                             icon="ion-load-a"
+                             distance="10%"
+                             on-infinite="loadMoreUnreadWorkItem()">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
+
+<script id="Search.html" type="text/ng-template">
+    <ion-modal-view ng-controller="SearchUnreadCtr">
+        <form role="form" ng-submit="doSearch(searchKey)">
+            <div class="bar bar-header item-input-inset">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input id="searchInput" type="search" placeholder="搜索"
+                           ng-model="searchKey" ng-change="doSearch(searchKey)">
+                </label>
+                <button class="button button-clear" ng-click="closeModal()">
+                    取消
+                </button>
+            </div>
+        </form>
+        <ion-content class="has-header">
+            <ion-list>
+                <ion-item class="item-icon-right" style="padding:1px 1px;background-color:#fff;"
+                          ng-repeat="circulateItem in circulateItems_Search" ng-click="openCirculateItem('{{circulateItem.ObjectID}}')">
+                    <div class="user-item">
+                        <div class="avatar-wrap" style="flex: 0 0 30px;width: 20px;height: 20px;">
+                            <i class="icon ion-clipboard"
+                               style="font-size:20px;left:15px;right:initial;" ng-show="!selectItemMode"></i>
+                            <div class="item-checkbox">
+                                <div class="checkbox" style="padding-left:0px;">
+                                    <input type="checkbox" ng-show="selectItemMode" ng-click="itemChangeed('{{circulateItem.ObjectID}}')" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <h2>{{circulateItem.InstanceName}}</h2>
+                            <p>
+                                <label>
+                                    {{circulateItem.OrigiantorName}} 发起
+                                </label>
+                                &nbsp;&nbsp;
+                                <label ng-if="circulateItem.CreatorName!=''">
+                                    {{circulateItem.CreatorName}} 传阅
+                                </label>
+                            </p>
+                        </div>
+                        <div class="tel">
+                            {{circulateItem.ReceiveTime}}
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item ng-if="circulateItems_Search.length == 0 && loadCompleted && searchKey!='' && !exception"
+                          style="cursor:pointer">
+                    <div class="item-icon-left" style="padding-left:20px;">
+                        <i class="icon ion-information-circled"></i>
+                        <h2 style="margin-left:10px;">没有找到任务</h2>
+                    </div>
+                </ion-item>
+                <ion-item ng-if="circulateItems_Search.length > 0 && loadCompleted"
+                          style="cursor:pointer">
+                    <div class="item-icon-left" style="padding-left:20px;">
+                        <i class="icon ion-android-happy"></i>
+                        <h2 style="margin-left:10px;">全部加载完成</h2>
+                    </div>
+                </ion-item>
+                <ion-item ng-if="exception"
+                          style="cursor:pointer">
+                    <div class="item-icon-left" style="padding-left:20px;">
+                        <i class="icon ion-information-circled"></i>
+                        <h2 style="margin-left:10px;">系统数据加载失败，请稍候再试！</h2>
+                    </div>
+                </ion-item>
+            </ion-list>
+
+            <ion-infinite-scroll ng-if="!loadCompleted"
+                                 icon="ion-load-a"
+                                 distance="10%"
+                                 on-infinite="loadMoreUnreadWorkItem()">
+            </ion-infinite-scroll>
+        </ion-content>
+    </ion-modal-view>
+</script>

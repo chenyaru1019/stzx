@@ -1,0 +1,66 @@
+<BizService>
+  <BizService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Serialized>true</Serialized>
+    <ObjectID>40def040-3c88-4101-9512-8406351b091b</ObjectID>
+    <ParentObjectID />
+    <ParentIndex>0</ParentIndex>
+    <BizAdapterCode>OThinker.H3.BizBus.BizAdapters.DbSqlAdapter</BizAdapterCode>
+    <Code>wjcx</Code>
+    <FolderCode>679659a0-19bf-4612-bb4f-ddf6bc68bf10</FolderCode>
+    <DisplayName>文件查询</DisplayName>
+    <EnableAccountMapping>false</EnableAccountMapping>
+    <VersionNo>0</VersionNo>
+    <Settings>
+      <BizServiceSetting>
+        <Serialized>true</Serialized>
+        <ObjectID>80bfb291-6f32-4a89-aafe-9f6db13707b7</ObjectID>
+        <ParentObjectID>40def040-3c88-4101-9512-8406351b091b</ParentObjectID>
+        <ParentPropertyName>Settings</ParentPropertyName>
+        <ParentIndex>0</ParentIndex>
+        <SettingName>DbCode</SettingName>
+        <SettingValue>Engine</SettingValue>
+      </BizServiceSetting>
+    </Settings>
+    <AllowCustomMethods>true</AllowCustomMethods>
+    <Methods>
+      <BizServiceMethod>
+        <Serialized>true</Serialized>
+        <ObjectID>8e8a23bd-1581-4df8-bae1-484904b9f2f4</ObjectID>
+        <ParentObjectID>40def040-3c88-4101-9512-8406351b091b</ParentObjectID>
+        <ParentPropertyName>Methods</ParentPropertyName>
+        <ParentIndex>0</ParentIndex>
+        <MethodName>gwcx</MethodName>
+        <ReturnType>List</ReturnType>
+        <DisplayName>公文查询</DisplayName>
+        <UsedCount>1</UsedCount>
+        <MethodSetting>&lt;MethodSetting&gt;
+&lt;Parameters&gt;
+&lt;/Parameters&gt;
+&lt;Columns&gt;
+&lt;Column Name="LWNumbering" Type="String" /&gt;
+&lt;Column Name="FWH" Type="String" /&gt;
+&lt;Column Name="Numbering" Type="String" /&gt;
+&lt;Column Name="FileName" Type="String" /&gt;
+&lt;Column Name="CreatedTime" Type="ShortString" /&gt;
+&lt;/Columns&gt;
+&lt;Sql&gt;
+SELECT
+	ed.LWNumbering ,dm.FWH , mm. Numbering , oa.FileName , oa.CreatedTime
+FROM
+	OT_Attachment oa
+LEFT JOIN I_ExternalDocument ed ON oa.BizObjectId = ed.ObjectID
+LEFT JOIN I_Document dm ON oa.BizObjectId = dm.ObjectID
+LEFT JOIN I_MinutesMeeting mm ON oa.BizObjectId = mm.ObjectID
+WHERE
+	oa.DataField IN (
+		'RedFile',
+		'SetRed',
+		'HTAttach'
+	)&lt;/Sql&gt;
+&lt;/MethodSetting&gt;</MethodSetting>
+      </BizServiceMethod>
+    </Methods>
+    <ModifiedTime>2017-09-07T14:16:00</ModifiedTime>
+    <UsedCount>1</UsedCount>
+  </BizService>
+</BizService>

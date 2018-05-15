@@ -1,0 +1,144 @@
+<!-- 面包屑导航条 -->
+<div class="col-sm-12 topNav" style='height: 35px;'>
+    <ol class="breadcrumb" style="height: 35px;margin-bottom: 0px;line-height: 18px;font-weight: inherit;">
+        <!--<li class="list1">业务管理</li>-->
+        <!--<li class="list2">行政办公</li>-->
+        <!--<li class="list3">后勤管理</li>-->
+        <!--<li class="list3">会务管理</li>-->
+        <!--<li class="list3">会议室使用情况</li>-->
+    </ol>
+</div>
+<style>
+    .breadcrumb {
+        font-family: PingFangSC-Medium;
+        font-size: 14px;
+        color: #4B4B4B;
+        background: #F6F6F6;
+        border-top:1px solid #C4C4C4;
+        border-bottom: 1px solid #C4C4C4;
+    }
+</style>
+<script>
+    $(function () {
+        var interfaceURL = url+'navigate/getNavigationsUpByUrl';
+        var innerfaceCID = url+'navigate/getNavigationsByCid';
+        var href_hash = window.location.hash || '';
+
+        //把字符串作为URI 组件进行编码(作为参数传给后后台)。
+        href_hash = encodeURIComponent(href_hash);
+
+
+        //导航栏核心代码
+        function breadcrumbHtml(url, href_hash) {
+            var breadcrumb_html = window.localStorage.getItem(href_hash);
+            if (breadcrumb_html != '' && breadcrumb_html !=null && breadcrumb_html != undefined) {
+                $('.breadcrumb').html(breadcrumb_html);
+            } else {
+                $.ajax({
+                    type: "GET",
+                    async: false,
+                    url: url,
+                    data:{'url':href_hash},
+                    dataType: "jsonp",//加入这个选项即可
+                    success:function (data) {
+                        var html = '';
+                        $.each(data, function (index, trem) {
+                            if (trem.url) {
+                                html += '<li class="list1"><a href="'+trem.url+'" cid ="'+trem.cid+'" pid="'+trem.pid+'">'+trem.mark+'</a></li>';
+                            } else {
+                                html += '<li class="list1">'+trem.mark+'</li>';
+                            }
+                        });
+                        $('.breadcrumb').html(html);
+                        window.localStorage.setItem(href_hash, html);
+                    }
+                })
+            }
+        }
+
+        if (href_hash !== undefined && href_hash !== '') {
+            breadcrumbHtml(interfaceURL, href_hash);
+        }
+
+        //点击下拉菜单添加导航栏
+        $('#navbar-nav').on('click','a', function () {
+            var cid = $(this).attr('cid');
+            if ($(this)[0].hash !== '') {
+                $.ajax({
+                    type: "GET",
+                    async: false,
+                    url:innerfaceCID,
+                    data:{'cid':cid},
+                    dataType: "jsonp",//加入这个选项即可
+                    success:function (data) {
+                        var html = '';
+                        $.each(data, function (index, trem) {
+                            if (trem.url) {
+                                html += '<li class="list1"><a href="'+trem.url+'" cid ="'+trem.cid+'" pid="'+trem.pid+'">'+trem.mark+'</a></li>';
+                            } else {
+                                html += '<li class="list1">'+trem.mark+'</li>';
+                            }
+
+                        });
+                        $('.breadcrumb').html(html);
+                    }
+                })
+            }
+        });
+
+        //后勤类页面添加导航
+        $('#wrap').on('click','a', function () {
+            var href_hash_from_click = $(this).attr('href');
+            if ($(this)[0].hash !== '') {
+                breadcrumbHtml(interfaceURL, encodeURIComponent(href_hash_from_click));
+            }
+        });
+
+        //办公用品添加导航
+        $('#wrapOffice').on('click','a', function () {
+            var href_hash_from_click = $(this).attr('href');
+            if ($(this)[0].hash !== '') {
+                breadcrumbHtml(interfaceURL, encodeURIComponent(href_hash_from_click));
+            }
+        });
+
+        //导航栏添加点击事件跳转页面
+        $('.breadcrumb').on('click','a',function () {
+            var cid = $(this).attr('cid');
+            if ($(this)[0].hash !== '') {
+                $.ajax({
+                    type: "GET",
+                    async: false,
+                    url:innerfaceCID,
+                    data:{'cid':cid},
+                    dataType: "jsonp",//加入这个选项即可
+                    success:function (data) {
+                        var html = '';
+                        $.each(data, function (index, trem) {
+                            if (trem.url) {
+                                html += '<li class="list1"><a href="'+trem.url+'" cid ="'+trem.cid+'" pid="'+trem.pid+'">'+trem.mark+'</a></li>';
+                            } else {
+                                html += '<li class="list1">'+trem.mark+'</li>';
+                            }
+                        });
+                        $('.breadcrumb').html(html);
+                    }
+                })
+            }
+        });
+
+
+        //浏览器回退功能(当浏览器回退时导航栏随url地址变化)
+        if (window.history && window.history.pushState) {
+            $(window).on('popstate', function () {
+                breadcrumbHtml(interfaceURL, encodeURIComponent(window.location.hash));
+            });
+        }
+        //        window.history.pushState('forward', null, '#'); //在IE中必须得有这两行
+        //        window.history.forward(1);
+    });
+
+
+
+
+</script>

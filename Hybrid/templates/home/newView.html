@@ -1,0 +1,133 @@
+<ion-view view-title="新闻查询">
+    <ion-nav-bar class="bar-stable ">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-ios-arrow-left"
+                    ng-click="$ionicGoBack()">
+                返回
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <div class="bar {{$root.dingMobile.dingHeaderClass}}" style="top: 44px">
+        <button class="button button-stable" ng-click="goToSearch()" style="width:100%;margin-top:0px;margin-bottom:0px;">
+            <i class="icon ion-search placeholder-icon"></i>搜索
+        </button>
+    </div>
+    <div class="ng-hide animated fadeIn scrollTop" ng-show="displayTop" ng-click="scrollTop()">
+        <i class="icon ion-arrow-up-a"></i>
+    </div>
+
+    <ion-content class="scroll-content ionic-scroll {{$root.dingMobile.dingSubHeaderClass}}" on-scroll="getScrollPosition();" style="top: 100px">
+        <ion-refresher on-refresh="refreshFinishedWorkItem()">
+        </ion-refresher>
+        <ion-list>
+            <ion-item ng-repeat="workItem in finishedWorkItems"
+                      class="item-icon-right"
+                      style="cursor:pointer" ng-click="openCirculateItem('{{workItem.ObjectID}}')">
+                <div ng-if="workItem.ObjectID!='' ">
+                    <h2>{{workItem.Title}}</h2>
+                    <p>发布时间：{{workItem.PublishTime}}</p>
+                    <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+                </div>
+                <div ng-if="workItem.ObjectID==''" class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-android-happy" ng-if="workItem.HasWorkItem"></i>
+                    <i class="icon ion-checkmark" ng-if="!workItem.HasWorkItem"></i>
+                    <h2>{{workItem.InstanceName}}</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="finishedWorkItems.length > 0 && loadCompleted && !exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-android-happy"></i>
+                    <h2 style="margin-left:10px;">全部加载完成</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="finishedWorkItems.length == 0 && loadCompleted && searchKey=='' && !exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-android-sad"></i>
+                    <h2 style="margin-left:10px;">您未办理过任何任务</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="finishedWorkItems.length == 0 && loadCompleted && searchKey!='' && !exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-information-circled"></i>
+                    <h2 style="margin-left:10px;">没有找到任务</h2>
+                </div>
+            </ion-item>
+            <ion-item ng-if="exception"
+                      style="cursor:pointer">
+                <div class="item-icon-left" style="padding-left:20px;">
+                    <i class="icon ion-information-circled"></i>
+                    <h2 style="margin-left:10px;">系统数据加载失败，请稍候再试！</h2>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll ng-if="!loadCompleted"
+                             icon="ion-load-a"
+                             distance="10%"
+                             on-infinite="loadMoreFishedWorkItem()">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
+
+
+<script id="Search.html" type="text/ng-template">
+    <ion-modal-view ng-controller="SearchNewViewWorkItemCtr">
+        <form role="form" ng-submit="doSearch(search.searchKey)">
+            <div class="bar bar-header item-input-inset">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input id="searchInput" type="search" placeholder="搜索"
+                           ng-model="search.searchKey" ng-change="doSearch(search.searchKey)">
+                </label>
+                <button class="button button-clear" ng-click="closeModal()">
+                    取消
+                </button>
+            </div>
+        </form>
+        <ion-content class="scroll-content ionic-scroll has-header">
+            <ion-list>
+                <ion-item ng-repeat="workItem in newViewItems_Search"
+                          class="item-icon-right"
+                          style="cursor:pointer" ng-click="openCirculateItem('{{workItem.ObjectID}}')">
+                    <div ng-if="workItem.ObjectID!='' ">
+                        <h2>{{workItem.Title}}</h2>
+                        <p>发布时间：{{workItem.PublishTime}}</p>
+                    </div>
+                    <!--<div ng-if="workItem.ObjectID==''" class="item-icon-left" style="padding-left:20px;">-->
+                        <!--<i class="icon ion-android-happy" ng-if="workItem.HasWorkItem"></i>-->
+                        <!--<i class="icon ion-checkmark" ng-if="!workItem.HasWorkItem"></i>-->
+                        <!--<h2>{{workItem.InstanceName}}</h2>-->
+                    <!--</div>-->
+                </ion-item>
+                <ion-item ng-if="newViewItems_Search.length > 0 && loadCompleted_Search && !exception"
+                          style="cursor:pointer">
+                    <div class="item-icon-left" style="padding-left:20px;">
+                        <i class="icon ion-android-happy"></i>
+                        <h2 style="margin-left:10px;">全部加载完成</h2>
+                    </div>
+                </ion-item>
+                <ion-item ng-if="newViewItems_Search.length == 0 && loadCompleted_Search && search.searchKey!='' && !exception"
+                          style="cursor:pointer">
+                    <div class="item-icon-left" style="padding-left:20px;">
+                        <i class="icon ion-information-circled"></i>
+                        <h2 style="margin-left:10px;">没有找到任务</h2>
+                    </div>
+                </ion-item>
+                <ion-item ng-if="exception"
+                          style="cursor:pointer">
+                    <div class="item-icon-left" style="padding-left:20px;">
+                        <i class="icon ion-information-circled"></i>
+                        <h2 style="margin-left:10px;">系统数据加载失败，请稍候再试！</h2>
+                    </div>
+                </ion-item>
+            </ion-list>
+            <ion-infinite-scroll ng-if="!loadCompleted_Search"
+                                 icon="ion-load-a"
+                                 distance="1%"
+                                 on-infinite="loadMoreWorkItem()">
+            </ion-infinite-scroll>
+        </ion-content>
+    </ion-modal-view>
+</script>

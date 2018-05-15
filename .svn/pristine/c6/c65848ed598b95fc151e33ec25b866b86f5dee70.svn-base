@@ -1,0 +1,132 @@
+﻿<div class="top-img">
+    <img src="img/top_logo.png" alt="" style="width: 240px;">
+</div>
+<div class="container w-xxl w-auto-xs page-signup">
+    <div class="signup-container">
+        <div class="signup-header">
+            <img src="WFRes/_Content/Login/images/main_logo.png" style="width: 115px;" >
+        </div>
+        <form name="form">
+            <div class="signup-form">
+                <div class="signup-text">
+                    <span  style=' font-style:normal'>办公管理平台</span>
+
+                </div>
+                <div class="form-group w-icon">
+                    <input name="txtUser" type="text" id="txtUser"
+                           autofocus class="form-control input-lg" size="20" placeholder="{{LanJson.Code}}"
+                           ng-model="userCode" ng-keypress="($event.which===13)?loginIn():''" required>
+                    <span class="fa fa-user signup-form-icon"></span>
+                </div>
+                <div class="form-group w-icon" style="margin-top:30px;">
+                    <input name="txtPassword" type="password" id="txtPassword"
+                           class="form-control input-lg" size="20" placeholder="{{LanJson.Password}}"
+                           ng-model="userPassword" ng-keypress="($event.which===13)?loginIn():''" required>
+                    <span class="fa fa-lock signup-form-icon"></span>
+                </div>
+                <div ng-if="!LoginSuccess" style="text-align: center;color:#ff0000; margin-top: 15px;">
+                    <span translate="LoginController.NotInvalid">用户名密码错误</span>
+                </div>
+                <div ng-if="!ConnectionFailed" style="text-align: center;color:#ff0000; margin-top: 15px;">
+                    <span>引擎连接失败</span>
+                </div>
+                <div ng-if="!EnginePasswordValid" style="text-align: center;color:#ff0000; margin-top: 15px;">
+                    <span>引擎连接失败,密码错误</span>
+                </div>
+                <!-- ng-disabled="form.$invalid" -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-lg btn-info btn-block"
+                            style="background: #F46B36;border: 1px solid #FBBFBF;box-shadow: 0 2px 4px 0 rgba(193,193,193,0.50);border-radius: 4px;font-size: 25px;line-height: 25px;height: 45px;"
+                            ng-click="loginIn()">
+                        <span translate="LoginController.Login" style=' font-family: "微软雅黑"; font-size: 22px;'>登录</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="line_login"></div>
+<div class="ul_login">
+    <ul>
+        <li><a href="http://www.shmetro.com"><img src="img/footer/shanghai.png"/></a></li>
+        <li><a href="http://www.bjsubway.com"><img src="img/footer/beijing.png"/></a></li>
+        <li><a href="http://www.gzmtr.com"><img src="img/footer/guangzhou.png"/></a></li>
+        <li><a href="http://www.szmc.net"><img src="img/footer/shenzhen.png"/></a></li>
+        <li><a href="http://www.mtr.com.hk/ch/customer/tourist/index.php"><img src="img/footer/xianggang.png"/></a></li>
+        <li><a href="http://www.njmetro.com.cn"><img src="img/footer/nanjing.png"/></a></li>
+        <li><a href="http://www.ncmtr.com"><img src="img/footer/nanchang.png"/></a></li>
+        <li><a href="http://www.hzmetro.com"><img src="img/footer/hangzhou.png"/></a></li>
+        <li><a href="http://www.sz-mtr.com"><img src="img/footer/suzhou.png"/></a></li>
+        <li><a href="http://www.harbin-metro.com"><img src="img/footer/haerbin.png"/></a></li>
+    </ul>
+</div>
+<div class="foot_login">
+    <div><img src="img/copyright_st.png" alt="" style="width: 300px;padding-top: 10px;"></div>
+    <span id="wenzi">SHANGHAI SHENTONG RAIL TRANSIT RESEARCH & CONSULTANCY CO.LTD</span>
+    <div id="copyright" style="color:#ACACAC">(c)2017 All Rights Reserved.</div>
+</div>
+<style>
+    .top-img {
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+        background-color:#FFFFFF;
+        border: 1px solid #979797;
+        position:absolute;
+        padding-left: 30px;
+        top: 0px;
+        left:0px;
+    }
+    .line_login {
+        width: 100%;
+        height: 32px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: 140px;
+    }
+    .ul_login {
+        width:100%;
+        height:70px;
+        padding: 0px 0px;
+        position:absolute;
+        bottom: 70px;
+        background: #ffffff;
+        border: 1px solid #e8e8e8;
+    }
+    .ul_login ul {
+        padding: 0px 6px;
+    }
+    .ul_login ul li {
+        width:10%;
+        list-style-type: none;
+        float:left;
+        padding:0 5px;
+        line-height: 70px;
+    }
+    .ul_login ul li a img {
+        width:100%;
+    }
+    .foot_login {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        background: white;
+        height: 70px;
+        text-align:center;
+    }
+    .page-signup .signup-text span {
+        font-family: PingFangSC-Medium;
+        font-size: 20px;
+        color: #B6B6B6;
+        letter-spacing: 0.83px;
+    }
+    #wenzi{
+        font-family: PingFangSC;
+        color: #ababab;
+        font-size: 9px;
+        margin-top: 2px;
+      }
+    #copyright{
+        margin-top: -2px !important;
+    }
+</style>

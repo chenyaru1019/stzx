@@ -1,0 +1,80 @@
+<!-- 后勤管理 -->
+<div id="wrap" class="bodywrap houqin">
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a ui-sref='app.EditBizObject({TopAppCode:"xmbyjgl",SchemaCode:"SpareMoney",SheetCode:"SSpareMoney",Mode:"Originate",FunctionCode:"xmbyjsq"})' >
+                <img src="img/project/备用金管理.png" alt="">
+                <h4>备用金管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.EditBizObject({TopAppCode:"zwjtffgl",SchemaCode:"ZJZXF",SheetCode:"SZJZXF",Mode:"Originate",FunctionCode:"zwjtffsq"})'>
+                <img src="img/project/驻外津贴发放管理.png" alt="">
+                <h4>驻外津贴发放管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.EditBizObject({TopAppCode:"zxylwfgl",SchemaCode:"ZJZXF",SheetCode:"SZJZXF",Mode:"Originate",FunctionCode:"zjffsqd"})' >
+                <img src="img/project/咨询与劳务费管理.png" alt="">
+                <h4>咨询与劳务费管理</h4>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a ui-sref='app.EditBizObject({TopAppCode:"hsfgl",SchemaCode:"SubsidyEnabled",SheetCode:"SSubsidyEnabled",Mode:"Originate",FunctionCode:"xmbhsfsqb"})'>
+                <img src="img/project/伙食费管理.png" alt="">
+                <h4>伙食费管理</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row" style='margin-top: 40px;'>
+        <div class="col-sm-3">
+            <a ui-sref='app.BizQueryView({TopAppCode:"gdzcgl",SchemaCode:"FixedAsset",QueryCode:"FixedAssetList",FunctionCode:"guzccx"}) '>
+                <img src="img/project/项目报销管理.png" alt="">
+                <h4>项目报销管理</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<style>
+    .app-aside {
+        display:none;
+    }
+    .app-content-body {
+        margin-left: -170px;
+    }
+    .row {
+        margin:0px;
+    }
+    .houqin {
+        width:110%;
+    }
+    .houqin .col-sm-3 {
+        text-align:center;
+    }
+    .houqin .col-sm-3 img {
+        width:120px;
+        margin-bottom: 20px;
+    }
+    .houqin .col-sm-12 {
+        width: 104%;
+        margin-left: -4px;
+    }
+    #wrap h4 {
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+    }
+    #wrap img {
+        width: 85px;
+        height: 85px;
+    }
+</style>
+<script>
+    $(function(){
+        var h4List = $('#wrap').find('h4');
+        for (var i = 0; i < h4List.length; i++) {
+            h4List[i].onclick = function (){
+                console.log();
+            }
+        }
+    })
+</script>

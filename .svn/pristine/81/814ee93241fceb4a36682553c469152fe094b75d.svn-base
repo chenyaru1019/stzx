@@ -1,0 +1,188 @@
+<!-- 内部公文库查询 -->
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+     app.settings.asideFolded=false;
+     app.settings.asideDock=false;">
+    <!-- main -->
+    <div class="col">
+        <!-- main header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row" style=" padding-right: 15px; ">
+                <div class="col-sm-6 col-xs-12">
+                    <span class="h3" title-name function-view-models="user.FunctionViewModels"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--表格部分Start-->
+        <div class="wrapper-md paddingbottomNone QueryList">
+            <div class="panel panel-default">
+                <form class="form-inline searchContainer ng-pristine ng-valid ng-valid-maxlength" role="form">
+                    <div class="form-group" >
+                        <!--<span class='span'>发文时间</span>-->
+                        <div class="input-group" style='border-top:0'>
+                            <input ng-model="StartTime" ui-jq="wdatePicker" id="StartTime" class="input-sm form-control ng-pristine ng-untouched ng-valid" placeholder="开始时间">
+                            <span class="input-group-addon ng-scope" style="border-left:0px;border-right:0px;" translate="QueryTableColumn.To">至</span>
+                            <input ng-model="EndTime" ui-jq="wdatePicker" id="EndTime" class="input-sm form-control ng-pristine ng-untouched ng-valid" placeholder="结束时间">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--<span class='span'>发文部门</span>-->
+                        <select class="input-sm form-control ng-pristine ng-valid ng-touched" id='Department'>
+                            <!--<option value="" class="ng-binding" selected = "selected">请选择部门</option>-->
+                            <!--<option value="总经理室" class="ng-binding">总经理室</option>-->
+                            <!--<option value="项目管理室" class="ng-binding">项目管理室</option>-->
+                            <!--<option value="综合办公室" class="ng-binding">综合办公室</option>-->
+                            <!--<option value="运营管理部" class="ng-binding">运营管理部</option>-->
+                            <!--<option value="项目管理室" class="ng-binding">项目管理室</option>-->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <!--<span class='span'>文件名</span>-->
+                        <input  maxlength="32" class="form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength" placeholder="文件名" id='fileName'>
+                    </div>
+                    <div class="form-group" style='margin-right: 0px'>
+                        <!--<span class='span'>发文编号</span>-->
+                        <input  maxlength="32" class="form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength" placeholder="发文编号" id='DocumentNumber'>
+                    </div>
+                    <div class="form-group">
+                        <input ng-model="searchKey" type="text" class="input-sm form-control ng-pristine ng-untouched ng-valid" style="width:200px;display:none;" placeholder="搜索...">
+                        <button class="btn btn-sm btn-default" type="button" style="height:30px;padding:5px 18px">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+            <div class="table-responsive" style="width: 100%;position: relative;min-height:123px;">
+                <table id="cs_table" class="datatable" style="width: 100%;border-bottom: 0px;"></table>
+                <div class='total'></div>
+            </div>
+        </div>
+     </div>
+        <!--表格部分End-->
+    </div>
+    <!-- / main -->
+</div>
+<style>
+    .form-group {
+        margin-right: 5px;
+    }
+    .dropUp {
+        margin-top: 0px;
+    }
+    .Btn_dropDown {
+        background: url(img/icon_arrow.png) no-repeat -61px 0px;
+        width: 61px;
+        height: 17px;
+        position: absolute;
+        top: 1px;
+        margin-left: -30px;
+        left: 50%;
+    }
+    .Btn_dropup {
+        background: url(img/icon_arrow.png) no-repeat 0px 0px;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+            type: "GET",
+            async: false,
+            url: url+'organization/list',
+            dataType: "jsonp",//加入这个选项即可
+            success:function (data) {
+                var html='<option value="" class="ng-binding" selected = "selected">请选择部门</option>';
+                var datas = data.result;
+                $.each(datas,function (index,iterm) {
+                   html += '<option value="'+iterm.name+'" class="ng-binding">'+iterm.name+'</option>'
+                });
+                $('#Department').html(html);
+            }
+        });
+        $.ajax({
+            type: "GET",
+            async: false,
+            url: url+'file/list',
+            dataType: "jsonp",//加入这个选项即可
+            jsonpCallback: "callbackName",
+            success: function (data) {
+                var html = '';
+                html='<div class="totalData">共'+data.length+'条数据</div>';
+                for(var i=0;i<data.length;i++){
+                    data[i] = {id:i+1,docNum:data[i].docNum,fileName:data[i].fileName,department:data[i].department,fileDate:data[i].fileDate};
+                }
+                if (data.length == 0){
+                    data[1] = {id:'暂无数据',docNum:"",fileName:'',department:'',fileDate:''};
+                }
+                new table({
+                    "tableId":"cs_table",  //必须
+                    "headers":["序号","发文编号","文件名","发文部门","发文日期"],  //必须
+                    "data":data,    //必须
+                    "displayNum": 10,  //必须  默认 10
+                    "groupDataNum":5 //可选  默认 10
+                });
+                $('.total').html(html);
+                $('#cs_table tbody').find('tr').css('cursor','pointer').on('click',function () {
+                    $(".app-aside-right").find('iframe').attr('src','InstanceSheets.html?InstanceId=ec4e5231-c417-4e53-b645-958f607a36ef');
+                    $('.app-aside-right').addClass('show');
+                });
+            }
+        });
+        $('.btn').on('click',function () {
+           var StartTime = $('#StartTime').val();
+           var EndTime = $('#EndTime').val();
+           var Department = $("#Department").val();
+           var fileName = $("#fileName").val();
+           var DocumentNumber = $("#DocumentNumber").val();
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: url+'file/list',
+                data: {"beginDate": StartTime,
+                       "endDate": EndTime,
+                       "department": Department,
+                       "fileName": fileName,
+                       "fileNum": DocumentNumber
+                },
+                dataType: "jsonp",//加入这个选项即可
+                jsonpCallback: "callbackName",
+                success: function (data) {
+                console.log(data);
+                    var html = '';
+                    html='<div class="totalData">共'+data.length+'条数据</div>';
+                    for(var i=0;i<data.length;i++){
+                        data[i] = {id:i+1,docNum:data[i].docNum,fileName:data[i].fileName,department:data[i].department,fileDate:data[i].fileDate};
+                    }
+                    if (data.length == 0){
+                        data[1] = {id:'暂无数据',docNum:"",fileName:'',department:'',fileDate:''};
+                        new table({
+                            "tableId":"cs_table",  //必须
+                            "headers":["序号","发文编号","文件名","发文部门","发文日期"],  //必须
+                            "data":data,    //必须
+                            "displayNum": 10,  //必须  默认 10
+                            "groupDataNum":5 //可选  默认 10
+                        });
+                        $('.total').html(html);
+                        $('#cs_table tbody').find('tr').css('cursor','pointer').on('click',function () {
+                            $(".app-aside-right").find('iframe').attr('src','#');
+                        });
+                    }else {
+                        new table({
+                            "tableId":"cs_table",  //必须
+                            "headers":["序号","发文编号","文件名","发文部门","发文日期"],  //必须
+                            "data":data,    //必须
+                            "displayNum": 10,  //必须  默认 10
+                            "groupDataNum":5 //可选  默认 10
+                        });
+                        $('.total').html(html);
+                        $('#cs_table tbody').find('tr').css('cursor','pointer').on('click',function () {
+                            $(".app-aside-right").find('iframe').attr('src','InstanceSheets.html?InstanceId=ec4e5231-c417-4e53-b645-958f607a36ef');
+                            $('.app-aside-right').addClass('show');
+                        });
+                    }
+
+
+                }
+            });
+        });
+    })
+</script>

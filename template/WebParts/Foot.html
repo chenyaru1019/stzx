@@ -1,0 +1,65 @@
+<!-- 首页底部模块 -->
+<div id='SY_foot' style='height: 190px;'>
+    <div class="SY_ul_login">
+        <ul>
+            <li><a href="http://www.shmetro.com"><img src="img/footer/shanghai.png"/></a></li>
+            <li><a href="http://www.bjsubway.com"><img src="img/footer/beijing.png"/></a></li>
+            <li><a href="http://www.gzmtr.com"><img src="img/footer/guangzhou.png"/></a></li>
+            <li><a href="http://www.szmc.net"><img src="img/footer/shenzhen.png"/></a></li>
+            <li><a href="http://www.mtr.com.hk/ch/customer/tourist/index.php"><img src="img/footer/xianggang.png"/></a></li>
+            <li><a href="http://www.njmetro.com.cn"><img src="img/footer/nanjing.png"/></a></li>
+            <li><a href="http://www.ncmtr.com"><img src="img/footer/nanchang.png"/></a></li>
+            <li><a href="http://www.hzmetro.com"><img src="img/footer/hangzhou.png"/></a></li>
+            <li><a href="http://www.sz-mtr.com"><img src="img/footer/suzhou.png"/></a></li>
+            <li><a href="http://www.harbin-metro.com"><img src="img/footer/haerbin.png"/></a></li>
+        </ul>
+    </div>
+    <div class="SY_foot_login">
+        <div><img src="img/copyright_st.png" alt="" style="width: 300px"></div>
+        <p id="wenzi">SHANGHAI SHENTONG RAIL TRANSIT RESEARCH & CONSULTANCY CO.LTD</p>
+        <div style="color:#ACACAC">(c)<span id="foot-year"></span> All Rights Reserved.</div>
+    </div>
+</div>
+<style>
+    .SY_ul_login {
+        width:98%;
+        height:80px;
+        position:absolute;
+        border-bottom: 1px solid lightgrey;
+        height: 113px;
+    }
+    .SY_ul_login ul {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .SY_ul_login ul li {
+        width:10%;
+        list-style-type: none;
+        float:left;
+        padding:0 5px;
+    }
+    .SY_ul_login ul li img {
+        width: 105%;
+        height: 65px;
+        margin-top: 25px;
+    }
+    .SY_foot_login {
+        width: 98%;
+        position: absolute;
+        bottom: 40px;
+        background: white;
+        height: 50px;
+        text-align:center;
+    }
+    #wenzi{
+        font-family: PingFangSC;
+        color: #ababab;
+        font-size: 9px;
+        margin-top: 2px;
+    }
+</style>
+<script type="text/javascript">
+    var Data = new Date();
+    var Year = Data.getFullYear();
+    $('#foot-year').html(Year);
+</script>

@@ -1,0 +1,298 @@
+<!-- 首页我的会议模块 -->
+<div class="meeting" style="height: 278px;">
+    <div class="M_top">
+        <div><img src="img/main/ic_index_meeting.png" style='padding-right: 10px;width: 32px;' alt="">公司会议
+            <a ui-sref='app.houqinHys({TopAppCode:"hys"})' class="M_more">更多</a>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="M_content">
+        <ul class='M_nav'>
+            <li class="M_li_left M_active">今日会议</li>
+            <li class="M_li_right">明日会议</li>
+        </ul>
+        <div class="line" style='margin-top: 0;margin-bottom: 0;'></div>
+        <div style="height: 91%;">
+            <div class="M_left">
+                <ul id="tab_left">
+
+                </ul>
+                <div class="line" style='margin-top: 0;margin-bottom: 0;'></div>
+                <div id="container">
+
+                </div>
+            </div>
+            <div class="M_right" style='display: none;'>
+                <ul id="tab_right">
+
+                </ul>
+                <div class="line" style='margin-top: 0;margin-bottom: 0;'></div>
+                <div id="container1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .M_top {
+        height:25px;
+        background: #FFFFFF;
+        /*font-family: PingFangSC-Medium;*/
+        font-size: 15px;
+        line-height:32px;
+        color: #4E4E4E;
+    }
+    .M_more {
+        float:right;
+        color: #9E60B2;
+        /*font-family: PingFangSC-Regular;*/
+    }
+    .line {
+        width:103%;
+        margin-left: -5px;
+        height:2px;
+        background: #D7D7D7;
+    }
+    .M_content .M_nav {
+        width: 103%;
+        height: 30px;
+        background: #E9EAEF;
+        margin-left: -5px;
+        margin-top: -10px;
+        padding-left: 10px;
+    }
+    .M_content .M_nav li {
+        float:left;
+        font-size: 15px;
+        padding: 4px;
+        font-weight: bold;
+    }
+
+    .M_content #tab_left li,.M_content #tab_right li {
+        font-size: 15px;
+        padding: 4px;
+    }
+    .M_content #container li,.M_content #container1 li {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    #container .divContent ul li,#container1 .divContent ul li {
+        border-bottom: 1px solid #eaeff0;
+    }
+
+    .row {
+        margin: 0px;
+    }
+
+    .M_content ul li:hover {
+        cursor:pointer;
+    }
+    .M_content div {
+        /*margin-top: 2px;*/
+        /*height: 207px;*/
+    }
+    .M_active {
+        color:#256BA9;
+        /*border-left: 2px solid #D7D7D7;*/
+        /*border-right: 2px solid #D7D7D7;*/
+    }
+    .M_left,.M_right {
+        height: 100%;
+    }
+    table tr {
+        height: 30px;
+    }
+    table tr td {
+        padding:8px 11px;
+        border-top: 1px solid #eaeff0;
+    }
+    table tr:last-child td {
+        border-bottom:1px solid #eaeff0 ;
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #FAFAFA;
+        /*background-image: url("");*/
+    }
+    *{
+        margin:0;
+        padding: 0;
+    }
+    #tab_left,#tab_right {
+        height: 25px;
+        display: -webkit-box;
+        display: -moz-box;
+        display:-webkit-flex;
+        display: -ms-flexbox;
+        display:flex;
+    }
+    #tab_left li,#tab_right li{
+        float: left;
+        list-style: none;
+        /*width: 80px;*/
+        height: 25px;
+        line-height: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+    #container,#container1{
+        position: relative;
+        height: 93%;
+        /*background-color: #FAFAFA;*/
+    }
+    #container .divContent,#container1 .divContent1{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        position: absolute;
+        left: 0;
+        background-color: #FAFAFA;
+        overflow: auto;
+    }
+    #container .divContent table,#container1 .divContent1 table {
+        width: 100%;
+        height: 149px;
+    }
+    #container .divContent:first-child,#container1 .divContent1:first-child {
+        background: #FAFAFA;
+        z-index: 2;
+    }
+    #tab_left li:first-child,#tab_right li:first-child {
+        background: #FAFAFA;
+        color: #256BA9;
+
+    }
+    .meetMsg {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .zIndex {
+        z-index: 999;
+    }
+    .col-sm-3 .col-sm-12 {
+        padding: 0px;
+    }
+</style>
+<script type="text/javascript">
+    $(function(){
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/Portal/Sheets/handlers/LogisticsHandler.ashx?Command=ViewMeetingInfo",
+            success: function (data) {
+                var itemToday = data.todayList;
+                var itemTomorrow = data.tomorrowList
+
+                //今日会议
+              if (itemToday.length == 0){
+                  var html ='<h3>暂无会议<h3/>';
+                    $(html).appendTo($('#container'));
+                    $('.M_left .line').css('display','none');
+                    $('#container').css({'text-align':'center','margin':'10%'})
+              }else {
+                  var html = '';
+                var html_li='';
+                var html_div= '';
+                var html_div1= '';
+
+                var s = [];
+                var tempMap = new Map();
+                $.each(itemToday, function(index, item) {
+                    if (tempMap.has(item.MeetingRoom)) {
+                        tempMap.get(item.MeetingRoom).push(item);
+                    } else {
+                        tempMap.set(item.MeetingRoom, [item]);
+                    }
+                });
+                tempMap.forEach(function(value, key) {
+                    var num = key.substring(0, 1);
+                    html_li = $('<li id="tab'+num+'" value="'+num+'" title="'+key+'">'+key+'</li>');
+                    html_div = $('<div id="content'+num+'" class="divContent"></div>');
+                    html_div1 = $('<ul></ul>');
+                    var html_table = '';
+                    for (var j =0; j<value.length; j++){
+                        var href = value[j].InstanceId;
+                        html_table += '<li style="cursor: pointer;" class="row"><span class="meetMsg col-md-8"><a href="InstanceSheets.html?InstanceId='+href+'" target="_blank">'+value[j].Title+'</a></span><span style="text-align: right" class="col-md-4">'+value[j].StartTime+'</span></li>'
+                    }
+                    html_li.appendTo('#tab_left');
+                    $(html_table).appendTo(html_div1);
+                    $(html_div1).appendTo(html_div);
+                    html_div.appendTo('#container');
+                    html_li.on('click', function() {
+                        $(this).css({'background-color':'#FAFAFA','color':'#256BA9'});
+                        $(this).siblings('li').css({'background-color':'white','color':'#000'});
+                        $('.divContent').removeClass('zIndex');
+                        $("#content"+$(this).val()).addClass('zIndex')
+                    });
+                });
+              }
+
+              //明日会议
+              if (itemTomorrow.length == 0){
+                  var html ='<h3>暂无会议<h3/>';
+                  $(html).appendTo($('#container1'));
+                  $('.M_right .line').css('display','none');
+                  $('#container1').css({'text-align':'center','margin':'10%'})
+              } else {
+                  var html = '';
+                  var html_li1='';
+                  var html_div= '';
+                  var html_div1= '';
+                  var tempMap1 = new Map();
+                  $.each(itemTomorrow, function(index, item) {
+                      if (tempMap1.has(item.MeetingRoom)) {
+                          tempMap1.get(item.MeetingRoom).push(item);
+                      } else {
+                          tempMap1.set(item.MeetingRoom, [item]);
+                      }
+                  });
+                  tempMap1.forEach(function(value, key) {
+                      var num = key.substring(0, 1);
+                      html_li1 = $('<li id="tab'+num+'" value="'+num+'" title="'+key+'">'+key+'</li>');
+                      html_div = $('<div id="contentI'+num+'" class="divContent1"></div>');
+                      html_div1 = $('<ul></ul>');
+                      var html_table = '';
+                      for (var j =0; j<value.length; j++){
+                          var href = value[j].InstanceId;
+                          html_table += '<li style="cursor: pointer;" class="row"><span class="meetMsg col-md-8"><a href="InstanceSheets.html?InstanceId='+href+'" target="_blank">'+value[j].Title+'</a></span><span style="text-align: right" class="col-md-4">'+value[j].StartTime+'</span></li>'
+                      }
+                      html_li1.appendTo('#tab_right');
+                      $(html_table).appendTo(html_div1);
+                      $(html_div1).appendTo(html_div);
+                      html_div.appendTo('#container1');
+                      html_li1.on('click', function() {
+                          $(this).css({'background-color':'#FAFAFA','color':'#256BA9'});
+                          $(this).siblings('li').css({'background-color':'white','color':'#000'});
+                          $('.divContent1').removeClass('zIndex');
+                          $("#contentI"+$(this).val()).addClass('zIndex')
+
+                      });
+                  });
+              }
+            }
+        });
+        $('.M_content').find('.M_li_left').on('click', function() {
+            $('.M_left').show();
+            $('.M_li_left').addClass('M_active');
+            $('.M_right').hide();
+            $('.M_li_right').removeClass("M_active");
+        });
+        $('.M_content').find('.M_li_right').on('click', function(event) {
+            $('.M_left').hide();
+            $('.M_li_left').removeClass("M_active");
+            $('.M_right').show();
+            $('.M_li_right').addClass('M_active');
+        });
+    });
+    $(window).resize(function() {
+        $('.meeting').height(($('#carousel-example-generic').height()+42)/2+37);
+        $('#container').height($('.meeting').height()-97);
+        $('#container1').height($('.meeting').height()-97);
+    });
+    $('.meeting').height(($('#carousel-example-generic').height()+42)/2+37);
+        $('#container').height($('.meeting').height()-97);
+        $('#container1').height($('.meeting').height()-97);
+</script>

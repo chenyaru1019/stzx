@@ -1,0 +1,39 @@
+{#foreach $T as record}
+<div class="row M_room">
+    <div class="col-sm-9 M_room_content">
+        <h2>{$T.record.Model}</h2>
+        <p class="p">{$T.record.SDate}可预约</p>
+        <ul class="M_room_ul">
+            <li class="M_room_li">
+                <p style="padding-left: 20px;">车辆行驶证号：{$T.record.DrivingNumber}</p>
+                <select style='position: absolute;top: 140px;right: 100px;'>
+                    <option value="启用">启用</option>
+                    <option value="禁用">禁用</option>
+                </select>
+                <div style='position: absolute;top: 80px;right: 100px;'>
+                    <img src="img/DrivingNumber.png" alt="" style='width: 40px;'> {$T.record.Plate}
+                </div>
+            </li>
+            <li class="M_room_li">
+                <ul class="M_room_li2">
+                    <li>
+                        <p>{$T.record.Status}</p>
+                        <p>预定情况</p>
+                    </li>
+                    <li>
+                        <p>{$T.record.Type}</p>
+                        <p>类型</p>
+                    </li>
+                    <li>
+                        <p><a href='/Portal\Admin/TabMaster.html?url=Organization/EditUser.html&Mode=View&ID=09a5efd8-561a-4dac-b525-26484771432d' target='_blank'>{$T.record.Driver}</a></p>
+                        <p>驾驶员</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-3 M_room_img">
+        <img src="img/hw_image.png" alt="">
+    </div>
+</div>
+{#/for}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src=../../vendor/jquery/jquery.min.js></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/SheetControls.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/MvcSheetUI.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetQuery.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetAttachment.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetCheckbox.js?20150722"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetCheckboxList.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetComment.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetDropDownList.js?20160330001"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetGridView.js?20160330002"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetHiddenField.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetHyperLink.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetInstancePrioritySelector.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetLabel.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetOffice.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetRadioButtonList.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetRichTextBox.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetTextBox.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetTime.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetToolbar.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetUser.js?201503300001"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetTimeSpan.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetCountLabel.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetOriginatorUnit.js?20160909"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/Controls/SheetRelationInstance.js?20151016"></script>
+    <script src="../../WFRes/_Scripts/MVCSheet/MvcSheet.js?20151016></script>
+    <script type=text/javascript" src="../../WFRes/_Scripts/MVCRuntime/Sheet.js?20151016"></script>
+    <script type="text/javascript" src="../../WFRes/_Scripts/MVCRuntime/Sheet.Computation.js?20151016"></script>
+    <script type="text/javascript" src="../../WFRes/_Scripts/MVCRuntime/Sheet.Display.js?20151016"></script>
+    <script type="text/javascript" src="../../WFRes/_Scripts/MVCRuntime/Sheet.Validate.js?20151016"></script>
+    <script type="text/javascript" src="../../WFRes/_Scripts/MVCRuntime/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../WFRes/_Scripts/MVCRuntime/custom.js"></script>
+</head>
+<body>
+<div class="DragContainer" style="text-align: center;">
+    <label class="panel-title" id="lblTitle">文件预览</label>
+</div>
+<div class="panel-body sheetContainer">
+    <div class="nav-icon fa fa-chevron-right bannerTitle">
+        <label id="divBasicInfo" data-en_us="Basic information">基本信息</label>
+    </div>
+    <div class="divContent">
+        <div class="row">
+            <div class="col-md-2" id="divFullNameTitle">
+                <label id="lblFullNameTitle" style="" data-type="SheetLabel" data-en_us="Originator" data-bindtype="OnlyVisiable" data-datafield="Originator.UserName">发起人</label>
+            </div>
+            <div class="col-md-4" id="divFullName">
+                <label id="lblFullName" style="" data-type="SheetLabel" data-bindtype="OnlyData" data-datafield="Originator.UserName">
+
+                </label>
+            </div>
+            <div class="col-md-2" id="divOriginateDateTitle">
+                <label id="lblOriginateDateTitle" style="" data-type="SheetLabel" data-en_us="Originate Date" data-bindtype="OnlyVisiable" data-datafield="OriginateTime">发起时间</label>
+            </div>
+            <div class="col-md-4" id="divOriginateDate">
+                <label id="lblOriginateDate" style="" data-type="SheetLabel" data-bindtype="OnlyData" data-datafield="OriginateTime">
+
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" id="divOriginateOUNameTitle">
+                <label id="lblOriginateOUNameTitle" style="" data-type="SheetLabel" data-en_us="Originate OUName" data-bindtype="OnlyVisiable" data-datafield="Originator.OUName">所属组织</label>
+            </div>
+            <div class="col-md-4" id="divOriginateOUName">
+                <!--					<label id="lblOriginateOUName" data-type="SheetLabel" data-datafield="Originator.OUName" data-bindtype="OnlyData">
+<span class="OnlyDesigner">Originator.OUName</span>
+                    </label>-->
+                <select id="ctlOriginaotrOUName" style="" data-type="SheetOriginatorUnit" data-datafield="Originator.OUName">
+                </select>
+            </div>
+            <div class="col-md-2" id="divSequenceNoTitle">
+                <label id="lblSequenceNoTitle" style="" data-type="SheetLabel" data-en_us="SequenceNo" data-bindtype="OnlyVisiable" data-datafield="SequenceNo">流水号</label>
+            </div>
+            <div class="col-md-4" id="divSequenceNo">
+                <label id="lblSequenceNo" style="" data-type="SheetLabel" data-bindtype="OnlyData" data-datafield="SequenceNo">
+
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="nav-icon fa  fa-chevron-right bannerTitle">
+        <label id="divSheetInfo" data-en_us="Sheet information">表单信息</label>
+    </div>
+    <div class="divContent" id="divSheet">
+        <div class="row">
+            <div class="col-md-2" id="title1">
+                <span id="Label11" style="" data-type="SheetLabel" data-datafield="fwbh">发文编号</span>
+            </div>
+            <div class="col-md-4" id="control1">
+                <input id="Control11" style="" type="text" data-type="SheetTextBox" data-datafield="fwbh">
+            </div>
+            <div class="col-md-2" id="title2">
+            </div>
+            <div class="col-md-4" id="control2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" id="div83574">
+                <span id="Label12" style="" data-type="SheetLabel" data-datafield="fwrq">发文日期</span>
+            </div>
+            <div class="col-md-4" id="div553139">
+                <input id="Control12" style="" type="text" data-type="SheetTime" data-datafield="fwrq">
+            </div>
+            <div class="col-md-2" id="div55679">
+            </div>
+            <div class="col-md-4" id="div414106">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" id="title3">
+                <span id="Label13" style="" data-type="SheetLabel" data-datafield="fwbm">发文部门</span>
+            </div>
+            <div class="col-md-4" id="control3">
+                <input id="Control13" style="" type="text" data-type="SheetTextBox" data-datafield="fwbm">
+            </div>
+            <div class="col-md-2" id="title4">
+            </div>
+            <div class="col-md-4" id="control4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" id="div653173">
+                <span id="Label14" style="" data-type="SheetLabel" data-datafield="wjm">文件名</span>
+            </div>
+            <div class="col-md-4" id="div39770">
+                <input id="Control14" style="" type="text" data-type="SheetTextBox" data-datafield="wjm">
+            </div>
+            <div class="col-md-2" id="div948383">
+            </div>
+            <div class="col-md-4" id="div950170">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="div52042">
+                <div id="ctl792893" style="" data-type="SheetOffice" data-datafield="wj">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <button class='close'>关闭</button>
+<script>
+    $(function () {
+        $(".close").on('click',function () {
+            $($((parent.window.frames['ifm'])).parents('.app-aside-right')).removeClass('show');
+        });
+    })
+</script>
+
+</body>
+
+</html>
